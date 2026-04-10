@@ -14,7 +14,7 @@ Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Ta
 body {
 	background: url("https://cdn.allthepics.net/images/2026/03/31/lab.jpg") center center;
 	background-attachment: fixed;
-	background-size: auto 100%;
+	background-size: width 100%;
 	font-family: "Nova Square", sans-serif;
 	color: #1c3f36 !important;
 	font-size: 12px;
