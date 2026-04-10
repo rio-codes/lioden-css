@@ -482,7 +482,7 @@ div.feature {
 	table.table > tbody {
 		overflow: hidden !important;;
 	}
-	table.table > tbody > tr > td:nth-child(2)::after {
+	table.table:nth-child(3) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)::after {
   content: url("https://cdn.allthepics.net/images/2026/04/10/mushies-phone.gif") !important;
   position:relative;
 	width: 300px !important;
@@ -542,7 +542,7 @@ table .pun-content h3 {
 	table.table > tbody {
 		overflow: hidden !important;
 	}
-	table.table > tbody > tr > td:nth-child(2)::after {
+	table.table:nth-child(3) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)::after {
   content: url("https://cdn.allthepics.net/images/2026/04/08/F0A3D97F-CE5D-4D7F-92DC-472FCD2DD9FE.gif") !important;
   overflow: hidden !important;
 		position: relative;
@@ -582,6 +582,7 @@ table .pun-content h3 {
  text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 }
+
 
 /* Desktop */
 @media only screen and (min-width: 1200px) {
