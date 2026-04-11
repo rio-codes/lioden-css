@@ -253,14 +253,6 @@ h3 {
 	font-weight: bolder;
 }
 
-/* Right panel sizes */
-
-div.visible-md:nth-child(4) > div:nth-child(2) {
-	width: max-content;
-	position: relative;
-	left: 84px;
-}
-
 /*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
 
 .table {
@@ -656,11 +648,6 @@ hr {
 .xlarge img {
 	display: none;
 }
-
-div.mb-2 > a > div > h3 {
-	
-}
-
 
 #allies > tbody:nth-child(1) > tr:nth-child(3) td,
 #allies > tbody:nth-child(1) > tr:nth-child(5) td,
