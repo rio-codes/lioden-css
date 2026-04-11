@@ -265,9 +265,10 @@ h1.center > small:nth-child(2) {
 /* Secondary header */
 
 h2 {
-	font-size: 24px;
-	color: #de788a;
-  	text-shadow: 0 0 .6em, 0 0 1em #f9d8de !important;
+	font-family: "Mea Culpa" !important;
+	font-size: 40px;
+  text-shadow: 0 0 .6em, 0 0 1em #ffffff !important;
+	color: #ffeadd;
 }
 
 /* Tertiary header */
