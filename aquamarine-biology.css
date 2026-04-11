@@ -97,6 +97,17 @@ button.button:hover, .btn:hover, .btn-default:hover {
 	color: #7cc2af !important;
 }
 
+button.button {
+	position: relative;
+	left: 25% !important;;
+}
+.btn {
+	position: relative;
+	left: 34%;
+	top: -50%;
+		
+}
+
 
 /* Make left panel background and border invisible */
 
@@ -238,6 +249,14 @@ h3 {
 .progress div {
 	color: #1c3f36 !important;
 	font-weight: bolder;
+}
+
+/* Right panel sizes */
+
+div.visible-md:nth-child(4) > div:nth-child(2) {
+	width: max-content;
+	position: relative;
+	left: 84px;
 }
 
 /*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
