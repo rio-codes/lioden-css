@@ -81,8 +81,10 @@ button.button:hover, .btn:hover, .btn-default:hover {
 }
 
 .btn-default {
-  	background: #19765d !important;
+	background: #19765d !important;
 	color: #7cc2af !important;
+	position: relative;
+	top: -20px
 }
 
 .btn.btn-default.btn {
