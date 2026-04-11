@@ -590,19 +590,13 @@ table .pun-content h3 {
 	table.table > tbody > tr > td:nth-child(2)::after {
 		content: url("https://cdn.allthepics.net/images/2026/04/08/smaller-rainy-mushies.gif") !important;
 		position: relative;
-		top: -80px;
-		left: 150px; 
+		top: 50px;
+		left: 400px; 
 	}
 	div.quote {
 		width: 790px;
 	}
 }
-
-	div.quote {
-		width: 790px;
-	}
-}
-
 
 /* Remove icons and edit text for user profile buttons */
 
