@@ -587,10 +587,10 @@ table .pun-content h3 {
 }
 
 @media only screen and (min-width: 1200px) {
-	table.table:nth-child(16) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)::after  {
+	table.table > tbody > tr > td:nth-child(2)::after {
 		content: url("https://cdn.allthepics.net/images/2026/04/08/smaller-rainy-mushies.gif") !important;
 		position: relative;
-		top: 50px;
+		top: 40px;
 		left: 400px; 
 	}
 	div.quote {
