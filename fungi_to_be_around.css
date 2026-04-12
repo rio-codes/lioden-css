@@ -1,5 +1,5 @@
 /* 
-Fungi to Be Around
+Fungi to Have Around
 Created 04/2026 by lyri [#583579] for Pix [#577276]
 AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
 
@@ -13,17 +13,16 @@ Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Ta
 /* Background image, font and font color, text alignment */
 
 body {
-	background: url("https://cdn.allthepics.net/images/2026/04/08/arboreal_heaven.png") center center;
-	background-size: width 100%;
-  background-attachment: fixed;
+    background: url("https://rio-codes.github.io/lioden-css/forest.webp");
+	background-size: cover;
+    background-attachment: fixed;
 	font-family: "Baumans", system-ui;
-  font-weight: 200 !important;
-  font-style: normal;
-  font-size: large;
+  	font-weight: 200 !important;
+  	font-style: normal;
+  	font-size: large;
 	color: #d7bf70 !important;
-  text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+  	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
-
 
 
 /* Link colors */
@@ -65,19 +64,20 @@ textarea {
 }
 
 /* Main panel container appearance*/
+
 .container.main {
 	background: radial-gradient(#746d18, #222504);
-	opacity: 94%;
+	opacity: 75%;
 	border: solid 1px #d7bf70;
 	box-shadow: 0px 1px 10px #d7bf70 !important;
-  text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+  	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 	border-radius: 4px;
-  font-size: medium;
+  	font-size: medium;
 }
 
 /* Switch Account and Bug Box buttons */
 
-button.button, button.button:hover {
+.btn:hover, button.button:hover {
 	background: #222504;
 	border: none !important;
 	border-radius: 4px;
@@ -89,12 +89,12 @@ button.button, button.button:hover {
 	display: none;
 }
 
-.btn, .btn:hover, .btn.btn {
+.btn, button.button, .btn.btn {
 	background: #222504;
 	border: none !important;
 	border-radius: 4px;
 	text-shadow: none !important;
-	color: #d7bf70; !important;
+	color: #d7bf70 !important;
 }
 
 /* Make left panel background and border invisible */
@@ -109,9 +109,9 @@ button.button, button.button:hover {
 .topbar {
 	background: #746d18 !important;
 	box-shadow: 0px 1px 10px #d7bf70 !important;
-  text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
-  color: #222504;
-  font-size: medium;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+	color: #222504;
+	font-size: medium;
 }
 
 .topbar a {
@@ -121,13 +121,13 @@ button.button, button.button:hover {
 /* Navbar (Den/Crossroads/Etc.) */
 
 .navbar {
-  font-family: Megrim;
+	font-family: Megrim;
 	background: linear-gradient(to right, #222504, #101203);
 	border-bottom: none;
 	color: #aadf69;
 	border-radius: 10px 10px 0px 0px;
 	opacity: 1;
-  font-size: x-large;
+	font-size: x-large;
 }
 
 .navbar li a {
@@ -138,24 +138,24 @@ button.button, button.button:hover {
 	background: #d7bf70 !important;
 	border-bottom: none;
 	color: #222504 !important;
-	border-radius: 0px
+	border-radius: 0px;
 	filter: brightness(100%) opacity(90%);
 	transition: 0.5s !important;
 	height: 50px;
-	width: auto !important
+	width: auto !important;
 }
 
 /* Breadcrumb (Home button, den owner, bookmark) */
 
 .breadcrumb {
-  background: #746d18 !important;
+	background: #746d18 !important;
 	color: #d7bf70 !important;
 	border-radius: 5px;
 	text-align:left !important;
-  box-shadow: 0px 1px 10px #d7bf70 !important;
-  font-size: medium;
-  z-index: 50;
-  opacity: 100%;
+	box-shadow: 0px 1px 10px #d7bf70 !important;
+	font-size: medium;
+	z-index: 50;
+	opacity: 100%;
 	margin-top: 10px;
 }
 
@@ -180,27 +180,26 @@ input.floatright, input.floatright:hover {
 	background: #d7bf70 !important;
 	border: none;
 	color: #3c3107;
-	border-radius: 4px; !important;
+	border-radius: 4px !important;
 	padding: 5px;
 	margin-top: 20px;
 	text-align: right;
-  z-index: 50;
-  opacity: 100%;
+	z-index: 50;
+	opacity: 100%;
 }
 
 /* Main header appearance ("___"'s Den) */
 
 h1 {
-    font-family: Megrim;
-    font-size: 34px;
-    background: #d7bf70;
-	  font-weight: 700;
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
-    color: #ede0a4;
-    animate: slideInDown;
-    text-align: center;
+	font-family: Megrim;
+	font-size: 34px;
+	background: #d7bf70;
+	font-weight: 700;
+	-webkit-background-clip: text;
+	background-clip: text;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+	color: #ede0a4;
+	text-align: center;
 }
 
 h1.center > small:nth-child(2) a:link, h1.center > small:nth-child(2) a:visited, p.center:nth-child(2) > a:nth-child(1) a:link, p.center:nth-child(2) > a:nth-child(1) a:visited {
@@ -240,11 +239,11 @@ h3 {
 	background: transparent;
 	color: #d7bf70 !important;
 	font-size: 28px !important;
-  font-weight: 500;
+	font-weight: 500;
 	text-align: right;
 	position: relative;
 	padding-top: 25px;
-  border: 0px !important;
+	border: 0px !important;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
@@ -256,29 +255,29 @@ h3 {
 	background: radial-gradient(#746d18, #222504) !important;
 	color: #ede0a4 !important;
 	text-align: right;
-  opacity: 0.9;
-  border: 0px !important;
-  box-shadow: 0px 1px 10px #d7bf70 !important;
-  z-index: 50;
-  opacity: 100%;
+	opacity: 0.9;
+	border: 0px !important;
+	box-shadow: 0px 1px 10px #d7bf70 !important;
+	z-index: 50;
+	opacity: 100%;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
 .panel-body.small .center a, .panel-body.small a {
 	font-weight: 200 !important;
 	color: #ede0a4 !important;
-  text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
 /* Profile text box appearance */
 
 div .pun-content {
-  width: 100%;
-  height: 70px !important;
-  z-index: 5;
-  position: relative;
-  top: 10px;
-  left: 10px;
+	width: 100%;
+	height: 70px !important;
+	z-index: 5;
+	position: relative;
+	top: 10px;
+	left: 10px;
 }
 
 table.table.pun-table {
@@ -309,19 +308,19 @@ table .pun-content {
 }
 
 table .pun-content h3 {
-  font-size: 30px !important;
-  font-weight: 600 !important;
+	font-size: 30px !important;
+	font-weight: 600 !important;
 }
 
 .pun-links a, .pun-graphics a, .pun-links {
-  position: relative;
-  color: #040201;
+	position: relative;
+	color: #040201;
 	z-index: 100;
 }
 
 .pun-table {
- border: 20px 0 0 0 #2e2e07;
- text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+	border: 20px 0 0 0 #2e2e07;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
 /* Progress bars (Energy, hunger, EXP, IMP) */
@@ -339,7 +338,7 @@ table .pun-content h3 {
     font-weight: 300 !important;
     text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
     color: #ede0a4 !important;
-	  font-weight: bolder;
+	font-weight: bolder;
 }
 
 /*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
@@ -351,14 +350,14 @@ table .pun-content h3 {
 	border-radius: 10px;
 	box-shadow: 0px 5px 30px #040201 !important;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
-  font-size: 14px;
-  font-weight: 300 !important;
-  position: absolute;
-  color: #040201;
-  hyphens: auto;
-  overflow: hidden;
-  position: relative;
-  opacity: 1;
+	font-size: 14px;
+	font-weight: 300 !important;
+	position: absolute;
+	color: #040201;
+	hyphens: auto;
+	overflow: hidden;
+	position: relative;
+	opacity: 1;
 }
 
 .table#pride tbody {
@@ -371,7 +370,7 @@ table .pun-content h3 {
 }
 .table#pride tbody tr th a {
 	color: #d7bf70;
-  font-weight: 300 !important;
+	font-weight: 300 !important;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
@@ -380,7 +379,7 @@ table .pun-content h3 {
 th {
 	background: #222504 !important;
 	color: #ede0a4 !important;
-  font-weight: 300 !important;
+	font-weight: 300 !important;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
@@ -390,7 +389,7 @@ th {
 	background: #242705 !important;
 	border: 1px #d7bf70;
 	color: #ede0a4 !important;
-  font-weight: 300 !important;
+	font-weight: 300 !important;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
@@ -401,20 +400,20 @@ td.bottom button {
 .inner-table .left {
 	background: #746d18 !important;
 	color: #3c3107;
-  font-weight: 300 !important;
+	font-weight: 300 !important;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
 .inner-table .right {
 	background: #d7bf70;
 	color: #3c3107;
-  font-weight: 300 !important;
+	font-weight: 300 !important;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
 td.right {
 	border: 0px !important;
-  font-weight: 300 !important;
+	font-weight: 300 !important;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
@@ -422,7 +421,7 @@ td.left,
 p.b {
 	border: 0px !important;
 	background: transparent !important;
-  font-weight: 300 !important;
+	font-weight: 300 !important;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
@@ -432,7 +431,7 @@ p.b {
 }
 
 div.left:nth-child(7) > a:nth-child(1) {
-  color: #d7bf70;
+	color: #d7bf70;
 }
 
 /* Lion and user profile pictures */
@@ -456,14 +455,14 @@ div#lion_image:hover {
 }
 
 table#player {
-  color: #ede0a4;
-  text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+	color: #ede0a4;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
 
 table#player img {
-    opacity: 0.9;
-	  overflow: hidden;
+	opacity: 0.9;
+	overflow: hidden;
 }
 
 /* Cave and Beetle Mound grid appearances*/
@@ -492,7 +491,7 @@ div.left {
 
 .feature,
 div.left h3, .feature h3 {
-  font-weight: 500 !important;
+	font-weight: 500 !important;
 	color: #d7bf70 !important;
 }
 
@@ -511,12 +510,14 @@ div.left h3, .feature h3 {
 
 div.feature {
 	color: #d7bf70 !important;
-  font-weight: 200;
-  height: 140px;
-  padding: 5px;
+	font-weight: 200;
+	height: 140px;
+	padding: 5px;
 }
 
-/* Profile fix for mobile */
+/* Profile fixes for differing screen sizes and ratios */
+
+/* Phone */
 
 @media only screen and (max-width: 767px) {
 	.container.main .hidden-xs {
@@ -525,66 +526,69 @@ div.feature {
 	div#fraProfileContent::after {
 		content: "" !important;
 	}
-  table.table.pun-table {
-  height: min-content !important;
-  width: 70% !important;
-}
-  table.table:nth-child(16) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)::after {
-    content: url("https://cdn.allthepics.net/images/2026/04/08/smaller-rainy-mushies.gif") !important;
-    position: relative;
-    top: 20px;
-    left: 360px;
-    z-index: 10;
-    opacity: 0.2;
-}
-  table .pun-content {
-    width: 100%;
-    height: min-content;
-    font-size: 14px;
-    font-weight: 500 !important;
-    position: relative;
-    top: 5px;
-    left: 360px;
-    color: #d7bf70;
-    padding: 30px;
-    hyphens: auto;
-    text-shadow: 0 0 .6em, 0 0 1em #222504 !important;
-    opacity: 1;
+	table.table.pun-table {
+		height: min-content !important;
+		width: 70% !important;
+	}
+  	table.table:nth-child(16) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)::after {
+		content: url("https://cdn.allthepics.net/images/2026/04/08/smaller-rainy-mushies.gif") !important;
+		position: relative;
+		top: 20px;
+		left: 360px;
+		z-index: 10;
+		opacity: 0.2;
+	}
+	table .pun-content {
+		width: 100%;
+		height: min-content;
+		font-size: 14px;
+		font-weight: 500 !important;
+		position: relative;
+		top: 5px;
+		left: 360px;
+		color: #d7bf70;
+		padding: 30px;
+		hyphens: auto;
+		text-shadow: 0 0 .6em, 0 0 1em #222504 !important;
+		opacity: 1;
+	}
+
+	table .pun-content h3 {
+		font-size: 30px !important;
+		font-weight: 600 !important;
+	}
 }
 
-table .pun-content h3 {
-  font-size: 30px !important;
-  font-weight: 600 !important;
-}
-}
+/* Tablet */
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
-	display: block !important;
 	div#fraProfileContent::after {
 		content: "" !important;
 	}
-   table .pun-content {
-    width: 90%;
-    height: min-content;
-    font-size: 14px;
-    font-weight: 500 !important;
-    position: relative;
-    top: 5px;
-    left: 110px;
-    color: #0b0703;
-    padding: 30px;
-    hyphens: auto;
-    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
-    opacity: 1;
+	table .pun-content {
+		width: 90%;
+		height: min-content;
+		font-size: 14px;
+		font-weight: 500 !important;
+		position: relative;
+		top: 5px;
+		left: 110px;
+		color: #0b0703;
+		padding: 30px;
+		hyphens: auto;
+		text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+		opacity: 1;
+	}
+	table.table:nth-child(16) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)::after {
+		content: url("https://cdn.allthepics.net/images/2026/04/08/smaller-rainy-mushies.gif") !important;
+		position: relative;
+		top: 20px;
+		left: 420px;
+		z-index: 10;
+	}
 }
-  table.table:nth-child(16) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)::after {
-    content: url("https://cdn.allthepics.net/images/2026/04/08/smaller-rainy-mushies.gif") !important;
-    position: relative;
-    top: 20px;
-    left: 420px;
-    z-index: 10;
-}
-}
+
+/* Desktop */
 
 @media only screen and (min-width: 1200px) {
 	table.table > tbody > tr > td:nth-child(2)::after {
@@ -671,6 +675,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
 	opacity: 0.8;
 	transition: 1s !important;
 }
+
 div.cave-grid>img[src$="nestingbanner.png"] {
 	content: url('') !important;
 	padding-left: 0%;
@@ -727,7 +732,7 @@ div.cave-grid>img {
 
 .mound-grid img {
 	content: url('') !important;
-  object-fit: cover !important;
+  	object-fit: cover !important;
 	height: 60px;
 	width: 300px !important;
 	opacity: 0.7;
@@ -816,17 +821,17 @@ div.lionImage {
 #editdetailspanel > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(6) > td:nth-child(1),
 #editdetailspanel > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(7) > td:nth-child(1)
 {
-  background-color: #222504 !important;
-  color: #d7bf70;
+	background-color: #222504 !important;
+	color: #d7bf70;
 }
 
 div.row:nth-child(20) > form:nth-child(2) > div:nth-child(1) > div:nth-child(1) > select:nth-child(4) {
-  margin-top: 20px;
-  height: 25px;
+	margin-top: 20px;
+	height: 25px;
 }
 
 .xsmall {
-  color: #222504;
+  	color: #222504;
 }
 
 hr {
@@ -836,9 +841,11 @@ hr {
 .text-muted {
 	opacity: 0%;
 }
+
 .center p img {
 	display: none;
 }
+
 .xlarge img {
 	display: none;
 }
