@@ -872,7 +872,64 @@ td.left {
  background-color: none;
 }
 
+/* Mushroom Image Placement */
+
+.mushrooms > img:nth-child(6) {
+	position: absolute;
+	top: 1%;
+	left: 33%;
+	height: 110px;
+	z-index: 50
 }
+
+.mushrooms > img:nth-child(2) {
+	position: absolute;
+	top: 2%;
+	left: 95%;
+	height: 100px;
+	z-index: 50;
+}
+
+.mushrooms > img:nth-child(4) {
+	position: absolute;
+	top: 6%;
+	left: 130%;
+	height: 110px;
+	z-index: 50;
+}
+
+.mushrooms > img:nth-child(8) {
+	position: absolute;
+	top: 4.5%;
+	left: 33%;
+	height: 70px;
+	z-index: 50;
+}
+
+.mushrooms > img:nth-child(10) {
+	position: absolute;
+	top: 9.5%;
+	left: 95%;
+	height: 90px;
+	z-index: 50; 
+}
+
+.mushrooms > img:nth-child(12) {
+	position: absolute;
+	top: 14.5%;
+	left: 95%;
+	height: 90px;
+	z-index: 50; 
+}
+
+.boxtopper > img:nth-child(1) {
+	position: absolute;
+	top: 5%;
+	left: 7%;
+	height: 90px;
+	z-index: 50; 
+}
+
 /* Footer */
 
 div.container.footer.center.white.visible-lg.visible-md.visible-sm, div.container.footer.center.white.visible-lg.visible-md.visible-sm a, ul.small {
