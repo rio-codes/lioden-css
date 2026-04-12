@@ -591,7 +591,7 @@ div.feature {
 /* Desktop */
 
 @media only screen and (min-width: 1200px) {
-	table.table > tbody > tr > td:nth-child(2)::after {
+	table.table:nth-child(16) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(2)::after {
 		content: url("https://cdn.allthepics.net/images/2026/04/08/smaller-rainy-mushies.gif") !important;
 		position: relative;
 		top: 40px;
@@ -881,58 +881,129 @@ td.left {
 
 /* Mushroom Image Placement */
 
+/* Define anchors */
+
+#pageContainer > h1:nth-child(3) {
+	anchor-name: --den-name;
+}
+
+.pun-content > h3:nth-child(1) {
+	anchor-name: --about-me-header;
+}
+
+div.panel-default:nth-child(2) > div:nth-child(1) {
+	anchor-name: --event-currency;
+}
+
+div.col-md-12:nth-child(1) > div:nth-child(4) > div:nth-child(1) {
+	anchor-name: --progress-bars;
+}
+
+div.col-md-12:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
+	anchor-name: --achievements;
+}
+
+div.clear:nth-child(1) {
+	anchor-name: --bookmarks;
+}
+
+div.visible-md:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
+	anchor-name: --game-stats;
+}
+
+/* place images on page */
+
 .mushrooms > img:nth-child(6) {
-	position: absolute;
-	top: 1%;
-	left: 33%;
-	height: 110px;
-	z-index: 50
+	position-anchor: --den-name;
+	position: fixed;
+	left: anchor(left);
+	align-self: anchor-center;
+	margin-left: 252px;
+	margin-top: 5px;
+	height: 140px;
+	z-index: 50;
+	opacity: 0.75;
 }
 
 .mushrooms > img:nth-child(2) {
-	position: absolute;
-	top: 2%;
-	left: 95%;
+	position-anchor: --event-currency;
+	position: fixed;
+	left: anchor(right);
+	align-self: anchor-center;
+	margin-left: -50px;
+	margin-top: -10px;
 	height: 100px;
 	z-index: 50;
+	opacity: 0.75;
 }
 
 .mushrooms > img:nth-child(4) {
-	position: absolute;
-	top: 6%;
-	left: 130%;
-	height: 110px;
+	position-anchor: --progress-bars;
+	position: fixed;
+	left: anchor(right);
+	align-self: anchor-center;
+	margin-left: -275px;
+	margin-top: -60px;
+	height: 100px;
 	z-index: 50;
+	opacity: 0.75;
 }
 
 .mushrooms > img:nth-child(8) {
-	position: absolute;
-	top: 4.5%;
-	left: 33%;
-	height: 70px;
+	position-anchor: --den-name;
+	position: fixed;
+	left: anchor(right);
+	align-self: anchor-center;
+	margin-left: -335px;
+	margin-top: 40px;
+	height: 60px;
 	z-index: 50;
+	opacity: 0.75;
 }
 
 .mushrooms > img:nth-child(10) {
-	position: absolute;
-	top: 9.5%;
-	left: 95%;
-	height: 90px;
-	z-index: 50; 
+	position-anchor: --achievements;
+	position: fixed;
+	left: anchor(left);
+	align-self: anchor-center;
+	margin-left: 220px;
+	margin-top: 1px;
+	height: 70px;
+	z-index: 50;
+	opacity: 0.75;
 }
 
 .mushrooms > img:nth-child(12) {
-	position: absolute;
-	top: 14.5%;
-	left: 95%;
+	position-anchor: --game-stats;
+	position: fixed;
+	left: anchor(left);
+	align-self: anchor-center;
+	margin-left: -40px;
+	margin-top: 10px;
 	height: 90px;
-	z-index: 50; 
+	z-index: 50;
+	opacity: 0.75;
 }
 
-.boxtopper > img:nth-child(1) {
-	position: absolute;
-	top: 5%;
-	left: 7%;
+.mushrooms > img:nth-child(14) {
+	position-anchor: --bookmarks;
+	position: fixed;
+	left: anchor(left);
+	align-self: anchor-center;
+	margin-left: 40px;
+	margin-top: -190px;
+	height: 100px;
+	z-index: 50;
+	opacity: 0.75;
+}
+
+.boxtopper > img {
+	position-anchor: --about-me-header;
+	position: fixed;
+	left: anchor(left);
+	align-self: anchor-center;
+	margin-left: 0px;
+	margin-top: -60px;
 	height: 90px;
 	z-index: 50; 
 }
