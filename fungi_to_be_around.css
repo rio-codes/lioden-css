@@ -772,7 +772,7 @@ div.cave-grid>img[src$="unsortedlionsbanner.png"] {
 	font-family: Megrim;
 	font-weight: 800;
 	background-color: #222504;
-  	color: #ede0a4;;
+  color: #ede0a4;;
 	padding: 0px;
 }
 
@@ -784,6 +784,18 @@ div.cave-grid>img[src$="unsortedlionsbanner.png"] {
 	opacity: 1;
 } 
 
+div.col-sm-6 > a:nth-child(1) > div:nth-child(1) {
+	background-color: transparent;
+	color: #ede0a4 !important;
+	font-weight: bolder !important;
+}
+
+div.col-sm-6 > a:nth-child(1) > div:nth-child(1) > h3:nth-child(1) {
+	font-weight: 800 !important;
+	position: relative;
+	bottom: -5px !important;
+	text-shadow: 0 0 .2em, 0 0 3em #d7bf70 !important;
+}
 img[src$="den_ancestors.png"] {
 	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-ancestors.gif');
 	object-fit: cover;
