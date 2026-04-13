@@ -652,6 +652,17 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
 	transition: 1s !important;
 }
 
+#fraOrganizationBlock > div > a > div:hover,
+#fraOrganizationBlock > div:nth-child(2) > div:hover,
+#fraCaveList > div:nth-child(1) > a > div:hover,
+#fraCaveList > div:nth-child(2) > a > div:hover,
+#fraCaveList > div:nth-child(3) > a > div:hover,
+#fraCaveList > div:nth-child(3) > div:nth-child(1):hover,
+.mound-grid:hover {
+	opacity: 0.2;
+	transition: 1s !important;
+}
+
 div.cave-grid>img[src$="nestingbanner.png"] {
 	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-cave3.gif') !important;
 	padding-left: 0%;
@@ -664,11 +675,6 @@ div.cave-grid>img[src$="nestingbanner.png"] {
 	border-radius: 10px 10px 10px 0px 0px !important;
 }
 
-#fraOrganizationBlock > div > a > div:hover {
-	filter: brightness(90%) opacity(80%);
-	overflow: hidden;
-	transition: 0.5s !important;
-}
 
 #fraCaveList > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
 	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-cave.gif') !important;
@@ -839,6 +845,7 @@ img[src$="iconInsta.png"] {
 img[src$="default.png"]{
 	content: url("https://cdn.allthepics.net/images/2026/04/08/7thmabiraforest.png")
 }
+
 
 /* Misc. layout fixes */
 
