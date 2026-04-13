@@ -769,6 +769,8 @@ div.cave-grid>img[src$="unsortedlionsbanner.png"] {
 }
 
 .mound-grid, .cave-grid {
+	font-family: Megrim;
+	font-weight: 800;
 	background-color: #222504;
   	color: #ede0a4;;
 	padding: 0px;
