@@ -1002,7 +1002,7 @@ div.visible-md:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
 		position: fixed;
 		left: anchor(right);
 		align-self: anchor-center;
-		margin-left: -300px;
+		margin-left: -270px;
 		margin-top: 40px;
 		height: 60px;
 		z-index: 50;
@@ -1022,63 +1022,19 @@ div.visible-md:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
 	}
 
 	.mushrooms > img:nth-child(4) {
-		position-anchor: --progress-bars;
-		position: fixed;
-		left: anchor(right);
-		align-self: anchor-center;
-		margin-left: -275px;
-		margin-top: -60px;
-		height: 100px;
-		z-index: 50;
-		opacity: 0.75;
-	}
-
-	.mushrooms > img:nth-child(8) {
-		position-anchor: --den-name;
-		position: fixed;
-		left: anchor(right);
-		align-self: anchor-center;
-		margin-left: -335px;
-		margin-top: 40px;
-		height: 60px;
-		z-index: 50;
-		opacity: 0.75;
+      display: none;
 	}
 
 	.mushrooms > img:nth-child(10) {
-		position-anchor: --achievements;
-		position: fixed;
-		left: anchor(left);
-		align-self: anchor-center;
-		margin-left: 220px;
-		margin-top: 1px;
-		height: 70px;
-		z-index: 50;
-		opacity: 0.75;
+      display: none;
 	}
 
 	.mushrooms > img:nth-child(12) {
-		position-anchor: --game-stats;
-		position: fixed;
-		left: anchor(left);
-		align-self: anchor-center;
-		margin-left: -40px;
-		margin-top: 10px;
-		height: 90px;
-		z-index: 50;
-		opacity: 0.75;
+      display: none;
 	}
 
 	.mushrooms > img:nth-child(14) {
-		position-anchor: --bookmarks;
-		position: fixed;
-		left: anchor(left);
-		align-self: anchor-center;
-		margin-left: 40px;
-		margin-top: -190px;
-		height: 100px;
-		z-index: 50;
-		opacity: 0.75;
+      display: none;
 	}
 
 	.boxtopper > img {
@@ -1086,12 +1042,14 @@ div.visible-md:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
 		position: fixed;
 		left: anchor(left);
 		align-self: anchor-center;
-		margin-left: 0px;
-		margin-top: -60px;
-		height: 90px;
+		margin-left: 20px;
+		margin-top: -40px;
+		height: 70px;
+		width: auto;
 		z-index: 50; 
 	}
 }
+
 
 
 /* Desktop */
