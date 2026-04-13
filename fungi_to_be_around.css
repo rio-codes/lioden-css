@@ -606,52 +606,27 @@ div.feature {
 
 /* Remove icons and edit text for user profile buttons */
 
-#player > tbody > tr:nth-child(3) > td:nth-child(1) > a::before {
-	opacity: 0%;
-	font-size: 0px;
-}
-
 #player > tbody > tr:nth-child(3) > td:nth-child(1) > a {
-	font-size:0px;
+	  font-size:14px;
+	  color: #ede0a4 !important;
 }
 
-#player > tbody > tr:nth-child(3) > td:nth-child(1) > a::after {
-    content:'Block Member';
-    font-size:13px;
+td.right_odd:nth-child(1) > a:nth-child(1) > img:nth-child(1), 
+td.right_odd:nth-child(2) > a:nth-child(1) > img:nth-child(1), 
+ {
+	display: none;
 }
 
-#player > tbody > tr:nth-child(3) > td:nth-child(2) > a::after {
-    content:'';
-    font-size:13px;
-}
-
-#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1) {
-    font-size:0px;
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1),
+div.xlarge:nth-child(4) > a:nth-child(3), div.xlarge:nth-child(4) > a:nth-child(5) {
+    font-size:14px;
+	  color: #ede0a4 !important;
 }   
 
-#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1)::after {
-    content:'Message';
-    font-size:12px;
+p.center:nth-child(5) > a:nth-child(1), p.center:nth-child(5) > a:nth-child(3) {
+	  font-size:14px;
+	  color: #ede0a4 !important;
 }
-
-#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(3) {
-    font-size:0px;
-}   
-
-#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(3)::after {
-    content:'Send Gift!';
-    font-size:12px;
-}
-
-#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(5) {
-    font-size:0px;
-}
- 
-#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(5)::after {
-    content:'Create Trade';
-    font-size:12px;
-}
- 
 #player > tbody > tr.right > td:nth-child(1) > p > a:nth-child(3)::after {
 	padding: 15px;
 }
@@ -662,6 +637,11 @@ div.feature {
 
 #player > tbody > tr.right > td:nth-child(1) > p.center:nth-child(5) > a:nth-child(3) > img:nth-child(1) {
 	display: none;
+}
+
+td.right_odd:nth-child(2) > a:nth-child(1) {
+		font-size:14px;
+	  color: #ede0a4 !important;
 }
 
 /* Image Replacement */
