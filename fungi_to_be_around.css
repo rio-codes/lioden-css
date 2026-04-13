@@ -611,12 +611,6 @@ div.feature {
 	  color: #ede0a4 !important;
 }
 
-td.right_odd:nth-child(1) > a:nth-child(1) > img:nth-child(1), 
-td.right_odd:nth-child(2) > a:nth-child(1) > img:nth-child(1), 
- {
-	display: none;
-}
-
 #player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1),
 div.xlarge:nth-child(4) > a:nth-child(3), div.xlarge:nth-child(4) > a:nth-child(5) {
     font-size:14px;
