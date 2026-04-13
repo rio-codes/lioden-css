@@ -313,7 +313,7 @@ td.left.b, div.lionImage.featured-lion {
 
 /* Lion and user profile pictures */
 
-div#lion_image {
+/*div#lion_image {
 	border-radius: 4px !important;
     opacity: 0.9;
 	overflow: hidden;
@@ -328,7 +328,23 @@ div#lion_image:hover {
     transition: 0.4s;
     opacity: 1;
     box-shadow: 0px 0px 8px #97BE96;
+}*/
+
+/* Lion and user profile pictures */
+
+#about > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) {
+	anchor-name: --amaranth
 }
+
+.amaranth.amaranth {
+	position-anchor: --amaranth;
+	position: absolute;
+	height:280px;
+	left: anchor(left);
+	margin-left: 0px;
+	margin-top: 390px
+}
+
 
 table#player img {
   opacity: 0.9;
