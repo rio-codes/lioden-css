@@ -677,13 +677,12 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
 	opacity: 0.8;
 	transition: 1s !important;
 }
-
 div.cave-grid>img[src$="nestingbanner.png"] {
-	content: url('') !important;
+	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-cave3.gif') !important;
 	padding-left: 0%;
-	height: 60px;	
+	height: 100px;	
 	width:250px;
-	opacity: 0.7;
+	opacity: 1;
 	border: 0px ridge;
 	overflow: hidden;
 	border: 0px;
@@ -696,12 +695,48 @@ div.cave-grid>img:hover{
 	transition: 0.5s !important;
 }
 
-div.cave-grid>img[src$="prideoverviewbanner.png"] {
-	content: url('') !important;
+#fraCaveList > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-cave.gif') !important;
 	padding-left: 0%;
-	height: 60px;	
+	height: 100px;	
 	width:250px;
-	opacity: 0.7;
+	opacity: 1;
+	border: 0px ridge;
+	overflow: hidden;
+	border: 0px;
+	border-radius: 10px 10px 0px 0px !important;
+}
+
+#fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-showcase.gif') !important;
+	padding-left: 0%;
+	height: 100px;	
+	width:250px;
+	opacity: 1;
+	border: 0px ridge;
+	overflow: hidden;
+	border: 0px;
+	border-radius: 10px 10px 0px 0px !important;
+}
+
+#fraCaveList > div:nth-child(3) > div:nth-child(1) > img:nth-child(1) {
+	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-mounds.gif') !important;
+	padding-left: 0%;
+	height: 100px;	
+	width:250px;
+	opacity: 1;
+	border: 0px ridge;
+	overflow: hidden;
+	border: 0px;
+	border-radius: 10px 10px 0px 0px !important;
+}
+
+div.cave-grid>img[src$="prideoverviewbanner.png"] {
+	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-unsortedbanner.gif') !important;
+	padding-left: 0%;
+	height: 100px;	
+	width:250px;
+	opacity: 1;
 	border: 0px ridge;
 	overflow: hidden;
 	border: 0px;
@@ -709,71 +744,66 @@ div.cave-grid>img[src$="prideoverviewbanner.png"] {
 }
 
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
-	content: url('') !important;
+	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-ancestorsfem.gif') !important;
 	padding-left: 0%;
-	height: 60px;	
+	height: 100px;	
 	width:250px;
-	opacity: 0.7;
+	opacity: 1;
 	border: 0px ridge;
 	overflow: hidden;
 	border: 0px;
 	border-radius: 10px 10px 0px 0px !important;
 }
 
-div.cave-grid>img {
-	content: url('') !important;
-	padding-left: 0%;
-	height: 100%;	
-	width:250px;
-	opacity: 0.7;
-	border: 0px ridge;
-	overflow: hidden;
-	border: 0px;
-	border-radius: 0px !important;
-}
-
-.mound-grid img {
-	content: url('') !important;
-  	object-fit: cover !important;
-	height: 60px;
+.mound-grid > img:nth-child(1) {
+	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-ancestorsfem.gif') !important;
+	padding-right: 2px;
+  object-fit: fill !important;
+	height: 100px;
 	width: 300px !important;
-	opacity: 0.7;
+	opacity: 1;
 	border: 0px ridge;
 	border: 0px;
 	border-radius: 0px !important;
-
 }
+
+.mound-grid > img:nth-child(1) {
+	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-nestingbanner.gif');
+	object-fit: cover;
+	height: 100px !important;
+	width: 2 !important;
+} 
 
 img[src$="den_ancestors.png"] {
-	content: url('');
+	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-ancestors.gif');
 	object-fit: cover;
 	height: 100px !important;
 	width: 2 !important;
 } 
 
 img[src$="ancestorsfem.png"] {
-	content: url('');
+	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-ancestorsfem.gif');
 	object-fit: cover;
 	height: 100px !important;
 	width: 2 !important;
 }
 
 img[src$="den_achievements.png"] {
-	content: url('');
+	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-achievments.gif');
 	object-fit: cover;
 	height: 100px;
 	width: 2 !important;
 }
 
 img[src$="den_showcase.png"] {
-	content: url('');
+	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-showcase.gif');
 	object-fit: cover;
 	height: 100px;
 	width: 2 !important
 }
 
 img[src$="den_beetlebook.png"] {
-	content: url('');
+	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-beetlebook.gif');
 	object-fit: cover;
 	height: 100px;
 	width: 2 !important 
