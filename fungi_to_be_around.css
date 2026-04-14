@@ -1061,9 +1061,9 @@ div.visible-md:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
     	position-anchor: --about-me-header;
 		position: absolute;
 		position-area: top right;
-    	left: 660px;
-    	top: 200px;
-		height: 70px;
+    	left: 655px;
+    	top: 170px;
+		height: 80px;
 		width: auto;
 		z-index: 50;
 		opacity: 0.9; 
