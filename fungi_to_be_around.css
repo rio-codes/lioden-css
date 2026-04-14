@@ -1046,15 +1046,7 @@ div.visible-md:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
 	}
 
 	.mushrooms > img:nth-child(2) {
-		position-anchor: --about-me-header;
-		position: absolute;
-		position-area: bottom right;
-    	left: 270px;
-    	top: 490px;
-		height: 70px;
-		width: auto;
-		z-index: 50;
-		opacity: 0.9; 
+      display: none;
 	}
 
 	.mushrooms > img:nth-child(4) {
