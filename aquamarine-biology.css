@@ -337,18 +337,12 @@ div#lion_image {
 }
 
 #about > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) {
-	anchor-name: --amaranth
+	content: url("https://cdn.allthepics.net/images/2026/04/13/half_ascendant_2.png");
+	object-fit: contain;
+	height:250px;
+	top: 0px;
+	z-index: 50;
 }
-
-.amaranth.amaranth {
-	position-anchor: --amaranth;
-	position: absolute;
-	height:280px;
-	left: anchor(left);
-	margin-left: 0px;
-	margin-top: 390px
-}
-
 
 table#player img {
   opacity: 0.9;
