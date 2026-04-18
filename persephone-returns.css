@@ -1,0 +1,110 @@
+/* 
+Persephone Returns
+
+Created 04/2026 by lyri [#583579] for Dallas [#387077]
+AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
+
+Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Tawny [#251887], Hok-Z [#41458], Austin [#43750] 
+*/
+
+/* Import Font (From Google Fonts) */
+
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lavishly+Yours&display=swap');
+
+/* Background image, font and font color, text alignment */
+
+body {
+    background: url("https://rio-codes.github.io/lioden-css/meadow.webp");
+	background-size: cover;
+    background-attachment: fixed;
+    font-family: "Bellota", system-ui;
+    font-weight: 200 !important;
+  	font-style: normal;
+  	font-size: large;
+	color: (91, 144, 171, 1) !important;
+  	text-shadow: 0 0 .6em, 0 0 1em #8fadbc !important;
+}
+
+/* Link colors */
+
+a:link,
+a:visited {
+	color: #b8779e;
+	font-weight: 500;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+a:hover {
+	color: #8fadbc !important;
+	transition: 0.5s;
+}
+
+/* Text input boxes */
+
+input,
+select,
+textarea {
+	background: #8fadbc !important;
+	border: none !important;
+	border-radius: 5px !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+	color: #744f34 !important;
+}
+
+.breadcrumb::after {
+	content: "custom css by lyri | #583579 ";
+	color: #4984a2;
+    font-family: "Lavishly Yours", cursive;
+	font-size: 25px;
+	position:absolute;
+	top: -5px;
+	left: 25px;
+}
+
+/* Main header appearance ("___"'s Den) */
+
+h1 {
+	font-family: "Lavishly Yours", cursive;
+	font-size: 50px;
+	font-weight: 700;
+	-webkit-background-clip: text;
+	background-clip: text;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+	color: (91, 144, 171, 1) !important;
+	text-align: center;
+}
+
+h1.center > small:nth-child(2) a:link, h1.center > small:nth-child(2) a:visited, p.center:nth-child(2) > a:nth-child(1) a:link, p.center:nth-child(2) > a:nth-child(1) a:visited {
+	color: (91, 144, 171, 1) !important;
+}
+
+h1.center > small:nth-child(2), p.center:nth-child(2) > a:nth-child(1) {
+	font-weight: 500 !important;
+    color: (91, 144, 171, 1) !important;
+}
+
+h2 {
+  font-family: "Lavishly Yours", cursive;
+	font-size: 45px;
+	color: (91, 144, 171, 1) !important;
+  text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+/* Tertiary header */
+
+h3 {
+  font-family: "Lavishly Yours", cursive;
+	font-size: 40px !important;
+	color: (91, 144, 171, 1) !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+#pageContainer.col-md-9 {
+	background: (91, 144, 171, 0.1) !important;
+	border: solid 1px #4984a2;
+	box-shadow: 0px 1px 10px #d7bf70 !important;
+  	text-shadow: 0 0 .6em, 0 0 1em #8fadbc !important;
+	border-radius: 0px;
+  	font-size: medium;
+}
