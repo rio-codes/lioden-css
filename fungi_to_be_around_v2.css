@@ -55,7 +55,7 @@ textarea {
 /* CSS Credit */
 
 .breadcrumb::after {
-	content: "custom css by lyri | #583579 ";
+	content: "custom css by lyri | #583579";
 	color: #d7bf70;
 	font-size: 12px;
 	position:absolute;
@@ -67,7 +67,7 @@ textarea {
 
 .container.main {
 	background: radial-gradient(#746d18, #222504);
-	opacity: 85%;
+	opacity: 75%;
 	border: solid 1px #d7bf70;
 	box-shadow: 0px 1px 10px #d7bf70 !important;
   	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
@@ -323,6 +323,11 @@ table .pun-content h3 {
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
+.pun-graphics > i:nth-child(1) {
+	display: none;
+}
+
+
 /* Progress bars (Energy, hunger, EXP, IMP) */
 .progress {
 	background: #222504;
@@ -563,7 +568,7 @@ div.feature {
 
 /* Tablet */
 
-@media only screen and (max-width: 1199px) and (min-width: 768px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) {
 	div#fraProfileContent::after {
 		content: "" !important;
 	}
@@ -606,21 +611,52 @@ div.feature {
 
 /* Remove icons and edit text for user profile buttons */
 
-#player > tbody > tr:nth-child(3) > td:nth-child(1) > a {
-	  font-size:14px;
-	  color: #ede0a4 !important;
+#player > tbody > tr:nth-child(3) > td:nth-child(1) > a::before {
+	opacity: 0%;
+	font-size: 0px;
 }
 
-#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1),
-div.xlarge:nth-child(4) > a:nth-child(3), div.xlarge:nth-child(4) > a:nth-child(5) {
-    font-size:14px;
-	  color: #ede0a4 !important;
+#player > tbody > tr:nth-child(3) > td:nth-child(1) > a {
+	font-size:0px;
+}
+
+#player > tbody > tr:nth-child(3) > td:nth-child(1) > a::after {
+    content:'Block Member';
+    font-size:13px;
+}
+
+#player > tbody > tr:nth-child(3) > td:nth-child(2) > a::after {
+    content:'';
+    font-size:13px;
+}
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1) {
+    font-size:0px;
 }   
 
-p.center:nth-child(5) > a:nth-child(1), p.center:nth-child(5) > a:nth-child(3) {
-	  font-size:14px;
-	  color: #ede0a4 !important;
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1)::after {
+    content:'Message';
+    font-size:12px;
 }
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(3) {
+    font-size:0px;
+}   
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(3)::after {
+    content:'Send Gift!';
+    font-size:12px;
+}
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(5) {
+    font-size:0px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(5)::after {
+    content:'Create Trade';
+    font-size:12px;
+}
+ 
 #player > tbody > tr.right > td:nth-child(1) > p > a:nth-child(3)::after {
 	padding: 15px;
 }
@@ -633,91 +669,44 @@ p.center:nth-child(5) > a:nth-child(1), p.center:nth-child(5) > a:nth-child(3) {
 	display: none;
 }
 
-td.right_odd:nth-child(2) > a:nth-child(1) {
-		font-size:14px;
-	  color: #ede0a4 !important;
-}
-
 /* Image Replacement */
 
 div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
-	content: url('');
+	content: url('https://cdn.allthepics.net/images/2026/04/19/logo-persephone.png');
 	opacity: 1;
 	transition: 1s !important;
 }
 
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
-	content: url('');
+	content: url('https://cdn.allthepics.net/images/2026/04/19/logo-persephone.png');
 	opacity: 0.8;
 	transition: 1s !important;
 }
 
-#fraOrganizationBlock > div > a > div:hover,
-#fraOrganizationBlock > div:nth-child(2) > div:hover,
-#fraCaveList > div:nth-child(1) > a > div:hover,
-#fraCaveList > div:nth-child(2) > a > div:hover,
-#fraCaveList > div:nth-child(3) > a > div:hover,
-#fraCaveList > div:nth-child(3) > div:nth-child(1):hover,
-.mound-grid:hover {
-	opacity: 0.2;
-	transition: 1s !important;
-}
-
 div.cave-grid>img[src$="nestingbanner.png"] {
-	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-cave3.gif') !important;
+	content: url('') !important;
 	padding-left: 0%;
-	height: 100px;	
+	height: 60px;	
 	width:250px;
-	opacity: 1;
+	opacity: 0.7;
 	border: 0px ridge;
 	overflow: hidden;
 	border: 0px;
 	border-radius: 10px 10px 10px 0px 0px !important;
 }
 
-
-#fraCaveList > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-cave.gif') !important;
-	padding-left: 0%;
-	height: 100px;	
-	width:250px;
-	opacity: 1;
-	border: 0px ridge;
+div.cave-grid>img:hover{
+	filter: brightness(90%) opacity(80%);
 	overflow: hidden;
-	border: 0px;
-	border-radius: 10px 10px 0px 0px !important;
-}
-
-#fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-showcase.gif') !important;
-	padding-left: 0%;
-	height: 100px;	
-	width:250px;
-	opacity: 1;
-	border: 0px ridge;
-	overflow: hidden;
-	border: 0px;
-	border-radius: 10px 10px 0px 0px !important;
-}
-
-#fraCaveList > div:nth-child(3) > div:nth-child(1) > img:nth-child(1) {
-	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-mounds.gif') !important;
-	padding-left: 0%;
-	height: 100px;	
-	width:250px;
-	opacity: 1;
-	border: 0px ridge;
-	overflow: hidden;
-	border: 0px;
-	border-radius: 10px 10px 0px 0px !important;
+	transition: 0.5s !important;
 }
 
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
-	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-unsortedbanner.gif') !important;
+	content: url('') !important;
 	padding-left: 0%;
-	height: 100px;	
+	height: 60px;	
 	width:250px;
-	opacity: 1;
+	opacity: 0.7;
 	border: 0px ridge;
 	overflow: hidden;
 	border: 0px;
@@ -725,95 +714,74 @@ div.cave-grid>img[src$="prideoverviewbanner.png"] {
 }
 
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
-	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-ancestorsfem.gif') !important;
+	content: url('') !important;
 	padding-left: 0%;
-	height: 100px;	
+	height: 60px;	
 	width:250px;
-	opacity: 1;
+	opacity: 0.7;
 	border: 0px ridge;
 	overflow: hidden;
 	border: 0px;
 	border-radius: 10px 10px 0px 0px !important;
 }
 
-.mound-grid > img:nth-child(1) {
-	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-overview.gif') !important;
-	padding-right: 2px;
-  object-fit: fill !important;
-	height: 100px;
-	width: 300px !important;
-	opacity: 1;
+div.cave-grid>img {
+	content: url('') !important;
+	padding-left: 0%;
+	height: 100%;	
+	width:250px;
+	opacity: 0.7;
 	border: 0px ridge;
+	overflow: hidden;
 	border: 0px;
 	border-radius: 0px !important;
 }
 
-.mound-grid, .cave-grid {
-	font-family: Megrim;
-	font-weight: 800;
-	background-color: #222504;
-  color: #ede0a4;;
-	padding: 0px;
+.mound-grid img {
+	content: url('') !important;
+  	object-fit: cover !important;
+	height: 60px;
+	width: 300px !important;
+	opacity: 0.7;
+	border: 0px ridge;
+	border: 0px;
+	border-radius: 0px !important;
+
 }
 
-.mound-grid > img:nth-child(1) {
-	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-nestingbanner.gif');
-	object-fit: cover;
-	height: 100px !important;
-	width: 2 !important;
-	opacity: 1;
-} 
-
-div.col-sm-6 > a:nth-child(1) > div:nth-child(1) {
-	background-color: transparent;
-	color: #ede0a4 !important;
-	font-weight: bolder !important;
-}
-
-div.col-sm-6 > a:nth-child(1) > div:nth-child(1) > h3:nth-child(1) {
-	font-weight: 800 !important;
-	position: relative;
-	bottom: -5px !important;
-	text-shadow: 0 0 .2em, 0 0 3em #d7bf70 !important;
-}
 img[src$="den_ancestors.png"] {
-	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-ancestors.gif');
+	content: url('');
 	object-fit: cover;
 	height: 100px !important;
 	width: 2 !important;
-	opacity: 1;
 } 
 
 img[src$="ancestorsfem.png"] {
-	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-ancestorsfem.gif');
+	content: url('');
 	object-fit: cover;
 	height: 100px !important;
 	width: 2 !important;
-	opacity: 1;
 }
 
 img[src$="den_achievements.png"] {
-	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-achievments.gif');
+	content: url('');
 	object-fit: cover;
 	height: 100px;
 	width: 2 !important;
-	opacity: 1;
 }
 
 img[src$="den_showcase.png"] {
-	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-showcase.gif');
+	content: url('');
 	object-fit: cover;
 	height: 100px;
-	width: 2 !important;
-	opacity: 1;
+	width: 2 !important
 }
 
 img[src$="den_beetlebook.png"] {
-	content: url('https://cdn.allthepics.net/images/2026/04/12/fungi-beetlebook.gif');
+	content: url('');
 	object-fit: cover;
 	height: 100px;
-	width: 2 !important;
-	opacity: 1;
+	width: 2 !important 
 }
 
 img[src$="iconFB.png"] {
@@ -845,7 +813,6 @@ img[src$="iconInsta.png"] {
 img[src$="default.png"]{
 	content: url("https://cdn.allthepics.net/images/2026/04/08/7thmabiraforest.png")
 }
-
 
 /* Misc. layout fixes */
 
@@ -955,7 +922,7 @@ div.visible-md:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
 
 /* Phone */
 
-/*@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 	.mushrooms > img:nth-child(6) {
 		position-anchor: --den-name;
 		position: fixed;
@@ -1018,91 +985,99 @@ div.visible-md:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
 	.mushrooms > img:nth-child(10), .mushrooms > img:nth-child(12), .mushrooms > img:nth-child(14) {
 		display: none;
 	}
-} */
+}
 
 /* Tablet */
 
-/*@media only screen and (max-width: 991px) and (min-width: 768px) {
+@media only screen and (max-width: 991px) and (min-width: 768px) {
 	.mushrooms > img:nth-child(6) {
 		position-anchor: --den-name;
-		position: absolute;
-		position-area: top left;
-    	left: 220px;
-    	top: 50px;
-		height: 110px;
+		position: fixed;
+		left: anchor(left);
+		align-self: anchor-center;
+		margin-left: 190px;
+		margin-top: 5px;
+		height: 130px;
 		z-index: 50;
-		opacity: 0.9;
+		opacity: 0.75;
 	}
 	
 	.mushrooms > img:nth-child(8) {
 		position-anchor: --den-name;
-		position: absolute;
-		position-area: top left;
-    	left: 460px;
-    	top: 110px;
-		height: 50px;
+		position: fixed;
+		left: anchor(right);
+		align-self: anchor-center;
+		margin-left: -270px;
+		margin-top: 50px;
+		height: 60px;
 		z-index: 50;
-		opacity: 0.9;
+		opacity: 0.75;
 	}
 
 	.mushrooms > img:nth-child(2) {
-      display: none;
+		position-anchor: --about-me-header;
+		position: fixed;
+		left: anchor(right);
+		align-self: anchor-center;
+		margin-left: -60px;
+		margin-top: 35px;
+		height: 50px;
+		z-index: 50;
+		opacity: 0.75;
 	}
 
 	.mushrooms > img:nth-child(4) {
-    	position-anchor: --about-me-header;
-		position: absolute;
-		position-area: top right;
-    	left: 655px;
-    	top: 170px;
-		height: 80px;
-		width: auto;
+		position-anchor: --about-me-header;
+		position: fixed;
+		left: anchor(right);
+		align-self: anchor-center;
+		margin-left: -275px;
+		margin-top: 360px;
+		height: 100px;
 		z-index: 50;
-		opacity: 0.9; 
+		opacity: 0.75;
 	}
 
 	.mushrooms > img:nth-child(10) {
 		position-anchor: --about-me-header;
-		position: absolute;
-		position-area: top right;
-    	left: 660px;
-   	 	top: 700px;
-		height: 80px;
-		width: auto;
+		position: fixed;
+		left: anchor(left);
+		align-self: anchor-center;
+		margin-left: 200px;
+		margin-top: 500px;
+		height: 70px;
 		z-index: 50;
-		opacity: 0.9; 
+		opacity: 0.75;
 	}
 
 	.mushrooms > img:nth-child(12) {
 		position-anchor: --about-me-header;
-		position: absolute;
-		position-area: top left;
-		left: 40px;
-		top: 650px;
-		height: 70px;
-		width: auto;
+		position: fixed;
+		left: anchor(left);
+		align-self: anchor-center;
+		margin-left: 550px;
+		margin-top: -50px;
+		height: 100px;
 		z-index: 50;
-		opacity: 0.9; 
+		opacity: 0.75;
 	}
 
 	.mushrooms > img:nth-child(14) {
-      	display: none;
+    display: none;
 	}
 
 	.boxtopper > img {
 		position-anchor: --about-me-header;
-		position: absolute;
-		position-area: top left;
-    	left: 100px;
-    	top: 230px;
-		height: 50px;
+		position: fixed;
+		left: anchor(left);
+		align-self: anchor-center;
+		margin-left: 20px;
+		margin-top: -30px;
+		height: 60px;
 		width: auto;
-		z-index: 50;
-		opacity: 0.9; 
+		z-index: 50; 
 	}
-}*/
-
-
+}
 
 
 /* Desktop */
