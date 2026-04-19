@@ -559,6 +559,11 @@ div.feature {
 		font-size: 30px !important;
 		font-weight: 600 !important;
 	}
+
+	.pun-graphics > i:nth-child(1) {
+		display: none;
+	}
+
 }
 
 /* Tablet */
