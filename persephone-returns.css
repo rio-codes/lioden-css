@@ -11,8 +11,6 @@ Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Ta
 
 @import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lavishly+Yours&display=swap');
 
-<<<<<<< HEAD
-=======
 /* CSS Credit */
 
 .breadcrumb::after {
@@ -26,7 +24,6 @@ Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Ta
 	left: 25px;
 }
 
->>>>>>> 1252870 (update persephone css)
 /* Background image, font and font color, text alignment */
 
 body {
@@ -37,14 +34,9 @@ body {
     font-weight: 200 !important;
   	font-style: normal;
   	font-size: large;
-<<<<<<< HEAD
-	color: (91, 144, 171, 1) !important;
-  	text-shadow: 0 0 .6em, 0 0 1em #8fadbc !important;
-=======
     font-weight: bolder;
 	   color: #4984a2;
 	text-shadow: 0 0 .6em, 0 0 .2em #ebefef;
->>>>>>> 1252870 (update persephone css)
 }
 
 /* Link colors */
@@ -53,11 +45,7 @@ a:link,
 a:visited {
 	color: #b8779e;
 	font-weight: 500;
-<<<<<<< HEAD
-	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
-=======
 	text-shadow: 0 0 .6em, 0 0 1em #cabec9 !important;
->>>>>>> 1252870 (update persephone css)
 }
 
 a:hover {
@@ -65,8 +53,6 @@ a:hover {
 	transition: 0.5s;
 }
 
-<<<<<<< HEAD
-=======
 a img {
   border: none !important;
   text-decoration: none !important;
@@ -76,7 +62,6 @@ a:focus {
   outline: none !important;
 }
 
->>>>>>> 1252870 (update persephone css)
 /* Text input boxes */
 
 input,
@@ -90,19 +75,7 @@ textarea {
 	color: #744f34 !important;
 }
 
-<<<<<<< HEAD
-.breadcrumb::after {
-	content: "custom css by lyri | #583579 ";
-	color: #4984a2;
-    font-family: "Lavishly Yours", cursive;
-	font-size: 25px;
-	position:absolute;
-	top: -5px;
-	left: 25px;
-}
-=======
 
->>>>>>> 1252870 (update persephone css)
 
 /* Main header appearance ("___"'s Den) */
 
@@ -111,44 +84,25 @@ h1 {
 	font-size: 50px;
 	font-weight: 700;
 	-webkit-background-clip: text;
-<<<<<<< HEAD
-	background-clip: text;
-	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
-	color: (91, 144, 171, 1) !important;
-=======
 	text-shadow: 0 0 .6em, 0 0 .2em #ebefef !important;
 	color:#b8779e;
->>>>>>> 1252870 (update persephone css)
 	text-align: center;
 }
 
 h1.center > small:nth-child(2) a:link, h1.center > small:nth-child(2) a:visited, p.center:nth-child(2) > a:nth-child(1) a:link, p.center:nth-child(2) > a:nth-child(1) a:visited {
-<<<<<<< HEAD
-	color: (91, 144, 171, 1) !important;
-=======
 	color: #b8779e !important;
->>>>>>> 1252870 (update persephone css)
 }
 
 h1.center > small:nth-child(2), p.center:nth-child(2) > a:nth-child(1) {
 	font-weight: 500 !important;
-<<<<<<< HEAD
-    color: (91, 144, 171, 1) !important;
-=======
   color:#b8779e;
->>>>>>> 1252870 (update persephone css)
 }
 
 h2 {
   font-family: "Lavishly Yours", cursive;
 	font-size: 45px;
-<<<<<<< HEAD
-	color: (91, 144, 171, 1) !important;
-  text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
-=======
 	color:#b8779e;
 	text-shadow: 0 0 .6em, 0 0 .2em #ebefef !important;
->>>>>>> 1252870 (update persephone css)
 }
 
 /* Tertiary header */
@@ -156,20 +110,6 @@ h2 {
 h3 {
   font-family: "Lavishly Yours", cursive;
 	font-size: 40px !important;
-<<<<<<< HEAD
-	color: (91, 144, 171, 1) !important;
-	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
-}
-
-#pageContainer.col-md-9 {
-	background: (91, 144, 171, 0.1) !important;
-	border: solid 1px #4984a2;
-	box-shadow: 0px 1px 10px #d7bf70 !important;
-  	text-shadow: 0 0 .6em, 0 0 1em #8fadbc !important;
-	border-radius: 0px;
-  	font-size: medium;
-}
-=======
   font-weight: 800;
 	color:#b8779e;
 	text-shadow: 0 0 .6em, 0 0 .2em #ebefef !important;
@@ -236,17 +176,18 @@ h3 {
 
 .navbar {
 	font-family: Bellota;
-	background: #b8779e;
+	background: #6ea869;
 	border-bottom: none;
-	color: #ebeff0 !important;
+	color: #23380d !important;
+  text-shadow: 0 0 .6em, 0 0 1em #ebefef !important;
 	opacity: 1;
 	font-size: x-large;
 }
 
 .navbar li a {
-	color: #ebeff0 !important;
+	color: #23380d !important;
 		font-family: Bellota;
-		font-weight: 800 !important;
+		font-weight: 500 !important;
 }
 
 .navbar li a:hover {
@@ -288,6 +229,9 @@ h3 {
   opacity: .95;
     color:#ab4d96;
 }
+
+
+/* Notifications */
 
 .alert,
 .alert-warning,
@@ -345,18 +289,28 @@ h3 {
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
+.panel-body.small {
+  background: #6ea869;
+  color: #23380d;
+  opacity: 0.9;
+}
 .panel-body.small .center a, .panel-body.small a {
 	font-weight: 200 !important;
-	color: #917485 !important;
+	color: #23380d !important;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
 /* Image Replacement */
+
+.boxtopper > img:nth-child(1) {
+  display: none;
+}
+
 div.container.main > div:nth-child(1) > nav > div.navbar-header > a {
   border: transparent !important;
 }
 div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
-	content: url('https://cdn.allthepics.net/images/2026/04/19/persephone-logo-4.png');
+	content: url('https://cdn.allthepics.net/images/2026/04/19/persephone-logo-5.png');
   width: 158px;
 	opacity: 1;
 	transition: 1s !important;
@@ -366,7 +320,7 @@ div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
 }
 
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
-	content: url('https://cdn.allthepics.net/images/2026/04/19/persephone-logo-4.png');
+	content: url('https://cdn.allthepics.net/images/2026/04/19/persephone-logo-5.png');
 	opacity: 0.8;
 	transition: 1s !important;
 }
@@ -501,4 +455,3 @@ img[src$="iconInsta.png"] {
 img[src$="default.png"]{
 	content: url("https://cdn.allthepics.net/images/2026/04/08/7thmabiraforest.png")
 }
->>>>>>> 1252870 (update persephone css)

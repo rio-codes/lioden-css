@@ -1,0 +1,27 @@
+Credits
+
+Main coding: Lyri [#583579]
+AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
+
+CSS
+Shadriel [#251887]
+Katie [#106445]
+Pandora [#144118]
+Kat [#94329]
+Tawny [#251887]
+Hok-Z [#41458]
+Austin [#43750]
+
+HTML
+[#191322] (deleted profile)
+
+Art
+Background: anonymous
+Lions: Artists of Lioden Ltd.
+
+Fonts
+Baumans by Cyreal, Google Fonts
+Megrim Daniel Johnson, Google Fonts
+
+Animated gifs
+Gifs by various artists, Giphy
