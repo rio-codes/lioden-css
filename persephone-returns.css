@@ -11,6 +11,22 @@ Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Ta
 
 @import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lavishly+Yours&display=swap');
 
+<<<<<<< HEAD
+=======
+/* CSS Credit */
+
+.breadcrumb::after {
+	background: transparent;
+	content: "custom css by lyri | #583579 ";
+	color:#ab4d96;
+    font-family: "Lavishly Yours", cursive;
+	font-size: 25px;
+	position:absolute;
+	top: 5px;
+	left: 25px;
+}
+
+>>>>>>> 1252870 (update persephone css)
 /* Background image, font and font color, text alignment */
 
 body {
@@ -21,8 +37,14 @@ body {
     font-weight: 200 !important;
   	font-style: normal;
   	font-size: large;
+<<<<<<< HEAD
 	color: (91, 144, 171, 1) !important;
   	text-shadow: 0 0 .6em, 0 0 1em #8fadbc !important;
+=======
+    font-weight: bolder;
+	   color: #4984a2;
+	text-shadow: 0 0 .6em, 0 0 .2em #ebefef;
+>>>>>>> 1252870 (update persephone css)
 }
 
 /* Link colors */
@@ -31,7 +53,11 @@ a:link,
 a:visited {
 	color: #b8779e;
 	font-weight: 500;
+<<<<<<< HEAD
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+=======
+	text-shadow: 0 0 .6em, 0 0 1em #cabec9 !important;
+>>>>>>> 1252870 (update persephone css)
 }
 
 a:hover {
@@ -39,6 +65,18 @@ a:hover {
 	transition: 0.5s;
 }
 
+<<<<<<< HEAD
+=======
+a img {
+  border: none !important;
+  text-decoration: none !important;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+>>>>>>> 1252870 (update persephone css)
 /* Text input boxes */
 
 input,
@@ -52,6 +90,7 @@ textarea {
 	color: #744f34 !important;
 }
 
+<<<<<<< HEAD
 .breadcrumb::after {
 	content: "custom css by lyri | #583579 ";
 	color: #4984a2;
@@ -61,6 +100,9 @@ textarea {
 	top: -5px;
 	left: 25px;
 }
+=======
+
+>>>>>>> 1252870 (update persephone css)
 
 /* Main header appearance ("___"'s Den) */
 
@@ -69,26 +111,44 @@ h1 {
 	font-size: 50px;
 	font-weight: 700;
 	-webkit-background-clip: text;
+<<<<<<< HEAD
 	background-clip: text;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 	color: (91, 144, 171, 1) !important;
+=======
+	text-shadow: 0 0 .6em, 0 0 .2em #ebefef !important;
+	color:#b8779e;
+>>>>>>> 1252870 (update persephone css)
 	text-align: center;
 }
 
 h1.center > small:nth-child(2) a:link, h1.center > small:nth-child(2) a:visited, p.center:nth-child(2) > a:nth-child(1) a:link, p.center:nth-child(2) > a:nth-child(1) a:visited {
+<<<<<<< HEAD
 	color: (91, 144, 171, 1) !important;
+=======
+	color: #b8779e !important;
+>>>>>>> 1252870 (update persephone css)
 }
 
 h1.center > small:nth-child(2), p.center:nth-child(2) > a:nth-child(1) {
 	font-weight: 500 !important;
+<<<<<<< HEAD
     color: (91, 144, 171, 1) !important;
+=======
+  color:#b8779e;
+>>>>>>> 1252870 (update persephone css)
 }
 
 h2 {
   font-family: "Lavishly Yours", cursive;
 	font-size: 45px;
+<<<<<<< HEAD
 	color: (91, 144, 171, 1) !important;
   text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+=======
+	color:#b8779e;
+	text-shadow: 0 0 .6em, 0 0 .2em #ebefef !important;
+>>>>>>> 1252870 (update persephone css)
 }
 
 /* Tertiary header */
@@ -96,6 +156,7 @@ h2 {
 h3 {
   font-family: "Lavishly Yours", cursive;
 	font-size: 40px !important;
+<<<<<<< HEAD
 	color: (91, 144, 171, 1) !important;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
@@ -108,3 +169,336 @@ h3 {
 	border-radius: 0px;
   	font-size: medium;
 }
+=======
+  font-weight: 800;
+	color:#b8779e;
+	text-shadow: 0 0 .6em, 0 0 .2em #ebefef !important;
+}
+
+/* Main panel container appearance*/
+
+.container.main {
+	background: #8fadbca0;
+	border: solid 1px #b8779e;
+  color:#ab4d96;
+  	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+  	font-size: medium;
+}
+
+/* Switch Account and Bug Box buttons */
+
+.btn:hover, button.button:hover {
+	background: #222504;
+	border: none !important;
+	border-radius: 4px;
+	text-shadow: none !important;
+	color: #d7bf70; !important
+}
+
+.btn img {
+	display: none;
+}
+
+.btn, button.button, .btn.btn {
+	background: #222504;
+	border: none !important;
+	border-radius: 4px;
+	text-shadow: none !important;
+	color: #d7bf70 !important;
+}
+
+/* Make left panel background and border invisible */
+
+.col-md-9 {
+	background: none;
+	border-right: none
+}
+
+/* Topbar (Welcome and account navigation) */
+
+.topbar {
+	background: #7087a2 !important;
+	border: none;
+	color: #ebeff0;
+	padding: 5px;
+	margin-top: 0px;
+	text-align: right;
+	z-index: 50;
+	opacity: 100%;
+  font-size: medium;
+}
+
+.topbar a {
+	color: #ebeff0 !important;
+}
+
+/* Navbar (Den/Crossroads/Etc.) */
+
+.navbar {
+	font-family: Bellota;
+	background: #b8779e;
+	border-bottom: none;
+	color: #ebeff0 !important;
+	opacity: 1;
+	font-size: x-large;
+}
+
+.navbar li a {
+	color: #ebeff0 !important;
+		font-family: Bellota;
+		font-weight: 800 !important;
+}
+
+.navbar li a:hover {
+	background: #b8779e !important;
+	border-bottom: none;
+	color: #ab4d96 !important;
+	border-radius: 0px;
+	filter: brightness(100%) opacity(90%);
+	transition: 0.5s !important;
+	height: 50px;
+	width: auto !important;
+}
+
+/* Breadcrumb (Home button, den owner, bookmark) */
+
+.breadcrumb {
+	background: #7087a2 !important;
+	color: #ebeff0 !important;
+	border-radius: 5px;
+	text-align:left !important;
+	box-shadow: 0px 1px 10px #ebeff0 !important;
+	font-size: medium;
+	z-index: 50;
+	opacity: 100%;
+	margin-top: 10px;
+}
+
+.breadcrumb a {
+  color: #ebeff0;
+}
+
+.breadcrumb .active {
+	color: #ebeff0;
+}
+
+/* About me table */
+.table.pun-table {
+  background: #6baac2;
+  opacity: .95;
+    color:#ab4d96;
+}
+
+.alert,
+.alert-warning,
+.alert-danger {
+	background: #cabec9 !important;
+	border: none;
+	color: #ab4d96;
+	padding: 5px;
+	margin-top: 20px;
+	text-align: right;
+	z-index: 50;
+	opacity: 100%;
+}
+
+.alert a,
+.alert-warning a,
+.alert-danger a {
+  color: #ab4d96;
+  text-shadow: 0 0 1em, 0 0 1em #ebeff0 !important;
+}
+
+.alert a:hover,
+.alert-warning a:hover,
+.alert-danger a:hover {
+ color: #ab4d96;
+ opacity: 0.7;
+}
+
+/* Right-side panel appearance */
+
+.sidebar h3 {
+	background: transparent !important;
+	color: #b8779e !important;
+	font-size: 28px !important;
+	font-weight: 800;
+	text-align: right;
+	position: relative;
+	padding-top: 25px;
+	border: 0px !important;
+	text-shadow: 0 0 .6em, 0 0 1em #ebeff0 !important;
+}
+
+.sidebar a {
+  color: #d7bf70;
+}
+
+.panel {
+	background: transparent;
+	color: #b8779e !important;
+	text-align: right;
+	opacity: 0.9;
+	border: 0px !important;
+	z-index: 50;
+	opacity: 100%;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+.panel-body.small .center a, .panel-body.small a {
+	font-weight: 200 !important;
+	color: #917485 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+/* Image Replacement */
+div.container.main > div:nth-child(1) > nav > div.navbar-header > a {
+  border: transparent !important;
+}
+div.container.main > div:nth-child(1) > nav > div.navbar-header > a > img {
+	content: url('https://cdn.allthepics.net/images/2026/04/19/persephone-logo-4.png');
+  width: 158px;
+	opacity: 1;
+	transition: 1s !important;
+  padding: none;
+	float: left;
+  z-index: 1;
+}
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
+	content: url('https://cdn.allthepics.net/images/2026/04/19/persephone-logo-4.png');
+	opacity: 0.8;
+	transition: 1s !important;
+}
+
+div.cave-grid>img[src$="nestingbanner.png"] {
+	content: url('') !important;
+	padding-left: 0%;
+	height: 60px;	
+	width:250px;
+	opacity: 0.7;
+	border: 0px ridge;
+	overflow: hidden;
+	border: 0px;
+	border-radius: 10px 10px 10px 0px 0px !important;
+}
+
+div.cave-grid>img:hover{
+	filter: brightness(90%) opacity(80%);
+	overflow: hidden;
+	transition: 0.5s !important;
+}
+
+div.cave-grid>img[src$="prideoverviewbanner.png"] {
+	content: url('') !important;
+	padding-left: 0%;
+	height: 60px;	
+	width:250px;
+	opacity: 0.7;
+	border: 0px ridge;
+	overflow: hidden;
+	border: 0px;
+	border-radius: 10px 10px 0px 0px !important;
+}
+
+div.cave-grid>img[src$="unsortedlionsbanner.png"] {
+	content: url('') !important;
+	padding-left: 0%;
+	height: 60px;	
+	width:250px;
+	opacity: 0.7;
+	border: 0px ridge;
+	overflow: hidden;
+	border: 0px;
+	border-radius: 10px 10px 0px 0px !important;
+}
+
+div.cave-grid>img {
+	content: url('') !important;
+	padding-left: 0%;
+	height: 100%;	
+	width:250px;
+	opacity: 0.7;
+	border: 0px ridge;
+	overflow: hidden;
+	border: 0px;
+	border-radius: 0px !important;
+}
+
+.mound-grid img {
+	content: url('') !important;
+  	object-fit: cover !important;
+	height: 60px;
+	width: 300px !important;
+	opacity: 0.7;
+	border: 0px ridge;
+	border: 0px;
+	border-radius: 0px !important;
+
+}
+
+img[src$="den_ancestors.png"] {
+	content: url('');
+	object-fit: cover;
+	height: 100px !important;
+	width: 2 !important;
+} 
+
+img[src$="ancestorsfem.png"] {
+	content: url('');
+	object-fit: cover;
+	height: 100px !important;
+	width: 2 !important;
+}
+
+img[src$="den_achievements.png"] {
+	content: url('');
+	object-fit: cover;
+	height: 100px;
+	width: 2 !important;
+}
+
+img[src$="den_showcase.png"] {
+	content: url('');
+	object-fit: cover;
+	height: 100px;
+	width: 2 !important
+}
+
+img[src$="den_beetlebook.png"] {
+	content: url('');
+	object-fit: cover;
+	height: 100px;
+	width: 2 !important 
+}
+
+img[src$="iconFB.png"] {
+	content: url('https://cdn.allthepics.net/images/2026/04/08/fungi-iconFB.png');
+	object-fit: cover;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+}
+
+img[src$="iconTwit.png"] {
+	content: url('https://cdn.allthepics.net/images/2026/04/08/fungi-iconTwit.png');
+	object-fit: cover;
+	height: 50px;
+	width: 50px;
+	position: relative;
+	top: 2px;
+	overflow: hidden;
+}
+
+img[src$="iconInsta.png"] {
+	content: url('https://cdn.allthepics.net/images/2026/04/08/fungi-iconInsta.png');
+	object-fit: cover;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+}
+
+img[src$="default.png"]{
+	content: url("https://cdn.allthepics.net/images/2026/04/08/7thmabiraforest.png")
+}
+>>>>>>> 1252870 (update persephone css)
