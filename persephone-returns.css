@@ -15,8 +15,8 @@ Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Ta
 
 .breadcrumb::after {
 	background: transparent;
-	content: "custom css by lyri | #583579 ";
-	color:#ab4d96;
+	content: "custom css by lyri";
+	color:#2f5f65;
     font-family: "Lavishly Yours", cursive;
 	font-size: 25px;
 	position:absolute;
@@ -28,14 +28,15 @@ Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Ta
 
 body {
     background: url("https://rio-codes.github.io/lioden-css/meadow.webp");
-	background-size: cover;
+	   background-size: cover;
+	background-clip: content-box;
     background-attachment: fixed;
     font-family: "Bellota", system-ui;
     font-weight: 200 !important;
   	font-style: normal;
   	font-size: large;
     font-weight: bolder;
-	   color: #4984a2;
+	   color: #d0f5fa;
 	text-shadow: 0 0 .6em, 0 0 .2em #ebefef;
 }
 
@@ -43,13 +44,13 @@ body {
 
 a:link,
 a:visited {
-	color: #b8779e;
+	color: #579ea8;
 	font-weight: 500;
-	text-shadow: 0 0 .6em, 0 0 1em #cabec9 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d0f5fa !important;
 }
 
 a:hover {
-	color: #8fadbc !important;
+	color: #d0f5fa !important;
 	transition: 0.5s;
 }
 
@@ -62,47 +63,69 @@ a:focus {
   outline: none !important;
 }
 
+/* Pagedoll */
+.container.main::after {
+	content: "";
+    background-image: url('https://cdn.allthepics.net/images/2026/04/19/persephone_pagedoll_sm_2.png');
+    background-size: cover;
+	display: block;
+    height:250px;
+    width:250px;
+	position:fixed;
+	right:0px;
+    bottom: 0px;
+	z-index: 30;
+	pointer-events: none;
+	opacity: 0.8;
+}
+
 /* Text input boxes */
 
 input,
 select,
 textarea {
-	background: #8fadbc !important;
+	background: #579ea8 !important;
 	border: none !important;
 	border-radius: 5px !important;
 	box-shadow: none !important;
 	text-shadow: none !important;
-	color: #744f34 !important;
+	color: #d0f5fa !important;
+  font-weight: 600;
 }
 
+div.comment, small.text-muted {
+	color: #D0F5FA;
+	font-weight: 800;
+	text-shadow: 0 0 .6em, 0 0 1em #d0f5fa !important;
+}
 
 
 /* Main header appearance ("___"'s Den) */
 
 h1 {
 	font-family: "Lavishly Yours", cursive;
-	font-size: 50px;
-	font-weight: 700;
+	font-size: 64px;
+	color: #d0f5fa;
+	font-weight: 800 !important;
+  text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 	-webkit-background-clip: text;
-	text-shadow: 0 0 .6em, 0 0 .2em #ebefef !important;
-	color:#b8779e;
 	text-align: center;
 }
 
 h1.center > small:nth-child(2) a:link, h1.center > small:nth-child(2) a:visited, p.center:nth-child(2) > a:nth-child(1) a:link, p.center:nth-child(2) > a:nth-child(1) a:visited {
-	color: #b8779e !important;
+	color: #579ea8 !important;
 }
 
 h1.center > small:nth-child(2), p.center:nth-child(2) > a:nth-child(1) {
 	font-weight: 500 !important;
-  color:#b8779e;
+  color:#579ea8;
 }
 
 h2 {
   font-family: "Lavishly Yours", cursive;
 	font-size: 45px;
-	color:#b8779e;
-	text-shadow: 0 0 .6em, 0 0 .2em #ebefef !important;
+	color:#579ea8;
+	text-shadow: 0 0 .6em, 0 0 .2em #90d5de !important;
 }
 
 /* Tertiary header */
@@ -111,28 +134,28 @@ h3 {
   font-family: "Lavishly Yours", cursive;
 	font-size: 40px !important;
   font-weight: 800;
-	color:#b8779e;
-	text-shadow: 0 0 .6em, 0 0 .2em #ebefef !important;
+	color:#579ea8;
+	text-shadow: 0 0 .6em, 0 0 .2em #ffffff !important;
 }
 
 /* Main panel container appearance*/
 
 .container.main {
-	background: #8fadbca0;
-	border: solid 1px #b8779e;
-  color:#ab4d96;
-  	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+	background: #90d5dea2;
+	border: solid 1px #d0f5fa;
+  color:#579ea8;
+  	text-shadow: 0 0 .6em, 0 0 1em #90d5de !important;
   	font-size: medium;
 }
 
 /* Switch Account and Bug Box buttons */
 
 .btn:hover, button.button:hover {
-	background: #222504;
+	background: #d0f5fa;
 	border: none !important;
-	border-radius: 4px;
+	border-radius: 2px;
 	text-shadow: none !important;
-	color: #d7bf70; !important
+	color: #f39cbf; !important
 }
 
 .btn img {
@@ -140,11 +163,11 @@ h3 {
 }
 
 .btn, button.button, .btn.btn {
-	background: #222504;
+	background: #d0f5fa;
 	border: none !important;
 	border-radius: 4px;
 	text-shadow: none !important;
-	color: #d7bf70 !important;
+	color: #2f5f65 !important;
 }
 
 /* Make left panel background and border invisible */
@@ -157,9 +180,9 @@ h3 {
 /* Topbar (Welcome and account navigation) */
 
 .topbar {
-	background: #7087a2 !important;
+	background: #90d5dea2;
 	border: none;
-	color: #ebeff0;
+	color: #2f5f65;
 	padding: 5px;
 	margin-top: 0px;
 	text-align: right;
@@ -169,31 +192,31 @@ h3 {
 }
 
 .topbar a {
-	color: #ebeff0 !important;
+	color: #2f5f65 !important;
 }
 
 /* Navbar (Den/Crossroads/Etc.) */
 
 .navbar {
 	font-family: Bellota;
-	background: #6ea869;
+	background: #ffeea38f;
 	border-bottom: none;
-	color: #23380d !important;
-  text-shadow: 0 0 .6em, 0 0 1em #ebefef !important;
+	color: #2f5f65 !important;
+  text-shadow: 0 0 .6em, 0 0 1em #fff7d3 !important;
 	opacity: 1;
 	font-size: x-large;
 }
 
 .navbar li a {
-	color: #23380d !important;
+	color: #2f5f65 !important;
 		font-family: Bellota;
-		font-weight: 500 !important;
+		font-weight: 800 !important;
 }
 
 .navbar li a:hover {
-	background: #b8779e !important;
+	background: #579ea8 !important;
 	border-bottom: none;
-	color: #ab4d96 !important;
+	color: #90d5de !important;
 	border-radius: 0px;
 	filter: brightness(100%) opacity(90%);
 	transition: 0.5s !important;
@@ -204,11 +227,11 @@ h3 {
 /* Breadcrumb (Home button, den owner, bookmark) */
 
 .breadcrumb {
-	background: #7087a2 !important;
-	color: #ebeff0 !important;
+	background: #579ea8 !important;
+	color: #90d5de !important;
 	border-radius: 5px;
 	text-align:left !important;
-	box-shadow: 0px 1px 10px #ebeff0 !important;
+	box-shadow: 0px 1px 10px #90d5de !important;
 	font-size: medium;
 	z-index: 50;
 	opacity: 100%;
@@ -225,9 +248,9 @@ h3 {
 
 /* About me table */
 .table.pun-table {
-  background: #6baac2;
+  background: #ffeea38f;
   opacity: .95;
-    color:#ab4d96;
+    color:#2f5f65;
 }
 
 
@@ -236,12 +259,12 @@ h3 {
 .alert,
 .alert-warning,
 .alert-danger {
-	background: #cabec9 !important;
-	border: none;
-	color: #ab4d96;
-	padding: 5px;
+  background: #579ea8 !important;
+	color: #90d5de !important;
+	border: 0px;
+	padding: 10px;
 	margin-top: 20px;
-	text-align: right;
+	text-align: center;
 	z-index: 50;
 	opacity: 100%;
 }
@@ -264,14 +287,15 @@ h3 {
 
 .sidebar h3 {
 	background: transparent !important;
-	color: #b8779e !important;
-	font-size: 28px !important;
-	font-weight: 800;
+	font-family: "Lavishly Yours", cursive;
+	font-size: 40px !important;
+  font-weight: 800;
+	color:#579ea8;
+	text-shadow: 0 0 .6em, 0 0 .2em #ffffff !important;
 	text-align: right;
 	position: relative;
 	padding-top: 25px;
 	border: 0px !important;
-	text-shadow: 0 0 .6em, 0 0 1em #ebeff0 !important;
 }
 
 .sidebar a {
@@ -280,7 +304,7 @@ h3 {
 
 .panel {
 	background: transparent;
-	color: #b8779e !important;
+	color: #579ea8 !important;
 	text-align: right;
 	opacity: 0.9;
 	border: 0px !important;
@@ -290,15 +314,346 @@ h3 {
 }
 
 .panel-body.small {
-  background: #6ea869;
-  color: #23380d;
-  opacity: 0.9;
+  background: #579ea8;
+  color: #2f5f65;
+  font-size: 13px;
 }
 .panel-body.small .center a, .panel-body.small a {
 	font-weight: 200 !important;
-	color: #23380d !important;
+	color: #d0f5fa !important;
 	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
+
+.pun-links a, .pun-graphics a, .pun-links {
+	position: relative;
+	color: #2f5f65;
+	z-index: 100;
+}
+
+.pun-table {
+	border: 20px 0 0 0 #2e2e07;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+/* Progress bars (Energy, hunger, EXP, IMP) */
+.progress {
+	background: #fff7d3;
+	text-shadow: 0 0 .6em, 0 0 .5em #fff7d3 !important;
+	color: #000000 !important;
+	font-weight: bolder;
+	font-size: 16px !important;
+}
+
+.progress-bar, .progress-bar-danger, .progress-bar-success {
+	background: linear-gradient(to right, #fff7d3, #ffeea3, #579ea8);
+}
+
+.progress div {
+    transition: .5s;
+    font-weight: 700 !important;
+    text-shadow: 0 0 .6em, 0 0 .5em #fff7d3 !important;
+    color: #2f5f65 !important;
+	font-weight: bolder;
+}
+
+/*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
+
+.table {
+	background: radial-gradient(#d0f5fa03, #2f5f6503);
+	border: none !important;
+	border-collapse: inherit;
+	border-radius: 10px;
+	box-shadow: 0px 5px 30px #579ea8 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+	font-size: 14px;
+	font-weight: 300 !important;
+	position: absolute;
+	color: #2f5f65;
+	hyphens: auto;
+	overflow: hidden;
+	position: relative;
+	opacity: 1;
+}
+
+.table#pride tbody {
+	font-weight: 100;
+	font-size: 12px;
+	color: #2f5f65;
+}
+.table#pride a {
+	color: #2f5f65;
+}
+
+.table#pride tbody tr th a {
+	color: #2f5f65;
+	font-weight: 300 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+.top,
+.top a,
+th, table#attack th {
+	background: #579ea8 !important;
+	color: #d0f5fa !important;
+	font-weight: 300 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+.bottom,
+.bottom a,
+th {
+	background: #d0f5fa !important;
+	border: 1px #d7bf70;
+	color: #2f5f65 !important;
+	font-weight: 300 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+td.bottom button {
+	margin-top: 10px;
+}
+
+.inner-table .left {
+	background: #579ea8 !important;
+	color: #d0f5fa;
+	font-weight: 300 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+.inner-table .right {
+	background: #d0f5fa;
+	color: #579ea8;
+	font-weight: 300 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+td.right {
+	border: 0px !important;
+	font-weight: 300 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+td.left,
+p.b {
+	border: 0px !important;
+	background: transparent !important;
+	font-weight: 300 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+
+.right_odd {
+	background: none !important
+}
+
+div.left:nth-child(7) > a:nth-child(1) {
+	color: #d0f5fa;
+}
+
+/* Lion and user profile pictures */
+
+div#lion_image {
+	border-radius: 20px !important;
+	overflow: hidden;
+    border: dotted 3px #d0f5fa;
+    box-shadow: 0px 5px 30px #579ea8 !important;
+    transition: 0.2s;
+	margin-top: 15px; 
+	margin-left: 12px;
+}
+
+div#lion_image:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+    opacity: 1;
+box-shadow: 0px 5px 30px #579ea8 !important;
+}
+
+table#player {
+	color: #d0f5fa;
+	font-weight: 800 !important;
+  text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+div.xlarge a, p.center a, #player > tbody:nth-child(1) > tr:nth-child(3) a {
+	color: #d0f5fa;
+	font-weight: 800 !important;
+  text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+table#player img {
+	border-radius: 20px !important;
+	overflow: hidden;
+    border: dotted 3px #d0f5fa;
+    box-shadow: 0px 5px 30px #579ea8 !important;
+	opacity: 0.9;
+	overflow: hidden;
+}
+
+/* Cave and Beetle Mound grid appearances*/
+
+.cave-grid,
+.mound-grid {
+	background: #d7bf70;
+	color: #4f4e0f;
+	border: solid 1px #d7bf70 !important;
+	border-radius: 10px !important
+}
+
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
+
+.feature {
+	background: radial-gradient(#d0f5fa03, #2f5f6503) !important;
+	color: transparent !important;
+	border: none !important;
+	border-radius: 0px !important
+}
+
+.feature,
+div.left {
+	background: #d0f5fa03;
+}
+
+.feature,
+div.left h3, .feature h3 {
+	font-weight: 500 !important;
+	color: #d7bf70 !important;
+}
+
+#sparring {
+  color: #d0f5fa !important;
+  text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+.xsmall {
+  color: #d0f5fa !important;
+  padding: 5px;
+}
+
+#pageContainer > center:nth-child(5) > b:nth-child(18) {
+  font-weight: 200;
+}
+
+div.feature {
+	color: #579ea8 !important;
+	font-weight: 200;
+	height: 140px;
+	padding: 5px;
+}
+
+/* Remove icons and edit text for user profile buttons */
+
+div.xlarge:nth-child(4) > a > img, td.right_odd:nth-child(1) > a:nth-child(1) > img:nth-child(1), td.right_odd:nth-child(2) > a:nth-child(1) > img:nth-child(1) {
+  display: none;
+}
+
+span.text-muted {
+	opacity: 0%;
+}
+
+#player > tbody > tr:nth-child(3) > td:nth-child(1) > a {
+	font-size:0px;
+}
+
+#player > tbody > tr:nth-child(3) > td:nth-child(1) > a::after {
+    content:'Block Member';
+    font-size:13px;
+}
+
+#player > tbody > tr:nth-child(3) > td:nth-child(2) > a::after {
+    content:'';
+    font-size:14px;
+}
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1) {
+    font-size:0px;
+}   
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1)::after {
+    content:'Message';
+    font-size:18px;
+}
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(3) {
+    font-size:0px;
+}   
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(3)::after {
+    content:'Send Gift!';
+    font-size:18px;
+}
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(5) {
+    font-size:0px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(5)::after {
+    content:'Create Trade';
+    font-size:18px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > p > a:nth-child(3)::after {
+	padding: 15px;
+}
+
+#player > tbody > tr.right > td:nth-child(1) > p.center:nth-child(5) > a:nth-child(1) > img:nth-child(1) {
+	display: none;
+}
+
+#player > tbody > tr.right > td:nth-child(1) > p.center:nth-child(5) > a:nth-child(3) > img:nth-child(1) {
+	display: none;
+}
+
+/* Cave and Beetle Mound grid appearances*/
+
+.cave-grid,
+.mound-grid {
+background: #ffeea38f;
+  opacity: .95;
+    color:#2f5f65;
+	border: 0px !important;
+	border-radius: 10px !important
+}
+
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
+
+.feature {
+	background: transparent !important;
+	color: #085e46 !important;
+	border: none !important;
+	border-radius: 0px !important
+}
+
+.feature,
+div.left {
+	background: transparent;
+}
+
+.feature,
+div.left h3, .feature h3 {
+	font-weight: 500 !important;
+	color: #d7bf70 !important;
+}
+
+#sparring {
+  color: #222504 !important;
+  text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+.xsmall {
+  color: #d7bf70 !important;
+  padding: 5px;
+}
+
+#pageContainer > center:nth-child(5) > b:nth-child(18) {
+  font-weight: 200;
+}
+
+div.feature {
+	color: #d7bf70 !important;
+	font-weight: 200;
+	height: 140px;
+	padding: 5px;
+}
+
 
 /* Image Replacement */
 
@@ -326,108 +681,119 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
 }
 
 div.cave-grid>img[src$="nestingbanner.png"] {
-	content: url('') !important;
-	padding-left: 0%;
-	height: 60px;	
-	width:250px;
-	opacity: 0.7;
-	border: 0px ridge;
-	overflow: hidden;
+	content: url('https://cdn.allthepics.net/images/2026/04/20/pink-flowers-old-photo.jpg') !important;
+  	object-fit: cover !important;
+	height: 100px !important;
+	width: 300px !important;
+	border: 5px ridge;
 	border: 0px;
-	border-radius: 10px 10px 10px 0px 0px !important;
+	border-radius: 0px !important;
 }
 
 div.cave-grid>img:hover{
-	filter: brightness(90%) opacity(80%);
+	filter: brightness(80%) opacity(70%);
 	overflow: hidden;
 	transition: 0.5s !important;
 }
 
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
-	content: url('') !important;
-	padding-left: 0%;
-	height: 60px;	
-	width:250px;
-	opacity: 0.7;
-	border: 0px ridge;
-	overflow: hidden;
-	border: 0px;
-	border-radius: 10px 10px 0px 0px !important;
+	content: url('https://cdn.allthepics.net/images/2026/04/20/flower-meadow-summitcheese.jpg') !important;
+  	object-fit: cover !important;
+	height: 100px !important;
+	width: 300px !important;
+	filter: brightness(90%) opacity(80%);
 }
 
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
-	content: url('') !important;
-	padding-left: 0%;
-	height: 60px;	
-	width:250px;
-	opacity: 0.7;
-	border: 0px ridge;
-	overflow: hidden;
-	border: 0px;
-	border-radius: 10px 10px 0px 0px !important;
+	content: url('https://cdn.allthepics.net/images/2026/04/20/blue-flowers-DeusXFlorida.jpg') !important;
+  	object-fit: cover !important;
+	height: 100px !important;
+	width: 300px !important;
+	filter: brightness(90%) opacity(80%);
 }
 
 div.cave-grid>img {
-	content: url('') !important;
-	padding-left: 0%;
-	height: 100%;	
-	width:250px;
-	opacity: 0.7;
-	border: 0px ridge;
-	overflow: hidden;
-	border: 0px;
-	border-radius: 0px !important;
+	content: url('https://cdn.allthepics.net/images/2026/04/20/pink-flowers-swaminathan.jpg') !important;
+  	object-fit: cover !important;
+	height: 100px !important;
+	width: 300px !important;
+  filter: brightness(90%) opacity(80%);
 }
 
 .mound-grid img {
-	content: url('') !important;
+	content: url('https://cdn.allthepics.net/images/2026/04/20/blue-flowers-HiggySTFC.jpg') !important;
   	object-fit: cover !important;
-	height: 60px;
+	height: 100px !important;
 	width: 300px !important;
-	opacity: 0.7;
-	border: 0px ridge;
-	border: 0px;
-	border-radius: 0px !important;
+	filter: brightness(90%) opacity(80%);
+}
 
+#fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+	content: url('https://cdn.allthepics.net/images/2026/04/20/blue-flowers-old-photo.jpg') !important;
+  	object-fit: cover !important;
+	height: 100px !important;
+	width: 300px !important;
+	filter: brightness(90%) opacity(80%);
+}
+
+#fraCaveList > div:nth-child(3) > div:nth-child(1) > img:nth-child(1) {
+	content: url('https://cdn.allthepics.net/images/2026/04/20/blue-flowers-oatsy40.jpg') !important;
+  	object-fit: cover !important;
+	height: 100px !important;
+	width: 300px !important;
+	filter: brightness(90%) opacity(80%);
+}
+
+div.col-xs-4:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+	content: url('https://cdn.allthepics.net/images/2026/04/20/blue-flowers-prague.jpg') !important;
+  	object-fit: cover !important;
+	height: 100px !important;
+	width: 300px !important;
+	filter: brightness(90%) opacity(80%);
 }
 
 img[src$="den_ancestors.png"] {
-	content: url('');
+	content: url('https://cdn.allthepics.net/images/2026/04/20/blue-flowers-oatsy40.jpg');
 	object-fit: cover;
 	height: 100px !important;
 	width: 2 !important;
+	filter: brightness(90%) opacity(80%);
 } 
 
 img[src$="ancestorsfem.png"] {
-	content: url('');
+	content: url('https://cdn.allthepics.net/images/2026/04/20/Up_Flower_Meadow_Mineral_King.jpg');
 	object-fit: cover;
 	height: 100px !important;
 	width: 2 !important;
+	filter: brightness(90%) opacity(80%);
 }
 
 img[src$="den_achievements.png"] {
-	content: url('');
+	content: url('https://cdn.allthepics.net/images/2026/04/20/blue-flowers-old-photo.jpg');
 	object-fit: cover;
 	height: 100px;
 	width: 2 !important;
+	filter: brightness(90%) opacity(80%);
 }
 
 img[src$="den_showcase.png"] {
-	content: url('');
+	content: url('https://cdn.allthepics.net/images/2026/04/20/pink-flowers-old-photo.jpg');
 	object-fit: cover;
 	height: 100px;
-	width: 2 !important
+	width: 2 !important;
+	filter: brightness(90%) opacity(80%);
 }
 
 img[src$="den_beetlebook.png"] {
-	content: url('');
+	content: url('https://cdn.allthepics.net/images/2026/04/20/blue-flowers-prague.jpg');
 	object-fit: cover;
 	height: 100px;
-	width: 2 !important 
+	width: 2 !important;
+	filter: brightness(90%) opacity(80%);
 }
 
 img[src$="iconFB.png"] {
-	content: url('https://cdn.allthepics.net/images/2026/04/08/fungi-iconFB.png');
+	content: url('https://cdn.allthepics.net/images/2026/04/20/persephone-FB.png');
 	object-fit: cover;
 	height: 50px;
 	width: 50px;
@@ -435,7 +801,7 @@ img[src$="iconFB.png"] {
 }
 
 img[src$="iconTwit.png"] {
-	content: url('https://cdn.allthepics.net/images/2026/04/08/fungi-iconTwit.png');
+	content: url('https://cdn.allthepics.net/images/2026/04/20/persephone-twit.png');
 	object-fit: cover;
 	height: 50px;
 	width: 50px;
@@ -445,7 +811,7 @@ img[src$="iconTwit.png"] {
 }
 
 img[src$="iconInsta.png"] {
-	content: url('https://cdn.allthepics.net/images/2026/04/08/fungi-iconInsta.png');
+	content: url('https://cdn.allthepics.net/images/2026/04/20/persephone-insta.png');
 	object-fit: cover;
 	height: 50px;
 	width: 50px;
