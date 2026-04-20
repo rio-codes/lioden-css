@@ -540,7 +540,9 @@ div.left {
 
 .feature,
 div.left h3,
-.feature h3 {
+.feature h3,
+div.row:nth-child(20) h3,
+div.row:nth-child(20) span {
 	font-weight: 500 !important;
 	color: #d0f5fa !important;
 }
