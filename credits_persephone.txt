@@ -1,9 +1,9 @@
-Credits
+~Credits~
 
-Main coding: Lyri [#583579]
+>> Main coding: Lyri [#583579]
 AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
 
-CSS
+>> CSS contributors
 Shadriel [#251887]
 Katie [#106445]
 Pandora [#144118]
@@ -12,13 +12,23 @@ Tawny [#251887]
 Hok-Z [#41458]
 Austin [#43750]
 
-HTML
+>> HTML
 [#191322] (deleted profile)
 
-Art
+>> Art
 Background: Leo [https://steamcommunity.com/profiles/76561198275434321 on Steam]
-Lions: Artists of Lioden Ltd.
+Lions and Den Background: Artists of Lioden Ltd.
 
-Fonts
+>> Social Media Icons
+Contributors to game-icons.net under CC-BY license
+
+>> Photos
+Flower and meadow photos by prague.czech.photo, Old Photo Profile, HiggySTFC, DeusXFlorida, oatsy40, It's No Game, Jane S. Richardson, and summitcheese are licensed under CC BY 2.0. 
+To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+>> Fonts
 Bellota by Kemie Guaida, Google Fonts
 Lavishly Yours by Robert Leuschke, Google Fonts
+
+>> Pagedoll
+Woman with Birds (1890), vintage illustration by Toshio Aoki
