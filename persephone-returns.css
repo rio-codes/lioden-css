@@ -875,7 +875,7 @@ img[src$="iconInsta.png"] {
 }
 
 img[src$="default.png"] {
-	content: url("https://cdn.allthepics.net/images/2026/04/08/7thmabiraforest.png")
+	content: url("https://cdn.allthepics.net/images/2026/04/20/floweringfynbos.png")
 }
 
 /* Pagedoll */
@@ -893,6 +893,10 @@ img[src$="default.png"] {
 	z-index: 30;
 	pointer-events: none;
 	opacity: 0.8;
+}
+
+span.xsmall {
+  color: #90d5de;
 }
 
 /*																						  			    		 */
