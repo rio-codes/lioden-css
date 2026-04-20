@@ -132,7 +132,7 @@ h3 {
 /* Main panel container appearance*/
 
 .container.main {
-	background: #90d5dea2;
+	background: #90d5dead;
 	border: solid 1px #d0f5fa;
 	color: #579ea8;
 	text-shadow: 0 0 .6em, 0 0 1em #90d5de !important;
@@ -542,7 +542,8 @@ div.left {
 div.left h3,
 .feature h3,
 div.row:nth-child(20) h3,
-div.row:nth-child(20) span {
+div.row:nth-child(20) span,
+span.xsmall:nth-child(1) {
 	font-weight: 500 !important;
 	color: #d0f5fa !important;
 }
