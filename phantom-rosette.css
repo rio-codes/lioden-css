@@ -1,0 +1,255 @@
+/* 
+Phantom Rosette
+
+Created 04/2026 by lyri [#583579] for Valentino DeVille [#384097]
+AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
+
+Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Tawny [#251887], Hok-Z [#41458], Austin [#43750] 
+
+Full credits for code contributors, artwork, photos, icons, and fonts can be found at https://rio-codes.github.io/lioden-css/credits_phantom.txt .
+*/
+
+/* Import Font (From Google Fonts) */
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Aubrey&display=swap');
+
+/* CSS Credit */
+
+.breadcrumb::after {
+    background: transparent;
+    content: "custom css by lyri";
+    color: #410a02;
+    font-family: "Aubrey", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+}
+
+/* Background image, font and font color, text alignment */
+
+body {
+    background: url("https://rio-codes.github.io/lioden-css/theater.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Aubrey", serif;
+    font-weight: 200 !important;
+    font-style: normal;
+    font-size: large;
+    font-weight: bolder;
+    color: #dc7d6d;
+    text-shadow: 0 0 .6em, 0 0 1em #d31d00;
+}
+
+/* Link colors */
+
+a:link,
+a:visited {
+    color: #dc7d6d;
+    font-weight: 500;
+    text-shadow: 0 0 .6em, 0 0 1em #d31d00 !important;
+}
+
+a:hover {
+    color: #410a02 !important;
+    transition: 0.75s;
+}
+
+a img {
+    border: none !important;
+    text-decoration: none !important;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+/* Main header appearance ("___"'s Den) */
+
+h1 {
+    font-family: "Aboreto", Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    color: #fcd7d1;
+    font-weight: 400 !important;
+    text-shadow: 0 0 .6em, 0 0 .5em #d31d00 !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+}
+
+h1.center>small:nth-child(2) a:link,
+h1.center>small:nth-child(2) a:visited,
+p.center:nth-child(2)>a:nth-child(1) a:link,
+p.center:nth-child(2)>a:nth-child(1) a:visited {
+    color: #fcd7d1 !important;
+}
+
+h1.center>small:nth-child(2),
+p.center:nth-child(2)>a:nth-child(1) {
+    font-weight: 500 !important;
+    color: #fcd7d1 !important;
+}
+
+h2 {
+    font-family: "Aboreto", Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #fcd7d1 !important;
+    text-shadow: 0 0 .6em, 0 0 .2em #d31d00 !important;
+}
+
+/* Tertiary header */
+
+h3 {
+    font-family: "Aboreto", Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px !important;
+    font-size: 24px;
+    font-weight: 800;
+    color: #fcd7d1 !important;
+    text-shadow: 0 0 .6em, 0 0 .3em #d31d00 !important;
+}
+
+
+/* Text input boxes */
+
+input,
+select,
+textarea {
+    background: linear-gradient(to right, #9b7300, #e2d6b2, #9b7300) !important;
+    border: solid 1px #e2d6b2;
+    border-radius: 10px;
+    box-shadow: 0px 5px 30px #4f0b00 !important;
+    text-shadow: none !important;
+    color: #9b7300 !important;
+    font-weight: 600;
+}
+
+/* Comment box */
+
+div.comment,
+small.text-muted {
+    color: #9b7300;
+    font-weight: 800;
+    text-shadow: 0 0 .6em, 0 0 1em #d39d00 !important;
+}
+
+div#commentBox {
+    background: radial-gradient(#e2d6b2, #9b7300);
+    border: solid 1px #e2d6b2;
+    border-collapse: inherit;
+    border-radius: 10px;
+    box-shadow: 0px 5px 30px #4f0b00 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d39d00 !important;
+    font-size: medium;
+    opacity: 0.8;
+}
+
+div.commentText,
+div.comment {
+    background: transparent;
+    font-weight: 500;
+    color: #413102 !important;
+}
+
+img.floatleft.commentTag.clear {
+    border-radius: 9px !important;
+    opacity: 0.9;
+    overflow: hidden;
+    border: solid 2px #9b7300;
+    box-shadow: 0px 0px 5px #4f0b00;
+    transition: 0.5s;
+}
+
+/* Main panel container appearance*/
+
+.container.main {
+    background: #670e00b7;
+    border: 0px !important;
+    border-collapse: inherit;
+    box-shadow: 0px 5px 30px #4f0b00 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d39d00 !important;
+    font-size: medium;
+}
+
+/* Switch Account and Bug Box buttons */
+
+.btn img {
+    display: none;
+}
+
+.btn,
+button.button,
+.btn.btn {
+    width: 8em;
+    height: 3.4em;
+    padding: .4em;
+    border: 2px solid #413102;
+    transform-style: preserve-3d;
+    transition: all 400ms cubic-bezier(0, 0, 1, 1);
+    background: radial-gradient(#e2d6b2, #9b7300);
+    border: none !important;
+    border-radius: 6px;
+    font-family: "Aboreto", Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px !important;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-shadow: none !important;
+    color: #413102 !important;
+}
+
+.btn::before,
+button.button::before,
+.btn.btn::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(#e2d6b2, #9b7300);
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px #674c00;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+.btn:hover,
+button.button:hover,
+.btn.btn:hover {
+    background: radial-gradient(#e2d6b2, #9b7300);
+    background-blend-mode: darken;
+    transform: translate(0, 0.375em);
+    color: #413102 !important;
+}
+
+.btn:hover::before,
+button.button:hover::before,
+.btn.btn:hover::before {
+    transform: translate3d(0, 0.75em, -1em);
+}
+
+.btn:active,
+button.button:active,
+.btn.btn:active {
+    transform: translate(0em, 0.75em);
+}
+
+.btn:active::before,
+button.button:active::before,
+.btn.btn:active::before {
+    transform: translate3d(0, 0, -1em);
+}
+
+.btn.btn-default.button {
+    padding-top: 15px;
+    position: relative;
+    top: -25px
+}
+
+/* Make left panel background and border invisible */
+
+.col-md-9 {
+    background: none;
+    border-right: none
+}
