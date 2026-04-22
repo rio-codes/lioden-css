@@ -18,7 +18,7 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 .breadcrumb::after {
     background: transparent;
     content: "custom css by lyri";
-    color: #410a02;
+    color: #e2d6b2;
     font-family: "Aubrey", Arial, Helvetica, sans-serif;
     font-size: 22px;
     position: absolute;
@@ -252,4 +252,166 @@ button.button:active::before,
 .col-md-9 {
     background: none;
     border-right: none
+}
+
+/* Topbar (Welcome and account navigation) */
+
+.topbar {
+    background: linear-gradient(to right, #9b7300, #e2d6b2, #9b7300) !important;
+    border: none;
+    color: #413102;
+    padding: 5px;
+    margin-top: 0px;
+    text-align: right;
+    z-index: 50;
+    opacity: 100%;
+    font-size: medium;
+}
+
+.topbar a {
+    color: #4f3b00 !important;
+}
+
+/* Navbar (Den/Crossroads/Etc.) */
+
+.navbar {
+    background: linear-gradient(to right, #9b7300, #e2d6b2, #9b7300) !important;
+    border-bottom: none;
+    color: #413102 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d39d00 !important;
+    opacity: 1;
+    font-size: 32px !important;
+}
+
+.navbar li a {
+    color: #4f3b00 !important;
+    font-weight: 800 !important;
+    font-size: 24px !important;
+}
+
+.navbar li a:hover {
+    background: #4f0b00 !important;
+    border-bottom: none;
+    color: #d31d00 !important;
+    border-radius: 0px;
+    filter: brightness(100%) opacity(90%);
+    transition: 0.5s !important;
+    height: 50px;
+    width: auto !important;
+}
+
+/* Breadcrumb (Home button, den owner, bookmark) */
+
+.breadcrumb {
+    background: linear-gradient(to right, #410a02, #670e00, #d31d00, #410a02) !important;
+    color: #bea255 !important;
+    border-radius: 5px;
+    text-align: left !important;
+    box-shadow: 0px 1px 10px #4f0b00 !important;
+    font-size: medium;
+    z-index: 50;
+    opacity: 100%;
+    margin-top: 10px;
+}
+
+.breadcrumb a {
+    color: #bea255;
+}
+
+.breadcrumb .active {
+    color: #bea255;
+}
+
+
+/* Notifications */
+
+.alert,
+.alert-warning,
+.alert-danger {
+    background: #9b1500 !important;
+    color: #410a02 !important;
+    border: 0px;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    z-index: 50;
+    opacity: 100%;
+}
+
+.alert a,
+.alert-warning a,
+.alert-danger a {
+    color: #410a02;
+    text-shadow: 0 0 1em, 0 0 1em #9b1500 !important;
+}
+
+.alert a:hover,
+.alert-warning a:hover,
+.alert-danger a:hover {
+    color: #410a02;
+    opacity: 0.7;
+}
+
+
+/* Right-side panel appearance */
+
+.sidebar h3 {
+    background: transparent !important;
+    font-family: "Aboreto", Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px !important;
+    font-weight: 800;
+    color: #e2d6b2;
+    text-shadow: 0 0 .6em, 0 0 .2em #d39d00 !important;
+    text-align: right;
+    position: relative;
+    padding-top: 25px;
+    border: 0px !important;
+}
+
+.sidebar a {
+    color: #d7bf70;
+}
+
+.panel {
+    background: transparent;
+    color: #410a02 !important;
+    font-size: 24px;
+    text-align: right;
+    opacity: 0.9;
+    border: 0px !important;
+    z-index: 50;
+    opacity: 100%;
+    text-shadow: 0 0 .6em, 0 0 1em #d31d00 !important;
+}
+
+.panel-body.small {
+    background: radial-gradient(#e2d6b2, #9b7300);
+    color: #410a02;
+    font-size: 18px;
+}
+
+.panel-body.small .center a,
+.panel-body.small a {
+    font-weight: 200 !important;
+    color: #d0f5fa !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d31d00 !important;
+}
+
+/* Replace Lioden Logo */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
+    border: transparent !important;
+}
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    content: url('https://cdn.allthepics.net/images/2026/04/22/phantom_logo.png');
+    width: 300px;
+    opacity: 1;
+    transition: 1s !important;
+    padding: none;
+    float: left;
+    position: relative;
+    top: -25px;
+    left: -25px;
+    z-index: 1;
 }
