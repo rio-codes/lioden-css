@@ -1,0 +1,8 @@
+.poems, .about-me, .art-grid, .wide-art, .links {
+  display: none;
+}
+
+#pageContainer > h1:nth-child(2)::after {
+  content: "\A\A\A...Under Construction";
+  white-space: pre-wrap;
+}
