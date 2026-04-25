@@ -9,9 +9,10 @@ Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Ta
 Full credits for code contributors, artwork, photos, icons, and fonts can be found at https://rio-codes.github.io/lioden-css/credits_phantom.txt .
 */
 
-/* Import Font (From Google Fonts) */
+/* Import Fonts (From Google Fonts) */
 
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Aubrey&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=IM+Fell+Double+Pica:ital@0;1&display=swap');
 
 /* CSS Credit */
 
@@ -22,9 +23,10 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
     font-family: "Aboreto", Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     position: absolute;
-    top: 75px;
+    top: 43px;
     right: 25px;
     margin-bottom: 20px;
+    z-index: 50;
 }
 
 /* Background image, font and font color, text alignment */
@@ -33,7 +35,7 @@ body {
     background: url("https://rio-codes.github.io/lioden-css/theater.webp");
     background-size: cover;
     background-attachment: fixed;
-    font-family: "Aubrey", serif;
+    font-family: "IM Fell Double Pica", serif;
     font-weight: 200 !important;
     font-style: normal;
     font-size: large;
@@ -342,7 +344,6 @@ ul.nav:nth-child(1) {
     color: #bea255;
 }
 
-
 /* Notifications */
 
 .alert,
@@ -430,6 +431,9 @@ div.panel {
     text-shadow: 0 0 .6em, 0 0 1em #d31d00 !important;
 }
 
+div.col-md-12:nth-child(3) > div:nth-child(4) > p:nth-child(2) {
+  display: none;
+}
 
 /* Progress bars (Energy, hunger, EXP, IMP) */
 .progress {
@@ -455,11 +459,10 @@ div.panel {
 /* Frames */
 
 .profile-content {
-  display: inline-block;
   width: 100%;
 }
 
-.poems, .frame, div.captioned-art .frame, .profile-content .captioned-art .frame {
+.poems, div.captioned-art .frame, .profile-content .captioned-art .frame {
 	list-style: none;
 	list-style-type: none;
 	margin: 0px;
@@ -467,22 +470,35 @@ div.panel {
 	text-align: center;
 }
 .poems {
-  margin: 5% 0;
-	width: 100%;
+  margin: 40px;
+	width: 90%;
+}
+.poems > img {
+  position: relative;
+  top: -150px;
+  margin-left: 20px;
 }
 
-img.frame:nth-child(2) {
-  position: relative;
-  top: -200px;
-  left: -25%;
+div .profile-content {
+  margin-top: -120px;
+  width: 100%;
+  column-count: 2;
+  column-gap: 2em;
 }
 
-img.frame:nth-child(4) {
-  position: relative;
-  left: 25%;
-  top: -920px;
+div .profile-content .frame {
+  display: inline-block;
+  margin: 0 0 em;
+  width: 100%;
 }
-.frame, .pun-table, div.captioned-art .frame, .profile-content .captioned-art a, .profile-content a  {
+
+div.about-me {
+  position: relative;
+  top: 750px;
+  left: 0%;
+}
+
+.pun-table, .poems img {
 	display: inline-block;
 	padding: 20px;
 	border-width: 20px;
@@ -494,7 +510,7 @@ img.frame:nth-child(4) {
 	position: relative;
 	overflow: hidden;
 }
-.frame::before, div.captioned-art .frame::before, .profile-content .captioned-art a::before {
+.frame::before, div.captioned-art .frame::before, .profile-content .captioned-art a:nth-child(1) img::before {
 	content: "";
 	position: absolute;
 	top: -175px;
@@ -507,7 +523,7 @@ img.frame:nth-child(4) {
 	-o-transform: rotateZ(-40deg);
 	background-image: linear-gradient(#410a02, #670e00);
 }
-.frame img, div.captioned-art .frame img, .profile-content .frame a img {
+.frame img, div.captioned-art .frame img, .profile-content .frame a:nth-child(1) img {
 	border-width: 2px;
 	border-style: solid;
 	border-color: #4f3b00 #674c00 #9b7300 #d39d00;
@@ -534,14 +550,75 @@ table.pun-table tbody {
 .pun-content {
   width: 100%;
 }
+
 .pun-links a, .pun-graphics a {
   color: #f1c9be;
 }
 
 
-/* Profile Masonry Grid */
+/* Art Masonry Grid */
+
+.art-grid {
+  position: relative;
+  top: -450px;
+  column-count: 2;
+  column-gap: 1em;
+}
+
+.art-item {
+  display: inline-block;
+  margin: 0 0 .5em;
+  width: 80%;
+}
+
+.art-grid > span:nth-child(8) {
+  position: relative;
+  top: -20px;
+  left: 20px;
+}
+
+.art-grid > span:nth-child(2), html body div.container.main div.row div#pageContainer.col-md-9.col-xs-12 center div#fraProfileContent div.art-grid a span {
+  position: relative;
+  top: -14px;
+}
+
+.art-grid > span:nth-child(5) {
+  position: relative;
+  top: 1050px;
+  left: -430px;
+}
+
+img.art-item:nth-child(7), img.art-item:nth-child(6) {
+  width: 200px;
+}
+
+img[src$="phantom_art-by-bluecattree-441089-1.png"] {
+  content: url("https://cdn.allthepics.net/images/2026/04/24/phantom_art-by-bluecattree-441089-combined.png");
+  width: 400px;
+}
+
+img[src$="phantom_art-by-bluecattree-441089-2.png"] {
+  display: none;
+}
 
 
+/* Art Grid */
+
+img[src$="phantom_panther.png"] {
+  content: url("https://rio-codes.github.io/lioden-css/phantom_art-grid-transparent.png");
+  position: relative;
+  top: -500px;
+}
+
+img[src$="phantom_tradition.png"] {
+  position: relative;
+  top: -490px;
+  width: 80%;
+}
+
+.art-grid, .links {
+  display: none;
+}
 
 /* Replace Lioden Logo */
 
