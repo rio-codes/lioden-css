@@ -303,7 +303,7 @@ button.button:active::before,
     color: #e2d6b2 !important;
     text-shadow: 0 0 .6em, 0 0 1em #d39d00 !important;
     font-weight: 800 !important;
-    font-size: 27px !important;
+    font-size: 16px !important;
 }
 
 ul.nav:nth-child(1) {
@@ -462,7 +462,7 @@ div.col-md-12:nth-child(3) > div:nth-child(4) > p:nth-child(2) {
   width: 100%;
 }
 
-.poems, div.captioned-art .frame, .profile-content .captioned-art .frame {
+.poems, div.captioned-art .frame, .profile-content .captioned-art .frame, div.lion_image {
 	list-style: none;
 	list-style-type: none;
 	margin: 0px;
@@ -498,7 +498,7 @@ div.about-me {
   left: 0%;
 }
 
-.pun-table, .poems img {
+.pun-table, .poems img, div#lion_image {
 	display: inline-block;
 	padding: 20px;
 	border-width: 20px;
@@ -510,7 +510,7 @@ div.about-me {
 	position: relative;
 	overflow: hidden;
 }
-.frame::before, div.captioned-art .frame::before, .profile-content .captioned-art a:nth-child(1) img::before {
+.frame::before, div.captioned-art .frame::before, .profile-content .captioned-art a:nth-child(1) img::before, div#lion_image::before {
 	content: "";
 	position: absolute;
 	top: -175px;
@@ -556,52 +556,6 @@ table.pun-table tbody {
 }
 
 
-/* Art Masonry Grid */
-
-.art-grid {
-  position: relative;
-  top: -450px;
-  column-count: 2;
-  column-gap: 1em;
-}
-
-.art-item {
-  display: inline-block;
-  margin: 0 0 .5em;
-  width: 80%;
-}
-
-.art-grid > span:nth-child(8) {
-  position: relative;
-  top: -20px;
-  left: 20px;
-}
-
-.art-grid > span:nth-child(2), html body div.container.main div.row div#pageContainer.col-md-9.col-xs-12 center div#fraProfileContent div.art-grid a span {
-  position: relative;
-  top: -14px;
-}
-
-.art-grid > span:nth-child(5) {
-  position: relative;
-  top: 1050px;
-  left: -430px;
-}
-
-img.art-item:nth-child(7), img.art-item:nth-child(6) {
-  width: 200px;
-}
-
-img[src$="phantom_art-by-bluecattree-441089-1.png"] {
-  content: url("https://cdn.allthepics.net/images/2026/04/24/phantom_art-by-bluecattree-441089-combined.png");
-  width: 400px;
-}
-
-img[src$="phantom_art-by-bluecattree-441089-2.png"] {
-  display: none;
-}
-
-
 /* Art Grid */
 
 img[src$="phantom_panther.png"] {
@@ -616,9 +570,143 @@ img[src$="phantom_tradition.png"] {
   width: 80%;
 }
 
-.art-grid, .links {
-  display: none;
+.links, .art-grid {
+  display:none;
 }
+
+img.wide-item {
+  width: 95%;
+}
+
+div#fraProfileContent, div.wide-art {
+  height: 2950px;
+}
+
+/*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
+
+.table#about {
+ 	background: #410a02;
+	border: 0px;
+	border-collapse: inherit;
+    box-shadow: 0px 4px 6px #410a02 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+	font-size: 17px;
+	font-weight: 300 !important;
+	position: absolute;
+	color: #e2d6b2 !important;
+	hyphens: auto;
+	overflow: hidden;
+	position: relative;
+	opacity: 0.8;
+}
+
+div#lion_image, div#lion_image img {
+  width: 200px;
+  height: 200px;
+}
+
+.lion-image-block img, .lion-image-block > img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: -200px
+}
+
+.table#pride tbody {
+	font-weight: 100;
+	font-size: 12px;
+	color: #e2d6b2;
+}
+
+.table#pride a {
+	color: #e2d6b2;
+}
+
+.table#pride {
+	color: #e2d6b2;
+	font-weight: 700 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+.top,
+th,
+table#attack {
+  background: linear-gradient(to right, #9b7300, #e2d6b2, #9b7300) !important;;
+	color: #000000 !important;
+	font-weight: 300 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+.top a {
+  color: #000000 !important;
+  text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+}
+
+.bottom,
+th {
+	background: #000000 !important;
+	border: 1px #d7bf70;
+	color: #e2d6b2 !important;
+	font-weight: 300 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+}
+
+td.top.center {
+  background: linear-gradient(to right, #9b7300, #e2d6b2, #9b7300) !important;
+}
+
+.bottom a {
+	color: #e2d6b2 !important;
+  text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+}
+
+
+td.bottom button {
+	margin-top: 10px;
+}
+
+.inner-table .left {
+	background: #410a02 !important;
+	color: #e2d6b2;
+	font-weight: 300 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+}
+
+.inner-table .right {
+	background: #410a02;
+	color: #e2d6b2;
+	font-weight: 300 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+}
+
+.inner-table a {
+  color: #e2d6b2;
+  text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+}
+
+td.right {
+	border: 0px !important;
+	font-weight: 300 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+td.left,
+p.b {
+	border: 0px !important;
+	background: transparent !important;
+	font-weight: 300 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+
+.right_odd {
+	background: none !important
+}
+
+div.left:nth-child(7)>a:nth-child(1) {
+	color: #d0f5fa;
+}
+
 
 /* Replace Lioden Logo */
 
