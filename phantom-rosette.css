@@ -479,7 +479,7 @@ div.lion_image,
 
 .poems>img {
     position: relative;
-    top: -150px;
+    top: -30px;
     margin-left: 20px;
 }
 
@@ -498,7 +498,7 @@ div .profile-content .frame {
 
 div.about-me {
     position: relative;
-    top: 750px;
+    top: 860px;
     left: 0%;
 }
 
@@ -608,22 +608,42 @@ img.wide-item {
 /* Phone */
 
 @media only screen and (max-width: 767px) {
+    .btn,
+button.button,
+.btn.btn {
+    position: relative;
+    top: 0px;
+    margin: 0px;
+    width: 20%;
+    }
+    .btn.btn-default.button {
+        top: -20px;
+    }
   .poems img {
     width: 48%;
     margin: 5px;
   }
+   .art-grid {
+        position: relative;
+        top: 100px;
+    }
+    .wide-art 
+    {
+        position: relative;
+        top: 100px;
+    }
   .art-item {
-    width: 90%;
+    width: 100%;
   }
     .clickable {
         width: 180px;
         position: relative;
-        top: -500px;
+        top: -400px;
         padding: 15px;
     }
 
     div#fraProfileContent {
-        height: 3100px;
+        height: 3230px;
     }
   .navbar {
     width: 100%;
@@ -638,13 +658,17 @@ img.wide-item {
     width: 46%;
   }
   .art-item {
-    width: 90%;
+    width: 100%;
   }
     .clickable {
-        width: 230px;
+        width: 210px;
         position: relative;
-        top: -3480px;
+        top: -510px;
         padding: 15px;
+    }
+    art-grid {
+        position: relative;
+        top: 100px;
     }
 
     div#fraProfileContent {
@@ -658,17 +682,18 @@ img.wide-item {
     .clickable {
         width: 260px;
         position: relative;
-        top: 0px;
+        top: -500px;
         padding: 15px;
     }
 
     div#fraProfileContent
      {
-        height: 3930px;
+        height: 3850px;
     }
-  div.wide-art {
-    height: 0px;
-  }
+    .art-grid {
+        position: relative;
+        top: 100px;
+    }
 }
 
 /*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
