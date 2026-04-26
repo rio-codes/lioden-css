@@ -1,0 +1,37 @@
+~Credits~
+
+>> Main coding: Lyri [#583579]
+AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
+
+>> CSS contributors
+Shadriel [#251887]
+Katie [#106445]
+Pandora [#144118]
+Kat [#94329]
+Tawny [#251887]
+Hok-Z [#41458]
+Austin [#43750]
+
+>> HTML
+[#191322] (deleted profile)
+
+>> Art
+Background: InfinityRooms
+Lions and Den Background: Artists of Lioden Ltd.
+
+>> Social Media Icons
+Contributors to game-icons.net under CC-BY license
+
+>> Photos
+- "Chandelier of the Palais Garnier, Paris" by Mustang Joe is licensed under CC0 1.0 Universal Public Domain Dedication.  
+- "play me" by damselfly58 is licensed under CC BY-NC-ND 2.0.
+- "Budapest opera house" by ChadBriggs is licensed under CC BY-NC 2.0.
+- Stills from the 1925 silent film, Phantom of the Opera, in the public domain
+To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+>> Fonts
+ Aboreto by Dominik Jáger for Google Fonts under Open Font License
+ IM Fell Double Pica by Igino Marini for Google Fonts under Open Font License
+ https://openfontlicense.org
+
+>> Created without the use of artificial intelligence.

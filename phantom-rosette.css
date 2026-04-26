@@ -119,10 +119,10 @@ textarea {
     background: linear-gradient(to right, #9b7300, #e2d6b2, #9b7300) !important;
     border: solid 1px #e2d6b2;
     border-radius: 10px;
-    box-shadow: 0px 5px 30px #4f0b00 !important;
     text-shadow: none !important;
-    color: #9b7300 !important;
+    color: #000000 !important;
     font-weight: 600;
+    margin: 10px;
 }
 
 /* Comment box */
@@ -316,7 +316,7 @@ ul.nav:nth-child(1) {
     border-radius: 0px;
     filter: brightness(100%) opacity(90%);
     transition: 0.5s !important;
-    height: 50px;
+    height: 48px;
     width: auto !important;
 }
 
@@ -660,7 +660,9 @@ div.wide-art {
 
 .table#about,
 .table#attack,
-.table#player {
+.table#player,
+.table#sparring,
+table.table {
     background: #410a02c0;
     border: 0px;
     border-collapse: inherit;
@@ -893,8 +895,14 @@ div.left h3,
 }
 
 .xsmall {
-    color: #0e0e0d !important;
+    color: #000000;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
     padding: 5px;
+}
+
+table#sparring span.xsmall {
+  font-size: 13px;
+  color: #d7bf70 !important;
 }
 
 #pageContainer>center:nth-child(5)>b:nth-child(18) {
@@ -1053,14 +1061,16 @@ div.mound-grid {
     text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
-div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div {
-    height: 50px;
+div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div, div.col.col-sm-4 div {
+    font-family: "Aboreto", Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    height: 70px;
     color: #e2d6b2;
     font-weight: 700 !important;
     text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
-div.cave-grid>img:hover {
+div.cave-grid>img:hover, div.col.col-sm-4 div:hover {
     filter: brightness(80%) opacity(70%);
     overflow: hidden;
     transition: 0.5s !important;
