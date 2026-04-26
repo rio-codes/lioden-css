@@ -11,7 +11,6 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Import Fonts (From Google Fonts) */
 
-
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=IM+Fell+Double+Pica:ital@0;1&display=swap');
 
 /* CSS Credit */
@@ -48,9 +47,9 @@ body {
 
 a:link,
 a:visited {
-    color: #dc7d6d;
+    color: #e2d6b2;
     font-weight: 500;
-    text-shadow: 0 0 .6em, 0 0 1em #d31d00 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d39d00 !important;
 }
 
 a:hover {
@@ -96,8 +95,8 @@ p.center:nth-child(2)>a:nth-child(1) {
 h2 {
     font-family: "Aboreto", Georgia, 'Times New Roman', Times, serif;
     font-size: 28px;
-    color: #fcd7d1 !important;
-    text-shadow: 0 0 .6em, 0 0 .2em #d31d00 !important;
+    color: #e2d6b2 !important;
+    text-shadow: 0 0 .6em, 0 0 .2em #e2d6b2 !important;
 }
 
 /* Tertiary header */
@@ -107,8 +106,8 @@ h3 {
     font-size: 28px !important;
     font-size: 24px;
     font-weight: 800;
-    color: #fcd7d1 !important;
-    text-shadow: 0 0 .6em, 0 0 .3em #d31d00 !important;
+    color: #e2d6b2 !important;
+    text-shadow: 0 0 .6em, 0 0 .3em #e2d6b2 !important;
 }
 
 
@@ -403,7 +402,7 @@ ul.nav:nth-child(1) {
     z-index: 50;
     opacity: 100%;
     text-shadow: 0 0 .6em, 0 0 1em #d31d00 !important;
-    
+
 }
 
 div.panel {
@@ -431,8 +430,8 @@ div.panel {
     text-shadow: 0 0 .6em, 0 0 1em #d31d00 !important;
 }
 
-div.col-md-12:nth-child(3) > div:nth-child(4) > p:nth-child(2) {
-  display: none;
+div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
+    display: none;
 }
 
 /* Progress bars (Energy, hunger, EXP, IMP) */
@@ -459,252 +458,738 @@ div.col-md-12:nth-child(3) > div:nth-child(4) > p:nth-child(2) {
 /* Frames */
 
 .profile-content {
-  width: 100%;
+    width: 100%;
 }
 
-.poems, div.captioned-art .frame, .profile-content .captioned-art .frame, div.lion_image {
-	list-style: none;
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
+.poems,
+div.captioned-art .frame,
+.profile-content .captioned-art .frame,
+div.lion_image,
+#player>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(2)>img:nth-child(1) {
+    list-style: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
+
 .poems {
-  margin: 40px;
-	width: 90%;
+    margin: 40px;
+    width: 90%;
 }
-.poems > img {
-  position: relative;
-  top: -150px;
-  margin-left: 20px;
+
+.poems>img {
+    position: relative;
+    top: -150px;
+    margin-left: 20px;
 }
 
 div .profile-content {
-  margin-top: -120px;
-  width: 100%;
-  column-count: 2;
-  column-gap: 2em;
+    margin-top: -120px;
+    width: 100%;
+    column-count: 2;
+    column-gap: 2em;
 }
 
 div .profile-content .frame {
-  display: inline-block;
-  margin: 0 0 em;
-  width: 100%;
+    display: inline-block;
+    margin: 0 0 em;
+    width: 100%;
 }
 
 div.about-me {
-  position: relative;
-  top: 750px;
-  left: 0%;
+    position: relative;
+    top: 750px;
+    left: 0%;
 }
 
-.pun-table, .poems img, div#lion_image {
-	display: inline-block;
-	padding: 20px;
-	border-width: 20px;
-	border-style: solid;
-	border-color: #4f3b00 #674c00 #d39d00 #9b7300 ;
-	background: linear-gradient(#410a02, #670e00);
-	background-image: linear-gradient(#410a02, #670e00);
-	box-shadow: inset 0 2px 5px rgba(0,0,0,.6),0 5px 2px rgba(0,0,0,.1), 0 10px 20px rgba(0,0,0,.8);
-	position: relative;
-	overflow: hidden;
+.pun-table,
+.poems img,
+div#lion_image {
+    display: inline-block;
+    padding: 20px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #4f3b00 #674c00 #d39d00 #9b7300;
+    background: linear-gradient(#410a02, #670e00);
+    background-image: linear-gradient(#410a02, #670e00);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, .6), 0 5px 2px rgba(0, 0, 0, .1), 0 10px 20px rgba(0, 0, 0, .8);
+    position: relative;
+    overflow: hidden;
 }
-.frame::before, div.captioned-art .frame::before, .profile-content .captioned-art a:nth-child(1) img::before, div#lion_image::before {
-	content: "";
-	position: absolute;
-	top: -175px;
-	right: -20%;
-	width: 400px;
-	height: 400px;
-	transform: rotateZ(-40deg);
-	-webkit-transform: rotateZ(-40deg);
-	-moz-transform: rotateZ(-40deg);
-	-o-transform: rotateZ(-40deg);
-	background-image: linear-gradient(#410a02, #670e00);
+
+.frame::before,
+div.captioned-art .frame::before,
+.profile-content .captioned-art a:nth-child(1) img::before,
+div#lion_image::before {
+    content: "";
+    position: absolute;
+    top: -175px;
+    right: -20%;
+    width: 400px;
+    height: 400px;
+    transform: rotateZ(-40deg);
+    -webkit-transform: rotateZ(-40deg);
+    -moz-transform: rotateZ(-40deg);
+    -o-transform: rotateZ(-40deg);
+    background-image: linear-gradient(#410a02, #670e00);
 }
-.frame img, div.captioned-art .frame img, .profile-content .frame a:nth-child(1) img {
-	border-width: 2px;
-	border-style: solid;
-	border-color: #4f3b00 #674c00 #9b7300 #d39d00;
-	box-shadow:  0 -1px 1px rgba(0,0,0,.1), 0 1px 1px 1px rgba(255,255,255,.7);
+
+.frame img,
+div.captioned-art .frame img,
+.profile-content .frame a:nth-child(1) img {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #4f3b00 #674c00 #9b7300 #d39d00;
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, .1), 0 1px 1px 1px rgba(255, 255, 255, .7);
 }
 
 /* About Me Box */
 
 .pun-table {
-  position: relative;
-  top: -1200px;
-  width: 774px;
-  background: url('https://cdn.allthepics.net/images/2026/04/23/phantom_chandelier.png');
-  background-size: cover;
-  no-repeat;
-  color: #f1c9be;
-  font-size: 18px;
+    position: relative;
+    top: -1200px;
+    width: 774px;
+    background: url('https://cdn.allthepics.net/images/2026/04/23/phantom_chandelier.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    color: #e2d6b2;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+    font-size: 18px;
+    text-align: left !important;
 }
 
 table.pun-table tbody {
-  backdrop-filter: brightness(70%);
+    backdrop-filter: brightness(70%);
+    text-align: left !important;
 }
 
 .pun-content {
-  width: 100%;
+    width: 100%;
+    text-align: center;
 }
 
-.pun-links a, .pun-graphics a {
-  color: #f1c9be;
+.pun-content ul,
+.pun-content>h3:nth-child(10) {
+    text-align: left !important;
+}
+
+.pun-links a,
+.pun-graphics a {
+    color: #e2d6b2;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
 
 /* Art Grid */
 
 img[src$="phantom_panther.png"] {
-  content: url("https://rio-codes.github.io/lioden-css/phantom_art-grid-transparent.png");
-  position: relative;
-  top: -500px;
+    content: url("https://rio-codes.github.io/lioden-css/phantom_art-grid-transparent.png");
+    position: relative;
+    top: -500px;
 }
 
 img[src$="phantom_tradition.png"] {
-  position: relative;
-  top: -490px;
-  width: 80%;
+    position: relative;
+    top: -490px;
+    width: 80%;
 }
 
-.links, .art-grid {
-  display:none;
+.art-grid {
+    display: none;
 }
 
 img.wide-item {
-  width: 95%;
+    width: 95%;
 }
 
-div#fraProfileContent, div.wide-art {
-  height: 2950px;
+div#fraProfileContent,
+div.wide-art {
+    height: 3400px;
+}
+
+/* Link image fixes for differing screen sizes and ratios */
+
+/* Phone */
+
+@media only screen and (max-width: 767px) {
+    .clickable {
+        width: 180px;
+        position: relative;
+        top: -3150px;
+        padding: 15px;
+    }
+
+    div#fraProfileContent {
+        height: 3660px;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+    .clickable {
+        width: 230px;
+        position: relative;
+        top: -2950px;
+        padding: 15px;
+    }
+
+    div#fraProfileContent {
+        height: 3830px;
+    }
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1200px) {
+    .clickable {
+        width: 280px;
+        position: relative;
+        top: -2750px;
+        padding: 15px;
+    }
+
+    div#fraProfileContent,
+    div.wide-art {
+        height: 3400px;
+    }
 }
 
 /*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
 
-.table#about {
- 	background: #410a02;
-	border: 0px;
-	border-collapse: inherit;
+.table#about,
+.table#attack,
+.table#player {
+    background: #410a02c0;
+    border: 0px;
+    border-collapse: inherit;
     box-shadow: 0px 4px 6px #410a02 !important;
     text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
-	font-size: 17px;
-	font-weight: 300 !important;
-	position: absolute;
-	color: #e2d6b2 !important;
-	hyphens: auto;
-	overflow: hidden;
-	position: relative;
-	opacity: 0.8;
+    font-size: 17px;
+    font-weight: 300 !important;
+    position: absolute;
+    color: #e2d6b2 !important;
+    hyphens: auto;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.8;
 }
 
-div#lion_image, div#lion_image img {
-  width: 200px;
-  height: 200px;
+div#lion_image,
+div#lion_image img {
+    width: 200px;
+    height: 200px;
 }
 
-.lion-image-block img, .lion-image-block > img {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  top: -200px
+.lion-image-block {
+    width: 190px;
+    height: 190px;
+    position: relative;
+    top: -50px;
+    left: -40px;
+    z-index: 50;
 }
 
 .table#pride tbody {
-	font-weight: 100;
-	font-size: 12px;
-	color: #e2d6b2;
+    font-weight: 100;
+    font-size: 12px;
+    color: #e2d6b2;
 }
 
 .table#pride a {
-	color: #e2d6b2;
+    color: #e2d6b2;
 }
 
 .table#pride {
-	color: #e2d6b2;
-	font-weight: 700 !important;
-	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+    color: #e2d6b2;
+    font-weight: 700 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
 .top,
 th,
-table#attack {
-  background: linear-gradient(to right, #9b7300, #e2d6b2, #9b7300) !important;;
-	color: #000000 !important;
-	font-weight: 300 !important;
-	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+#attack th {
+    background: linear-gradient(to right, #9b7300, #e2d6b2, #9b7300) !important;
+    color: #000000 !important;
+    font-weight: 300 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
 .top a {
-  color: #000000 !important;
-  text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+    color: #000000 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
 }
 
-.bottom,
+
 th {
-	background: #000000 !important;
-	border: 1px #d7bf70;
-	color: #e2d6b2 !important;
-	font-weight: 300 !important;
-	text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+    background: linear-gradient(to right, #9b7300, #e2d6b2, #9b7300) !important;
+    border: 1px #d7bf70;
+    color: #e2d6b2 !important;
+    font-weight: 300 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+}
+
+.bottom {
+    background: #000000 !important;
 }
 
 td.top.center {
-  background: linear-gradient(to right, #9b7300, #e2d6b2, #9b7300) !important;
+    background: #410a02;
 }
 
 .bottom a {
-	color: #e2d6b2 !important;
-  text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+    color: #e2d6b2 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
 }
 
 
 td.bottom button {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .inner-table .left {
-	background: #410a02 !important;
-	color: #e2d6b2;
-	font-weight: 300 !important;
-	text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+    background: #410a02 !important;
+    color: #e2d6b2;
+    font-weight: 300 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
 }
 
 .inner-table .right {
-	background: #410a02;
-	color: #e2d6b2;
-	font-weight: 300 !important;
-	text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+    background: #410a02;
+    color: #e2d6b2;
+    font-weight: 300 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
 }
 
 .inner-table a {
-  color: #e2d6b2;
-  text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+    color: #e2d6b2;
+    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
 }
 
 td.right {
-	border: 0px !important;
-	font-weight: 300 !important;
-	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+    border: 0px !important;
+    font-weight: 300 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
 td.left,
 p.b {
-	border: 0px !important;
-	background: transparent !important;
-	font-weight: 300 !important;
-	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+    border: 0px !important;
+    background: transparent !important;
+    font-weight: 300 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
 
 .right_odd {
-	background: none !important
+    background: none !important
 }
 
 div.left:nth-child(7)>a:nth-child(1) {
-	color: #d0f5fa;
+    color: #d0f5fa;
+}
+
+div.xlarge:nth-child(4)>a {
+    color: #e2d6b2;
+    font-weight: 700 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+table#player tr.right {
+
+    color: #e2d6b2;
+    font-weight: 700 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+/* Lion and user profile pictures */
+
+div#lion_image:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+    opacity: 1;
+    box-shadow: 0px 5px 30px #410a02 !important;
+}
+
+table#player table img,
+#player>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(2)>img:nth-child(1) {
+    border-radius: 50% !important;
+    border: 0px;
+    transform: scale(1.05);
+    transition: 0.4s;
+    opacity: 1;
+    box-shadow: 0px 5px 30px #410a02 !important;
+}
+
+div.xlarge a,
+p.center a,
+#player>tbody:nth-child(1)>tr:nth-child(3) a {
+    color: #e2d6b2;
+    font-weight: 800 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+#attack {
+    background: #410a0250;
+    border: 0px;
+}
+
+/* Recent Allies */
+
+#allies tbody span {
+    font-size: 14px;
+    font-weight: bolder !important;
+    color: #d7bf70;
+    text-shadow: 0 0 .4em, 0 0 .8em #e2d6b2 !important;
+}
+
+#allies tbody span a,
+a.bigger {
+    color: #d0f5fa;
+    font-size: 16px !important;
+    font-weight: bolder !important;
+    text-shadow: 0 0 .4em, 0 0 .8em #e2d6b2 !important;
+}
+
+/* Feed all/Play all */
+
+div.feature,
+.feature {
+    background: radial-gradient(#e2d6b2, #9b7300) !important;
+    color: #410a02 !important;
+    border: none !important;
+    border-collapse: inherit;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px #410a02 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+    font-size: 14px;
+    font-weight: 300 !important;
+    position: absolute;
+    hyphens: auto;
+    overflow: hidden;
+    position: relative;
+    opacity: 1;
+}
+
+.feature,
+div.left {
+    background: #040201;
+}
+
+.feature,
+div.left h3,
+.feature h3 {
+    font-weight: 500 !important;
+    color: #410a02 !important;
+}
+
+/* Sparring table */
+
+#sparring {
+    color: #0e0e0d !important;
+    font-weight: 900;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+.xsmall {
+    color: #0e0e0d !important;
+    padding: 5px;
+}
+
+#pageContainer>center:nth-child(5)>b:nth-child(18) {
+    font-weight: 200;
+}
+
+div.feature {
+    color: #d7bf70 !important;
+    font-weight: 200;
+    height: 140px;
+    padding: 5px;
+}
+
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
+
+div.mb-2 div,
+div.col div {
+    color: #410a02 !important;
+    background: radial-gradient(#e2d6b2, #9b7300) !important;
+    height: 0px;
+    box-shadow: 0px 4px 6px #410a02 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+    margin: 5px;
+}
+
+/* Edit Details */
+
+table.table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>th:nth-child(1) {
+    background: #410a02 !important;
+    color: #e2d6b2 !important;
+}
+
+td.left b {
+    background: transparent !important;
+    font-weight: 700 !important;
+}
+
+
+/* Remove icons and edit text for user profile buttons */
+
+div.xlarge:nth-child(4)>a>img,
+td.right_odd:nth-child(1)>a:nth-child(1)>img:nth-child(1),
+td.right_odd:nth-child(2)>a:nth-child(1)>img:nth-child(1) {
+    display: none;
+}
+
+span.text-muted {
+    opacity: 0%;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a {
+    font-size: 0px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a::after {
+    content: 'Block Member';
+    font-size: 13px;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(2)>a::after {
+    content: '';
+    font-size: 14px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1)::after {
+    content: 'Message';
+    font-size: 18px;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3)::after {
+    content: 'Send Gift!';
+    font-size: 18px;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5)::after {
+    content: 'Create Trade';
+    font-size: 18px;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p>a:nth-child(3)::after {
+    padding: 15px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p.center:nth-child(5)>a:nth-child(1)>img:nth-child(1) {
+    display: none;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p.center:nth-child(5)>a:nth-child(3)>img:nth-child(1) {
+    display: none;
+}
+
+table.inner-table:nth-child(2)>tbody:nth-child(1)>tr:nth-child(1)>td {
+    background: none !important;
+}
+
+/* Image Replacement */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover,
+#fraOrganizationBlock>div:nth-child(2)>div:nth-child(1)>img:nth-child(1):hover {
+    content: url('');
+    opacity: 0.8;
+    transition: 1s !important;
+}
+
+div.mound-grid img {
+    position: relative;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    width: 200px
+}
+
+#fraOrganizationBlock>div>a>div>img:hover,
+div.mound-grid img:hover,
+div.col-xs-4:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1):hover,
+#fraCaveList>div:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1):hover,
+#fraCaveList>div:nth-child(3)>div:nth-child(1)>img:nth-child(1):hover,
+#fraCaveList>div:nth-child(3)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1):hover,
+div.col-md-4:hover {
+    filter: brightness(50%) opacity(70%);
+    transition: 0.5s;
+}
+
+div.cave-grid>img[src$="nestingbanner.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/04/26/phantom-cave-grid-2.png') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    border: 5px ridge;
+    border: 0px;
+    border-radius: 0px !important;
+}
+
+div.cave-grid,
+div.mound-grid {
+    background: #000000;
+    border: 0px;
+    color: #e2d6b2;
+    font-weight: 800 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div {
+    height: 50px;
+    color: #e2d6b2;
+    font-weight: 700 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+div.cave-grid>img:hover {
+    filter: brightness(80%) opacity(70%);
+    overflow: hidden;
+    transition: 0.5s !important;
+}
+
+div.cave-grid>img[src$="prideoverviewbanner.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/04/26/phantom-cave-grid-3.png') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+div.cave-grid>img[src$="unsortedlionsbanner.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/04/26/phantom-cave-grid-1.png') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+div.cave-grid>img {
+    content: url('https://cdn.allthepics.net/images/2026/04/26/phantom-cave-grid-4.png') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+.mound-grid img {
+    content: url('https://cdn.allthepics.net/images/2026/04/26/phantom-mound-grid-1.png') !important;
+    object-fit: cover !important;
+    height: 100px !important;
+    width: 300px !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+#fraCaveList>div:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/04/26/phantom-cave-grid-5.png') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+#fraCaveList>div:nth-child(3)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/04/26/phantom-cave-grid-6.png') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+div.col-xs-4:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/04/26/phantom-mound-grid-2.png') !important;
+    object-fit: cover !important;
+    height: 100px !important;
+    width: 300px !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+img[src$="den_ancestors.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px !important;
+    width: 2 !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+img[src$="ancestorsfem.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px !important;
+    width: 2 !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+img[src$="den_achievements.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+img[src$="den_showcase.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+img[src$="den_beetlebook.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+img[src$="iconFB.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+
+img[src$="iconTwit.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+}
+
+img[src$="iconInsta.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+
+img[src$="default.png"] {
+    content: url("")
 }
 
 
@@ -727,3 +1212,18 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
     left: -60px;
     z-index: 5;
 }
+
+/* Misc. layout fixes */
+
+div.row:nth-child(20)>form:nth-child(2)>div:nth-child(1)>div:nth-child(1)>select:nth-child(4),
+div.row:nth-child(20)>form:nth-child(2)>div:nth-child(1)>div:nth-child(1)>input:nth-child(5) {
+    position: relative;
+    top: -10px;
+    height: 25px;
+}
+
+
+/*																						  			    		 
+/* "If there is in fact a creator, he must have an inordinate fondness for beetles." - biologist, J.B.S. Haldane 
+/*																						  			    		 
+/* (Beetles make up 40% of all insect species and 25% of animal species on Earth.)         				 
