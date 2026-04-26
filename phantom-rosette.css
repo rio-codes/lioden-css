@@ -583,8 +583,12 @@ table.pun-table tbody {
 
 /* Art Grid */
 
-img[src$="phantom_panther.png"] {
-    content: url("https://rio-codes.github.io/lioden-css/phantom_art-grid-transparent.png");
+img[src$="phantom_art-grid-transparent.png"] {
+    position: relative;
+    top: -500px;
+}
+
+img[src$="phantom_click-for-Mysteryas-den.png"] {
     position: relative;
     top: -500px;
 }
@@ -595,17 +599,8 @@ img[src$="phantom_tradition.png"] {
     width: 80%;
 }
 
-.art-grid {
-    display: none;
-}
-
 img.wide-item {
     width: 95%;
-}
-
-div#fraProfileContent,
-div.wide-art {
-    height: 3400px;
 }
 
 /* Link image fixes for differing screen sizes and ratios */
@@ -613,30 +608,47 @@ div.wide-art {
 /* Phone */
 
 @media only screen and (max-width: 767px) {
+  .poems img {
+    width: 48%;
+    margin: 5px;
+  }
+  .art-item {
+    width: 90%;
+  }
     .clickable {
         width: 180px;
         position: relative;
-        top: -3150px;
+        top: -500px;
         padding: 15px;
     }
 
     div#fraProfileContent {
-        height: 3660px;
+        height: 3100px;
     }
+  .navbar {
+    width: 100%;
+    left: 0px;
+  }
 }
 
 /* Tablet */
 
 @media only screen and (max-width: 1199px) and (min-width: 768px) {
+  .poems img {
+    width: 46%;
+  }
+  .art-item {
+    width: 90%;
+  }
     .clickable {
         width: 230px;
         position: relative;
-        top: -2950px;
+        top: -3480px;
         padding: 15px;
     }
 
     div#fraProfileContent {
-        height: 3830px;
+        height: 3500px;
     }
 }
 
@@ -644,16 +656,19 @@ div.wide-art {
 
 @media only screen and (min-width: 1200px) {
     .clickable {
-        width: 280px;
+        width: 260px;
         position: relative;
-        top: -2750px;
+        top: 0px;
         padding: 15px;
     }
 
-    div#fraProfileContent,
-    div.wide-art {
-        height: 3400px;
+    div#fraProfileContent
+     {
+        height: 3930px;
     }
+  div.wide-art {
+    height: 0px;
+  }
 }
 
 /*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
@@ -661,8 +676,7 @@ div.wide-art {
 .table#about,
 .table#attack,
 .table#player,
-.table#sparring,
-table.table {
+.table#sparring {
     background: #410a02c0;
     border: 0px;
     border-collapse: inherit;
@@ -1171,9 +1185,10 @@ img[src$="den_beetlebook.png"] {
     width: 2 !important;
     filter: brightness(90%) opacity(80%);
 }
+/* Replace Social Media Icons */
 
 img[src$="iconFB.png"] {
-    content: url('');
+    content: url('https://cdn.allthepics.net/images/2026/04/26/phantom-facebook.png');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -1181,7 +1196,7 @@ img[src$="iconFB.png"] {
 }
 
 img[src$="iconTwit.png"] {
-    content: url('');
+    content: url('https://cdn.allthepics.net/images/2026/04/26/phantom-twitter.png');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -1191,17 +1206,12 @@ img[src$="iconTwit.png"] {
 }
 
 img[src$="iconInsta.png"] {
-    content: url('');
+    content: url('https://cdn.allthepics.net/images/2026/04/26/phantom-insta.png');
     object-fit: cover;
     height: 50px;
     width: 50px;
     overflow: hidden;
 }
-
-img[src$="default.png"] {
-    content: url("")
-}
-
 
 /* Replace Lioden Logo */
 
@@ -1223,6 +1233,23 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
     z-index: 5;
 }
 
+/* Pagedoll */
+
+.container.main::after {
+	content: "";
+	background-image: url('https://cdn.allthepics.net/images/2026/04/26/rose-pagedoll.png');
+	background-size: cover;
+	display: block;
+	height: 250px;
+	width: 180px;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	z-index: 30;
+	pointer-events: none;
+	opacity: 0.8;
+}
+
 /* Misc. layout fixes */
 
 div.row:nth-child(20)>form:nth-child(2)>div:nth-child(1)>div:nth-child(1)>select:nth-child(4),
@@ -1232,8 +1259,10 @@ div.row:nth-child(20)>form:nth-child(2)>div:nth-child(1)>div:nth-child(1)>input:
     height: 25px;
 }
 
+img[src$="Untitled91_20230314094614.png"] {
+  display: none;
+}
 
-/*																						  			    		 
-/* "If there is in fact a creator, he must have an inordinate fondness for beetles." - biologist, J.B.S. Haldane 
-/*																						  			    		 
-/* (Beetles make up 40% of all insect species and 25% of animal species on Earth.)         				 
+img[src$="Untitled1_20230724121641.png"] {
+  display: none;
+}
