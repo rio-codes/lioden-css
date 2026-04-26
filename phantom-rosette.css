@@ -1262,6 +1262,22 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
     z-index: 5;
 }
 
+/* Chat Box */
+
+#fra_chatContainer body {
+    font-family: "IM Fell Double Pica", serif;
+    font-weight: 200 !important;
+    background: #410a02c0;
+    border: 0px;
+    box-shadow: 0px 4px 6px #410a02 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+    font-size: 17px;
+    font-weight: 300 !important;
+    color: #000000 !important;
+    hyphens: auto;
+}
+
+
 /* Pagedoll */
 
 .container.main::after {
