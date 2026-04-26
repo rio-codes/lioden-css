@@ -682,15 +682,19 @@ button.button,
     .clickable {
         width: 260px;
         position: relative;
-        top: -500px;
+        top: -400px;
         padding: 15px;
     }
 
     div#fraProfileContent
      {
-        height: 3850px;
+        height: 3950px;
     }
     .art-grid {
+        position: relative;
+        top: 100px;
+    }
+    .wide-art {
         position: relative;
         top: 100px;
     }
