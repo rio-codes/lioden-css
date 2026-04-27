@@ -35,9 +35,14 @@ a:hover {
 
 /* Profile Styling */
 
+.about-me:before {
+	content: url("https://cdn.allthepics.net/images/2026/04/27/am_lion.png");
+	margin: 50px;
+}
+
 .about-me {
   background: radial-gradient(#7cc2af, #19765d);
-  width: 70%;
+  width: 90%;
   height: 300px;
   overflow-y: scroll;
   border: solid 2px #0c6249;
