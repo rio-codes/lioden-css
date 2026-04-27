@@ -29,11 +29,11 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 }
 
 /* Background image, font and font color, text alignment */
-
 body {
-    background: url("https://rio-codes.github.io/lioden-css/theater.webp");
+    background: url("https://rio-codes.github.io/lioden-css/theater.webp") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
+    z-index: -1;
     font-family: "IM Fell Double Pica", serif;
     font-weight: 200 !important;
     font-style: normal;
@@ -548,7 +548,7 @@ div.captioned-art .frame img,
 .pun-table {
     position: relative;
     top: -1200px;
-    width: 774px;
+    width: 97%;
     background: url('https://cdn.allthepics.net/images/2026/04/23/phantom_chandelier.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -607,7 +607,18 @@ img.wide-item {
 
 /* Phone */
 
+
 @media only screen and (max-width: 767px) {
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('https://rio-codes.github.io/lioden-css/theater.webp') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+}
+
     .btn,
 button.button,
 .btn.btn {
@@ -621,7 +632,7 @@ button.button,
     }
   .poems img {
     width: 48%;
-    margin: 5px;
+    margin: 3px;
   }
    .art-grid {
         position: relative;
@@ -633,7 +644,7 @@ button.button,
         top: 100px;
     }
   .art-item {
-    width: 100%;
+    width: 98%;
   }
     .clickable {
         width: 180px;
@@ -645,15 +656,31 @@ button.button,
     div#fraProfileContent {
         height: 3230px;
     }
-  .navbar {
+    div#fraSidebarChat, div #fraSidebarChat a {
+        width: 98%;
+        color: #000000;
+    }
+ .container.topbar {
     width: 100%;
     left: 0px;
   }
+    .navbar {
+        width: 100%;
+        left: 0px !important;
+    }
 }
 
 /* Tablet */
 
 @media only screen and (max-width: 1199px) and (min-width: 768px) {
+    .navbar {
+       width: 100%;
+       left: 0px;
+       top: 0px;
+    }
+    .container {
+        width: 100%;
+    }
   .poems img {
     width: 46%;
   }
@@ -663,16 +690,21 @@ button.button,
     .clickable {
         width: 210px;
         position: relative;
-        top: -510px;
+        top: -410px;
         padding: 15px;
     }
-    art-grid {
+    .art-grid {
+        position: relative;
+        top: 110px;
+    }
+    
+    .wide-art {
         position: relative;
         top: 100px;
     }
 
     div#fraProfileContent {
-        height: 3500px;
+        height: 3850px;
     }
 }
 
@@ -1276,7 +1308,6 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
     color: #000000 !important;
     hyphens: auto;
 }
-
 
 /* Pagedoll */
 
