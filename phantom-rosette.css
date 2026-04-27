@@ -1311,3 +1311,8 @@ img[src$="Untitled91_20230314094614.png"] {
 img[src$="Untitled1_20230724121641.png"] {
   display: none;
 }
+
+/* Chat box styling */
+.s-chat-message, .s-chat-message a {
+    color: #000000 !important;
+}
