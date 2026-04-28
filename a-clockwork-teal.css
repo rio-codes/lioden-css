@@ -31,19 +31,88 @@ body {
 /* CSS Credit */
 
 .breadcrumb::after {
-	content: "custom css by lyri | #583579 ";
-	color: #7debdc !important;
+	content: "custom css by lyri";
+	color: #002731 !important;
 	font-size: 12px;
 	position:absolute;
 	top: 6px;
 	left: 30px;
 }
 
+/* Link colors */
+
+a:link,
+a:visited {
+    color: #005165;
+    font-weight: 500;
+    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+}
+
+a:hover {
+    color: #002731 !important;
+    transition: 0.75s;
+}
+
+a img {
+    border: none !important;
+    text-decoration: none !important;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+/* Main header appearance ("___"'s Den) */
+
+h1 {
+    font-family: "Atomic Age", Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    color: #002731;
+    font-weight: 400 !important;
+    text-shadow: 0 0 .6em, 0 0 .5em #e2d6b2 !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+}
+
+h1.center>small:nth-child(2) a:link,
+h1.center>small:nth-child(2) a:visited,
+p.center:nth-child(2)>a:nth-child(1) a:link,
+p.center:nth-child(2)>a:nth-child(1) a:visited {
+    color: #00637c !important;
+}
+
+h1.center>small:nth-child(2),
+p.center:nth-child(2)>a:nth-child(1) {
+    font-weight: 500 !important;
+    color: #00637c !important;
+}
+
+h2 {
+    font-family: "Atomic Age", Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #00637c !important;
+    text-shadow: 0 0 .6em, 0 0 .2em #e2d6b2 !important;
+}
+
+/* Tertiary header */
+
+h3 {
+    font-family: "Atomic Age", Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px !important;
+    font-size: 24px;
+    font-weight: 800;
+    color: #00637c !important;
+    text-shadow: 0 0 .6em, 0 0 .3em #e2d6b2 !important;
+}
+
+
+
 /* Main panel container appearance*/
 
 .container.main {
-	background: radial-gradient(#7debdc, #00637c);
-	opacity: 70%;
+	background: radial-gradient(#7debdca7, #00637ca7);
+	opacity: 1;
 	border: solid 1px #002731;
 	box-shadow: 0px 1px 10px #002731 !important;
 	border-radius: 4px;
