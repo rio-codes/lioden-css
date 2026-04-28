@@ -189,10 +189,10 @@ h3 {
 .navbar li a:hover {
     background: #00637c !important;
     border-bottom: none;
-    color: #002731 !important;
+    color: #7debdca7 !important;
     border-radius: 0px;
     filter: brightness(100%) opacity(90%);
-    transition: 0.5s !important;
+    transition: 1s !important;
     height: 50px;
     width: auto !important
 }
