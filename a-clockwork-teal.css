@@ -43,13 +43,13 @@ body {
 
 a:link,
 a:visited {
-    color: #005165;
+    color: #002731;
     font-weight: 500;
     text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
 }
 
 a:hover {
-    color: #002731 !important;
+    color: #7debdc !important;
     transition: 0.75s;
 }
 
@@ -66,10 +66,11 @@ a:focus {
 
 input.floatright,
 input.floatright:hover {
-    background: #00637c !important;
+    background: #7debdc !important;
     border: none !important;
     border-radius: 4px !important;
     color: #002731 !important;
+    box-shadow: 0px 0px 10px 5px #7debdca7 !important;
 }
 
 /* Alerts (i.e. "Your lionesses have returned from hunting!") */
@@ -99,7 +100,7 @@ h1 {
     font-size: 54px;
     color: #002731;
     font-weight: 400 !important;
-    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
     -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
@@ -122,7 +123,7 @@ h2 {
     font-family: "Atomic Age", Georgia, 'Times New Roman', Times, serif;
     font-size: 28px;
     color: #00637c !important;
-    text-shadow: 0 0 .6em, 0 0 .2em #e2d6b2 !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
 }
 
 /* Tertiary header */
@@ -133,7 +134,7 @@ h3 {
     font-size: 24px;
     font-weight: 800;
     color: #00637c !important;
-    text-shadow: 0 0 .6em, 0 0 .3em #e2d6b2 !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
 }
 
 /* Main panel container appearance*/
@@ -160,7 +161,7 @@ h3 {
     background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808) !important;
     color: #002731;
     border: 0px;
-    box-shadow: 0px 1px 10px #002731 !important;
+    box-shadow: 0px 0px 30px 20px #7debdca7 !important;
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -219,7 +220,7 @@ h3 {
     font-size: 20px !important;
     font-weight: 800;
     color: #002731 !important;
-    text-shadow: 0 0 .6em, 0 0 .2em #e2d6b2 !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
     text-align: right;
     position: relative;
     padding-top: 25px;
@@ -227,7 +228,7 @@ h3 {
 }
 
 .sidebar a {
-    color: #002731;
+    color: #005165;
 }
 
 .panel {
@@ -239,7 +240,7 @@ h3 {
     border: 0px !important;
     z-index: 50;
     opacity: 100%;
-    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
 
 }
 
@@ -259,10 +260,16 @@ h3 {
 
 .panel-body.small .center a,
 .panel-body.small a {
-    color: #002731;
     font-weight: 200 !important;
     color: #002731 !important;
-    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+}
+
+.panel-body.small .center a:hover,
+.panel-body.small a:hover {
+    font-weight: 200 !important;
+    color: #7debdc !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
 }
 
 div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
