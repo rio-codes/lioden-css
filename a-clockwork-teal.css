@@ -1,7 +1,7 @@
 /* 
 A Clockwork Teal
 
-Created 04/2026 by lyri [#583579] for Ranjit
+Created 04/2026 by lyri [#583579] for Ranjit [#3581]
 AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
 
 Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Tawny [#251887], Hok-Z [#41458], Austin [#43750] 
@@ -25,7 +25,7 @@ body {
     font-size: large;
     font-weight: bolder;
     color: #002731;
-    text-shadow: 0 0 .6em, 0 0 1em #05a892;
+    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2;
 }
 
 /* CSS Credit */
@@ -60,17 +60,23 @@ body {
 /* Topbar (Welcome and account navigation) */
 
 .topbar {
-    background: linear-gradient(to right, #9b7300, #e2d6b2, #9b7300) !important;
+    background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808) !important;
 	color: #002731;
 	border: 0px;
 	box-shadow: 0px 1px 10px #002731 !important;
 	border-radius: 0px 0px 4px 4px;
 }
 
+.topbar a {
+    color: #000000 !important;
+    font-weight: 500;
+}
+
+
 /* Navbar (Den/Crossroads/Etc.) */
 
 .navbar {
-	background: linear-gradient(to right, #9b7300, #e2d6b2);
+	background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808);
 	border-bottom: none;
 	color: #002731;
 	border-radius: 10px 10px 0px 0px;
@@ -82,9 +88,9 @@ body {
 }
 
 .navbar li a:hover {
-	background: #9CE8D3 !important;
+	background: #00637c !important;
 	border-bottom: none;
-	color: #297560 !important;
+	color: #002731 !important;
 	border-radius: 0px;
 	filter: brightness(100%) opacity(90%);
 	transition: 0.5s !important;
@@ -104,4 +110,14 @@ body {
 
 .breadcrumb .active {
 	color: #7debdc !important;
+}
+
+/* Replace Lioden Logo */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
+    border: transparent !important;
+}
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    content: url('');
 }
