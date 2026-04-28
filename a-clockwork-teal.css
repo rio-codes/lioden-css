@@ -90,7 +90,7 @@ input.floatright:hover {
 .alert a,
 .alert-warning a,
 .alert-danger a {
-    color: #7debdc;
+    color: #002731;
 }
 
 /* Main header appearance ("___"'s Den) */
@@ -135,6 +135,12 @@ h3 {
     font-weight: 800;
     color: #00637c !important;
     text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+}
+
+h1:hover {
+    color: #7debdc !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+    transition: 2s;
 }
 
 /* Main panel container appearance*/
@@ -231,29 +237,55 @@ h3 {
     color: #005165;
 }
 
-.panel {
+.sidebar a:hover {
+    color: #7debdc !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+    transition: 1s;
+}
+
+.panel h3 {
     background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808) !important;
     color: #002731;
     font-size: 24px;
     text-align: right;
     opacity: 0.9;
     border: 0px !important;
-    z-index: 50;
+    z-index: 5;
     opacity: 100%;
     text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+}
 
+.col-md-12 a {
+    color: #005165;
+}
+
+.col-md-12 a :hover {
+    color: #7debdc !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+    transition: 1s;
 }
 
 .panel-body.small {
     background: radial-gradient(#e2d6b2, #5d4808) !important;
-    color: #002731;
+    color: #7debdc;
     font-size: 13px;
-    z-index: 50;
+    z-index: 5;
     box-shadow: 0px 4px 4px #002731 !important;
+    text-shadow: 0 0 2em, 0 0 .5em #002731 !important;
+
+}
+
+.panel-body.small a {
+    color: #005165;
+}
+
+.panel-body.small a:hover {
+    color: #7debdc !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+    transition: 1s;
 }
 
 .col-md-3 .panel {
-
     border: transparent;
     box-shadow: 0px 4px 6px #002731 !important;
 }
@@ -274,6 +306,28 @@ h3 {
 
 div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
     display: none;
+}
+
+/* Progress bars (Energy, hunger, EXP, IMP) */
+.progress {
+	background: #00637c;
+	color: #7debdc !important;
+	border-radius: 4px !important;
+}
+
+.progress-bar, .progress-bar-danger, .progress-bar-success {
+	background: radial-gradient(#ffffff, #7debdca7);
+    box-shadow: 0px 0px 30px 20px #7debdca7 !important;
+	border-radius: 4px !important;
+    z-index: 10;
+}
+
+.progress div {
+	color: #002731 !important;
+    font-size: 12px;
+    padding: 1px;
+	font-weight: bolder;
+    z-index: 15;
 }
 
 /* Replace Lioden Logo */
