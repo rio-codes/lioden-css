@@ -61,6 +61,8 @@ textarea {
 	box-shadow: none !important;
 	text-shadow: none !important;
 	color: #19765d !important;
+	text-align: center;
+	object-position: center;
 }
 
 /* CSS Credit */
