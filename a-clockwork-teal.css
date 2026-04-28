@@ -31,12 +31,12 @@ body {
 /* CSS Credit */
 
 .breadcrumb::after {
-	content: "custom css by lyri";
-	color: #002731 !important;
-	font-size: 12px;
-	position:absolute;
-	top: 6px;
-	left: 30px;
+    content: "custom css by lyri";
+    color: #002731 !important;
+    font-size: 12px;
+    position: absolute;
+    top: 6px;
+    left: 30px;
 }
 
 /* Link colors */
@@ -62,14 +62,44 @@ a:focus {
     outline: none !important;
 }
 
+/* Bookmark button */
+
+input.floatright,
+input.floatright:hover {
+    background: #00637c !important;
+    border: none !important;
+    border-radius: 4px !important;
+    color: #002731 !important;
+}
+
+/* Alerts (i.e. "Your lionesses have returned from hunting!") */
+
+.alert,
+.alert-warning,
+.alert-danger {
+    background: #00637c !important;
+    border: none;
+    color: #002731;
+    border-radius: 4px !important;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.alert a,
+.alert-warning a,
+.alert-danger a {
+    color: #7debdc;
+}
+
 /* Main header appearance ("___"'s Den) */
 
 h1 {
     font-family: "Atomic Age", Georgia, 'Times New Roman', Times, serif;
-    font-size: 48px;
+    font-size: 54px;
     color: #002731;
     font-weight: 400 !important;
-    text-shadow: 0 0 .6em, 0 0 .5em #e2d6b2 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
     -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
@@ -109,18 +139,18 @@ h3 {
 /* Main panel container appearance*/
 
 .container.main {
-	background: radial-gradient(#7debdca7, #00637ca7);
-	opacity: 1;
-	border: solid 1px #002731;
-  box-shadow: 0px 4px 4px #002731 !important;
-	border-radius: 4px;
+    background: radial-gradient(#7debdca7, #00637ca7);
+    opacity: 1;
+    border: 0px;
+    box-shadow: 0px 0px 30px 20px #7debdca7 !important;
+    border-radius: 10px;
 }
 
 /* Make left panel background and border invisible */
 
 .col-md-9 {
-	background: none;
-	border-right: none
+    background: none;
+    border-right: none
 }
 
 
@@ -128,10 +158,10 @@ h3 {
 
 .topbar {
     background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808) !important;
-	color: #002731;
-	border: 0px;
-	box-shadow: 0px 1px 10px #002731 !important;
-	border-radius: 0px 0px 4px 4px;
+    color: #002731;
+    border: 0px;
+    box-shadow: 0px 1px 10px #002731 !important;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .topbar a {
@@ -143,41 +173,41 @@ h3 {
 /* Navbar (Den/Crossroads/Etc.) */
 
 .navbar {
-	background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808);
-	border-bottom: none;
-	color: #002731;
-	border-radius: 10px 10px 0px 0px;
-	opacity: 1;
-  box-shadow: 0px 4px 4px #002731 !important;
+    background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808);
+    border-bottom: none;
+    color: #002731;
+    border-radius: 10px 10px 0px 0px;
+    opacity: 1;
+    box-shadow: 0px 4px 4px #002731 !important;
 }
 
 .navbar li a {
-	color: #002731 !important;
+    color: #002731 !important;
 }
 
 .navbar li a:hover {
-	background: #00637c !important;
-	border-bottom: none;
-	color: #002731 !important;
-	border-radius: 0px;
-	filter: brightness(100%) opacity(90%);
-	transition: 0.5s !important;
-	height: 50px;
-	width: auto !important
+    background: #00637c !important;
+    border-bottom: none;
+    color: #002731 !important;
+    border-radius: 0px;
+    filter: brightness(100%) opacity(90%);
+    transition: 0.5s !important;
+    height: 50px;
+    width: auto !important
 }
 
 /* Breadcrumb (Home button, den owner, bookmark) */
 
 .breadcrumb {
-	background: #00637c !important;
-	color: #7debdc !important;
-	border: 0px !important;
-	border-radius: 5px;
-	text-align:left !important;
+    background: #00637c !important;
+    color: #7debdc !important;
+    border: 0px !important;
+    border-radius: 5px;
+    text-align: left !important;
 }
 
 .breadcrumb .active {
-	color: #7debdc !important;
+    color: #7debdc !important;
 }
 
 
@@ -188,7 +218,7 @@ h3 {
     font-family: "Atomic Age", Georgia, 'Times New Roman', Times, serif;
     font-size: 20px !important;
     font-weight: 800;
-    color: #e2d6b2;
+    color: #002731 !important;
     text-shadow: 0 0 .6em, 0 0 .2em #e2d6b2 !important;
     text-align: right;
     position: relative;
@@ -197,12 +227,12 @@ h3 {
 }
 
 .sidebar a {
-    color: #d7bf70;
+    color: #002731;
 }
 
 .panel {
     background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808) !important;
-	color: #002731;
+    color: #002731;
     font-size: 24px;
     text-align: right;
     opacity: 0.9;
@@ -222,7 +252,7 @@ h3 {
 }
 
 .col-md-3 .panel {
-    
+
     border: transparent;
     box-shadow: 0px 4px 6px #002731 !important;
 }
@@ -231,7 +261,7 @@ h3 {
 .panel-body.small a {
     color: #002731;
     font-weight: 200 !important;
-    color: #ffffff !important;
+    color: #002731 !important;
     text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
 }
 
