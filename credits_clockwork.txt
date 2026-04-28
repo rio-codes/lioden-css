@@ -1,0 +1,36 @@
+~Credits~
+
+>> Main coding: Lyri [#583579]
+AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
+
+>> CSS contributors
+Shadriel [#251887]
+Katie [#106445]
+Pandora [#144118]
+Kat [#94329]
+Tawny [#251887]
+Hok-Z [#41458]
+Austin [#43750]
+
+>> HTML
+[#191322] (deleted profile)
+
+>> Art
+Cogwheels and Gears pixel art released to the public domain by knekko on opengameart.org
+"clock mechanism" background from video by Danny Morel on Vimeo
+"brass pocket watch" by Leo Reynolds is licensed under CC BY-NC-SA 2.0.
+Lions and Den Background: Artists of Lioden Ltd.
+Pagedoll: helen-the-keller on DeviantArt
+
+>> Social Media Icons
+Contributors to game-icons.net under CC-BY license
+
+>> Photos
+
+
+>> Fonts
+  by for Google Fonts under Open Font License
+ by for Google Fonts under Open Font License
+ https://openfontlicense.org
+
+>> Created without the use of artificial intelligence.

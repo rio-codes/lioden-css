@@ -147,8 +147,7 @@ button.button:hover {
 	border: none !important;
 	border-radius: 2px;
 	text-shadow: none !important;
-	color: #f39cbf;
-	!important
+	color: #f39cbf !important;
 }
 
 .btn img {

@@ -177,7 +177,7 @@ img.floatleft.commentTag.clear {
 	background: #f19fad !important;
 	border-bottom: none;
 	color: #c25165 !important;
-	border-radius: 0px
+	border-radius: 0px;
 	filter: brightness(100%) opacity(90%);
 	transition: 0.5s !important;
 	height: 50px;
@@ -230,7 +230,7 @@ input.floatright, input.floatright:hover {
 	background: linear-gradient(to right, #ffc8a8, #ffeadd, #ffc8a8);
 	border: none;
 	color: #cf8356;
-	border-radius: 4px; !important;
+	border-radius: 4px !important;
 	padding: 5px;
 	margin-top: 20px;
 	text-align: center;
