@@ -35,7 +35,7 @@ body {
     color: #002731 !important;
     font-size: 12px;
     position: absolute;
-    top: 6px;
+    top: 62px;
     left: 30px;
 }
 
@@ -349,7 +349,39 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
     z-index: 15;
 }
 
+/* Comment box */
+div#commentBox {
+    background: #00637c !important;
+    border: 0px;
+    border-radius: 10px;
+    color: #002731 !important;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    box-shadow: 0px 4px 4px #002731 !important;
+}
 
+div#commentBox a {
+    color: #014354;
+}
+
+div.commentText {
+    border-bottom: 1px solid #002731;
+    height: 47px;
+}
+.text-muted {
+    color: #002731 !important;
+}
+
+img.floatleft.commentTag.clear {
+    height: 40px;
+    border: 2px solid #002731;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    left: -3px
+}
 /*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
 
 .table {
@@ -361,7 +393,7 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 }
 
 table#about.table a {
-    color: #00637c;
+    color: #014354;
     text-decoration: none;
 }
 
@@ -381,7 +413,7 @@ th {
 th,
 .bottom a {
     background: transparent !important;
-    color: #002731;
+    color: #014354;
 }
 
 td.bottom button {
@@ -412,6 +444,122 @@ div.lionImage.featured-lion {
     background: transparent;
 }
 
+/* Lion and user profile pictures */
+
+div#lion_image {
+	opacity: 0%;
+}
+
+#about > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) {
+	content: url("https://cdn.allthepics.net/images/2026/04/29/ranjit-300px-flipped-halfbody.png");
+	object-fit: cover;
+	height:300px;
+    position: relative;
+	top: 40px;
+    left: 0px;
+	z-index: 50;
+}
+
+table#player img {
+  opacity: 0.9;
+	overflow: hidden;
+  border: solid 0px;
+}
+
+/* Remove icons and edit text for user profile buttons */
+
+table.inner-table.auto td {
+    border: 0px;
+}
+
+td.right_odd:nth-child(1) > a:nth-child(1) > img:nth-child(1), td.right_odd.text-right img {
+  display: none;
+}
+
+#player > tbody > tr:nth-child(3) > td:nth-child(1) > a::before {
+	opacity: 0%;
+	font-size: 0px;
+}
+
+#player > tbody > tr:nth-child(3) > td:nth-child(1) > a {
+	font-size:0px;
+}
+
+#player > tbody > tr:nth-child(3) > td:nth-child(1) > a::after {
+    content:'Block Member';
+    font-size:13px;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+}
+
+#player > tbody > tr:nth-child(3) > td:nth-child(2) > a {
+	font-size:0px;
+}
+
+#player > tbody > tr:nth-child(3) > td:nth-child(2) > a::after {
+    content:'Friend Request';
+    font-size:13px;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+}
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1) {
+    font-size:0px;
+}   
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1)::after {
+    content:'Message';
+    font-size:14px !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+}
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(3) {
+    font-size:0px;
+}   
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(3)::after {
+    content:'Send Gift!';
+    font-size:14px !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+}
+
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(5) {
+    font-size:0px;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(5)::after {
+    content:'Create Trade';
+    font-size:14px !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+}
+ 
+#player > tbody > tr.right > td:nth-child(1) > p > a:nth-child(3)::after {
+	padding: 15px;
+}
+
+#player > tbody > tr.right > td:nth-child(1) > p.center:nth-child(5) > a:nth-child(1) > img:nth-child(1) {
+	display: none;
+}
+
+#player > tbody > tr.right > td:nth-child(1) > p.center:nth-child(5) > a:nth-child(3) > img:nth-child(1) {
+	display: none;
+}
+
+td.left.b,
+div.lionImage.featured-lion {
+    background: transparent;
+}
+
+div.xlarge img {
+    display : none;
+}
+
+span.text-muted {
+    display: none;
+}
+
+div.xlarge a {
+    padding: 14px !important;
+}
+
 /* Background fix for mobile */
 @media only screen and (max-width: 767px) {
     body::before {
@@ -438,5 +586,6 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
 }
 
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
-    content: url('');
+    content: url('https://cdn.allthepics.net/images/2026/04/29/ranjit-300px.png');
+    width: 134px;
 }
