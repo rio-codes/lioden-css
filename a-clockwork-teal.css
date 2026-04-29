@@ -209,6 +209,8 @@ h1:hover {
 
 .navbar li a {
     color: #002731 !important;
+    font-size: 20px;
+    font-weight: 600;    
 }
 
 .navbar li a:hover {
