@@ -89,10 +89,11 @@ input.floatright:hover {
     background: #00637c !important;
     border: none;
     color: #002731;
-    border-radius: 4px !important;
+    border-radius: 10px !important;
     padding: 5px;
     margin-top: 20px;
     text-align: right;
+    box-shadow: 0px 4px 4px #002731 !important;
 }
 
 .alert a,
@@ -222,8 +223,9 @@ h1:hover {
     background: #00637c !important;
     color: #7debdc !important;
     border: 0px !important;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: left !important;
+    box-shadow: 0px 4px 4px #002731 !important;
 }
 
 .breadcrumb .active {
