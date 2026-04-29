@@ -240,7 +240,17 @@ button.button,
 	color: #ebeff0;
 }
 
-/* About me table */
+/* About me table and art */
+
+div#fraProfileContent {
+	column-count: 2;
+	align-items: center;
+}
+
+.wolfatail-art {
+	width: 100%;
+}
+
 .table.pun-table {
 	background: #ffeea38f;
 	opacity: .95;
@@ -897,6 +907,22 @@ img[src$="default.png"] {
 span.xsmall {
   color: #90d5de;
 }
+
+/* Background fix for mobile */
+@media only screen and (max-width: 767px) {
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://rio-codes.github.io/lioden-css/meadow.webp') no-repeat center center;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
 
 /*																						  			    		 */
 /* "If there is in fact a creator, he must have an inordinate fondness for beetles." - biologist, J.B.S. Haldane */
