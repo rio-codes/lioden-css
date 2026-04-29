@@ -64,13 +64,21 @@ a:focus {
 
 /* Bookmark button */
 
-input.floatright,
-input.floatright:hover {
+input.floatright {
     background: #7debdc !important;
     border: none !important;
     border-radius: 4px !important;
     color: #002731 !important;
     box-shadow: 0px 0px 10px 5px #7debdca7 !important;
+    text-align: center !important;
+}
+
+input.floatright:hover {
+    background: transparent !important;
+    color: #7debdc !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+    box-shadow: none !important;
+    transition: 1s;
 }
 
 /* Alerts (i.e. "Your lionesses have returned from hunting!") */
@@ -176,6 +184,11 @@ h1:hover {
     font-weight: 500;
 }
 
+.topbar a:hover {
+    color: #7debdc !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+    transition: 1s;
+}
 
 /* Navbar (Den/Crossroads/Etc.) */
 
@@ -253,6 +266,7 @@ h1:hover {
     z-index: 5;
     opacity: 100%;
     text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+    border-radius: 10px;
 }
 
 .col-md-12 a {
@@ -272,7 +286,7 @@ h1:hover {
     z-index: 5;
     box-shadow: 0px 4px 4px #002731 !important;
     text-shadow: 0 0 2em, 0 0 .5em #002731 !important;
-
+    border-radius: 10px;
 }
 
 .panel-body.small a {
@@ -288,6 +302,7 @@ h1:hover {
 .col-md-3 .panel {
     border: transparent;
     box-shadow: 0px 4px 6px #002731 !important;
+    border-radius: 11px;
 }
 
 .panel-body.small .center a,
