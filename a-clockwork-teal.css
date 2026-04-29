@@ -22,7 +22,7 @@ body {
     font-family: "Nova Round", serif;
     font-weight: 200 !important;
     font-style: normal;
-    font-size: large;
+    font-size: 15px;
     font-weight: bolder;
     color: #002731;
     text-shadow: 0 0 .6em, 0 0 1em #e2d6b2;
@@ -343,6 +343,65 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
     padding: 1px;
 	font-weight: bolder;
     z-index: 15;
+}
+
+
+/*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
+
+.table {
+	background: transparent;
+	border: 1px solid #002731;
+	border-collapse: separate;
+	border-radius: 10px;
+	box-shadow: 0px 5px 30px #19765d !important;
+}
+table#about.table a {
+    color: #00637c;
+    text-decoration: none;
+}
+.table .top {
+    background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808) !important;
+    border-bottom: 1px solid #002731;
+}
+
+.top,
+th {
+	background: #19765d !important;
+	color: #002731 !important;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.bottom,
+th, .bottom a {
+	background: transparent !important;
+    color: #002731;
+}
+
+td.bottom button {
+	margin-top: 10px;
+}
+
+.inner-table .left {
+	background: transparent !important;
+	color: #002731;
+	border: 1px solid #002731;
+	border-radius: 4px 0px 0px 4px !important;
+}
+
+.inner-table .right {
+	background: transparent !important;
+	color: #002731;
+    border: 1px solid #002731;
+    border-left: 0px;
+	border-radius: 0px 4px 4px 0px !important;
+}
+
+.right_odd {
+	background: none !important
+}
+
+td.left.b, div.lionImage.featured-lion {
+	background: transparent;
 }
 
 /* Replace Lioden Logo */
