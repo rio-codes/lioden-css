@@ -11,7 +11,7 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Import Fonts (From Google Fonts) */
 
-@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Text+Me+One&display=swap');
 
 /* Background image, font and font color, text alignment */
 body {
@@ -19,7 +19,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
-    font-family: "Turret Road", serif;
+    font-family: "Text Me One", serif;
     font-weight: 600 !important;
     font-style: normal;
     font-size: 17px;
@@ -33,6 +33,7 @@ body {
 .breadcrumb::after {
     content: "custom css by lyri";
     color: #002731 !important;
+    font-size: 16px;
     font-size: 16px;
     font-weight: 600;
     position: absolute;
@@ -208,8 +209,6 @@ h1:hover {
 
 .navbar li a {
     color: #002731 !important;
-    font-size: 20px;
-    font-weight: 600;
 }
 
 .navbar li a:hover {
@@ -290,7 +289,8 @@ h1:hover {
 .panel-body.small {
     background: radial-gradient(#e2d6b2, #5d4808) !important;
     color: #7debdc;
-    font-size: 13px;
+    font-size: 16px;
+    font-weight: 600;
     z-index: 5;
     box-shadow: 0px 4px 4px #002731 !important;
     text-shadow: 0 0 2em, 0 0 .5em #002731 !important;
@@ -299,6 +299,7 @@ h1:hover {
 
 .panel-body.small a {
     color: #005165;
+    font-weight: 600;
 }
 
 .panel-body.small a:hover {
@@ -315,7 +316,7 @@ h1:hover {
 
 .panel-body.small .center a,
 .panel-body.small a {
-    font-weight: 200 !important;
+    font-weight: 500 !important;
     color: #002731 !important;
     text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
 }
