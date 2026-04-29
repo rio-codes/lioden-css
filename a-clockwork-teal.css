@@ -727,7 +727,7 @@ div.col div {
     margin: 5px;
 }
 
-/* Edit Details */
+/* Edit Details 
 
 table.table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>th:nth-child(1) {
     background: #410a02 !important;
@@ -738,6 +738,8 @@ td.left b {
     background: transparent !important;
     font-weight: 700 !important;
 }
+
+*/
 
 
 /* Background fix for mobile */
