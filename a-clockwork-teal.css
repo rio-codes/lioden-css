@@ -227,7 +227,7 @@ h1:hover {
 /* Breadcrumb (Home button, den owner, bookmark) */
 
 .breadcrumb {
-    background: #00637c !important;
+    background: #00637ca7 !important;
     color: #7debdc !important;
     border: 0px !important;
     border-radius: 10px;
@@ -360,7 +360,7 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 
 /* Comment box */
 div#commentBox {
-    background: #00637c !important;
+    background: #00637ca7 !important;
     border: 0px;
     border-radius: 10px;
     color: #002731 !important;
@@ -391,6 +391,36 @@ img.floatleft.commentTag.clear {
     position: relative;
     top: 2px;
     left: -3px
+}
+
+/* Switch Account and Bug Box buttons */
+
+.btn:hover,
+button.button:hover, .btn.btn:hover {
+	background: #7debdc;
+	color: #00637c !important;
+    box-shadow: 0px 0px 30px 20px #7debdca7 !important;
+    transition: 1s;
+}
+
+.button.button {
+}
+
+.btn img {
+	display: none;
+}
+
+.btn,
+button.button,
+.btn.btn {
+	background: #00637ca7;
+	border: none !important;
+	border-radius: 4px;
+	text-shadow: none !important;
+	color: #7debdc !important;
+    width: 160px;
+    height: 30px;
+    box-shadow: 0px 4px 4px #002731 !important;
 }
 
 /* All tables - styling */
