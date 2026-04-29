@@ -327,23 +327,25 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 
 /* Progress bars (Energy, hunger, EXP, IMP) */
 .progress {
-	background: #00637c;
-	color: #7debdc !important;
-	border-radius: 4px !important;
+    background: #00637c;
+    color: #7debdc !important;
+    border-radius: 4px !important;
 }
 
-.progress-bar, .progress-bar-danger, .progress-bar-success {
-	background: radial-gradient(#ffffff, #7debdca7);
+.progress-bar,
+.progress-bar-danger,
+.progress-bar-success {
+    background: radial-gradient(#ffffff, #7debdca7);
     box-shadow: 0px 0px 30px 20px #7debdca7 !important;
-	border-radius: 4px !important;
+    border-radius: 4px !important;
     z-index: 10;
 }
 
 .progress div {
-	color: #002731 !important;
+    color: #002731 !important;
     font-size: 12px;
     padding: 1px;
-	font-weight: bolder;
+    font-weight: bolder;
     z-index: 15;
 }
 
@@ -351,16 +353,18 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 /*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
 
 .table {
-	background: transparent;
-	border: 1px solid #002731;
-	border-collapse: separate;
-	border-radius: 10px;
-	box-shadow: 0px 5px 30px #19765d !important;
+    background: transparent;
+    border: 1px solid #002731;
+    border-collapse: separate;
+    border-radius: 10px;
+    box-shadow: 0px 5px 30px #19765d !important;
 }
+
 table#about.table a {
     color: #00637c;
     text-decoration: none;
 }
+
 .table .top {
     background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808) !important;
     border-bottom: 1px solid #002731;
@@ -368,42 +372,63 @@ table#about.table a {
 
 .top,
 th {
-	background: #19765d !important;
-	color: #002731 !important;
-	border-radius: 10px 10px 0px 0px;
+    background: #19765d !important;
+    color: #002731 !important;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .bottom,
-th, .bottom a {
-	background: transparent !important;
+th,
+.bottom a {
+    background: transparent !important;
     color: #002731;
 }
 
 td.bottom button {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .inner-table .left {
-	background: transparent !important;
-	color: #002731;
-	border: 1px solid #002731;
-	border-radius: 4px 0px 0px 4px !important;
+    background: transparent !important;
+    color: #002731;
+    border: 1px solid #002731;
+    border-radius: 4px 0px 0px 4px !important;
 }
 
 .inner-table .right {
-	background: transparent !important;
-	color: #002731;
+    background: transparent !important;
+    color: #002731;
     border: 1px solid #002731;
     border-left: 0px;
-	border-radius: 0px 4px 4px 0px !important;
+    border-radius: 0px 4px 4px 0px !important;
 }
 
 .right_odd {
-	background: none !important
+    background: none !important
 }
 
-td.left.b, div.lionImage.featured-lion {
-	background: transparent;
+td.left.b,
+div.lionImage.featured-lion {
+    background: transparent;
+}
+
+/* Background fix for mobile */
+@media only screen and (max-width: 767px) {
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://rio-codes.github.io/lioden-css/clockwork-shorter.webp') no-repeat center center;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .container.main {
+        margin-top: 35px;
+    }
 }
 
 /* Replace Lioden Logo */
