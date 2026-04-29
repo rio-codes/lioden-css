@@ -18,6 +18,7 @@ body {
     background: url("https://rio-codes.github.io/lioden-css/clockwork-shorter.webp") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
+    backdrop-filter: brightness(80%) contrast(80%) sepia(50%);
     z-index: -1;
     font-family: "Revalia", serif;
     font-weight: 400 !important;
