@@ -631,6 +631,115 @@ div.center.h3:hover {
     transition: 1s;
 }
 
+/* Cave and Beetle Mound grid appearances*/
+
+.cave-grid,
+.mound-grid {
+	background: #00637ca7;
+	color: #002731 !important;
+	border: 0px;
+	border-radius: 10px !important
+}
+
+/* Feed all/Play all 
+
+div.feature,
+.feature {
+    background: radial-gradient(#e2d6b2, #9b7300) !important;
+    color: #410a02 !important;
+    border: none !important;
+    border-collapse: inherit;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px #410a02 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+    font-size: 14px;
+    font-weight: 300 !important;
+    position: absolute;
+    hyphens: auto;
+    overflow: hidden;
+    position: relative;
+    opacity: 1;
+}
+
+.feature,
+div.left {
+    background: #040201;
+}
+
+.feature,
+div.left h3,
+.feature h3 {
+    font-weight: 500 !important;
+    color: #410a02 !important;
+} */
+
+/* Sparring table 
+#sparring {
+    color: #0e0e0d !important;
+    font-weight: 900;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+.xsmall {
+    color: #000000;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+    padding: 5px;
+}
+
+table#sparring span.xsmall {
+  font-size: 13px;
+  color: #d7bf70 !important;
+}
+
+#pageContainer>center:nth-child(5)>b:nth-child(18) {
+    font-weight: 200;
+}
+
+div.feature {
+    color: #d7bf70 !important;
+    font-weight: 200;
+    height: 140px;
+    padding: 5px;
+} */
+
+
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
+
+div.col-md-4 div h3 {
+	color: #002731 !important;
+	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+div.col-md-4 div h3:hover {
+    color: #7debdc !important;
+    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
+    transition: 1s;
+}
+
+div.mb-2 div,
+div.col div {
+    color: #002731 !important;
+    border-radius: 10px;
+    background: radial-gradient(#e2d6b2, #5d4808) !important;
+    height: 0px;
+    box-shadow: 0px 4px 6px #410a02 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+    margin: 5px;
+}
+
+/* Edit Details */
+
+table.table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>th:nth-child(1) {
+    background: #410a02 !important;
+    color: #e2d6b2 !important;
+}
+
+td.left b {
+    background: transparent !important;
+    font-weight: 700 !important;
+}
+
+
 /* Background fix for mobile */
 @media only screen and (max-width: 767px) {
     body::before {
@@ -648,6 +757,179 @@ div.center.h3:hover {
     .container.main {
         margin-top: 35px;
     }
+}
+
+/* Image Replacement */
+
+div.mound-grid img {
+    position: relative;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    width: 200px
+}
+
+.cave-grid img, .mound-grid img, .cave-grid, .mound-grid {
+    box-shadow: 0px 4px 4px #002731 !important;
+}
+
+.cave-grid img:hover, .mound-grid img:hover {
+    transition: 1s;
+    box-shadow: 0px 0px 20px 20px #7debdc !important;
+    z-index: 50;
+}
+
+div.cave-grid>img[src$="nestingbanner.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-02.jpg') !important;
+    object-fit: cover !important;
+    filter: brightness(80%) contrast(80%) sepia(50%);
+    height: 130px !important;
+    width: 300px !important;
+    border: 5px ridge;
+    border: 0px;
+    border-radius: 0px !important;
+}
+
+div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div, div.col.col-sm-4 div {
+    height: 70px;
+    color: #e2d6b2;
+    font-weight: 700 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+div.cave-grid>img[src$="prideoverviewbanner.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-07.jpg') !important;
+    filter: brightness(80%) contrast(80%) sepia(50%);
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+}
+
+div.cave-grid>img[src$="unsortedlionsbanner.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-05.jpg') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(80%) contrast(80%) sepia(50%);
+}
+
+div.cave-grid>img {
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-04.jpg') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(80%) contrast(80%) sepia(50%);
+}
+
+.mound-grid img {
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-06.jpg') !important;
+    object-fit: cover !important;
+    height: 100px !important;
+    width: 300px !important;
+    filter: brightness(80%) contrast(80%) sepia(50%);
+}
+
+#fraCaveList>div:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-03.jpg') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(80%) contrast(80%) sepia(50%);
+}
+
+#fraCaveList>div:nth-child(3)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-03.jpg') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(80%) contrast(80%) sepia(50%);
+}
+
+#fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-09.jpg') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(80%) contrast(80%) sepia(50%);
+}
+
+div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-08.jpg') !important;
+    object-fit: cover !important;
+    object-position: right !important;; 
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(80%) contrast(80%) sepia(50%);
+}
+img[src$="den_ancestors.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px !important;
+    width: 2 !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+img[src$="ancestorsfem.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px !important;
+    width: 2 !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+img[src$="den_achievements.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+img[src$="den_showcase.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) opacity(80%);
+}
+
+img[src$="den_beetlebook.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) opacity(80%);
+}
+/* Replace Social Media Icons */
+
+img[src$="iconFB.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+
+img[src$="iconTwit.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+}
+
+img[src$="iconInsta.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+
+img[src$="image.png?ex=699f6661&is=699e14e1&hm=fbcf57db1ea875e7341d6cb771f9756f6c56fd741695e7c32d1f67e4ec39ae0c&=&format=webp&quality=lossless"] {
+    display: none;
 }
 
 /* Replace Lioden Logo */
