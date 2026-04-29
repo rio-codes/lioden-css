@@ -784,7 +784,7 @@ div.mound-grid img {
 div.cave-grid>img[src$="nestingbanner.png"] {
     content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-02.jpg') !important;
     object-fit: cover !important;
-    filter: brightness(80%) contrast(80%) sepia(50%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
     height: 130px !important;
     width: 300px !important;
     border: 5px ridge;
@@ -801,7 +801,7 @@ div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div, div.col.col-sm-4 div {
 
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
     content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-07.jpg') !important;
-    filter: brightness(80%) contrast(80%) sepia(50%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
@@ -812,7 +812,7 @@ div.cave-grid>img[src$="unsortedlionsbanner.png"] {
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
-    filter: brightness(80%) contrast(80%) sepia(50%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
 div.cave-grid>img {
@@ -820,7 +820,7 @@ div.cave-grid>img {
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
-    filter: brightness(80%) contrast(80%) sepia(50%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
 .mound-grid img {
@@ -828,7 +828,7 @@ div.cave-grid>img {
     object-fit: cover !important;
     height: 100px !important;
     width: 300px !important;
-    filter: brightness(80%) contrast(80%) sepia(50%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
 #fraCaveList>div:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
@@ -836,7 +836,7 @@ div.cave-grid>img {
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
-    filter: brightness(80%) contrast(80%) sepia(50%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
 #fraCaveList>div:nth-child(3)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
@@ -844,7 +844,7 @@ div.cave-grid>img {
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
-    filter: brightness(80%) contrast(80%) sepia(50%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
 #fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
@@ -852,7 +852,7 @@ div.cave-grid>img {
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
-    filter: brightness(80%) contrast(80%) sepia(50%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
 div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
@@ -861,14 +861,14 @@ div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
     object-position: right !important;; 
     height: 130px !important;
     width: 300px !important;
-    filter: brightness(80%) contrast(80%) sepia(50%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 img[src$="den_ancestors.png"] {
     content: url('');
     object-fit: cover;
     height: 100px !important;
     width: 2 !important;
-    filter: brightness(90%) opacity(80%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
 img[src$="ancestorsfem.png"] {
@@ -876,7 +876,7 @@ img[src$="ancestorsfem.png"] {
     object-fit: cover;
     height: 100px !important;
     width: 2 !important;
-    filter: brightness(90%) opacity(80%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
 img[src$="den_achievements.png"] {
@@ -884,7 +884,7 @@ img[src$="den_achievements.png"] {
     object-fit: cover;
     height: 100px;
     width: 2 !important;
-    filter: brightness(90%) opacity(80%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
 img[src$="den_showcase.png"] {
@@ -892,7 +892,7 @@ img[src$="den_showcase.png"] {
     object-fit: cover;
     height: 100px;
     width: 2 !important;
-    filter: brightness(90%) opacity(80%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
 img[src$="den_beetlebook.png"] {
@@ -900,7 +900,7 @@ img[src$="den_beetlebook.png"] {
     object-fit: cover;
     height: 100px;
     width: 2 !important;
-    filter: brightness(90%) opacity(80%);
+    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 /* Replace Social Media Icons */
 
