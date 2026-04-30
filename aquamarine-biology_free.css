@@ -43,6 +43,8 @@ textarea {
 	box-shadow: none !important;
 	text-shadow: none !important;
 	color: #19765d !important;
+	text-align: left;
+	object-position: center;
 }
 
 /* CSS Credit */
@@ -146,7 +148,7 @@ button.button {
 	background: #9CE8D3 !important;
 	border-bottom: none;
 	color: #297560 !important;
-	border-radius: 0px
+	border-radius: 0px;
 	filter: brightness(100%) opacity(90%);
 	transition: 0.5s !important;
 	height: 50px;
@@ -184,7 +186,7 @@ input.floatright, input.floatright:hover {
 	background: #7cc2af !important;
 	border: none;
 	color: #085e46;
-	border-radius: 4px; !important;
+	border-radius: 4px !important;
 	padding: 5px;
 	margin-top: 20px;
 	text-align: right;
