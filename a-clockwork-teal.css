@@ -942,11 +942,12 @@ hr {
 
 /* Pagedoll */
 
-#pagedoll {
-	height: 250px;
-	width: auto;
-    position: fixed;
-	z-index: 3000;
+#fraProfileContent > img:nth-child(3) {
+	height: 300px;
+	position: fixed !important;
+	right: 0px;
+	bottom: 0px;
+	z-index: 3000 !important;
 	pointer-events: none;
 }
 
