@@ -83,6 +83,21 @@ input.floatright:hover {
     transition: 1s;
 }
 
+/* Text input boxes, misc buttons */
+
+input,
+select,
+textarea {
+	background: #00637c !important;
+	border: none !important;
+	border-radius: 5px !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+	color: #7debdc !important;
+	font-weight: 300;
+}
+
+
 /* Alerts (i.e. "Your lionesses have returned from hunting!") */
 
 .alert,
@@ -444,7 +459,7 @@ table#about.table a {
     text-decoration: none;
 }
 
-.table .top {
+.table .top, #sparring th, table.table th, div.left {
     background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808) !important;
     border-bottom: 1px solid #002731;
 }
@@ -641,24 +656,19 @@ div.center.h3:hover {
 	border-radius: 10px !important
 }
 
-/* Feed all/Play all 
+/* Feed all/Play all */
 
 div.feature,
 .feature {
-    background: radial-gradient(#e2d6b2, #9b7300) !important;
-    color: #410a02 !important;
-    border: none !important;
-    border-collapse: inherit;
-    border-radius: 15px;
-    box-shadow: 0px 4px 6px #410a02 !important;
-    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
-    font-size: 14px;
-    font-weight: 300 !important;
-    position: absolute;
-    hyphens: auto;
-    overflow: hidden;
-    position: relative;
-    opacity: 1;
+    background: radial-gradient(#e2d6b2, #5d4808) !important;
+    color: #7debdc;
+    font-size: 13px;
+    font-weight: 200;
+    z-index: 5;
+    box-shadow: 0px 4px 4px #002731 !important;
+    text-shadow: 0 0 2em, 0 0 .5em #002731 !important;
+    border: 0px;
+    border-radius: 10px;
 }
 
 .feature,
@@ -670,47 +680,20 @@ div.left {
 div.left h3,
 .feature h3 {
     font-weight: 500 !important;
-    color: #410a02 !important;
+    color: #002731 !important;
 } */
 
-/* Sparring table 
-#sparring {
-    color: #0e0e0d !important;
-    font-weight: 900;
-    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
-}
 
-.xsmall {
-    color: #000000;
-    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
-    padding: 5px;
-}
-
-table#sparring span.xsmall {
-  font-size: 13px;
-  color: #d7bf70 !important;
-}
-
-#pageContainer>center:nth-child(5)>b:nth-child(18) {
-    font-weight: 200;
-}
-
-div.feature {
-    color: #d7bf70 !important;
-    font-weight: 200;
-    height: 140px;
-    padding: 5px;
-} */
 
 
 /* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
 
-div.col-md-4 div h3 {
+div.col-md-4 div h3, .dynastycollection a {
 	color: #002731 !important;
-	text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+
 }
 
-div.col-md-4 div h3:hover {
+div.col-md-4 div h3:hover, div.col > a > div:hover {
     color: #7debdc !important;
     text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
     transition: 1s;
@@ -723,7 +706,6 @@ div.col div {
     background: radial-gradient(#e2d6b2, #5d4808) !important;
     height: 0px;
     box-shadow: 0px 4px 6px #410a02 !important;
-    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
     margin: 5px;
 }
 
@@ -934,6 +916,14 @@ img[src$="image.png?ex=699f6661&is=699e14e1&hm=fbcf57db1ea875e7341d6cb771f9756f6
     display: none;
 }
 
+/* Misc layout fixes */
+hr {
+	display:none;
+}
+
+#clans td.left, #allies td.left  {
+    display: none
+}
 /* Replace Lioden Logo */
 
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
