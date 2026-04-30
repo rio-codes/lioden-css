@@ -35,11 +35,6 @@ a:hover {
 
 /* Profile Styling */
 
-.about-me:before {
-	content: url("https://cdn.allthepics.net/images/2026/04/27/am_lion.png");
-	width: 80%;
-}
-
 .about-me {
   background: radial-gradient(#7cc2af, #19765d);
   width: 90%;
@@ -48,6 +43,10 @@ a:hover {
   border: solid 2px #0c6249;
   border-radius: 10px;
   box-shadow: 0px 5px 30px #19765d !important;
+}
+
+.about-me img {
+	width: 100%
 }
 
 /* Text input boxes */
