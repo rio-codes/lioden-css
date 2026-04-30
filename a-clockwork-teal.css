@@ -130,8 +130,6 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
-    position: relative;
-    top: 30px;
 }
 
 h1.center>small:nth-child(2) a:link,
@@ -519,6 +517,7 @@ div.lionImage.featured-lion {
 
 div#lion_image {
     opacity: 0%;
+    
 }
 
 #about>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(1) {
@@ -529,6 +528,7 @@ div#lion_image {
     top: 40px;
     left: 0px;
     z-index: 50;
+    filter: drop-shadow(0px 0px 3rem #7debdc) !important;
 }
 
 table#player img {
