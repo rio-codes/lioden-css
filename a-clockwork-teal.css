@@ -889,30 +889,35 @@ img[src$="den_beetlebook.png"] {
 /* Replace Social Media Icons */
 
 img[src$="iconFB.png"] {
-    content: url('');
+    content: url('https://cdn.allthepics.net/images/2026/04/30/clockwork_facebook.png');
     object-fit: cover;
     height: 50px;
     width: 50px;
     overflow: hidden;
+    filter: drop-shadow(0px 0px 3rem #7debdc) !important;
 }
 
 img[src$="iconTwit.png"] {
-    content: url('');
+    content: url('https://cdn.allthepics.net/images/2026/04/30/clockwork_twitter.png');
     object-fit: cover;
     height: 50px;
     width: 50px;
     position: relative;
     top: 2px;
     overflow: hidden;
+    filter: drop-shadow(0px 0px 3rem #7debdc) !important;
 }
 
 img[src$="iconInsta.png"] {
-    content: url('');
+    content: url('https://cdn.allthepics.net/images/2026/04/30/clockwork_instagram.png');
     object-fit: cover;
     height: 50px;
     width: 50px;
     overflow: hidden;
+    filter: drop-shadow(0px 0px 3rem #7debdc) !important;
 }
+
+
 
 img[src$="image.png?ex=699f6661&is=699e14e1&hm=fbcf57db1ea875e7341d6cb771f9756f6c56fd741695e7c32d1f67e4ec39ae0c&=&format=webp&quality=lossless"] {
     display: none;
