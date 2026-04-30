@@ -942,19 +942,12 @@ hr {
 
 /* Pagedoll */
 
-.container.main::after {
-	content: "";
-	background-image: url('https://cdn.allthepics.net/images/2026/04/30/clockwork-pagedoll.png');
-	background-size: cover;
-	display: block;
+#pagedoll {
 	height: 250px;
-	width: 250px;
-	position: fixed;
-	right: 0px;
-	bottom: 0px;
-	z-index: 30;
+	width: auto;
+    position: fixed;
+	z-index: 3000;
 	pointer-events: none;
-	opacity: 0.8;
 }
 
 /* Replace Lioden Logo */
