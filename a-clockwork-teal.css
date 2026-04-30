@@ -130,6 +130,8 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
+    position: relative;
+    top: 30px;
 }
 
 h1.center>small:nth-child(2) a:link,
