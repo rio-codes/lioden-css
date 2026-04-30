@@ -11,19 +11,18 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Import Fonts (From Google Fonts) */
 
-@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Revalia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Text+Me+One&display=swap');
 
 /* Background image, font and font color, text alignment */
 body {
     background: url("https://rio-codes.github.io/lioden-css/clockwork-shorter.webp") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
-    backdrop-filter: brightness(80%) contrast(80%) sepia(50%);
     z-index: -1;
-    font-family: "Revalia", serif;
-    font-weight: 400 !important;
+    font-family: "Text Me One", serif;
+    font-weight: 600 !important;
     font-style: normal;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: bolder;
     color: #002731;
     text-shadow: 0 0 .6em, 0 0 1em #e2d6b2;
@@ -34,7 +33,8 @@ body {
 .breadcrumb::after {
     content: "custom css by lyri";
     color: #002731 !important;
-    font-size: 14px;
+    font-size: 16px;
+    font-size: 16px;
     font-weight: 600;
     position: absolute;
     top: 62px;
@@ -82,21 +82,6 @@ input.floatright:hover {
     box-shadow: none !important;
     transition: 1s;
 }
-
-/* Text input boxes, misc buttons */
-
-input,
-select,
-textarea {
-	background: #00637c !important;
-	border: none !important;
-	border-radius: 5px !important;
-	box-shadow: none !important;
-	text-shadow: none !important;
-	color: #7debdc !important;
-	font-weight: 300;
-}
-
 
 /* Alerts (i.e. "Your lionesses have returned from hunting!") */
 
@@ -195,13 +180,13 @@ h1:hover {
     border: 0px;
     box-shadow: 0px 0px 30px 20px #7debdca7 !important;
     border-radius: 0px 0px 4px 4px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
 }
 
 .topbar a {
     color: #000000 !important;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -224,8 +209,8 @@ h1:hover {
 
 .navbar li a {
     color: #002731 !important;
-    font-size: 17px;
-    font-weight: 600;    
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .navbar li a:hover {
@@ -242,7 +227,7 @@ h1:hover {
 /* Breadcrumb (Home button, den owner, bookmark) */
 
 .breadcrumb {
-    background: #00637ca7 !important;
+    background: #00637c !important;
     color: #7debdc !important;
     border: 0px !important;
     border-radius: 10px;
@@ -306,8 +291,8 @@ h1:hover {
 .panel-body.small {
     background: radial-gradient(#e2d6b2, #5d4808) !important;
     color: #7debdc;
-    font-size: 13px;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: 600;
     z-index: 5;
     box-shadow: 0px 4px 4px #002731 !important;
     text-shadow: 0 0 2em, 0 0 .5em #002731 !important;
@@ -316,7 +301,7 @@ h1:hover {
 
 .panel-body.small a {
     color: #005165;
-    font-weight: 200;
+    font-weight: 600;
 }
 
 .panel-body.small a:hover {
@@ -333,7 +318,7 @@ h1:hover {
 
 .panel-body.small .center a,
 .panel-body.small a {
-    font-weight: 200 !important;
+    font-weight: 500 !important;
     color: #002731 !important;
     text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
 }
@@ -367,15 +352,15 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 
 .progress div {
     color: #002731 !important;
-    font-size: 10px;
+    font-size: 12px;
     padding: 1px;
-    font-weight: 200;
+    font-weight: bolder;
     z-index: 15;
 }
 
 /* Comment box */
 div#commentBox {
-    background: #00637ca7 !important;
+    background: #00637c !important;
     border: 0px;
     border-radius: 10px;
     color: #002731 !important;
@@ -408,39 +393,12 @@ img.floatleft.commentTag.clear {
     left: -3px
 }
 
-/* Switch Account and Bug Box buttons */
-
-.btn:hover,
-button.button:hover, .btn.btn:hover {
-	background: #7debdc;
-	color: #00637c !important;
-    box-shadow: 0px 0px 30px 20px #7debdca7 !important;
-    transition: 1s;
-}
-
-.button.button {
-}
-
-.btn img {
-	display: none;
-}
-
-.btn,
-button.button,
-.btn.btn {
-	background: #00637ca7;
-	border: none !important;
-	border-radius: 4px;
-	text-shadow: none !important;
-	color: #7debdc !important;
-    width: 160px;
-    height: 30px;
-    box-shadow: 0px 4px 4px #002731 !important;
-}
-
 /* All tables - styling */
 
-table#about, table#player, table#attack, table#allies {
+table#about,
+table#player,
+table#attack,
+table#allies {
     box-shadow: 0px 4px 4px #002731 !important;
 }
 
@@ -459,7 +417,7 @@ table#about.table a {
     text-decoration: none;
 }
 
-.table .top, #sparring th, table.table th, div.left {
+.table .top {
     background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808) !important;
     border-bottom: 1px solid #002731;
 }
@@ -485,23 +443,16 @@ td.bottom button {
 .inner-table .left {
     background: transparent !important;
     color: #002731;
-    font-size: 11px;
     border: 1px solid #002731;
-    border-left: 1px solid #002731;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 1px solid #002731;
-    border-radius: 0px 0px 0px 0px !important;
+    border-radius: 4px 0px 0px 4px !important;
 }
 
 .inner-table .right {
     background: transparent !important;
     color: #002731;
-    font-size: 11px;
-    border-bottom: 1px solid #002731;
-    border-right: 0px;
-    border-left: 1px solid #002731;
-    border-radius: 0px 0px 0px 0px !important;
+    border: 1px solid #002731;
+    border-left: 0px;
+    border-radius: 0px 4px 4px 0px !important;
 }
 
 .right_odd {
@@ -517,7 +468,6 @@ div.lionImage.featured-lion {
 
 div#lion_image {
     opacity: 0%;
-    
 }
 
 #about>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(1) {
@@ -528,7 +478,6 @@ div#lion_image {
     top: 40px;
     left: 0px;
     z-index: 50;
-    filter: drop-shadow(0px 0px 3rem #7debdc) !important;
 }
 
 table#player img {
@@ -545,7 +494,7 @@ p.center a {
 
 /* Remove icons and edit text for user profile buttons */
 
-table.inner-table.auto:nth-child(2) td {
+table.inner-table.auto td {
     border: 0px;
 }
 
@@ -648,84 +597,6 @@ div.center.h3:hover {
     transition: 1s;
 }
 
-/* Cave and Beetle Mound grid appearances*/
-
-.cave-grid,
-.mound-grid {
-	background: #00637ca7;
-	color: #002731 !important;
-	border: 0px;
-	border-radius: 10px !important
-}
-
-/* Feed all/Play all */
-
-div.feature,
-.feature {
-    background: radial-gradient(#e2d6b2, #5d4808) !important;
-    color: #7debdc;
-    font-size: 13px;
-    font-weight: 200;
-    z-index: 5;
-    box-shadow: 0px 4px 4px #002731 !important;
-    text-shadow: 0 0 2em, 0 0 .5em #002731 !important;
-    border: 0px;
-    border-radius: 10px;
-}
-
-.feature,
-div.left {
-    background: #040201;
-}
-
-.feature,
-div.left h3,
-.feature h3 {
-    font-weight: 500 !important;
-    color: #002731 !important;
-} */
-
-
-
-
-/* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
-
-div.col-md-4 div h3, .dynastycollection a {
-	color: #002731 !important;
-
-}
-
-div.col-md-4 div h3:hover, div.col > a > div:hover {
-    color: #7debdc !important;
-    text-shadow: 0 0 2em, 0 0 .5em #7debdc !important;
-    transition: 1s;
-}
-
-div.mb-2 div,
-div.col div {
-    color: #002731 !important;
-    border-radius: 10px;
-    background: radial-gradient(#e2d6b2, #5d4808) !important;
-    height: 0px;
-    box-shadow: 0px 4px 6px #410a02 !important;
-    margin: 5px;
-}
-
-/* Edit Details 
-
-table.table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>th:nth-child(1) {
-    background: #410a02 !important;
-    color: #e2d6b2 !important;
-}
-
-td.left b {
-    background: transparent !important;
-    font-weight: 700 !important;
-}
-
-*/
-
-
 /* Background fix for mobile */
 @media only screen and (max-width: 767px) {
     body::before {
@@ -745,192 +616,6 @@ td.left b {
     }
 }
 
-/* Image Replacement */
-
-div.mound-grid img {
-    position: relative;
-    left: -10px;
-    right: -10px;
-    top: -10px;
-    width: 200px
-}
-
-.cave-grid img, .mound-grid img, .cave-grid, .mound-grid {
-    box-shadow: 0px 4px 4px #002731 !important;
-}
-
-.cave-grid img:hover, .mound-grid img:hover {
-    transition: 1s;
-    box-shadow: 0px 0px 20px 20px #7debdc !important;
-    z-index: 50;
-}
-
-div.cave-grid>img[src$="nestingbanner.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-02.jpg') !important;
-    object-fit: cover !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-    height: 130px !important;
-    width: 300px !important;
-    border: 5px ridge;
-    border: 0px;
-    border-radius: 0px !important;
-}
-
-div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div, div.col.col-sm-4 div {
-    height: 70px;
-    color: #e2d6b2;
-    font-weight: 700 !important;
-    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
-}
-
-div.cave-grid>img[src$="prideoverviewbanner.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-07.jpg') !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-    object-fit: cover !important;
-    height: 130px !important;
-    width: 300px !important;
-}
-
-div.cave-grid>img[src$="unsortedlionsbanner.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-05.jpg') !important;
-    object-fit: cover !important;
-    height: 130px !important;
-    width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
-div.cave-grid>img {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-04.jpg') !important;
-    object-fit: cover !important;
-    height: 130px !important;
-    width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
-.mound-grid img {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-06.jpg') !important;
-    object-fit: cover !important;
-    height: 100px !important;
-    width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
-#fraCaveList>div:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-03.jpg') !important;
-    object-fit: cover !important;
-    height: 130px !important;
-    width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
-#fraCaveList>div:nth-child(3)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-03.jpg') !important;
-    object-fit: cover !important;
-    height: 130px !important;
-    width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
-#fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-09.jpg') !important;
-    object-fit: cover !important;
-    height: 130px !important;
-    width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
-div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-08.jpg') !important;
-    object-fit: cover !important;
-    object-position: right !important;; 
-    height: 130px !important;
-    width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-img[src$="den_ancestors.png"] {
-    content: url('');
-    object-fit: cover;
-    height: 100px !important;
-    width: 2 !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
-img[src$="ancestorsfem.png"] {
-    content: url('');
-    object-fit: cover;
-    height: 100px !important;
-    width: 2 !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
-img[src$="den_achievements.png"] {
-    content: url('');
-    object-fit: cover;
-    height: 100px;
-    width: 2 !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
-img[src$="den_showcase.png"] {
-    content: url('');
-    object-fit: cover;
-    height: 100px;
-    width: 2 !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
-img[src$="den_beetlebook.png"] {
-    content: url('');
-    object-fit: cover;
-    height: 100px;
-    width: 2 !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-/* Replace Social Media Icons */
-
-img[src$="iconFB.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/30/clockwork_facebook.png');
-    object-fit: cover;
-    height: 50px;
-    width: 50px;
-    overflow: hidden;
-    filter: drop-shadow(0px 0px 3rem #7debdc) !important;
-}
-
-img[src$="iconTwit.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/30/clockwork_twitter.png');
-    object-fit: cover;
-    height: 50px;
-    width: 50px;
-    position: relative;
-    top: 2px;
-    overflow: hidden;
-    filter: drop-shadow(0px 0px 3rem #7debdc) !important;
-}
-
-img[src$="iconInsta.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/30/clockwork_instagram.png');
-    object-fit: cover;
-    height: 50px;
-    width: 50px;
-    overflow: hidden;
-    filter: drop-shadow(0px 0px 3rem #7debdc) !important;
-}
-
-
-
-img[src$="image.png?ex=699f6661&is=699e14e1&hm=fbcf57db1ea875e7341d6cb771f9756f6c56fd741695e7c32d1f67e4ec39ae0c&=&format=webp&quality=lossless"] {
-    display: none;
-}
-
-/* Misc layout fixes */
-hr {
-	display:none;
-}
-
-#clans td.left, #allies td.left  {
-    display: none
-}
 /* Replace Lioden Logo */
 
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
