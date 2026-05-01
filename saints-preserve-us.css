@@ -8,3 +8,932 @@ Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Ta
 
 Full credits for code contributors, artwork, photos, icons, and fonts can be found at https://rio-codes.github.io/lioden-css/credits_saints.txt .
 */
+
+/*
+Saints Preserve Us
+
+Created 04/2026 by lyri [#583579] for moth [#164881]
+AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
+
+Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Tawny [#251887], Hok-Z [#41458], Austin [#43750] 
+
+Full credits for code contributors, artwork, photos, icons, and fonts can be found at https://rio-codes.github.io/lioden-css/credits_saints.txt .
+*/
+
+/* 
+A Clockwork Teal
+
+Created 04/2026 by lyri [#583579] for Ranjit [#3581]
+AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
+
+Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Tawny [#251887], Hok-Z [#41458], Austin [#43750] 
+
+Full credits for code contributors, artwork, photos, icons, and fonts can be found at https://rio-codes.github.io/lioden-css/credits_clockwork.txt .
+*/
+
+/* Import Fonts (From Google Fonts) */
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Manufacturing+Consent&display=swap');
+
+/* Background image, font and font color, text alignment */
+body {
+    background: url("https://rio-codes.github.io/lioden-css/cathedral.webp") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    font-family: "Alegreya SC", serif;
+    font-weight: 400 !important;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #0d000f;
+    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2;
+}
+
+/* CSS Credit */
+
+.breadcrumb::after {
+    content: "custom css by lyri";
+    color: #0d000f !important;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 62px;
+    left: 30px;
+}
+
+/* Link colors */
+
+a:link,
+a:visited {
+    color: #0d000f;
+    font-weight: 500;
+    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+}
+
+a img {
+    border: none !important;
+    text-decoration: none !important;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+/* Bookmark button */
+
+input.floatright {
+    background: #daa1dd !important;
+    border: none !important;
+    border-radius: 4px !important;
+    color: #0d000f !important;
+    box-shadow: 0px 0px 10px 5px #daa1dda7 !important;
+    text-align: center !important;
+}
+
+input.floatright:hover {
+    background: transparent !important;
+    color: #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    box-shadow: none !important;
+    transition: 1s;
+}
+
+/* Text input boxes, misc buttons */
+
+input,
+select,
+textarea {
+	background: #432266 !important;
+	border: none !important;
+	border-radius: 5px !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+	color: #daa1dd !important;
+	font-weight: 300;
+}
+
+
+/* Alerts (i.e. "Your lionesses have returned from hunting!") */
+
+.alert,
+.alert-warning,
+.alert-danger {
+    background: #4d3057 !important;
+    border: none;
+    color: #ffffff;
+    border-radius: 10px !important;
+    padding: 5px;
+    text-align: left !important;
+    font-size: 15px;
+    height: 40px;
+    position: relative;
+    top: 20px;
+    font-weight: 200;
+}
+
+.alert a,
+.alert-warning a,
+.alert-danger a {
+    color: #ffffff;
+}
+
+/* Main header appearance ("___"'s Den) */
+
+div#pageContainer.col-md-9 h1 {
+  text-indent: -9999px;
+}
+
+div#pageContainer.col-md-9 h1:before {
+  content: "Aurelion's Den";
+  text-indent: 250px;
+  float: left
+}
+
+h1 {
+    font-family: "Alegreya SC", Georgia, 'Times New Roman', Times, serif;
+    font-size: 58px;
+    color: #0d000f;
+    font-weight: 400 !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    text-shadow: 0 0 2em, 0 0 .5em #ffffff !important;
+}
+
+h1.center>small:nth-child(2) a:link,
+h1.center>small:nth-child(2) a:visited,
+p.center:nth-child(2)>a:nth-child(1) a:link,
+p.center:nth-child(2)>a:nth-child(1) a:visited {
+    color: #432266 !important;
+}
+
+h1.center>small:nth-child(2),
+p.center:nth-child(2)>a:nth-child(1) {
+    font-weight: 300 !important;
+    color: #432266 !important;
+}
+
+h2 {
+    font-family: "Alegreya SC", Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #0d000f !important;
+}
+
+/* Tertiary header */
+
+h3 {
+    font-family: "Alegreya SC", Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px !important;
+    font-size: 24px;
+    font-weight: 300;
+    color: #0d000f !important;
+}
+
+/* Main panel container appearance*/
+
+.container.main {
+    background: transparent;
+    border: 1px;
+    border-radius: 2px;
+}
+
+/* Make left panel background and border invisible */
+
+.col-md-9 {
+    background: none;
+    border-right: none
+}
+
+
+/* Topbar (Welcome and account navigation) */
+
+.topbar {
+    background: #4d3057;
+    color: #0d000f;
+    border: 0px;
+    border-radius: 0px 0px 4px 4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.topbar a {
+    color: #0d000f !important;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/* Navbar (Den/Crossroads/Etc.) */
+
+.navbar {
+    background-image: url("https://rio-codes.github.io/lioden-css/stained_glass_header.png");
+    background-size: contain;
+    border-bottom: none;
+    color: #ffffff;
+    text-shadow: 0 0 2em, 0 0 .5em #432266 !important;
+    border-radius: 2px 2px 0px 0px;
+    align-items: left;
+}
+
+.navbar li a {
+    background: #432266a7 !important;
+    color: #ffffff !important;
+    font-size: 17px;
+    font-weight: 200;
+    padding: 15px;
+    margin-left: 15px;
+}
+
+.navbar li a:hover {
+    background: #432266 !important;
+    border-bottom: none;
+    color: #daa1dd !important;
+    border-radius: 0px;
+    filter: brightness(100%) opacity(90%);
+    transition: 1s !important;
+    height: 50px;
+    width: auto !important
+}
+
+/* Breadcrumb (Home button, den owner, bookmark) */
+
+.breadcrumb {
+    background: #4d3057 !important;
+    color: #ffffff !important;
+    border: 0px !important;
+    border-radius: 2px;
+    text-align: left !important;
+}
+
+.breadcrumb .active {
+    color: #ffffff !important;
+}
+
+
+
+/* Right-side panel appearance */
+
+.sidebar h3 {
+    font-family: "Alegreya SC", Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px !important;
+    font-weight: 300;
+    color: #0d000f !important;
+    text-shadow: 0 0 2em, 0 0 .5em #ffffff !important;
+    text-align: right;
+    position: relative;
+    padding-top: 25px;
+
+}
+
+.sidebar a {
+    color: #0d000f;
+}
+
+.panel h3 {
+    background: transparent;
+    color: #0d000f;
+    font-size: 24px;
+    text-align: right;
+    opacity: 0.9;
+    border: 0px !important;
+    z-index: 5;
+    opacity: 100%;
+    border-radius: 2px;
+}
+
+.col-md-12 a {
+    color: #005165;
+}
+
+.panel-body.small {
+    background: none;
+    color: #daa1dd;
+    font-size: 13px;
+    font-weight: 200;
+    z-index: 5;
+    border-radius: 10px;
+}
+
+.panel-body.small a {
+    color: #005165;
+    font-weight: 200;
+}
+
+.panel-body.small a:hover {
+    color: #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    transition: 1s;
+}
+
+.col-md-3 .panel {
+    background: transparent;
+    border: 1px solid #0d000f;
+    border-radius: 2px;
+}
+
+.panel-body.small .center a,
+.panel-body.small a {
+    font-weight: 200 !important;
+    color: #0d000f !important;
+}
+
+div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
+    display: none;
+}
+
+/* Progress bars (Energy, hunger, EXP, IMP) */
+.progress {
+    background: #4d3057;
+    color: #4d3057 !important;
+    border-radius: 2px !important;
+}
+
+.progress-bar,
+.progress-bar-danger,
+.progress-bar-success {
+    background: #432266;
+    border-radius: 2px !important;
+    z-index: 10;
+}
+
+.progress div {
+    color: #ffffff !important;
+    font-size: 10px;
+    padding: 1px;
+    font-weight: 200;
+    z-index: 15;
+}
+
+/* Comment box */
+div#commentBox {
+    background: transparent;
+    border: 1px solid 432266;
+    border-radius: 2px;
+    color: #0d000f !important;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+div#commentBox a {
+    color: #014354;
+}
+
+div.commentText {
+    border-bottom: 1px solid #0d000f;
+    height: 47px;
+}
+
+.text-muted {
+    color: #0d000f !important;
+}
+
+img.floatleft.commentTag.clear {
+    height: 40px;
+    border: 2px solid #0d000f;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    left: -3px
+}
+
+/* Switch Account and Bug Box buttons */
+
+.btn:hover,
+button.button:hover, .btn.btn:hover {
+	background: #daa1dd;
+	color: #432266 !important;
+    transition: 1s;
+}
+
+.button.button {
+}
+
+.btn img {
+	display: none;
+}
+
+.btn,
+button.button,
+.btn.btn {
+	background: #432266a7;
+	border: none !important;
+	border-radius: 4px;
+	text-shadow: none !important;
+	color: #daa1dd !important;
+    width: 160px;
+    height: 30px;
+    box-shadow: 0px 4px 4px #0d000f !important;
+}
+
+/* All tables - styling */
+
+table#about, table#player, table#attack, table#allies {
+    box-shadow: 0px 4px 4px #0d000f !important;
+}
+
+/*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
+
+.table {
+    background: transparent;
+    border: 1px solid #0d000f;
+    border-collapse: separate;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #0d000f !important;
+}
+
+table#about.table a {
+    color: #014354;
+    text-decoration: none;
+}
+
+.table .top, #sparring th, table.table th, div.left {
+    background:;
+    border-bottom: 1px solid #0d000f;
+}
+
+.top,
+th {
+    background: #19765d !important;
+    color: #0d000f !important;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.bottom,
+th,
+.bottom a {
+    background: transparent !important;
+    color: #014354;
+}
+
+td.bottom button {
+    margin-top: 10px;
+}
+
+.inner-table .left {
+    background: transparent !important;
+    color: #0d000f;
+    font-size: 11px;
+    border: 1px solid #0d000f;
+    border-left: 1px solid #0d000f;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #0d000f;
+    border-radius: 0px 0px 0px 0px !important;
+}
+
+.inner-table .right {
+    background: transparent !important;
+    color: #0d000f;
+    font-size: 11px;
+    border-bottom: 1px solid #0d000f;
+    border-right: 0px;
+    border-left: 1px solid #0d000f;
+    border-radius: 0px 0px 0px 0px !important;
+}
+
+.right_odd {
+    background: none !important
+}
+
+td.left.b,
+div.lionImage.featured-lion {
+    background: transparent;
+}
+
+/* Lion and user profile pictures */
+
+div#lion_image {
+    border: solid 2px #0d000f !important;
+    border-radius: 2px;
+}
+
+
+/*#about>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(1) {
+    content: url("");
+    object-fit: cover;
+    height: 300px;
+    position: relative;
+    top: 40px;
+    left: 0px;
+    z-index: 50;
+    filter: drop-shadow(0px 0px 3rem #daa1dd) !important;
+}*/
+
+table#player img {
+    border: solid 2px #0d000f !important;
+    border-radius: 2px;
+}
+
+p.center a {
+    padding: 20px;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+}
+
+/* Remove icons and edit text for user profile buttons */
+
+table.inner-table.auto:nth-child(2) td {
+    border: 0px;
+}
+
+td.right_odd:nth-child(1)>a:nth-child(1)>img:nth-child(1),
+td.right_odd.text-right img {
+    display: none;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a::before {
+    opacity: 0%;
+    font-size: 0px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a {
+    font-size: 0px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a::after {
+    content: 'Block Member';
+    font-size: 13px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(2)>a {
+    font-size: 0px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(2)>a::after {
+    content: 'Friend Request';
+    font-size: 13px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1)::after {
+    content: 'Message';
+    font-size: 14px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3)::after {
+    content: 'Send Gift!';
+    font-size: 14px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5)::after {
+    content: 'Create Trade';
+    font-size: 14px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p>a:nth-child(3)::after {
+    padding: 15px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p.center:nth-child(5)>a:nth-child(1)>img:nth-child(1) {
+    display: none;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p.center:nth-child(5)>a:nth-child(3)>img:nth-child(1) {
+    display: none;
+}
+
+td.left.b,
+div.lionImage.featured-lion {
+    background: transparent;
+}
+
+div.xlarge img {
+    display: none;
+}
+
+span.text-muted {
+    display: none;
+}
+
+div.xlarge a {
+    padding: 14px !important;
+}
+
+table#player hr {
+    display: none;
+}
+
+div.center.h3:hover {
+    color: #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    transition: 1s;
+}
+
+/* Cave and Beetle Mound grid appearances*/
+
+.cave-grid,
+.mound-grid {
+	background: #432266a7;
+	color: #0d000f !important;
+	border: 0px;
+	border-radius: 10px !important
+}
+
+/* Feed all/Play all */
+
+div.feature,
+.feature {
+    background:;
+    color: #daa1dd;
+    font-size: 13px;
+    font-weight: 200;
+    z-index: 5;
+    box-shadow: 0px 4px 4px #0d000f !important;
+    text-shadow: 0 0 2em, 0 0 .5em #0d000f !important;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.feature,
+div.left {
+    background: #040201;
+}
+
+.feature,
+div.left h3,
+.feature h3 {
+    font-weight: 500 !important;
+    color: #0d000f !important;
+} */
+
+
+
+
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
+
+div.col-md-4 div h3, .dynastycollection a {
+	color: #0d000f !important;
+
+}
+
+div.col-md-4 div h3:hover, div.col > a > div:hover {
+    color: #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    transition: 1s;
+}
+
+div.mb-2 div,
+div.col div {
+    color: #0d000f !important;
+    border-radius: 10px;
+    background:;
+    height: 0px;
+    box-shadow: 0px 4px 6px #410a02 !important;
+    margin: 5px;
+}
+
+/* Edit Details 
+
+table.table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>th:nth-child(1) {
+    background: #410a02 !important;
+    color: #e2d6b2 !important;
+}
+
+td.left b {
+    background: transparent !important;
+    font-weight: 700 !important;
+}
+
+*/
+
+
+/* Background fix for mobile */
+@media only screen and (max-width: 767px) {
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://rio-codes.github.io/lioden-css/cathedral.webp') no-repeat center center;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .container.main {
+        margin-top: 35px;
+    }
+}
+
+/* Image Replacement */
+
+div.mound-grid img {
+    position: relative;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    width: 200px
+}
+
+.cave-grid img, .mound-grid img, .cave-grid, .mound-grid {
+    box-shadow: 0px 4px 4px #0d000f !important;
+}
+
+.cave-grid img:hover, .mound-grid img:hover {
+    transition: 1s;
+    box-shadow: 0px 0px 20px 20px #daa1dd !important;
+    z-index: 50;
+}
+
+div.cave-grid>img[src$="nestingbanner.png"] {
+    content: url('') !important;
+    object-fit: cover !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+    height: 130px !important;
+    width: 300px !important;
+    border: 5px ridge;
+    border: 0px;
+    border-radius: 0px !important;
+}
+
+div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div, div.col.col-sm-4 div {
+    height: 70px;
+    color: #e2d6b2;
+    font-weight: 700 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+div.cave-grid>img[src$="prideoverviewbanner.png"] {
+    content: url('') !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+}
+
+div.cave-grid>img[src$="unsortedlionsbanner.png"] {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+div.cave-grid>img {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+.mound-grid img {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 100px !important;
+    width: 300px !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+#fraCaveList>div:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+#fraCaveList>div:nth-child(3)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+#fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('') !important;
+    object-fit: cover !important;
+    object-position: right !important;; 
+    height: 130px !important;
+    width: 300px !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+img[src$="den_ancestors.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px !important;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="ancestorsfem.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px !important;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="den_achievements.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="den_showcase.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="den_beetlebook.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+/* Replace Social Media Icons */
+
+img[src$="iconFB.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/04/30/saints_facebook.png');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 3rem #daa1dd) !important;
+}
+
+img[src$="iconTwit.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/04/30/saints_twitter.png');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 3rem #daa1dd) !important;
+}
+
+img[src$="iconInsta.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/04/30/saints_instagram.png');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 3rem #daa1dd) !important;
+}
+
+
+/* Misc layout fixes */
+hr {
+	display:none;
+}
+
+#clans td.left, #allies td.left  {
+    display: none
+}
+
+/* Pagedoll */
+
+.container.main::after {
+	content: "";
+	background-image: url('');
+	background-size: cover;
+	display: block;
+	height: 250px;
+	width: 250px;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	z-index: 30;
+	pointer-events: none;
+	opacity: 0.8;
+}
+
+/* Replace Lioden Logo */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
+    border: transparent !important;
+}
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    content: url('');
+    width: 134px;
+}
