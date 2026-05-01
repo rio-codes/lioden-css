@@ -167,7 +167,7 @@ h3 {
 /* Main panel container appearance*/
 
 .container.main {
-    background: #0d000f67;
+    background: #4D305767;
     border: 1px solid #0d000f;
     border-radius: 10px;
 }
@@ -212,7 +212,16 @@ h3 {
     color: #fffced !important;
     font-size: 17px;
     font-weight: 300;    
-    text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
+    text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
+}
+
+.navbar li a:hover {
+    background: #fffceda7 !important;
+    color: #4D3057 !important;
+    font-size: 17px;
+    font-weight: 300;    
+    text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
+    height: 50px;
 }
 
 /* Breadcrumb (Home button, den owner, bookmark) */
