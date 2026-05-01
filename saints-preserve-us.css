@@ -55,6 +55,10 @@ a:focus {
     outline: none !important;
 }
 
+a:hover {
+    color: #4D3057 !important;
+}
+
 /* Bookmark button */
 
 input.floatright {
@@ -197,6 +201,9 @@ h3 {
     font-weight: 200;
 }
 
+.topbar a:hover {
+    color: #4D3057 !important;
+}
 /* Navbar (Den/Crossroads/Etc.) */
 
 .navbar {
@@ -248,7 +255,7 @@ h3 {
     font-family: "Alegreya SC", Georgia, 'Times New Roman', Times, serif;
     font-size: 20px !important;
     font-weight: 400;
-    color: #0d000f !important;
+    color: #fffced !important;
     text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
     text-align: right;
     position: relative;
@@ -257,9 +264,12 @@ h3 {
 }
 
 .sidebar a {
-    color: #0d000f !important;
+    color: #fffced !important;
 }
 
+.sidebar a hover {
+    color: #4D3057;
+}
 .panel h3 {
     background: none !important;
     color: #0d000f;
@@ -274,10 +284,13 @@ h3 {
 }
 
 .col-md-12 a {
-    color: #0d000f;
+    color: #fffced;
     text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
 }
 
+.col-md-12 a:hover, .panel-body.small a:hover, div.panel a:hover, h3 a:hover {
+    color: #4D3057 !important;
+}
 
 .panel-body.small, div.panel {
     background: none !important;
@@ -293,6 +306,7 @@ h3 {
     font-weight: 200;
 }
 
+
 .col-md-3 .panel {
     border: none !important;
     border-radius: 2px;
@@ -301,8 +315,8 @@ h3 {
 .panel-body.small .center a,
 .panel-body.small a {
     font-weight: 200 !important;
-    color: #0d000f !important;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    color: #fffced !important;
+    text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
 }
 
 div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
