@@ -31,7 +31,7 @@ body {
     content: "custom css by lyri";
     color: #ffffff !important;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 200;
     position: absolute;
     top: 62px;
     left: 30px;
@@ -42,7 +42,7 @@ body {
 a:link,
 a:visited {
     color: #0d000f;
-    font-weight: 500;
+    font-weight: 200;
     text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
 }
 
@@ -188,19 +188,13 @@ h3 {
     border: 0px;
     border-radius: 0px 0px 4px 4px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 200;
 }
 
 .topbar a {
     color: #000000 !important;
     font-size: 14px;
-    font-weight: 600;
-}
-
-.topbar a:hover {
-    color: #daa1dd !important;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
-    transition: 1s;
+    font-weight: 200;
 }
 
 /* Navbar (Den/Crossroads/Etc.) */
@@ -209,15 +203,15 @@ h3 {
     background-image: url("https://rio-codes.github.io/lioden-css/stained_glass_header.png");
     background-size: contain;
     border-bottom: none;
-    color: #0d000f;
+    color: #ffffff;
     border-radius: 2px 2px 0px 0px;
     opacity: 1;
 }
 
 .navbar li a {
-    color: #0d000f !important;
+    color: #ffffff !important;
     font-size: 17px;
-    font-weight: 600;    
+    font-weight: 300;    
 }
 
 /* Breadcrumb (Home button, den owner, bookmark) */
@@ -241,7 +235,7 @@ h3 {
 .sidebar h3 {
     font-family: "Alegreya SC", Georgia, 'Times New Roman', Times, serif;
     font-size: 20px !important;
-    font-weight: 800;
+    font-weight: 400;
     color: #0d000f !important;
     text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
     text-align: right;
@@ -271,11 +265,6 @@ h3 {
     color: #005165;
 }
 
-.col-md-12 a :hover {
-    color: #daa1dd !important;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
-    transition: 1s;
-}
 
 .panel-body.small {
     background: none;
@@ -291,12 +280,6 @@ h3 {
     font-weight: 200;
 }
 
-.panel-body.small a:hover {
-    color: #daa1dd !important;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
-    transition: 1s;
-}
-
 .col-md-3 .panel {
     border: transparent;
     box-shadow: 0px 4px 6px #0d000f !important;
@@ -310,30 +293,21 @@ h3 {
     text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
 }
 
-.panel-body.small .center a:hover,
-.panel-body.small a:hover {
-    font-weight: 200 !important;
-    color: #daa1dd !important;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
-}
-
 div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
     display: none;
 }
 
 /* Progress bars (Energy, hunger, EXP, IMP) */
 .progress {
-    background: #432266;
-    color: #daa1dd !important;
+    color: #4d3057 !important;
     border-radius: 4px !important;
 }
 
 .progress-bar,
 .progress-bar-danger,
 .progress-bar-success {
-    background:#daa1dd;
-    box-shadow: 0px 0px 30px 20px #daa1dda7 !important;
-    border-radius: 4px !important;
+    background:#4d3057;
+    border-radius: 2px !important;
     z-index: 10;
 }
 
@@ -667,7 +641,6 @@ div.mb-2 div,
 div.col div {
     color: #0d000f !important;
     border-radius: 10px;
-    background:;
     height: 0px;
     box-shadow: 0px 4px 6px #410a02 !important;
     margin: 5px;
@@ -740,8 +713,8 @@ div.cave-grid>img[src$="nestingbanner.png"] {
 
 div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div, div.col.col-sm-4 div {
     height: 70px;
-    color: #e2d6b2;
-    font-weight: 700 !important;
+    color: #0d000f;
+    font-weight: 200 !important;
     text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
