@@ -20,19 +20,16 @@ body {
     background-attachment: fixed;
     z-index: -1;
     font-family: "Alegreya SC", serif;
-    font-weight: 400 !important;
-    font-style: normal;
+    font-weight: 200 !important;
     font-size: 14px;
-    font-weight: bolder;
     color: #0d000f;
-    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2;
 }
 
 /* CSS Credit */
 
 .breadcrumb::after {
     content: "custom css by lyri";
-    color: #0d000f !important;
+    color: #ffffff !important;
     font-size: 14px;
     font-weight: 600;
     position: absolute;
@@ -49,11 +46,6 @@ a:visited {
     text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
 }
 
-a:hover {
-    color: #daa1dd !important;
-    transition: 0.75s;
-}
-
 a img {
     border: none !important;
     text-decoration: none !important;
@@ -66,7 +58,7 @@ a:focus {
 /* Bookmark button */
 
 input.floatright {
-    background: #4d3057 !important;
+    background: #4D3057 !important;
     border: none !important;
     border-radius: 4px !important;
     color: #0d000f !important;
@@ -77,7 +69,6 @@ input.floatright {
 input.floatright:hover {
     background: transparent !important;
     color: #daa1dd !important;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
     box-shadow: none !important;
     transition: 1s;
 }
@@ -87,8 +78,8 @@ input.floatright:hover {
 input,
 select,
 textarea {
-	background: #432266 !important;
-	border: none !important;
+	background: transparent;
+	border: 1px solid ;
 	border-radius: 5px !important;
 	box-shadow: none !important;
 	text-shadow: none !important;
@@ -102,21 +93,17 @@ textarea {
 .alert,
 .alert-warning,
 .alert-danger {
-    background: #432266 !important;
+    background: #4D3057 !important;
     border: none;
-    color: #0d000f;
-    border-radius: 10px !important;
+    color: #ffffff;
+    border-radius: 2px !important;
     padding: 5px;
-    background: #432266a7 !important;
-    border: 0px !important;
-    border-radius: 10px;
     text-align: left !important;
-    box-shadow: 0px 4px 4px #0d000f !important;
     font-size: 15px;
-    height: 40px;
+    height: 30px;
     position: relative;
     top: 20px;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .alert a,
@@ -180,9 +167,8 @@ h3 {
 /* Main panel container appearance*/
 
 .container.main {
-    background: radial-gradient(#daa1dd00);
-    opacity: 1;
-    border: 0px;
+    background: transparent;
+    border: 1px solid #0d000f;
     border-radius: 10px;
 }
 
@@ -197,7 +183,7 @@ h3 {
 /* Topbar (Welcome and account navigation) */
 
 .topbar {
-    background:;
+    background: none;
     color: #0d000f;
     border: 0px;
     border-radius: 0px 0px 4px 4px;
@@ -221,11 +207,11 @@ h3 {
 
 .navbar {
     background-image: url("https://rio-codes.github.io/lioden-css/stained_glass_header.png");
+    background-size: contain;
     border-bottom: none;
     color: #0d000f;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 2px 2px 0px 0px;
     opacity: 1;
-    box-shadow: 0px 4px 4px #0d000f !important;
 }
 
 .navbar li a {
@@ -234,30 +220,18 @@ h3 {
     font-weight: 600;    
 }
 
-.navbar li a:hover {
-    background: #432266 !important;
-    border-bottom: none;
-    color: #daa1dda7 !important;
-    border-radius: 0px;
-    filter: brightness(100%) opacity(90%);
-    transition: 1s !important;
-    height: 50px;
-    width: auto !important
-}
-
 /* Breadcrumb (Home button, den owner, bookmark) */
 
 .breadcrumb {
-    background: #432266a7 !important;
-    color: #daa1dd !important;
+    background: #4D3057 !important;
+    color: #0d000f !important;
     border: 0px !important;
     border-radius: 10px;
     text-align: left !important;
-    box-shadow: 0px 4px 4px #0d000f !important;
 }
 
 .breadcrumb .active {
-    color: #daa1dd !important;
+    color: #0d000f !important;
 }
 
 
@@ -278,12 +252,6 @@ h3 {
 
 .sidebar a {
     color: #005165;
-}
-
-.sidebar a:hover {
-    color: #daa1dd !important;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
-    transition: 1s;
 }
 
 .panel h3 {
@@ -310,13 +278,11 @@ h3 {
 }
 
 .panel-body.small {
-    background: radial-gradient(#e2d6b2, #5d4808) !important;
+    background: none;
     color: #daa1dd;
     font-size: 13px;
     font-weight: 200;
     z-index: 5;
-    box-shadow: 0px 4px 4px #0d000f !important;
-    text-shadow: 0 0 2em, 0 0 .5em #0d000f !important;
     border-radius: 10px;
 }
 
@@ -365,7 +331,7 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 .progress-bar,
 .progress-bar-danger,
 .progress-bar-success {
-    background: radial-gradient(#ffffff, #daa1dda7);
+    background:#daa1dd;
     box-shadow: 0px 0px 30px 20px #daa1dda7 !important;
     border-radius: 4px !important;
     z-index: 10;
@@ -381,7 +347,7 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 
 /* Comment box */
 div#commentBox {
-    background: #432266a7 !important;
+    background: none;
     border: 0px;
     border-radius: 10px;
     color: #0d000f !important;
@@ -389,7 +355,6 @@ div#commentBox {
     padding-left: 10px;
     padding-right: 10px;
     text-align: left;
-    box-shadow: 0px 4px 4px #0d000f !important;
 }
 
 div#commentBox a {
@@ -441,7 +406,6 @@ button.button,
 	color: #daa1dd !important;
     width: 160px;
     height: 30px;
-    box-shadow: 0px 4px 4px #0d000f !important;
 }
 
 /* All tables - styling */
@@ -465,14 +429,16 @@ table#about.table a {
     text-decoration: none;
 }
 
-.table .top, #sparring th, table.table th, div.left {
-    background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808) !important;
+.table .top, #sparring th, table.table th {
+    background-image: url("https://rio-codes.github.io/lioden-css/stained_glass_header.png");
+    background-size: contain;
     border-bottom: 1px solid #0d000f;
 }
 
 .top,
 th {
-    background: #19765d !important;
+    background-image: url("https://rio-codes.github.io/lioden-css/stained_glass_header.png");
+    background-size: contain;
     color: #0d000f !important;
     border-radius: 10px 10px 0px 0px;
 }
@@ -480,7 +446,7 @@ th {
 .bottom,
 th,
 .bottom a {
-    background: transparent !important;
+    background-image: url("https://rio-codes.github.io/lioden-css/stained_glass_header.png");
     color: #014354;
 }
 
@@ -522,12 +488,11 @@ div.lionImage.featured-lion {
 /* Lion and user profile pictures */
 
 div#lion_image {
-    opacity: 0%;
     
 }
 
-#about>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(1) {
-    content: url("https://cdn.allthepics.net/images/2026/04/29/ranjit-300px-flipped-halfbody.png");
+/*#about>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(1) {
+    content: url("");
     object-fit: cover;
     height: 300px;
     position: relative;
@@ -535,13 +500,10 @@ div#lion_image {
     left: 0px;
     z-index: 50;
     filter: drop-shadow(0px 0px 3rem #daa1dd) !important;
-}
+}*/
 
 table#player img {
     border: solid 2px #0d000f !important;
-    border-radius: 50%;
-    box-shadow: 0px 0px 30px 20px #daa1dda7 !important;
-
 }
 
 p.center a {
@@ -658,17 +620,17 @@ div.center.h3:hover {
 
 .cave-grid,
 .mound-grid {
-	background: #432266a7;
+	background: none;
 	color: #0d000f !important;
 	border: 0px;
-	border-radius: 10px !important
+	border-radius: 2px !important
 }
 
-/* Feed all/Play all */
+/* Feed all/Play all
 
 div.feature,
 .feature {
-    background: radial-gradient(#e2d6b2, #5d4808) !important;
+    background:;
     color: #daa1dd;
     font-size: 13px;
     font-weight: 200;
@@ -701,17 +663,11 @@ div.col-md-4 div h3, .dynastycollection a {
 
 }
 
-div.col-md-4 div h3:hover, div.col > a > div:hover {
-    color: #daa1dd !important;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
-    transition: 1s;
-}
-
 div.mb-2 div,
 div.col div {
     color: #0d000f !important;
     border-radius: 10px;
-    background: radial-gradient(#e2d6b2, #5d4808) !important;
+    background:;
     height: 0px;
     box-shadow: 0px 4px 6px #410a02 !important;
     margin: 5px;
@@ -741,7 +697,7 @@ td.left b {
         left: 0;
         width: 100%;
         height: 100%;
-        background: url('https://rio-codes.github.io/lioden-css/clockwork-shorter.webp') no-repeat center center;
+        background: url('https://rio-codes.github.io/lioden-css/cathedral.webp') no-repeat center center;
         background-size: cover;
         z-index: -1;
     }
@@ -772,7 +728,7 @@ div.mound-grid img {
 }
 
 div.cave-grid>img[src$="nestingbanner.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-02.jpg') !important;
+    content: url('') !important;
     object-fit: cover !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
     height: 130px !important;
@@ -790,7 +746,7 @@ div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div, div.col.col-sm-4 div {
 }
 
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-07.jpg') !important;
+    content: url('') !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
     object-fit: cover !important;
     height: 130px !important;
@@ -798,7 +754,7 @@ div.cave-grid>img[src$="prideoverviewbanner.png"] {
 }
 
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-05.jpg') !important;
+    content: url('') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
@@ -806,7 +762,7 @@ div.cave-grid>img[src$="unsortedlionsbanner.png"] {
 }
 
 div.cave-grid>img {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-04.jpg') !important;
+    content: url('') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
@@ -814,7 +770,7 @@ div.cave-grid>img {
 }
 
 .mound-grid img {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-06.jpg') !important;
+    content: url('') !important;
     object-fit: cover !important;
     height: 100px !important;
     width: 300px !important;
@@ -822,7 +778,7 @@ div.cave-grid>img {
 }
 
 #fraCaveList>div:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-03.jpg') !important;
+    content: url('') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
@@ -830,7 +786,7 @@ div.cave-grid>img {
 }
 
 #fraCaveList>div:nth-child(3)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-03.jpg') !important;
+    content: url('') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
@@ -838,7 +794,7 @@ div.cave-grid>img {
 }
 
 #fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-09.jpg') !important;
+    content: url('') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
@@ -846,7 +802,7 @@ div.cave-grid>img {
 }
 
 div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-08.jpg') !important;
+    content: url('') !important;
     object-fit: cover !important;
     object-position: right !important;; 
     height: 130px !important;
@@ -895,7 +851,7 @@ img[src$="den_beetlebook.png"] {
 /* Replace Social Media Icons */
 
 img[src$="iconFB.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/30/clockwork_facebook.png');
+    content: url('');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -904,7 +860,7 @@ img[src$="iconFB.png"] {
 }
 
 img[src$="iconTwit.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/30/clockwork_twitter.png');
+    content: url('');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -915,7 +871,7 @@ img[src$="iconTwit.png"] {
 }
 
 img[src$="iconInsta.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/30/clockwork_instagram.png');
+    content: url('');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -924,10 +880,6 @@ img[src$="iconInsta.png"] {
 }
 
 
-
-img[src$="image.png?ex=699f6661&is=699e14e1&hm=fbcf57db1ea875e7341d6cb771f9756f6c56fd741695e7c32d1f67e4ec39ae0c&=&format=webp&quality=lossless"] {
-    display: none;
-}
 
 /* Misc layout fixes */
 hr {
@@ -942,7 +894,7 @@ hr {
 
 .container.main::after {
 	content: "";
-	background-image: url('https://cdn.allthepics.net/images/2026/04/30/clockwork-pagedoll.png');
+	background-image: url('');
 	background-size: cover;
 	display: block;
 	height: 250px;
@@ -962,6 +914,5 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
 }
 
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
-    content: url('https://cdn.allthepics.net/images/2026/04/29/ranjit-300px.png');
-    width: 134px;
+    content: url('');
 }
