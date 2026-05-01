@@ -22,14 +22,14 @@ body {
     font-family: "Alegreya SC", serif;
     font-weight: 200 !important;
     font-size: 14px;
-    color: #0d000f;
+    color: #fffced;
 }
 
 /* CSS Credit */
 
 .breadcrumb::after {
     content: "custom css by lyri";
-    color: #ffffff !important;
+    color: #fffced !important;
     font-size: 14px;
     font-weight: 200;
     position: absolute;
@@ -41,9 +41,9 @@ body {
 
 a:link,
 a:visited {
-    color: #0d000f;
+    color: #fffced;
     font-weight: 200;
-    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #fffced !important;
 }
 
 a img {
@@ -60,9 +60,8 @@ a:focus {
 input.floatright {
     background: #4D3057 !important;
     border: none !important;
-    border-radius: 4px !important;
+    border-radius: 2px !important;
     color: #0d000f !important;
-    box-shadow: 0px 0px 10px 5px #daa1dda7 !important;
     text-align: center !important;
 }
 
@@ -79,11 +78,11 @@ input,
 select,
 textarea {
 	background: transparent;
-	border: 1px solid ;
+	border: 1px solid #4D3057;
 	border-radius: 5px !important;
 	box-shadow: none !important;
 	text-shadow: none !important;
-	color: #daa1dd !important;
+	color: #0d000f !important;
 	font-weight: 300;
 }
 
@@ -95,7 +94,7 @@ textarea {
 .alert-danger {
     background: #4D3057 !important;
     border: none;
-    color: #ffffff;
+    color: #fffced;
     border-radius: 2px !important;
     padding: 5px;
     text-align: left !important;
@@ -110,7 +109,7 @@ textarea {
 .alert-warning a,
 .alert-danger a {
     color: #0d000f;
-    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #fffced !important;
 }
 
 /* Main header appearance ("___"'s Den) */
@@ -128,11 +127,12 @@ div#pageContainer.col-md-9 h1:before {
 h1 {
     font-family: "Alegreya SC", Georgia, 'Times New Roman', Times, serif;
     font-size: 58px;
-    color: #0d000f;
+    color: #fffced;
     font-weight: 400 !important;
     -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
+    text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
 }
 
 h1.center>small:nth-child(2) a:link,
@@ -151,7 +151,7 @@ p.center:nth-child(2)>a:nth-child(1) {
 h2 {
     font-family: "Alegreya SC", Georgia, 'Times New Roman', Times, serif;
     font-size: 28px;
-    color: #0d000f !important;
+    color: #fffced !important;
 }
 
 /* Tertiary header */
@@ -161,7 +161,7 @@ h3 {
     font-size: 28px !important;
     font-size: 24px;
     font-weight: 300;
-    color: #0d000f !important;
+    color: #fffced !important;
 }
 
 /* Main panel container appearance*/
@@ -184,7 +184,7 @@ h3 {
 
 .topbar {
     background: none;
-    color: #0d000f;
+    color: #fffced;
     border: 0px;
     border-radius: 0px 0px 4px 4px;
     font-size: 14px;
@@ -192,7 +192,7 @@ h3 {
 }
 
 .topbar a {
-    color: #000000 !important;
+    color: #fffced !important;
     font-size: 14px;
     font-weight: 200;
 }
@@ -203,29 +203,32 @@ h3 {
     background-image: url("https://rio-codes.github.io/lioden-css/stained_glass_header.png");
     background-size: contain;
     border-bottom: none;
-    color: #ffffff;
+    color: #fffced;
     border-radius: 2px 2px 0px 0px;
     opacity: 1;
 }
 
 .navbar li a {
-    color: #ffffff !important;
+    color: #fffced !important;
     font-size: 17px;
     font-weight: 300;    
+    text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
 }
 
 /* Breadcrumb (Home button, den owner, bookmark) */
 
 .breadcrumb {
     background: #4D3057 !important;
-    color: #0d000f !important;
+    color: #fffced !important;
     border: 0px !important;
     border-radius: 10px;
     text-align: left !important;
+    text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
 }
 
 .breadcrumb .active {
-    color: #0d000f !important;
+    color: #fffced !important;
+    text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
 }
 
 
@@ -237,7 +240,7 @@ h3 {
     font-size: 20px !important;
     font-weight: 400;
     color: #0d000f !important;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
     text-align: right;
     position: relative;
     padding-top: 25px;
@@ -245,11 +248,11 @@ h3 {
 }
 
 .sidebar a {
-    color: #005165;
+    color: #0d000f !important;
 }
 
 .panel h3 {
-    background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808) !important;
+    background: none !important;
     color: #0d000f;
     font-size: 24px;
     text-align: right;
@@ -257,33 +260,33 @@ h3 {
     border: 0px !important;
     z-index: 5;
     opacity: 100%;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
     border-radius: 10px;
 }
 
 .col-md-12 a {
-    color: #005165;
+    color: #0d000f;
+    text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
 }
 
 
-.panel-body.small {
-    background: none;
-    color: #daa1dd;
+.panel-body.small, div.panel {
+    background: none !important;
+    color: #fffced !important;
     font-size: 13px;
     font-weight: 200;
     z-index: 5;
     border-radius: 10px;
 }
 
-.panel-body.small a {
-    color: #005165;
+.panel-body.small a, div.panel a {
+    color: #fffced !important;
     font-weight: 200;
 }
 
 .col-md-3 .panel {
-    border: transparent;
-    box-shadow: 0px 4px 6px #0d000f !important;
-    border-radius: 11px;
+    border: none !important;
+    border-radius: 2px;
 }
 
 .panel-body.small .center a,
@@ -312,11 +315,13 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 }
 
 .progress div {
-    color: #0d000f !important;
+    color: #fffced !important;
     font-size: 10px;
     padding: 1px;
     font-weight: 200;
     z-index: 15;
+    text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
+
 }
 
 /* Comment box */
@@ -324,7 +329,8 @@ div#commentBox {
     background: none;
     border: 0px;
     border-radius: 10px;
-    color: #0d000f !important;
+    color: #fffced !important;
+    text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
     margin-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -332,16 +338,19 @@ div#commentBox {
 }
 
 div#commentBox a {
-    color: #014354;
+    color: #fffced;
 }
 
 div.commentText {
-    border-bottom: 1px solid #0d000f;
+    color: #fffced !important;
+    border-bottom: 1px solid #fffced;
+    text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
     height: 47px;
 }
 
 .text-muted {
-    color: #0d000f !important;
+    color: #fffced !important;
+    text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
 }
 
 img.floatleft.commentTag.clear {
@@ -357,8 +366,8 @@ img.floatleft.commentTag.clear {
 
 .btn:hover,
 button.button:hover, .btn.btn:hover {
-	background: #daa1dd;
-	color: #432266 !important;
+	background: #4D3057;
+	color: #fffced !important;
     box-shadow: 0px 0px 30px 20px #daa1dda7 !important;
     transition: 1s;
 }
@@ -399,7 +408,7 @@ table#about, table#player, table#attack, table#allies {
 }
 
 table#about.table a {
-    color: #014354;
+    color: #fffced;
     text-decoration: none;
 }
 
@@ -407,31 +416,41 @@ table#about.table a {
     background-image: url("https://rio-codes.github.io/lioden-css/stained_glass_header.png");
     background-size: contain;
     border-bottom: 1px solid #0d000f;
+    text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
 }
 
 .top,
 th {
     background-image: url("https://rio-codes.github.io/lioden-css/stained_glass_header.png");
     background-size: contain;
-    color: #0d000f !important;
-    border-radius: 10px 10px 0px 0px;
+    color: #fffced !important;
+    border-radius: 2px 2px 0px 0px;
 }
 
 .bottom,
 th,
 .bottom a {
-    background-image: url("https://rio-codes.github.io/lioden-css/stained_glass_header.png");
+    background: #4D3057;
     color: #014354;
+}
+
+.table .bottom {
+    background: none !important;
 }
 
 td.bottom button {
     margin-top: 10px;
 }
 
+#about.table tr:nth-child(7) {
+    background: #4D3057
+}
+
 .inner-table .left {
     background: transparent !important;
-    color: #0d000f;
-    font-size: 11px;
+    color: #fffced;
+    text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
+    font-size: 13px;
     border: 1px solid #0d000f;
     border-left: 1px solid #0d000f;
     border-top: 0px;
@@ -442,8 +461,9 @@ td.bottom button {
 
 .inner-table .right {
     background: transparent !important;
-    color: #0d000f;
-    font-size: 11px;
+    color: #fffced;
+    text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
+    font-size: 13px;
     border-bottom: 1px solid #0d000f;
     border-right: 0px;
     border-left: 1px solid #0d000f;
@@ -461,20 +481,13 @@ div.lionImage.featured-lion {
 
 /* Lion and user profile pictures */
 
-div#lion_image {
-    
+#about.table div .lion-image-block {
+   border-radius: 50%;
+   position: relative;
+   left: 15px;
+   top: 15px;
+   box-shadow: 0px 0px 12px 12px #fffced !important;
 }
-
-/*#about>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(1) {
-    content: url("");
-    object-fit: cover;
-    height: 300px;
-    position: relative;
-    top: 40px;
-    left: 0px;
-    z-index: 50;
-    filter: drop-shadow(0px 0px 3rem #daa1dd) !important;
-}*/
 
 table#player img {
     border: solid 2px #0d000f !important;
