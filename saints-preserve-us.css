@@ -9,17 +9,6 @@ Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Ta
 Full credits for code contributors, artwork, photos, icons, and fonts can be found at https://rio-codes.github.io/lioden-css/credits_saints.txt .
 */
 
-/*
-Saints Preserve Us
-
-Created 04/2026 by lyri [#583579] for moth [#164881]
-AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
-
-Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Tawny [#251887], Hok-Z [#41458], Austin [#43750] 
-
-Full credits for code contributors, artwork, photos, icons, and fonts can be found at https://rio-codes.github.io/lioden-css/credits_saints.txt .
-*/
-
 /* Import Fonts (From Google Fonts) */
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Manufacturing+Consent&display=swap');
@@ -60,6 +49,11 @@ a:visited {
     text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
 }
 
+a:hover {
+    color: #daa1dd !important;
+    transition: 0.75s;
+}
+
 a img {
     border: none !important;
     text-decoration: none !important;
@@ -72,7 +66,7 @@ a:focus {
 /* Bookmark button */
 
 input.floatright {
-    background: #daa1dd !important;
+    background: #4d3057 !important;
     border: none !important;
     border-radius: 4px !important;
     color: #0d000f !important;
@@ -108,23 +102,28 @@ textarea {
 .alert,
 .alert-warning,
 .alert-danger {
-    background: #4d3057 !important;
+    background: #432266 !important;
     border: none;
-    color: #ffffff;
+    color: #0d000f;
     border-radius: 10px !important;
     padding: 5px;
+    background: #432266a7 !important;
+    border: 0px !important;
+    border-radius: 10px;
     text-align: left !important;
+    box-shadow: 0px 4px 4px #0d000f !important;
     font-size: 15px;
     height: 40px;
     position: relative;
     top: 20px;
-    font-weight: 200;
+    font-weight: 600;
 }
 
 .alert a,
 .alert-warning a,
 .alert-danger a {
-    color: #ffffff;
+    color: #0d000f;
+    text-shadow: 0 0 .6em, 0 0 1em #e2d6b2 !important;
 }
 
 /* Main header appearance ("___"'s Den) */
@@ -147,7 +146,6 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
-    text-shadow: 0 0 2em, 0 0 .5em #ffffff !important;
 }
 
 h1.center>small:nth-child(2) a:link,
@@ -182,9 +180,10 @@ h3 {
 /* Main panel container appearance*/
 
 .container.main {
-    background: transparent;
-    border: 1px;
-    border-radius: 2px;
+    background: radial-gradient(#daa1dd00);
+    opacity: 1;
+    border: 0px;
+    border-radius: 10px;
 }
 
 /* Make left panel background and border invisible */
@@ -198,7 +197,7 @@ h3 {
 /* Topbar (Welcome and account navigation) */
 
 .topbar {
-    background: #4d3057;
+    background:;
     color: #0d000f;
     border: 0px;
     border-radius: 0px 0px 4px 4px;
@@ -207,36 +206,38 @@ h3 {
 }
 
 .topbar a {
-    color: #0d000f !important;
+    color: #000000 !important;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 600;
+}
+
+.topbar a:hover {
+    color: #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    transition: 1s;
 }
 
 /* Navbar (Den/Crossroads/Etc.) */
 
 .navbar {
     background-image: url("https://rio-codes.github.io/lioden-css/stained_glass_header.png");
-    background-size: contain;
     border-bottom: none;
-    color: #ffffff;
-    text-shadow: 0 0 2em, 0 0 .5em #432266 !important;
-    border-radius: 2px 2px 0px 0px;
-    align-items: left;
+    color: #0d000f;
+    border-radius: 10px 10px 0px 0px;
+    opacity: 1;
+    box-shadow: 0px 4px 4px #0d000f !important;
 }
 
 .navbar li a {
-    background: #432266a7 !important;
-    color: #ffffff !important;
+    color: #0d000f !important;
     font-size: 17px;
-    font-weight: 200;
-    padding: 15px;
-    margin-left: 15px;
+    font-weight: 600;    
 }
 
 .navbar li a:hover {
     background: #432266 !important;
     border-bottom: none;
-    color: #daa1dd !important;
+    color: #daa1dda7 !important;
     border-radius: 0px;
     filter: brightness(100%) opacity(90%);
     transition: 1s !important;
@@ -247,15 +248,16 @@ h3 {
 /* Breadcrumb (Home button, den owner, bookmark) */
 
 .breadcrumb {
-    background: #4d3057 !important;
-    color: #ffffff !important;
+    background: #432266a7 !important;
+    color: #daa1dd !important;
     border: 0px !important;
-    border-radius: 2px;
+    border-radius: 10px;
     text-align: left !important;
+    box-shadow: 0px 4px 4px #0d000f !important;
 }
 
 .breadcrumb .active {
-    color: #ffffff !important;
+    color: #daa1dd !important;
 }
 
 
@@ -265,9 +267,9 @@ h3 {
 .sidebar h3 {
     font-family: "Alegreya SC", Georgia, 'Times New Roman', Times, serif;
     font-size: 20px !important;
-    font-weight: 300;
+    font-weight: 800;
     color: #0d000f !important;
-    text-shadow: 0 0 2em, 0 0 .5em #ffffff !important;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
     text-align: right;
     position: relative;
     padding-top: 25px;
@@ -275,11 +277,17 @@ h3 {
 }
 
 .sidebar a {
-    color: #0d000f;
+    color: #005165;
+}
+
+.sidebar a:hover {
+    color: #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    transition: 1s;
 }
 
 .panel h3 {
-    background: transparent;
+    background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808) !important;
     color: #0d000f;
     font-size: 24px;
     text-align: right;
@@ -287,19 +295,28 @@ h3 {
     border: 0px !important;
     z-index: 5;
     opacity: 100%;
-    border-radius: 2px;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    border-radius: 10px;
 }
 
 .col-md-12 a {
     color: #005165;
 }
 
+.col-md-12 a :hover {
+    color: #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    transition: 1s;
+}
+
 .panel-body.small {
-    background: none;
+    background: radial-gradient(#e2d6b2, #5d4808) !important;
     color: #daa1dd;
     font-size: 13px;
     font-weight: 200;
     z-index: 5;
+    box-shadow: 0px 4px 4px #0d000f !important;
+    text-shadow: 0 0 2em, 0 0 .5em #0d000f !important;
     border-radius: 10px;
 }
 
@@ -315,15 +332,23 @@ h3 {
 }
 
 .col-md-3 .panel {
-    background: transparent;
-    border: 1px solid #0d000f;
-    border-radius: 2px;
+    border: transparent;
+    box-shadow: 0px 4px 6px #0d000f !important;
+    border-radius: 11px;
 }
 
 .panel-body.small .center a,
 .panel-body.small a {
     font-weight: 200 !important;
     color: #0d000f !important;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+}
+
+.panel-body.small .center a:hover,
+.panel-body.small a:hover {
+    font-weight: 200 !important;
+    color: #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
 }
 
 div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
@@ -332,21 +357,22 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 
 /* Progress bars (Energy, hunger, EXP, IMP) */
 .progress {
-    background: #4d3057;
-    color: #4d3057 !important;
-    border-radius: 2px !important;
+    background: #432266;
+    color: #daa1dd !important;
+    border-radius: 4px !important;
 }
 
 .progress-bar,
 .progress-bar-danger,
 .progress-bar-success {
-    background: #432266;
-    border-radius: 2px !important;
+    background: radial-gradient(#ffffff, #daa1dda7);
+    box-shadow: 0px 0px 30px 20px #daa1dda7 !important;
+    border-radius: 4px !important;
     z-index: 10;
 }
 
 .progress div {
-    color: #ffffff !important;
+    color: #0d000f !important;
     font-size: 10px;
     padding: 1px;
     font-weight: 200;
@@ -355,14 +381,15 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 
 /* Comment box */
 div#commentBox {
-    background: transparent;
-    border: 1px solid 432266;
-    border-radius: 2px;
+    background: #432266a7 !important;
+    border: 0px;
+    border-radius: 10px;
     color: #0d000f !important;
     margin-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: left;
+    box-shadow: 0px 4px 4px #0d000f !important;
 }
 
 div#commentBox a {
@@ -393,6 +420,7 @@ img.floatleft.commentTag.clear {
 button.button:hover, .btn.btn:hover {
 	background: #daa1dd;
 	color: #432266 !important;
+    box-shadow: 0px 0px 30px 20px #daa1dda7 !important;
     transition: 1s;
 }
 
@@ -438,7 +466,7 @@ table#about.table a {
 }
 
 .table .top, #sparring th, table.table th, div.left {
-    background:;
+    background: linear-gradient(to right, #5d4808, #e2d6b2, #5d4808) !important;
     border-bottom: 1px solid #0d000f;
 }
 
@@ -494,13 +522,12 @@ div.lionImage.featured-lion {
 /* Lion and user profile pictures */
 
 div#lion_image {
-    border: solid 2px #0d000f !important;
-    border-radius: 2px;
+    opacity: 0%;
+    
 }
 
-
-/*#about>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(1) {
-    content: url("");
+#about>tbody:nth-child(1)>tr:nth-child(2)>td:nth-child(1) {
+    content: url("https://cdn.allthepics.net/images/2026/04/29/ranjit-300px-flipped-halfbody.png");
     object-fit: cover;
     height: 300px;
     position: relative;
@@ -508,11 +535,13 @@ div#lion_image {
     left: 0px;
     z-index: 50;
     filter: drop-shadow(0px 0px 3rem #daa1dd) !important;
-}*/
+}
 
 table#player img {
     border: solid 2px #0d000f !important;
-    border-radius: 2px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 20px #daa1dda7 !important;
+
 }
 
 p.center a {
@@ -543,6 +572,7 @@ td.right_odd.text-right img {
 #player>tbody>tr:nth-child(3)>td:nth-child(1)>a::after {
     content: 'Block Member';
     font-size: 13px;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
 }
 
 #player>tbody>tr:nth-child(3)>td:nth-child(2)>a {
@@ -552,6 +582,7 @@ td.right_odd.text-right img {
 #player>tbody>tr:nth-child(3)>td:nth-child(2)>a::after {
     content: 'Friend Request';
     font-size: 13px;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1) {
@@ -561,6 +592,7 @@ td.right_odd.text-right img {
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1)::after {
     content: 'Message';
     font-size: 14px !important;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3) {
@@ -570,6 +602,7 @@ td.right_odd.text-right img {
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3)::after {
     content: 'Send Gift!';
     font-size: 14px !important;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5) {
@@ -579,6 +612,7 @@ td.right_odd.text-right img {
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5)::after {
     content: 'Create Trade';
     font-size: 14px !important;
+    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>p>a:nth-child(3)::after {
@@ -634,7 +668,7 @@ div.center.h3:hover {
 
 div.feature,
 .feature {
-    background:;
+    background: radial-gradient(#e2d6b2, #5d4808) !important;
     color: #daa1dd;
     font-size: 13px;
     font-weight: 200;
@@ -677,7 +711,7 @@ div.mb-2 div,
 div.col div {
     color: #0d000f !important;
     border-radius: 10px;
-    background:;
+    background: radial-gradient(#e2d6b2, #5d4808) !important;
     height: 0px;
     box-shadow: 0px 4px 6px #410a02 !important;
     margin: 5px;
@@ -707,7 +741,7 @@ td.left b {
         left: 0;
         width: 100%;
         height: 100%;
-        background: url('https://rio-codes.github.io/lioden-css/cathedral.webp') no-repeat center center;
+        background: url('https://rio-codes.github.io/lioden-css/clockwork-shorter.webp') no-repeat center center;
         background-size: cover;
         z-index: -1;
     }
@@ -738,7 +772,7 @@ div.mound-grid img {
 }
 
 div.cave-grid>img[src$="nestingbanner.png"] {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-02.jpg') !important;
     object-fit: cover !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
     height: 130px !important;
@@ -756,7 +790,7 @@ div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div, div.col.col-sm-4 div {
 }
 
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-07.jpg') !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
     object-fit: cover !important;
     height: 130px !important;
@@ -764,7 +798,7 @@ div.cave-grid>img[src$="prideoverviewbanner.png"] {
 }
 
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-05.jpg') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
@@ -772,7 +806,7 @@ div.cave-grid>img[src$="unsortedlionsbanner.png"] {
 }
 
 div.cave-grid>img {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-04.jpg') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
@@ -780,7 +814,7 @@ div.cave-grid>img {
 }
 
 .mound-grid img {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-06.jpg') !important;
     object-fit: cover !important;
     height: 100px !important;
     width: 300px !important;
@@ -788,7 +822,7 @@ div.cave-grid>img {
 }
 
 #fraCaveList>div:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-03.jpg') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
@@ -796,7 +830,7 @@ div.cave-grid>img {
 }
 
 #fraCaveList>div:nth-child(3)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-03.jpg') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
@@ -804,7 +838,7 @@ div.cave-grid>img {
 }
 
 #fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-09.jpg') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
@@ -812,7 +846,7 @@ div.cave-grid>img {
 }
 
 div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/04/29/steampunk-photo-08.jpg') !important;
     object-fit: cover !important;
     object-position: right !important;; 
     height: 130px !important;
@@ -861,7 +895,7 @@ img[src$="den_beetlebook.png"] {
 /* Replace Social Media Icons */
 
 img[src$="iconFB.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/30/saints_facebook.png');
+    content: url('https://cdn.allthepics.net/images/2026/04/30/clockwork_facebook.png');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -870,7 +904,7 @@ img[src$="iconFB.png"] {
 }
 
 img[src$="iconTwit.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/30/saints_twitter.png');
+    content: url('https://cdn.allthepics.net/images/2026/04/30/clockwork_twitter.png');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -881,7 +915,7 @@ img[src$="iconTwit.png"] {
 }
 
 img[src$="iconInsta.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/04/30/saints_instagram.png');
+    content: url('https://cdn.allthepics.net/images/2026/04/30/clockwork_instagram.png');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -889,6 +923,11 @@ img[src$="iconInsta.png"] {
     filter: drop-shadow(0px 0px 3rem #daa1dd) !important;
 }
 
+
+
+img[src$="image.png?ex=699f6661&is=699e14e1&hm=fbcf57db1ea875e7341d6cb771f9756f6c56fd741695e7c32d1f67e4ec39ae0c&=&format=webp&quality=lossless"] {
+    display: none;
+}
 
 /* Misc layout fixes */
 hr {
@@ -903,7 +942,7 @@ hr {
 
 .container.main::after {
 	content: "";
-	background-image: url('');
+	background-image: url('https://cdn.allthepics.net/images/2026/04/30/clockwork-pagedoll.png');
 	background-size: cover;
 	display: block;
 	height: 250px;
@@ -923,6 +962,6 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
 }
 
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
-    content: url('');
+    content: url('https://cdn.allthepics.net/images/2026/04/29/ranjit-300px.png');
     width: 134px;
 }
