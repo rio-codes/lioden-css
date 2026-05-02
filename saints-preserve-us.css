@@ -155,12 +155,18 @@ div#pageContainer.col-md-9 h1 {
 }
 
 div#pageContainer.col-md-9 h1:before {
-  content: "The Cathedral of Aurelion";
-  text-indent: 50px;
+  content: "Cathedral of Aurelion";
+  text-indent: 100px;
   float: left;
   position: relative;
   top: 20px;
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    div#pageContainer.col-md-9 h1:before {
+        text-indent: 20px;
+    }
 }
 
 h1 {
