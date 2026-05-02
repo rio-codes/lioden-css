@@ -130,7 +130,9 @@ div#pageContainer.col-md-9 h1 {
 div#pageContainer.col-md-9 h1:before {
   content: "The Cathedral of Aurelion";
   text-indent: 50px;
-  float: left
+  float: left;
+  position: relative;
+  top: 20px;
 }
 
 h1 {
@@ -156,6 +158,8 @@ p.center:nth-child(2)>a:nth-child(1) {
     font-weight: 300 !important;
     color: #432266 !important;
 }
+
+/* Secondary header */
 
 h2 {
     font-family: "Alegreya SC", Georgia, 'Times New Roman', Times, serif;
@@ -239,13 +243,12 @@ h3 {
 /* Breadcrumb (Home button, den owner, bookmark) */
 
 .breadcrumb {
-    background: #4D3057 !important;
+    background: #4D3057a7 !important;
     color: #fffced !important;
     border: 0px !important;
     border-radius: 2px;
     text-align: left !important;
     text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
-    box-shadow: 0px 0px 5px 2px #fffced !important;
 }
 
 .breadcrumb .active {
@@ -338,18 +341,18 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 .progress-bar,
 .progress-bar-danger,
 .progress-bar-success {
-    background:#4d3057;
+    background:#4d3057a7;
     border-radius: 2px !important;
     z-index: 10;
 }
 
 .progress div {
-    color: #fffced !important;
-    font-size: 10px;
+    color: #0d000f !important;
+    font-size: 11px;
     padding: 1px;
     font-weight: 200;
     z-index: 15;
-    text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
+    text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
 
 }
 
@@ -374,7 +377,6 @@ div.commentText {
     color: #fffced !important;
     border-bottom: 1px solid #fffced;
     text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
-    height: 47px;
 }
 
 .text-muted {
@@ -411,7 +413,7 @@ button.button,
 	border: none !important;
 	border-radius: 4px;
 	text-shadow: none !important;
-	color: #daa1dd !important;
+	color: #fffced !important;
     width: 160px;
     height: 30px;
 }
@@ -524,7 +526,7 @@ table#player img {
 
 p.center a {
     padding: 20px;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
 }
 
 /* Remove icons and edit text for user profile buttons */
@@ -550,7 +552,7 @@ td.right_odd.text-right img {
 #player>tbody>tr:nth-child(3)>td:nth-child(1)>a::after {
     content: 'Block Member';
     font-size: 13px;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
 }
 
 #player>tbody>tr:nth-child(3)>td:nth-child(2)>a {
@@ -560,7 +562,7 @@ td.right_odd.text-right img {
 #player>tbody>tr:nth-child(3)>td:nth-child(2)>a::after {
     content: 'Friend Request';
     font-size: 13px;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1) {
@@ -570,7 +572,7 @@ td.right_odd.text-right img {
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1)::after {
     content: 'Message';
     font-size: 14px !important;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3) {
@@ -580,7 +582,7 @@ td.right_odd.text-right img {
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3)::after {
     content: 'Send Gift!';
     font-size: 14px !important;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5) {
@@ -590,7 +592,7 @@ td.right_odd.text-right img {
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5)::after {
     content: 'Create Trade';
     font-size: 14px !important;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
+    text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>p>a:nth-child(3)::after {
