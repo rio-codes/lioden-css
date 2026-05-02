@@ -620,6 +620,10 @@ td.right_odd.text-right img {
     height: 20px !important;
 }
 
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3) {
+    font-size: 0px;
+}
+
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3):after {
     background: transparent;
     content: 'Send Gift!';
