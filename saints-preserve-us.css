@@ -334,8 +334,9 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 
 /* Progress bars (Energy, hunger, EXP, IMP) */
 .progress {
+    background: transparent;
     color: #4d3057 !important;
-    border-radius: 4px !important;
+    border-radius: 2px !important;
 }
 
 .progress-bar,
@@ -347,7 +348,7 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 }
 
 .progress div {
-    color: #0d000f !important;
+    color: #fffced !important;
     font-size: 11px;
     padding: 1px;
     font-weight: 200;
@@ -628,12 +629,6 @@ table#player hr {
     display: none;
 }
 
-div.center.h3:hover {
-    color: #daa1dd !important;
-    text-shadow: 0 0 2em, 0 0 .5em #daa1dd !important;
-    transition: 1s;
-}
-
 /* Cave and Beetle Mound grid appearances*/
 
 .cave-grid,
@@ -688,6 +683,7 @@ div.col div {
     height: 0px;
     box-shadow: 0px 4px 6px #410a02 !important;
     margin: 5px;
+    background: transparent !important;
 }
 
 /* Edit Details 
