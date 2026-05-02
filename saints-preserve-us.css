@@ -703,9 +703,10 @@ table#player hr {
 .cave-grid,
 .mound-grid {
 	background: none;
-	color: #0d000f !important;
+	color: #fffced !important;
 	border: 0px;
-	border-radius: 2px !important
+	border-radius: 2px !important;
+    font-size: 20px !important;
 }
 
 /* Feed all/Play all
@@ -741,8 +742,8 @@ div.left h3,
 /* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
 
 div.col-md-4 div h3, .dynastycollection a {
-	color: #0d000f !important;
-
+	color: #fffced !important;
+    font-size: 20px !important;
 }
 
 div.mb-2 div,
@@ -750,7 +751,6 @@ div.col div {
     color: #0d000f !important;
     border-radius: 10px;
     height: 0px;
-    box-shadow: 0px 4px 6px #410a02 !important;
     margin: 5px;
     background: transparent !important;
 }
@@ -800,12 +800,11 @@ div.mound-grid img {
 }
 
 .cave-grid img, .mound-grid img, .cave-grid, .mound-grid {
-    box-shadow: 0px 4px 4px #0d000f !important;
 }
 
 .cave-grid img:hover, .mound-grid img:hover {
     transition: 1s;
-    box-shadow: 0px 0px 20px 20px #daa1dd !important;
+    box-shadow: 0px 0px 20px 20px #fffced !important;
     z-index: 50;
 }
 
