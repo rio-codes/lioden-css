@@ -502,7 +502,7 @@ div.lionImage.featured-lion {
 #about.table div .lion-image-block {
    border-radius: 50%;
    position: relative;
-   left: 15px;
+   left: 10px;
    top: 15px;
    box-shadow: 0px 0px 12px 12px #fffced !important;
 }
