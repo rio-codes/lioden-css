@@ -136,7 +136,7 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
-    text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
+    text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
 }
 
 h1.center>small:nth-child(2) a:link,
