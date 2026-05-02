@@ -413,7 +413,8 @@ button.button,
 /* All tables - styling */
 
 table#about, table#player, table#attack, table#allies {
-    box-shadow: 0px 4px 4px #0d000f !important;
+    border: 1px solid #fffced;
+    border-radius: 2px;
 }
 
 /*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
@@ -422,8 +423,7 @@ table#about, table#player, table#attack, table#allies {
     background: transparent;
     border: 1px solid #0d000f;
     border-collapse: separate;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px #0d000f !important;
+    border-radius: 2px;
 }
 
 table#about.table a {
@@ -467,24 +467,24 @@ td.bottom button {
 .inner-table .left {
     background: transparent !important;
     color: #fffced;
-    text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
+    text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
     font-size: 13px;
-    border: 1px solid #0d000f;
-    border-left: 1px solid #0d000f;
+    border: 1px solid #fffced;
+    border-left: 1px solid #fffced;
     border-top: 0px;
     border-right: 0px;
-    border-bottom: 1px solid #0d000f;
+    border-bottom: 1px solid #fffced;
     border-radius: 0px 0px 0px 0px !important;
 }
 
 .inner-table .right {
     background: transparent !important;
     color: #fffced;
-    text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
+    text-shadow: none !important;
     font-size: 13px;
-    border-bottom: 1px solid #0d000f;
+    border-bottom: 1px solid #fffced;
     border-right: 0px;
-    border-left: 1px solid #0d000f;
+    border-left: 1px solid #fffced;
     border-radius: 0px 0px 0px 0px !important;
 }
 
@@ -508,7 +508,12 @@ div.lionImage.featured-lion {
 }
 
 table#player img {
-    border: solid 2px #0d000f !important;
+    border-radius: 50%;
+    border: 0px !important;
+    box-shadow: 0px 0px 12px 12px #fffced !important;
+    position: relative;
+    left: -15px;
+    top: 15px;
 }
 
 p.center a {
@@ -918,5 +923,10 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
 }
 
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
-    content: url('');
+    content: url('https://cdn.allthepics.net/images/2026/05/02/aurelion_body.png');
+    width: 140px;
+    position:relative;
+    top: -40px;
+    left: 20px;
+    filter: drop-shadow(0px 0px 3rem #fffced) !important;
 }
