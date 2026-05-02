@@ -545,8 +545,20 @@ table#player img {
 }
 
 p.center a {
+    position: relative !important;
     padding: 10px;
     text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
+}
+
+div.xlarge:nth-child(4) {
+    position: relative;
+    top: -50px;
+}
+
+p.center:nth-child(5) {
+    margin-top: 0px !important;
+    font-size: 20px;
+    top: -50px;
 }
 
 div.center.h3 {
@@ -576,7 +588,7 @@ td.right_odd.text-right img {
 #player>tbody>tr:nth-child(3)>td:nth-child(1)>a:after {
     background: transparent;
     content: 'Block Member' !important;
-    font-size: 13px !important;
+    font-size: 20px !important;
     text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
     width: 100px !important;
     text-decoration: none !important;
@@ -592,7 +604,7 @@ td.right_odd.text-right img {
 #player>tbody>tr:nth-child(3)>td:nth-child(2)>a:after {
     background: transparent;
     content: 'Friend Request';
-    font-size: 13px;
+    font-size: 20px !important;
     text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
     width: 100px !important;
     text-decoration: none !important;
@@ -608,7 +620,7 @@ td.right_odd.text-right img {
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1):after {
     background: transparent;
     content: 'Message';
-    font-size: 13px;
+    font-size: 20px !important;
     text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
     width: 100px !important;
     text-decoration: none !important;
@@ -627,7 +639,7 @@ td.right_odd.text-right img {
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3):after {
     background: transparent;
     content: 'Send Gift!';
-    font-size: 13px;
+    font-size: 20px !important;
     text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
     width: 100px !important;
     text-decoration: none !important;
@@ -642,7 +654,7 @@ td.right_odd.text-right img {
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5):after {
     background: transparent;
     content: 'Create Trade';
-    font-size: 13px;
+    font-size: 20px !important;
     text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
     width: 100px !important;
     text-decoration: none !important;
