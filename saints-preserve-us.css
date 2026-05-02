@@ -704,7 +704,9 @@ table#player hr {
 }
 
 /* Cave and Beetle Mound grid appearances*/
-
+#fraOrganizationBlock > div:nth-child(2) > div:nth-child(1), div.center:nth-child(5) > div:nth-child(1) > i:nth-child(3) {
+    text-shadow: 0 0 2em, 0 0 .5em #fffced !important;
+}
 .cave-grid,
 .mound-grid {
 	background: none;
@@ -804,7 +806,7 @@ div.mound-grid img {
     width: 200px
 }
 
-.cave-grid img:hover, .mound-grid img:hover {
+.cave-grid img:hover, .mound-grid img:hover  {
     transition: 1s;
     box-shadow: 0px 0px 20px 20px #fffced !important;
     z-index: 50;
@@ -897,7 +899,7 @@ div.center:nth-child(5) > div:nth-child(1) > img:nth-child(1) {
 img[src$="den_ancestors.png"] {
     content: url('');
     object-fit: cover;
-    height: 0px !important;
+    height: 100px !important;
     width: 2 !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
 }
@@ -905,7 +907,7 @@ img[src$="den_ancestors.png"] {
 img[src$="ancestorsfem.png"] {
     content: url('');
     object-fit: cover;
-    height: 0px !important;
+    height: 100px !important;
     width: 2 !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
 }
@@ -913,7 +915,7 @@ img[src$="ancestorsfem.png"] {
 img[src$="den_achievements.png"] {
     content: url('');
     object-fit: cover;
-    height: 0px;
+    height: 100px;
     width: 2 !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
 }
@@ -921,7 +923,7 @@ img[src$="den_achievements.png"] {
 img[src$="den_showcase.png"] {
     content: url('');
     object-fit: cover;
-    height: 0px;
+    height: 100px;
     width: 2 !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
 }
@@ -929,7 +931,7 @@ img[src$="den_showcase.png"] {
 img[src$="den_beetlebook.png"] {
     content: url('');
     object-fit: cover;
-    height: 0px;
+    height: 100px;
     width: 2 !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
 }
