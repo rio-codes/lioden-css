@@ -61,7 +61,7 @@ a:focus {
 
 /* Link hover animation */
 
-a,a:visited,a:hover,a:active,button.button:hover, a:focus{
+/*a,a:visited,a:hover,a:active,button.button:hover, a:focus{
     -webkit-backface-visibility:hidden;
     backface-visibility:hidden;
 	position:relative;
@@ -89,7 +89,7 @@ a:after {
 
 a:hover:before,a:hover:after, button.button:hover:before, button.button:hover:after, a:focus:after {
   width:100%;
-}
+}*/
 
 /* Bookmark button */
 
