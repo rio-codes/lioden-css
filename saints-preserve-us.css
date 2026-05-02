@@ -123,8 +123,8 @@ div#pageContainer.col-md-9 h1 {
 }
 
 div#pageContainer.col-md-9 h1:before {
-  content: "Aurelion's Den";
-  text-indent: 250px;
+  content: "The Cathedral of Aurelion";
+  text-indent: 50px;
   float: left
 }
 
