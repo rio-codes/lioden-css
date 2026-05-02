@@ -402,7 +402,6 @@ div.commentText {
     color: #fffced !important;
     border-bottom: 1px solid #fffced;
     text-shadow: 0 0 2em #0d000f, 0 0 .3em #0d000f !important;
-    text-decoration: 
 }
 
 .text-muted {
@@ -633,7 +632,7 @@ td.right_odd.text-right img {
     height: 0px !important;
 }
 
-#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a) {
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a {
     font-size: 0px;
     height: 20px !important;
 }
@@ -805,9 +804,6 @@ div.mound-grid img {
     width: 200px
 }
 
-.cave-grid img, .mound-grid img, .cave-grid, .mound-grid {
-}
-
 .cave-grid img:hover, .mound-grid img:hover {
     transition: 1s;
     box-shadow: 0px 0px 20px 20px #fffced !important;
@@ -815,7 +811,7 @@ div.mound-grid img {
 }
 
 div.cave-grid>img[src$="nestingbanner.png"] {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/05/02/saints-02.png') !important;
     object-fit: cover !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
     height: 130px !important;
@@ -833,7 +829,7 @@ div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div, div.col.col-sm-4 div {
 }
 
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/05/02/saints-03.png') !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
     object-fit: cover !important;
     height: 130px !important;
@@ -841,11 +837,10 @@ div.cave-grid>img[src$="prideoverviewbanner.png"] {
 }
 
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/05/02/saints-01.png') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
 div.cave-grid>img {
@@ -853,48 +848,51 @@ div.cave-grid>img {
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
 .mound-grid img {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/05/02/saints-11.png') !important;
     object-fit: cover !important;
     height: 100px !important;
     width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
-#fraCaveList>div:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('') !important;
+#fraCaveList > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/05/02/saints-04.png') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
 
-#fraCaveList>div:nth-child(3)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('') !important;
-    object-fit: cover !important;
-    height: 130px !important;
-    width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
 #fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/05/02/saints-05.png') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+#fraCaveList > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/05/02/saints-10.png') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
 }
 
 div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('') !important;
+    content: url('https://cdn.allthepics.net/images/2026/05/02/saints-07.png') !important;
     object-fit: cover !important;
     object-position: right !important;; 
     height: 130px !important;
     width: 300px !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+div.center:nth-child(5) > div:nth-child(1) > img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/05/02/saints-09.png') !important;
+    object-fit: cover !important;
+    object-position: right !important;; 
+    height: 130px !important;
+    width: 300px !important;
 }
 img[src$="den_ancestors.png"] {
     content: url('');
