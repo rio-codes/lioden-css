@@ -101,14 +101,12 @@ input#postComment {
 .alert,
 .alert-warning,
 .alert-danger {
-    background: #4D3057 !important;
-    border: none;
-    color: #fffced;
-    border-radius: 2px !important;
-    padding: 5px;
+    background: #4D3057a7 !important;
+    color: #fffced !important;
+    border: 0px !important;
+    border-radius: 2px;
     text-align: left !important;
-    font-size: 15px;
-    height: 30px;
+    text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
     position: relative;
     top: 20px;
     font-weight: 300;
@@ -117,7 +115,7 @@ input#postComment {
 .alert a,
 .alert-warning a,
 .alert-danger a {
-    color: #0d000f;
+    color: #fffced;
     text-shadow: 0 0 .6em, 0 0 1em #fffced !important;
 }
 
@@ -133,6 +131,7 @@ div#pageContainer.col-md-9 h1:before {
   float: left;
   position: relative;
   top: 20px;
+  margin-bottom: 30px;
 }
 
 h1 {
