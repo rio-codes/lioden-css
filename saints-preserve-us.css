@@ -897,7 +897,7 @@ div.center:nth-child(5) > div:nth-child(1) > img:nth-child(1) {
 img[src$="den_ancestors.png"] {
     content: url('');
     object-fit: cover;
-    height: 100px !important;
+    height: 0px !important;
     width: 2 !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
 }
@@ -905,7 +905,7 @@ img[src$="den_ancestors.png"] {
 img[src$="ancestorsfem.png"] {
     content: url('');
     object-fit: cover;
-    height: 100px !important;
+    height: 0px !important;
     width: 2 !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
 }
@@ -913,7 +913,7 @@ img[src$="ancestorsfem.png"] {
 img[src$="den_achievements.png"] {
     content: url('');
     object-fit: cover;
-    height: 100px;
+    height: 0px;
     width: 2 !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
 }
@@ -921,7 +921,7 @@ img[src$="den_achievements.png"] {
 img[src$="den_showcase.png"] {
     content: url('');
     object-fit: cover;
-    height: 100px;
+    height: 0px;
     width: 2 !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
 }
@@ -929,7 +929,7 @@ img[src$="den_showcase.png"] {
 img[src$="den_beetlebook.png"] {
     content: url('');
     object-fit: cover;
-    height: 100px;
+    height: 0px;
     width: 2 !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
 }
