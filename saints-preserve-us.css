@@ -59,42 +59,10 @@ a:focus {
     text-shadow: 0 0 .6em, 0 0 1em #fffced !important;
 }
 
-/* Link hover animation */
-
-/*a,a:visited,a:hover,a:active,button.button:hover, a:focus{
-    -webkit-backface-visibility:hidden;
-    backface-visibility:hidden;
-	position:relative;
-    transition:0.5s color ease;
-	text-decoration:none;
-}
-
-a:before, a:after {
-  content: "";
-  transition:0.5s all ease;
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-  position:absolute;
-}
-
-a:after {
-  height:1px;
-  width:0;
-  background: #fffced;
-  bottom: 1px;
-  left:50%;
-  -webkit-transform:translateX(-50%);
-  transform:translateX(-50%);
-}
-
-a:hover:before,a:hover:after, button.button:hover:before, button.button:hover:after, a:focus:after {
-  width:100%;
-}*/
-
 /* Bookmark button */
 
 input.floatright {
-    background: #4D3057 !important;
+    background: #4D3057a7 !important;
     border: none !important;
     border-radius: 2px !important;
     color: #0d000f !important;
@@ -103,7 +71,7 @@ input.floatright {
 
 input.floatright:hover {
     background: transparent !important;
-    color: #daa1dd !important;
+    color: #fffced !important;
     box-shadow: none !important;
     transition: 1s;
 }
@@ -178,16 +146,6 @@ h1 {
     background-clip: text;
     text-align: center;
     text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
-}
-
-h1.center>small:nth-child(2) a:link,
-h1.center>small:nth-child(2) a:visited,
-p.center:nth-child(2)>a:nth-child(1) a:link,
-p.center:nth-child(2)>a:nth-child(1) a:visited {
-}
-
-h1.center>small:nth-child(2),
-p.center:nth-child(2)>a:nth-child(1) {
 }
 
 /* Secondary header */
@@ -445,7 +403,7 @@ button.button,
 
 /* All tables - styling */
 
-table#about, table#player, table#attack, table#allies {
+table#about, table#player, table#attack, table#allies, table#clans {
     border: 1px solid #fffced;
     border-radius: 2px;
 }
