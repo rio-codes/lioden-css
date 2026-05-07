@@ -352,7 +352,7 @@ div#lion_image:hover {
 /* Lion and user profile pictures */
 
 div#lion_image {
-	opacity: 0%;
+	opacity: 100%;
 }
 
 /*#about > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) {
