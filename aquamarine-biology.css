@@ -355,13 +355,13 @@ div#lion_image {
 	opacity: 0%;
 }
 
-#about > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) {
+/*#about > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) {
 	content: url("https://cdn.allthepics.net/images/2026/04/13/half_ascendant_2.png");
 	object-fit: contain;
 	height:250px;
 	top: 0px;
 	z-index: 50;
-}
+}*/
 
 table#player img {
   opacity: 0.9;
