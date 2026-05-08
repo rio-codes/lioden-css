@@ -167,6 +167,10 @@ div#pageContainer.col-md-9 h1:before {
     z-index: 501;
     transform: translateZ(0);
 }
+.external-link {
+    position: relative;
+    left: -42%;
+}
 }
 
 @media only screen and (min-width: 768px) {
@@ -187,8 +191,14 @@ div#pageContainer.col-md-9 h1:before {
     position: relative;
     top: 20px;
 }
+.external-link {
+    position: relative;
+    left: -46%;
+}
 
 }
+
+
 h1 {
     font-family: "Alegreya SC", Georgia, 'Times New Roman', Times, serif;
     font-size: 58px;
