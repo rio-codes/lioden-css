@@ -248,16 +248,31 @@ div#fraProfileContent {
 	align-items: center;
 }
 
+@media only screen and (max-width: 767 px) {
+    .scroll-image {
+        width: 50% !important;
+        height: 100px !important;
+        position: relative;
+        top: 20px;
+        left: -200px;
+    }
+    .scroll-box {
+        font-size: 10px;
+        width: auto;
+        height: 200px;
+    }
+}
+
 .scroll-image {
     width: auto;
-    height: 300px;
+    height: 310px;
 }
 
 .scroll-box {
     font-size: 12px;
     overflow-y: scroll;
-    width: 40%;
-    height: 500px;
+    width: 100%;
+    height: 300px;
 }
 
 
