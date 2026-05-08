@@ -12,4 +12,23 @@ Tawny [#251887]
 Hok-Z [#41458]
 Austin [#43750]
  
- https://openfontlicense.org
+>> HTML
+[#191322] (deleted profile)
+
+>> Art
+Background: anonymous, found on Youtube
+Lions and Den Background: Artists of Lioden Ltd.
+
+>> Social Media Icons
+Contributors to game-icons.net under CC-BY license
+
+>> Photos
+Agony in the Garden by Alfred Ernest Child, St. Brendan's Cathedral, Stained Glass Window by NateBergin is licensed under CC-BY-4.0. (headers)
+Interior of Saint-Chapelle in Paris by Duvda is licensed under CC-BY-4.0.
+Tribune des reliques dans l'abside de la chapelle haute by the French Ministry of Culture is licensed under CC-BY-4.0.
+
+>> Font
+ Alegreya SC by Juan Pablo del Peral and Huerta Tipográfica is licensed under the Open Font License
+
+>> Pagedoll
+TBD
