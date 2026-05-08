@@ -164,6 +164,7 @@ div#pageContainer.col-md-9 h1:before {
     left: 0px;
     top: 0px;
     z-index: 501;
+    transform: translateZ(0);
 }
 }
 
