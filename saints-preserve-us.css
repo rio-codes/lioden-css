@@ -135,8 +135,56 @@ div#pageContainer.col-md-9 h1:before {
     div#pageContainer.col-md-9 h1:before {
         text-indent: 20px;
     }
+    /* About me scrollbox */
+
+    .about-me {
+        column-count: 2;
+        align-items: center;
+        background: #4D3057a7;
+        height: 450px;
+        width: 93%;
+    }
+.about-me img {
+    width: 40%;
+    height: 380px !important;
+    position: absolute !important;
+    margin-bottom: 50px;
+    left: 70px;
+    top: 280px;
+    z-index: 500;
 }
 
+.scroll-box {
+    font-size: 14px;
+    overflow-y: scroll;
+    width: 43%;
+    height: 410px;
+    position: absolute !important;
+    left: 380px;
+    top: 270px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+.about-me {
+        column-count: 2;
+        align-items: center;
+        background: #4D3057a7;
+}
+.scroll-image {
+    width: 90%;
+    margin: 30px;
+}
+.scroll-box {
+    font-size: 16px;
+    overflow-y: scroll;
+    height: 500px;
+    width: 90%;
+    position: relative;
+    top: 20px;
+}
+
+}
 h1 {
     font-family: "Alegreya SC", Georgia, 'Times New Roman', Times, serif;
     font-size: 58px;
@@ -241,43 +289,9 @@ h3 {
     text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
 }
 
-/* About me scrollbox */
 
 
-
-@media only screen and (max-width: 767 px) {
-    div#fraProfileContent {
-        align-items: left !important;
-    }
-    .scroll-image {
-        height: 100px !important;
-        position: absolute;
-        top: 200px;
-        left: -500px;
-    }
-    .scroll-box {
-        font-size: 10px;
-        width: auto;
-        height: 200px;
-    }
 }
-
-div#fraProfileContent {
-	column-count: 2;
-	align-items: center;
-}
-.scroll-image {
-    width: auto;
-    height: 400px !important;
-}
-
-.scroll-box {
-    font-size: 14px;
-    overflow-y: scroll;
-    width: 100%;
-    height: 400px;
-}
-
 
 /* Right-side panel appearance */
 
