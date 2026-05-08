@@ -163,6 +163,7 @@ div#pageContainer.col-md-9 h1:before {
     position: relative !important;
     left: 10px;
     top: 0px;
+    z-index: 500;
 }
 }
 
