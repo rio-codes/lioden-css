@@ -241,6 +241,24 @@ h3 {
     text-shadow: 0 0 2em #fffced, 0 0 .3em #fffced !important;
 }
 
+/* About me scrollbox */
+
+div#fraProfileContent {
+	column-count: 2;
+	align-items: center;
+}
+
+.scroll-image {
+    width: auto;
+    height: 300px;
+}
+
+.scroll-box {
+    font-size: 12px;
+    overflow-y: scroll;
+    width: 40%;
+    height: 500px;
+}
 
 
 /* Right-side panel appearance */
