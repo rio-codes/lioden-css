@@ -158,12 +158,12 @@ div#pageContainer.col-md-9 h1:before {
 .scroll-box {
     font-size: 14px;
     overflow-y: scroll;
-    width: 90%;
+    width: 100%;
     height: 410px;
     position: relative !important;
-    left: 10px;
+    left: 0px;
     top: 0px;
-    z-index: 500;
+    z-index: 501;
 }
 }
 
@@ -180,7 +180,7 @@ div#pageContainer.col-md-9 h1:before {
 .scroll-box {
     font-size: 16px;
     overflow-y: scroll;
-    height: 500px;
+    height: 460px;
     width: 90%;
     position: relative;
     top: 20px;
