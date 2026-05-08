@@ -1,0 +1,1035 @@
+/*
+Golden Apples of the Sun
+
+Created 05/2026 by lyri [#583579] for Crypt [#378417]
+AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
+
+Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Tawny [#251887], Hok-Z [#41458], Austin [#43750] 
+
+Full credits for code contributors, artwork, photos, icons, and fonts can be found at https://rio-codes.github.io/lioden-css/credits_apples.txt .
+*/
+
+/* Color variables */
+:root {
+    --apollo-sunlight: #ffd96b;
+    --hera-hearth: #ffedb9;
+    --icarus-warmth: #ffe28e;
+    --artemis-blonde: #ffd14d;
+    --ares-brass: #e8b72a;
+    --hermes-heat: #ffbe6b;
+    --demeter-wheat: #ffe0b9;
+    --aphrodite-blossom: #ffce8e;
+    --athena-glow: #ffb24d88;
+    --poseidon-coral: #e8942a;
+    --siren-brown: #432705;
+}
+
+/* Import Fonts (From Google Fonts) */
+
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Background image, font and font color, text alignment */
+body {
+    background: url("https://rio-codes.github.io/lioden-css/beach.webp") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    font-family: "MuseoModerno", serif;
+    font-weight: 200 !important;
+    font-size: 14px;
+    color: var(--posiedon-coral);
+}
+
+/* CSS Credit */
+
+.breadcrumb::after {
+    content: "custom css by lyri";
+    color: var(--siren-brown) !important;
+    font-size: 14px;
+    font-weight: 200;
+    position: relative;
+    top: 30px;
+    left: -200px;
+}
+
+/* Link colors */
+
+a:link,
+a:visited {
+    color: var(--siren-brown);
+    font-weight: 200;
+    text-shadow: 0 0 .6em, 0 0 1em var(--hera-hearth) !important;
+}
+
+a img {
+    border: none !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-shadow: none !important;
+}
+
+a:focus {
+    text-shadow: 0 0 .6em, 0 0 1em var(--hermes-heat) !important;
+}
+
+/* Bookmark button */
+
+input.floatright {
+    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+    border: none !important;
+    border-radius: 2px !important;
+    color: var(--siren-brown) !important;
+    text-align: center !important;
+}
+
+input.floatright:hover {
+    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+    color: var(--posiedon-coral) !important;
+    box-shadow: none !important;
+    transition: 1s;
+}
+
+/* Text input boxes, misc buttons */
+input,
+select,
+textarea {
+    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+	border: 1px solid var(--posiedon-coral);
+	border-radius: 5px !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+	color: var(--posiedon-coral) !important;
+	font-weight: 300;
+}
+
+input#postComment {
+    background: var(--athena-glow);
+	border: 1px solid var(--posiedon-coral);
+}
+
+
+/* Alerts (i.e. "Your lionesses have returned from hunting!") */
+
+.alert,
+.alert-warning,
+.alert-danger {
+    background: var(--artemis-blonde);
+    color: var(--posiedon-coral) !important;
+    border: 0px !important;
+    border-radius: 2px;
+    text-align: left !important;
+    text-shadow: 0 0 2em var(--posiedon-coral), 0 0 .3em var(--posiedon-coral) !important;
+    position: relative;
+    top: 20px;
+    font-weight: 300;
+}
+
+.alert a,
+.alert-warning a,
+.alert-danger a {
+}
+
+/* Main header appearance ("___"'s Den) */
+
+div#pageContainer.col-md-9 h1 {
+  text-indent: -9999px;
+}
+
+div#pageContainer.col-md-9 h1:before {
+  font-family: 'Almendra SC', Georgia, 'Times New Roman', Times, serif;
+  content: "Temple of Phoebus Apollo";
+  text-indent: 100px;
+  float: left;
+  position: relative;
+  top: 20px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 7px) {
+    div#pageContainer.col-md-9 h1:before {
+        text-indent: 20px;
+    }
+    /* About me scrollbox */
+
+    .about-me {
+        column-count: 2;
+        align-items: center;
+        background: var(--athena-glow);
+        height: 450px;
+        width: 93%;
+        padding: 20px;
+        position: relative !important;
+    }
+.about-me img {
+    width: 50%;
+    height: 400px !important;
+    position: absolute !important;
+    margin-bottom: 50px;
+    left: 20px;
+    top: 20px;
+    z-index: 500;
+}
+
+.scroll-box {
+    font-size: 14px;
+    overflow-y: scroll;
+    width: 40%;
+    height: 410px;
+    position: absolute !important;
+    left: 300px;
+    top: 10px;
+    z-index: 501;
+    transform: translateZ(0);
+}
+.external-link {
+    position: relative;
+    left: -42%;
+}
+}
+
+@media only screen and (min-width: 768px) {
+.about-me {
+        column-count: 2;
+        align-items: center;
+        background: var(--athena-glow);
+}
+.scroll-image {
+    width: 90%;
+    margin: 30px;
+}
+.scroll-box {
+    font-size: 16px;
+    overflow-y: scroll;
+    height: 500px;
+    width: 90%;
+    position: relative;
+    top: 20px;
+}
+.external-link {
+    position: relative;
+    left: -46%;
+}
+
+}
+
+
+h1 {
+    font-family: 'Almendra SC', Georgia, 'Times New Roman', Times, serif;
+    font-size: 58px;
+    color: var(--posiedon-coral);
+    font-weight: 400 !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    text-shadow: 0 0 2em var(--posiedon-coral), 0 0 .3em var(--posiedon-coral) !important;
+}
+
+/* Secondary header */
+
+h2 {
+    font-family: 'Almendra SC', Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: var(--posiedon-coral) !important;
+}
+
+/* Tertiary header */
+
+h3 {
+    font-family: 'Almendra SC', Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px !important;
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--posiedon-coral) !important;
+}
+
+/* Main panel container appearance*/
+
+.container.main {
+    background: var(--athena-glow);
+    border: 1px solid var(--siren-brown);
+    border-radius: 10px;
+}
+
+/* Make left panel background and border invisible */
+
+.col-md-9 {
+    background: none;
+    border-right: none
+}
+
+
+/* Topbar (Welcome and account navigation) */
+
+.topbar {
+    background: var(--artemis-blonde);
+    color: var(--siren-brown);
+    border: 0px;
+    border-radius: 0px 0px 4px 4px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.topbar a {
+    color: var(--siren-brown) !important;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.topbar a:hover {
+    text-shadow: none;
+}
+
+/* Navbar (Den/Crossroads/Etc.) */
+
+.navbar {
+    background-color: var(--artemis-blonde);
+    border-bottom: none;
+    color: var(--posiedon-coral);
+    border-radius: 2px 2px 0px 0px;
+    opacity: 1;
+}
+
+.navbar li a {
+    color: var(--posiedon-coral) !important;
+    font-size: 17px;
+    font-weight: 300;    
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+}
+
+.navbar li a:hover {
+    background: transparent !important;
+    text-shadow: none !important;
+}
+
+/* Breadcrumb (Home button, den owner, bookmark) */
+
+.breadcrumb {
+    background: var(--siren-brown) !important;
+    color: var(--demeter-wheat) !important;
+    border: 0px !important;
+    border-radius: 2px;
+    text-align: left !important;
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+}
+
+.breadcrumb .active {
+    color: var(--demeter-wheat) !important;
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+}
+
+.breadcrumb a {
+    color: var(--demeter-wheat);
+}
+
+
+/* Right-side panel appearance */
+
+.sidebar h3 {
+    font-family: "Almendra SC", Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px !important;
+    font-weight: 400;
+    color: var(--posiedon-coral) !important;
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+    text-align: right;
+    position: relative;
+    padding-top: 25px;
+
+}
+
+.sidebar a {
+    color: var(--posiedon-coral) !important;
+}
+
+.panel h3 {
+    background: none !important;
+    color: var(--siren-brown);
+    font-size: 24px;
+    text-align: right;
+    opacity: 0.9;
+    border: 0px !important;
+    z-index: 5;
+    opacity: 100%;
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+    border-radius: 10px;
+}
+
+.col-md-12 a {
+    color: var(--posiedon-coral);
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+}
+
+.col-md-12 a:hover, .panel-body.small a:hover, div.panel a:hover {
+    text-shadow: none !important;
+}
+
+.panel-body.small, div.panel {
+    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+    color: var(--posiedon-coral) !important;
+    font-size: 13px;
+    font-weight: 200;
+    z-index: 5;
+    border-radius: 1px;
+}
+
+.panel-body.small a, div.panel a {
+    color: var(--posiedon-coral) !important;
+    font-weight: 200;
+}
+
+
+.col-md-3 .panel {
+    border: none !important;
+    border-radius: 2px;
+}
+
+.panel-body.small .center a,
+.panel-body.small a {
+    font-weight: 200 !important;
+    color: var(--posiedon-coral) !important;
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+}
+
+div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
+    display: none;
+}
+
+/* Progress bars (Energy, hunger, EXP, IMP) */
+.progress {
+    background: var(--athena-glow);
+    color: var(--siren-brown) !important;
+    border-radius: 2px !important;
+}
+
+.progress-bar,
+.progress-bar-danger,
+.progress-bar-success {
+    background: var(--demeter-wheat) !important;
+    border-radius: 2px !important;
+    z-index: 10;
+}
+
+.progress div {
+    background: var(--poseiden-coral);
+    color: var(--posiedon-coral) !important;
+    font-size: 11px;
+    padding: 1px;
+    font-weight: 200;
+    z-index: 15;
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+
+}
+
+/* Comment box */
+div#commentBox {
+    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+    border: 0px;
+    border-radius: 10px;
+    color: var(--posiedon-coral) !important;
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+div#commentBox a {
+    color: var(--posiedon-coral);
+}
+
+div.commentText {
+    color: var(--posiedon-coral) !important;
+    border-bottom: 1px solid var(--posiedon-coral);
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+}
+
+.text-muted {
+    color: var(--posiedon-coral) !important;
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+}
+
+img.floatleft.commentTag.clear {
+    height: 40px;
+    border: 2px solid var(--siren-brown);
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    left: -3px
+}
+
+/* Switch Account and Bug Box buttons */
+
+.btn:hover,
+button.button:hover, .btn.btn:hover {
+	background: var(--athena-glow);
+	color: var(--posiedon-coral) !important;
+    transition: 1s;
+}
+
+.btn img {
+	display: none;
+}
+
+.btn,
+button.button,
+.btn.btn {
+	background: var(--poseidon-coral);
+	border: none !important;
+	border-radius: 4px;
+	text-shadow: none !important;
+	color: var(--siren-brown) !important;
+    width: 160px;
+    height: 30px;
+    filter: drop-shadow(0px 0px 3rem var(--athena-glow)) !important;
+}
+
+/* All tables - styling */
+
+table#about, table#player, table#attack, table#allies, table#clans, table#sparring, table.table {
+    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+    border: 1px solid var(--posiedon-coral);
+    border-radius: 2px;
+}
+
+/*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
+
+.table {
+    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+    border: 1px solid var(--siren-brown);
+    border-collapse: separate;
+    border-radius: 2px;
+}
+
+table#about.table a {
+    color: var(--posiedon-coral);
+    text-decoration: none;
+}
+
+.table .top, #sparring th, table.table th {
+    border-bottom: 1px solid var(--siren-brown);
+    text-shadow: 0 0 2em var(--posiedon-coral), 0 0 .3em var(--posiedon-coral) !important;
+}
+
+.top,
+th {
+    color: var(--posiedon-coral) !important;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.bottom,
+th {
+    background: var(--athena-glow);
+    color: var(--demeter-wheat);
+}
+
+.table .bottom {
+    background: radial-gradient(var(--hermes-heat), var(--hera-hearth));
+}
+
+td.bottom button {
+    margin-top: 10px;
+}
+
+#about.table tr:nth-child(7) {
+    background: var(--athena-glow)
+}
+
+.inner-table .left {
+    background: transparent !important;
+    color: var(--posiedon-coral);
+    text-shadow: 0 0 2em var(--posiedon-coral), 0 0 .3em var(--posiedon-coral) !important;
+    font-size: 13px;
+    border: 1px solid var(--posiedon-coral);
+    border-left: 1px solid var(--posiedon-coral);
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid var(--posiedon-coral);
+    border-radius: 0px 0px 0px 0px !important;
+}
+
+.inner-table .right {
+    background: transparent !important;
+    color: var(--posiedon-coral);
+    text-shadow: none !important;
+    font-size: 13px;
+    border-bottom: 1px solid var(--posiedon-coral);
+    border-right: 0px;
+    border-left: 1px solid var(--posiedon-coral);
+    border-radius: 0px 0px 0px 0px !important;
+}
+
+.right_odd {
+    background: none !important
+}
+
+td.left.b,
+div.lionImage.featured-lion {
+    background: transparent;
+}
+
+/* Lion and user profile pictures */
+
+#about.table div .lion-image-block {
+   border-radius: 50%;
+   position: relative;
+   left: 10px;
+   top: 15px;
+   box-shadow: 0px 0px 12px 12px var(--posiedon-coral) !important;
+}
+
+table#player img {
+    border-radius: 50%;
+    border: 0px !important;
+    box-shadow: 0px 0px 12px 12px var(--posiedon-coral) !important;
+    position: relative;
+    left: -15px;
+    top: 15px;
+}
+
+p.center a {
+    position: relative !important;
+    padding: 10px;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+}
+
+div.xlarge:nth-child(4) {
+    position: relative;
+    top: -50px;
+}
+
+p.center:nth-child(5) {
+    margin-top: 0px !important;
+    font-size: 20px;
+    top: -50px;
+}
+
+div.center.h3 {
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+}
+
+/* Remove icons and edit text for user profile buttons */
+
+table.inner-table.auto:nth-child(2) td {
+    border: 0px;
+}
+
+td.right_odd:nth-child(1)>a:nth-child(1)>img:nth-child(1),
+td.right_odd.text-right img {
+    display: none;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a:before {
+    opacity: 0%;
+    font-size: 0px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a {
+    font-size: 0px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a:after {
+    background: transparent;
+    content: 'Block Member' !important;
+    font-size: 20px !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    left: 50px;
+    top: -10px;
+    height: 0px !important;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(2)>a {
+    font-size: 0px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(2)>a:after {
+    background: transparent;
+    content: 'Friend Request';
+    font-size: 20px !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    left: 50px;
+    top: -10px;
+    height: 0px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1):after {
+    background: transparent;
+    content: 'Message';
+    font-size: 20px !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    height: 0px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a {
+    font-size: 0px;
+    height: 20px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3):after {
+    background: transparent;
+    content: 'Send Gift!';
+    font-size: 20px !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    height: 0px !important;
+    right: 100px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5):after {
+    background: transparent;
+    content: 'Create Trade';
+    font-size: 20px !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    height: 0px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p>a:nth-child(3):after {
+    padding: 15px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p.center:nth-child(5)>a:nth-child(1)>img:nth-child(1) {
+    display: none;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p.center:nth-child(5)>a:nth-child(3)>img:nth-child(1) {
+    display: none;
+}
+
+p.center > a, div.xlarge > a#text {
+    top: -50px;
+}
+
+td.left.b,
+div.lionImage.featured-lion {
+    background: transparent;
+}
+
+div.xlarge img {
+    display: none;
+}
+
+span.text-muted {
+    display: none;
+}
+
+div.xlarge a {
+    padding: 50px !important;
+}
+
+table#player hr {
+    display: none;
+}
+
+/* Cave and Beetle Mound grid appearances*/
+#fraOrganizationBlock > div:nth-child(2) > div:nth-child(1), div.center:nth-child(5) > div:nth-child(1) > i:nth-child(3) {
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+}
+.cave-grid,
+.mound-grid {
+	background: none;
+	color: var(--posiedon-coral) !important;
+	border: 0px;
+	border-radius: 2px !important;
+    font-size: 20px !important;
+}
+
+/* Feed all/Play all */
+
+div.feature,
+.feature {
+    background: var(--athena-glow);
+    color: var(--posiedon-coral);
+    font-size: 13px;
+    font-weight: 200;
+    z-index: 5;
+    box-shadow: 0px 3px 8px 4px var(--posiedon-coral) !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    border: 0px;
+    border-radius: 2px;
+}
+
+.feature,
+div.left {
+    background: #040201;
+}
+
+.feature,
+div.left h3,
+.feature h3 {
+    font-weight: 500 !important;
+    color: var(--posiedon-coral) !important;
+} */
+
+
+
+
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
+
+div.col-md-4 div h3, .dynastycollection a {
+	 color: var(--posiedon-coral) !important;
+    font-size: 20px !important;
+}
+
+div.mb-2 div,
+div.col div {
+    color: var(--posiedon-coral) !important;
+    border-radius: 10px;
+    height: 0px;
+    margin: 5px;
+    background: transparent !important;
+}
+
+/* Edit Details 
+
+table.table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>th:nth-child(1) {
+    background: #410a02 !important;
+    color: #e2d6b2 !important;
+}
+
+td.left b {
+    background: transparent !important;
+    font-weight: 700 !important;
+}
+
+*/
+
+
+/* Background fix for mobile */
+@media only screen and (max-width: 7px) {
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://rio-codes.github.io/lioden-css/beach.webp') no-repeat center center;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .container.main {
+        margin-top: 35px;
+    }
+}
+
+/* Image Replacement */
+
+div.mound-grid img {
+    position: relative;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    width: 200px
+}
+
+.cave-grid img:hover, .mound-grid img:hover  {
+    transition: 1s;
+    box-shadow: 0px 0px 20px 20px var(--posiedon-coral) !important;
+    z-index: 50;
+}
+
+div.cave-grid>img[src$="nestingbanner.png"] {
+    content: url('') !important;
+    object-fit: cover !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+    height: 130px !important;
+    width: 300px !important;
+    border: 5px ridge;
+    border: 0px;
+    border-radius: 0px !important;
+}
+
+div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div, div.col.col-sm-4 div {
+    height: 70px;
+    color: var(--siren-brown);
+    font-weight: 200 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+div.cave-grid>img[src$="prideoverviewbanner.png"] {
+    content: url('') !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+}
+
+div.cave-grid>img[src$="unsortedlionsbanner.png"] {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+}
+
+div.cave-grid>img {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+}
+
+.mound-grid img {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 100px !important;
+    width: 300px !important;
+}
+
+#fraCaveList > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+
+}
+
+#fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+}
+
+#fraCaveList > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 130px !important;
+    width: 300px !important;
+}
+
+div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('') !important;
+    object-fit: cover !important;
+    object-position: right !important;; 
+    height: 130px !important;
+    width: 300px !important;
+}
+
+div.center:nth-child(5) > div:nth-child(1) > img:nth-child(1) {
+    content: url('') !important;
+    object-fit: cover !important;
+    object-position: right !important;; 
+    height: 130px !important;
+    width: 300px !important;
+}
+
+div.center:nth-child(5) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('') !important;
+    object-fit: cover !important;
+    object-position: right !important;; 
+    height: 130px !important;
+    width: 300px !important;
+}
+
+div.col-md-4:nth-child(6) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('') !important;
+    object-fit: cover !important;
+    object-position: right !important;; 
+    height: 130px !important;
+    width: 300px !important;
+}
+img[src$="den_ancestors.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px !important;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="ancestorsfem.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px !important;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="den_achievements.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="den_showcase.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="den_beetlebook.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="icon_den_friend.png"], img[src$="icon_den_wishlist.png"] {
+  display: none;
+} 
+
+p.center:nth-child(4) > a {
+  top: 10px;
+}
+/* Replace Social Media Icons */
+
+img[src$="iconFB.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 3rem var(--posiedon-coral)) !important;
+}
+
+img[src$="iconTwit.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 3rem var(--posiedon-coral)) !important;
+}
+
+img[src$="iconInsta.png"] {
+    content: url('');
+
+/* Replace Lioden Logo */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
+    border: transparent !important;
+}
+
+img[src$="logo-full-2.png] {
+    content: "";
+    display: none !important;
+}
