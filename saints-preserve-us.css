@@ -144,11 +144,12 @@ div#pageContainer.col-md-9 h1:before {
         height: 450px;
         width: 93%;
         padding: 20px;
+        position: relative !important;
     }
 .about-me img {
-    width: 100%;
+    width: 50%;
     height: 400px !important;
-    position: relative !important;
+    position: absolute !important;
     margin-bottom: 50px;
     left: 20px;
     top: 20px;
@@ -158,11 +159,11 @@ div#pageContainer.col-md-9 h1:before {
 .scroll-box {
     font-size: 14px;
     overflow-y: scroll;
-    width: 90%;
+    width: 40%;
     height: 410px;
-    position: relative !important;
-    left: 0px;
-    top: 0px;
+    position: absolute !important;
+    left: 300px;
+    top: 10px;
     z-index: 501;
     transform: translateZ(0);
 }
