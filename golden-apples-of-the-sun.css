@@ -131,7 +131,6 @@ input#postComment {
     position: relative;
     top: 20px;
     font-weight: 300;
-    box-shadow: 0px 0px 20px 20px var(--apollo-sunlight) !important;
 }
 
 .alert a,
@@ -176,7 +175,6 @@ div#pageContainer.col-md-9 h1:before {
         position: relative !important;
         border-radius: 20px;
         text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
-            box-shadow: 0px 0px 20px 20px var(--apollo-sunlight) !important;
     }
 
     .about-me img {
@@ -187,7 +185,6 @@ div#pageContainer.col-md-9 h1:before {
         left: 320px;
         top: 140px;
         z-index: 500;
-            box-shadow: 0px 0px 20px 20px var(--apollo-sunlight) !important;
     }
 
     .scroll-box {
@@ -204,7 +201,6 @@ div#pageContainer.col-md-9 h1:before {
         z-index: 501;
         transform: translateZ(0);
         text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
-            box-shadow: 0px 0px 20px 20px var(--apollo-sunlight) !important;
     }
 
     .external-link {
@@ -283,7 +279,6 @@ div#pageContainer.col-md-9 h1:before {
         backdrop-filter: brightness(80%);
         height: 450px;
         border-radius: 20px;
-        box-shadow: 0px 0px 10px 10px var(--apollo-sunlight) !important;
     }
     
     .scroll-image {
@@ -335,7 +330,6 @@ div#pageContainer.col-md-9 h1:before {
         backdrop-filter: brightness(80%);
         height: 450px;
         border-radius: 20px;
-            box-shadow: 0px 0px 10px 10px var(--apollo-sunlight) !important;
     }
     
     .scroll-image img {
@@ -477,7 +471,6 @@ h3, div.center.h3 {
     border-radius: 10px;
     text-align: left !important;
     text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
-    box-shadow: 0px 0px 20px 20px var(--apollo-sunlight) !important;
 }
 
 .breadcrumb .active {
@@ -548,7 +541,6 @@ div.panel {
     z-index: 5;
     border-radius: 1px;
     backdrop-filter: brightness(70%) !important;
-        box-shadow: 0px 0px 5px 5px var(--apollo-sunlight) !important;
 }
 
 .panel-body.small a,
