@@ -148,7 +148,7 @@ div#pageContainer.col-md-9 h1:before {
     margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 743px) {
     div#pageContainer.col-md-9 h1:before {
         text-indent: 20px;
     }
@@ -196,7 +196,7 @@ div#pageContainer.col-md-9 h1:before {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1199px) and (min-width: 744px) {
     .about-me {
         column-count: 2;
         align-items: center;
@@ -206,18 +206,17 @@ div#pageContainer.col-md-9 h1:before {
     }
     
     .about-me img {
-        width: 47%;
-        height: auto !important;
         position: absolute !important;
         margin-bottom: 50px;
         left: 410px;
-        top: 290px;
+        top: 340px;
         z-index: 500;
     }
 
-    .scroll-image {
-        width: 90%;
-        margin: 30px;
+    .scroll-image img {
+        position: absolute !important;
+        width: 35% !important;
+        height: auto;
     }
 
     .scroll-box {
