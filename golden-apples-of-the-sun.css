@@ -9,6 +9,10 @@ Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Ta
 Full credits for code contributors, artwork, photos, icons, and fonts can be found at https://rio-codes.github.io/lioden-css/credits_apples.txt .
 */
 
+/* Import Fonts (From Google Fonts) */
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Sankofa+Display&display=swap');
+
 /* Color variables */
 :root {
     --apollo-sunlight: #ffd96b;
@@ -24,9 +28,7 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
     --siren-brown: #432705;
 }
 
-/* Import Fonts (From Google Fonts) */
 
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Sankofa+Display&display=swap');
 
 /* Background image, font and font color, text alignment */
 body {
