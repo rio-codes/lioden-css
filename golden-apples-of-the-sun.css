@@ -96,17 +96,17 @@ input,
 select,
 textarea {
     background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
-	border: 1px solid var(--posiedon-coral);
-	border-radius: 5px !important;
-	box-shadow: none !important;
-	text-shadow: none !important;
-	color: var(--posiedon-coral) !important;
-	font-weight: 300;
+    border: 1px solid var(--posiedon-coral);
+    border-radius: 5px !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    color: var(--posiedon-coral) !important;
+    font-weight: 300;
 }
 
 input#postComment {
     background: var(--athena-glow);
-	border: 1px solid var(--posiedon-coral);
+    border: 1px solid var(--posiedon-coral);
 }
 
 
@@ -128,29 +128,29 @@ input#postComment {
 
 .alert a,
 .alert-warning a,
-.alert-danger a {
-}
+.alert-danger a {}
 
 /* Main header appearance ("___"'s Den) */
 
 div#pageContainer.col-md-9 h1 {
-  text-indent: -9999px;
+    text-indent: -9999px;
 }
 
 div#pageContainer.col-md-9 h1:before {
-  font-family: 'Almendra SC', Georgia, 'Times New Roman', Times, serif;
-  content: "Temple of Phoebus Apollo";
-  text-indent: 100px;
-  float: left;
-  position: relative;
-  top: 20px;
-  margin-bottom: 30px;
+    font-family: 'Almendra SC', Georgia, 'Times New Roman', Times, serif;
+    content: "Temple of Phoebus Apollo";
+    text-indent: 100px;
+    float: left;
+    position: relative;
+    top: 20px;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 767px) {
     div#pageContainer.col-md-9 h1:before {
         text-indent: 20px;
     }
+
     /* About me scrollbox */
 
     .about-me {
@@ -162,57 +162,62 @@ div#pageContainer.col-md-9 h1:before {
         padding: 20px;
         position: relative !important;
     }
-.about-me img {
-    width: 50%;
-    height: 400px !important;
-    position: absolute !important;
-    margin-bottom: 50px;
-    left: 20px;
-    top: 20px;
-    z-index: 500;
-}
 
-.scroll-box {
-    font-size: 14px;
-    overflow-y: scroll;
-    width: 50%;
-    height: 500px;
-    position: absolute !important;
-    left: 0px;
-    top: 0px;
-    padding: 10px;
-    z-index: 501;
-    transform: translateZ(0);
-}
-.external-link {
-    position: relative;
-    left: -42%;
-}
+    .about-me img {
+        width: 50%;
+        height: 400px !important;
+        position: absolute !important;
+        margin-bottom: 50px;
+        left: 20px;
+        top: 20px;
+        z-index: 500;
+    }
+
+    .scroll-box {
+        font-size: 14px;
+        overflow-y: scroll;
+        width: 50%;
+        height: 500px;
+        position: absolute !important;
+        left: 0px;
+        top: 0px;
+        padding: 10px;
+        z-index: 501;
+        transform: translateZ(0);
+    }
+
+    .external-link {
+        position: relative;
+        left: -42%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-.about-me {
+    .about-me {
         column-count: 2;
         align-items: center;
         background: var(--athena-glow);
         height: 450px;
-}
-.scroll-image {
-    width: 90%;
-    margin: 30px;
-}
-.scroll-box {
-    font-size: 14px;
-    overflow-y: scroll;
-    height: 400px;
-    width: 90%;
-    position: relative;
-    top: 20px;
-}
-.external-link {
-    position: relative;
-    left: -46%;
-}
+    }
+
+    .scroll-image {
+        width: 90%;
+        margin: 30px;
+    }
+
+    .scroll-box {
+        font-size: 14px;
+        overflow-y: scroll;
+        height: 400px;
+        width: 90%;
+        position: relative;
+        top: 20px;
+    }
+
+    .external-link {
+        position: relative;
+        left: -46%;
+    }
 
 }
 
@@ -296,7 +301,7 @@ h3 {
 .navbar li a {
     color: var(--posiedon-coral) !important;
     font-size: 17px;
-    font-weight: 300;    
+    font-weight: 300;
     text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
 }
 
@@ -362,11 +367,14 @@ h3 {
     text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
 }
 
-.col-md-12 a:hover, .panel-body.small a:hover, div.panel a:hover {
+.col-md-12 a:hover,
+.panel-body.small a:hover,
+div.panel a:hover {
     text-shadow: none !important;
 }
 
-.panel-body.small, div.panel {
+.panel-body.small,
+div.panel {
     background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
     color: var(--posiedon-coral) !important;
     font-size: 13px;
@@ -375,7 +383,8 @@ h3 {
     border-radius: 1px;
 }
 
-.panel-body.small a, div.panel a {
+.panel-body.small a,
+div.panel a {
     color: var(--posiedon-coral) !important;
     font-weight: 200;
 }
@@ -464,24 +473,25 @@ img.floatleft.commentTag.clear {
 /* Switch Account and Bug Box buttons */
 
 .btn:hover,
-button.button:hover, .btn.btn:hover {
-	background: var(--athena-glow);
-	color: var(--posiedon-coral) !important;
+button.button:hover,
+.btn.btn:hover {
+    background: var(--athena-glow);
+    color: var(--posiedon-coral) !important;
     transition: 1s;
 }
 
 .btn img {
-	display: none;
+    display: none;
 }
 
 .btn,
 button.button,
 .btn.btn {
-	background: var(--poseidon-coral);
-	border: none !important;
-	border-radius: 4px;
-	text-shadow: none !important;
-	color: var(--siren-brown) !important;
+    background: var(--poseidon-coral);
+    border: none !important;
+    border-radius: 4px;
+    text-shadow: none !important;
+    color: var(--siren-brown) !important;
     width: 160px;
     height: 30px;
     filter: drop-shadow(0px 0px 3rem var(--athena-glow)) !important;
@@ -489,7 +499,13 @@ button.button,
 
 /* All tables - styling */
 
-table#about, table#player, table#attack, table#allies, table#clans, table#sparring, table.table {
+table#about,
+table#player,
+table#attack,
+table#allies,
+table#clans,
+table#sparring,
+table.table {
     background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
     border: 1px solid var(--posiedon-coral);
     border-radius: 2px;
@@ -509,7 +525,9 @@ table#about.table a {
     text-decoration: none;
 }
 
-.table .top, #sparring th, table.table th {
+.table .top,
+#sparring th,
+table.table th {
     border-bottom: 1px solid var(--siren-brown);
     text-shadow: 0 0 2em var(--posiedon-coral), 0 0 .3em var(--posiedon-coral) !important;
 }
@@ -574,16 +592,17 @@ div.lionImage.featured-lion {
 /* Lion and user profile pictures */
 
 #about.table div .lion-image-block {
-   border-radius: 50%;
-   position: relative;
-   left: 10px;
-   top: 15px;
-   box-shadow: 0px 0px 12px 12px var(--posiedon-coral) !important;
+    border-radius: 20px;
+    border: 4px solid var(--siren-brown) !important;
+    position: relative;
+    left: 10px;
+    top: 15px;
+    box-shadow: 0px 0px 12px 12px var(--posiedon-coral) !important;
 }
 
 table#player img {
-    border-radius: 50%;
-    border: 0px !important;
+    border-radius: 20px;
+    border: 4px solid var(--siren-brown) !important;
     box-shadow: 0px 0px 12px 12px var(--posiedon-coral) !important;
     position: relative;
     left: -15px;
@@ -719,7 +738,8 @@ td.right_odd.text-right img {
     display: none;
 }
 
-p.center > a, div.xlarge > a#text {
+p.center>a,
+div.xlarge>a#text {
     top: -50px;
 }
 
@@ -745,15 +765,17 @@ table#player hr {
 }
 
 /* Cave and Beetle Mound grid appearances*/
-#fraOrganizationBlock > div:nth-child(2) > div:nth-child(1), div.center:nth-child(5) > div:nth-child(1) > i:nth-child(3) {
+#fraOrganizationBlock>div:nth-child(2)>div:nth-child(1),
+div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
     text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
 }
+
 .cave-grid,
 .mound-grid {
-	background: none;
-	color: var(--posiedon-coral) !important;
-	border: 0px;
-	border-radius: 2px !important;
+    background: none;
+    color: var(--posiedon-coral) !important;
+    border: 0px;
+    border-radius: 2px !important;
     font-size: 20px !important;
 }
 
@@ -761,7 +783,7 @@ table#player hr {
 
 div.feature,
 .feature {
-    background: var(--athena-glow);
+    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
     color: var(--posiedon-coral);
     font-size: 13px;
     font-weight: 200;
@@ -782,15 +804,14 @@ div.left h3,
 .feature h3 {
     font-weight: 500 !important;
     color: var(--posiedon-coral) !important;
-} */
+}
 
-
-
-
+*/
 /* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
 
-div.col-md-4 div h3, .dynastycollection a {
-	 color: var(--posiedon-coral) !important;
+div.col-md-4 div h3,
+.dynastycollection a {
+    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
     font-size: 20px !important;
 }
 
@@ -803,11 +824,11 @@ div.col div {
     background: transparent !important;
 }
 
-/* Edit Details 
+/* Edit Details */
 
 table.table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>th:nth-child(1) {
-    background: #410a02 !important;
-    color: #e2d6b2 !important;
+    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+    color: var(--siren-brown) !important;
 }
 
 td.left b {
@@ -815,11 +836,9 @@ td.left b {
     font-weight: 700 !important;
 }
 
-*/
-
 
 /* Background fix for mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 7px) {
     body::before {
         content: "";
         position: fixed;
@@ -847,7 +866,8 @@ div.mound-grid img {
     width: 200px
 }
 
-.cave-grid img:hover, .mound-grid img:hover  {
+.cave-grid img:hover,
+.mound-grid img:hover {
     transition: 1s;
     box-shadow: 0px 0px 20px 20px var(--posiedon-coral) !important;
     z-index: 50;
@@ -864,7 +884,8 @@ div.cave-grid>img[src$="nestingbanner.png"] {
     border-radius: 0px !important;
 }
 
-div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div, div.col.col-sm-4 div {
+div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div,
+div.col.col-sm-4 div {
     height: 70px;
     color: var(--siren-brown);
     font-weight: 200 !important;
@@ -873,7 +894,6 @@ div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div, div.col.col-sm-4 div {
 
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
     content: url('') !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
@@ -900,7 +920,7 @@ div.cave-grid>img {
     width: 300px !important;
 }
 
-#fraCaveList > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+#fraCaveList>div:nth-child(1)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
     content: url('') !important;
     object-fit: cover !important;
     height: 130px !important;
@@ -908,51 +928,56 @@ div.cave-grid>img {
 
 }
 
-#fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+#fraCaveList>div:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
     content: url('') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
 }
 
-#fraCaveList > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+#fraCaveList>div:nth-child(3)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
     content: url('') !important;
     object-fit: cover !important;
     height: 130px !important;
     width: 300px !important;
 }
 
-div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+div.center:nth-child(4)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
     content: url('') !important;
     object-fit: cover !important;
-    object-position: right !important;; 
+    object-position: right !important;
+    ;
     height: 130px !important;
     width: 300px !important;
 }
 
-div.center:nth-child(5) > div:nth-child(1) > img:nth-child(1) {
+div.center:nth-child(5)>div:nth-child(1)>img:nth-child(1) {
     content: url('') !important;
     object-fit: cover !important;
-    object-position: right !important;; 
+    object-position: right !important;
+    ;
     height: 130px !important;
     width: 300px !important;
 }
 
-div.center:nth-child(5) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+div.center:nth-child(5)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
     content: url('') !important;
     object-fit: cover !important;
-    object-position: right !important;; 
+    object-position: right !important;
+    ;
     height: 130px !important;
     width: 300px !important;
 }
 
-div.col-md-4:nth-child(6) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+div.col-md-4:nth-child(6)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
     content: url('') !important;
     object-fit: cover !important;
-    object-position: right !important;; 
+    object-position: right !important;
+    ;
     height: 130px !important;
     width: 300px !important;
 }
+
 img[src$="den_ancestors.png"] {
     content: url('');
     object-fit: cover;
@@ -993,13 +1018,15 @@ img[src$="den_beetlebook.png"] {
     filter: brightness(90%) contrast(90%) sepia(30%);
 }
 
-img[src$="icon_den_friend.png"], img[src$="icon_den_wishlist.png"] {
-  display: none;
-} 
-
-p.center:nth-child(4) > a {
-  top: 10px;
+img[src$="icon_den_friend.png"],
+img[src$="icon_den_wishlist.png"] {
+    display: none;
 }
+
+p.center:nth-child(4)>a {
+    top: 10px;
+}
+
 /* Replace Social Media Icons */
 
 img[src$="iconFB.png"] {
@@ -1024,6 +1051,14 @@ img[src$="iconTwit.png"] {
 
 img[src$="iconInsta.png"] {
     content: url('');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 3rem var(--posiedon-coral)) !important;
+}
 
 /* Replace Lioden Logo */
 
@@ -1031,7 +1066,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
     border: transparent !important;
 }
 
-img[src$="logo-full-2.png] {
+.navbar-brand {
     content: "";
     display: none !important;
 }
