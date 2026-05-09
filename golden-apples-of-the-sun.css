@@ -147,7 +147,7 @@ div#pageContainer.col-md-9 h1:before {
   margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 7px) {
+@media only screen and (max-width: 767px) {
     div#pageContainer.col-md-9 h1:before {
         text-indent: 20px;
     }
@@ -157,7 +157,7 @@ div#pageContainer.col-md-9 h1:before {
         column-count: 2;
         align-items: center;
         background: var(--athena-glow);
-        height: 450px;
+        height: 500px;
         width: 93%;
         padding: 20px;
         position: relative !important;
@@ -175,11 +175,12 @@ div#pageContainer.col-md-9 h1:before {
 .scroll-box {
     font-size: 14px;
     overflow-y: scroll;
-    width: 40%;
-    height: 410px;
+    width: 50%;
+    height: 500px;
     position: absolute !important;
-    left: 300px;
-    top: 10px;
+    left: 0px;
+    top: 0px;
+    padding: 10px;
     z-index: 501;
     transform: translateZ(0);
 }
@@ -194,15 +195,16 @@ div#pageContainer.col-md-9 h1:before {
         column-count: 2;
         align-items: center;
         background: var(--athena-glow);
+        height: 450px;
 }
 .scroll-image {
     width: 90%;
     margin: 30px;
 }
 .scroll-box {
-    font-size: 16px;
+    font-size: 14px;
     overflow-y: scroll;
-    height: 500px;
+    height: 400px;
     width: 90%;
     position: relative;
     top: 20px;
@@ -817,7 +819,7 @@ td.left b {
 
 
 /* Background fix for mobile */
-@media only screen and (max-width: 7px) {
+@media only screen and (max-width: 767px) {
     body::before {
         content: "";
         position: fixed;
