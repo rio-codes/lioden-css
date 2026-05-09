@@ -149,17 +149,17 @@ div#pageContainer.col-md-9 h1 {
 }
 
 div#pageContainer.col-md-9 h1:before {
-    font-family: 'Sankofa Display';
+    font-family: "Sankofa Display";
     content: "Phoebus Apollo's Temple";
     font-weight: 600;
-    text-indent: 100px;
+    text-indent: 130px;
     float: left;
     position: relative;
     top: 20px;
     margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 743px) {
     div#pageContainer.col-md-9 h1:before {
         text-indent: 20px;
     }
@@ -208,7 +208,69 @@ div#pageContainer.col-md-9 h1:before {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 819px) and (min-width: 744px) {
+    div#pageContainer.col-md-9 h1:before {
+        font-family: "Sankofa Display";
+        content: "Phoebus Apollo's Temple";
+        font-weight: 600;
+        text-indent: 70px;
+        float: left;
+        position: relative;
+        top: 20px;
+        margin-bottom: 30px;
+    }
+    .navbar a {
+        font-size: 20px !important;
+    }
+    .about-me {
+        column-count: 2;
+        align-items: center;
+        background: linear-gradient(90deg, #da70d6a7 0%, #ffa500a7 100%);
+        backdrop-filter: brightness(80%);
+        height: 450px;
+        border-radius: 20px;
+    }
+
+    .scroll-image {
+        width: 100%;
+        height: auto !important;
+        position: absolute !important;
+        margin-bottom: 50px;
+        left: 65px;
+        top: 10px;
+        z-index: 500;
+    }
+
+    .scroll-box {
+        font-size: 16px;
+        overflow-y: scroll;
+        height: 400px;
+        width: 40%;
+        position: relative;
+        top: 20px;
+        scrollbar-color: #e18791 var(--artemis-blonde);
+    }
+
+    .external-link {
+        position: relative;
+        left: -46%;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 820px) {
+    div#pageContainer.col-md-9 h1:before {
+        font-family: "Sankofa Display";
+        content: "Phoebus Apollo's Temple";
+        font-weight: 600;
+        text-indent: 70px;
+        float: left;
+        position: relative;
+        top: 20px;
+        margin-bottom: 30px;
+    }
+    .navbar a {
+        font-size: 20px !important;
+    }
     .about-me {
         column-count: 2;
         align-items: center;
@@ -218,19 +280,14 @@ div#pageContainer.col-md-9 h1:before {
         border-radius: 20px;
     }
     
-    .about-me img {
-        width: 47%;
+    .scroll-image {
+        width: 90%;
         height: auto !important;
         position: absolute !important;
         margin-bottom: 50px;
-        left: 410px;
-        top: 100px;
+        left: -50px;
+        top: 0px;
         z-index: 500;
-    }
-
-    .scroll-image {
-        width: 90%;
-        margin: 30px;
     }
 
     .scroll-box {
@@ -240,7 +297,7 @@ div#pageContainer.col-md-9 h1:before {
         width: 90%;
         position: relative;
         top: 20px;
-        scrollbar-color: #e18791 var(--poseidon-coral);
+        scrollbar-color: #e18791 var(--artemis-blonde);
     }
 
     .external-link {
