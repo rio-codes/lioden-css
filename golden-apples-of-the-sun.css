@@ -26,16 +26,7 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Import Fonts (From Google Fonts) */
 
-@font-face {
-    font-family: "Sankofa Display";
-    src: url(https://rio-codes.github.io/lioden-css/SankofaDisplay-Regular.ttf) format(ttf);
-}
-
-@font-face {
-    font-family: "Electrolize";
-     src: url(https://rio-codes.github.io/lioden-css/Electrolize-Regular.ttf) format(ttf);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Sankofa+Display&display=swap');
 
 /* Background image, font and font color, text alignment */
 body {
@@ -189,6 +180,7 @@ div#pageContainer.col-md-9 h1:before {
     }
 
     .scroll-box {
+        font-family: "Electrolize" !important;
         font-size: 12px;
         overflow-y: auto;
         width: 48%;
@@ -358,7 +350,7 @@ div#pageContainer.col-md-9 h1:before {
 }
 
 h1 {
-    font-family: 'Sankofa Display';
+    font-family: "Sankofa Display";
     font-size: 58px;
     color: var(--posiedon-coral);
     font-weight: 400 !important;
@@ -371,7 +363,7 @@ h1 {
 /* Secondary header */
 
 h2 {
-    font-family: 'Sankofa Display';
+    font-family: "Sankofa Display";
     font-size: 28px;
     color: var(--posiedon-coral) !important;
 }
@@ -379,7 +371,7 @@ h2 {
 /* Tertiary header */
 
 h3, div.center.h3 {
-    font-family: 'Sankofa Display';
+    font-family: "Sankofa Display";
     font-size: 34px !important;
     font-weight: 300;
     color: var(--posiedon-coral) !important;
@@ -481,7 +473,7 @@ h3, div.center.h3 {
 /* Right-side panel appearance */
 
 .sidebar h3 {
-    font-family: "Sankofa Display", Georgia, 'Times New Roman', Times, serif;
+    font-family: "Sankofa Display";
     font-size: 26px !important;
     font-weight: 600;
     color: var(--posiedon-coral) !important;
