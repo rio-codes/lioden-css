@@ -52,6 +52,7 @@ body {
     position: relative;
     top: 30px;
     left: -310px;
+    text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
 }
 
 /* Link colors */
@@ -60,7 +61,7 @@ a:link,
 a:visited {
     color: var(--siren-brown);
     font-weight: 200;
-    text-shadow: 0 0 .6em, 0 0 1em var(--hera-hearth) !important;
+    text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight); !important;
 }
 
 a img {
@@ -69,12 +70,13 @@ a img {
 }
 
 a:hover {
-    color: var(--demeter-wheat); 
-    text-shadow: none !important;
+    color: var(--poseidon-coral); 
+    text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
+    transition: .5s;
 }
 
 a:focus {
-    text-shadow: 0 0 .6em, 0 0 1em var(--hermes-heat) !important;
+    text-shadow: 0 0 1em var(--hermes-heat), 0 0 .5em var(--hermes-heat);
 }
 
 /* Bookmark button */
@@ -103,7 +105,7 @@ textarea {
     border: 1px solid var(--posiedon-coral);
     border-radius: 5px !important;
     box-shadow: none !important;
-    text-shadow: none !important;
+    text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight);
     color: var(--posiedon-coral) !important;
     font-weight: 300;
 }
@@ -125,7 +127,7 @@ input#postComment {
     border: 0px !important;
     border-radius: 2px;
     text-align: left !important;
-    text-shadow: 0 0 2em var(--posiedon-coral), 0 0 .3em var(--posiedon-coral) !important;
+    text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight);
     position: relative;
     top: 20px;
     font-weight: 300;
@@ -133,7 +135,9 @@ input#postComment {
 
 .alert a,
 .alert-warning a,
-.alert-danger a {}
+.alert-danger a {
+    text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight);
+}
 
 /* Main header appearance ("___"'s Den) */
 
@@ -143,13 +147,14 @@ div#pageContainer.col-md-9 h1 {
 
 div#pageContainer.col-md-9 h1:before {
     font-family: "Sankofa Display";
-    content: "Phoebus Apollo's Temple";
+    content: "Temple of Phoebus Apollo";
     font-weight: 600;
     text-indent: 130px;
     float: left;
     position: relative;
     top: 20px;
     margin-bottom: 30px;
+    text-shadow: 0 0 1em var(--poseidon-coral), 0 0 .2em var(--apollo-sunlight);
 }
 
 @media only screen and (max-width: 743px) {
@@ -169,6 +174,7 @@ div#pageContainer.col-md-9 h1:before {
         padding: 10px;
         position: relative !important;
         border-radius: 20px;
+        text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
     }
 
     .about-me img {
@@ -194,6 +200,7 @@ div#pageContainer.col-md-9 h1:before {
         scrollbar-color: var(--poseidon-coral) var(--athena-glow);
         z-index: 501;
         transform: translateZ(0);
+        text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
     }
 
     .external-link {
@@ -205,7 +212,7 @@ div#pageContainer.col-md-9 h1:before {
 @media only screen and (max-width: 819px) and (min-width: 744px) {
     div#pageContainer.col-md-9 h1:before {
         font-family: "Sankofa Display";
-        content: "Phoebus Apollo's Temple";
+        content: "Temple of Phoebus Apollo";
         font-weight: 600;
         text-indent: 70px;
         float: left;
@@ -254,7 +261,7 @@ div#pageContainer.col-md-9 h1:before {
 @media only screen and (max-width: 1000px) and (min-width: 820px) {
     div#pageContainer.col-md-9 h1:before {
         font-family: "Sankofa Display";
-        content: "Phoebus Apollo's Temple";
+        content: "Temple of Phoebus Apollo";
         font-weight: 600;
         text-indent: 70px;
         float: left;
@@ -304,7 +311,7 @@ div#pageContainer.col-md-9 h1:before {
 @media only screen and (min-width: 1001px) {
     div#pageContainer.col-md-9 h1:before {
         font-family: "Sankofa Display";
-        content: "Phoebus Apollo's Temple";
+        content: "Temple of Phoebus Apollo";
         font-weight: 600;
         text-indent: 130px;
         float: left;
@@ -498,7 +505,7 @@ h3, div.center.h3 {
     opacity: 0.9;
     border: 0px !important;
     z-index: 5;
-    opacity: 100%;
+    opacity: 90%;
     text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
     border-radius: 10px;
     filter: brightness(80%);
@@ -591,11 +598,12 @@ div#commentBox {
     padding-left: 10px;
     padding-right: 10px;
     text-align: left;
+    opacity: 80%;
 }
 
 div#commentBox a {
-    color: var(--posiedon-coral);
-    
+    color: var(--athena-glow);
+    opacity: 80%;
 }
 
 div.commentText {
@@ -611,8 +619,8 @@ div.commentText {
 
 img.floatleft.commentTag.clear {
     height: 40px;
-    border: 2px solid var(--siren-brown);
-    border-radius: 50%;
+    border: 4px solid var(--siren-brown);
+    border-radius: 20px !important;
     position: relative;
     top: 2px;
     left: -3px
@@ -656,7 +664,7 @@ table#sparring,
 table#attack,
 table.table {
     background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
-    opacity: .8;
+    opacity: 85%;
     border: 1px solid var(--posiedon-coral);
     border-radius: 2px;
 }
@@ -680,6 +688,7 @@ table#about.table a {
 table.table th {
     border-bottom: 1px solid var(--siren-brown);
     text-shadow: 0 0 2em var(--posiedon-coral), 0 0 .3em var(--posiedon-coral) !important;
+    opacity: 93% !important;
 }
 
 .top,
@@ -687,16 +696,18 @@ th, #attack th {
     background: linear-gradient(90deg, #da70d6 0%, #ffa500 100%);
     backdrop-filter: brightness(80%);
     border-radius: 2px 2px 0px 0px;
+    opacity: 93% !important;
 }
 
 .bottom,
 th {
     background: var(--athena-glow);
-    color: var(--demeter-wheat);
+    color: var(--siren-brown);
 }
 
 .table .bottom {
-    background: radial-gradient(var(--hermes-heat), var(--hera-hearth));
+    background: var(--athena-glow);
+    color: var(--siren-brown);
 }
 
 td.bottom button {
