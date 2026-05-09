@@ -26,7 +26,15 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Import Fonts (From Google Fonts) */
 
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Sankofa+Display&display=swap');
+@font-face {
+    font-family: "Sankofa Display";
+    src: url(https://rio-codes.github.io/lioden-css/SankofaDisplay-Regular.ttf) format(ttf);
+}
+
+@font-face {
+    font-family: "Electrolize";
+     src: url(https://rio-codes.github.io/lioden-css/Electrolize-Regular.ttf) format(ttf);
+}
 
 
 /* Background image, font and font color, text alignment */
