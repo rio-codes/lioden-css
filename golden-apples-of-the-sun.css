@@ -307,6 +307,55 @@ div#pageContainer.col-md-9 h1:before {
 
 }
 
+@media only screen and (min-width: 1001px) {
+    div#pageContainer.col-md-9 h1:before {
+        font-family: "Sankofa Display";
+        content: "Phoebus Apollo's Temple";
+        font-weight: 600;
+        text-indent: 130px;
+        float: left;
+        position: relative;
+        top: 20px;
+        margin-bottom: 30px;
+    }
+    .navbar a {
+        font-size: 20px !important;
+    }
+    .about-me {
+        column-count: 2;
+        align-items: center;
+        background: linear-gradient(90deg, #da70d6a7 0%, #ffa500a7 100%);
+        backdrop-filter: brightness(80%);
+        height: 450px;
+        border-radius: 20px;
+    }
+    
+    .scroll-image img {
+        width: 40%;
+        height: auto !important;
+        position: absolute !important;
+        margin-bottom: 50px;
+        left: 450px;
+        top: 100px;
+        z-index: 500;
+    }
+
+    .scroll-box {
+        font-size: 16px;
+        overflow-y: scroll;
+        height: 400px;
+        width: 90%;
+        position: relative;
+        top: 20px;
+        scrollbar-color: #e18791 var(--artemis-blonde);
+    }
+
+    .external-link {
+        position: relative;
+        left: -46%;
+    }
+
+}
 
 h1 {
     font-family: 'Sankofa Display';
