@@ -158,153 +158,149 @@ div#pageContainer.col-md-9 h1:before {
 }
 
 @media only screen and (max-width: 743px) {
-    div#pageContainer.col-md-9 h1:before {
-        text-indent: 20px;
-    }
-
-    /* About me scrollbox */
-
-    .about-me {
-        column-count: 2;
-        align-items: center;
-        background: linear-gradient(180deg, #ffafbd 0%, #ffc3a0 45%, #2193b0 100%);
-        backdrop-filter: brightness(80%);
-        height: 400px;
-        width: 93%;
-        padding: 10px;
-        position: relative !important;
-        border-radius: 20px;
-        text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
-    }
-
-    .about-me img {
-        width: 35%;
-        height: auto !important;
-        position: absolute !important;
-        margin-bottom: 50px;
-        left: 320px;
-        top: 140px;
-        z-index: 500;
-    }
-
-    .scroll-box {
-        font-family: "Electrolize" !important;
-        font-size: 12px;
-        overflow-y: auto;
-        width: 48%;
-        height: 320px;
-        position: absolute !important;
-        left: 40px;
+ div#pageContainer.col-md-9 h1:before {
+        font-family: "Sankofa Display";
+        content: "Temple of Phoebus Apollo";
+        font-weight: 600;
+        font-size: 47px;
+        text-indent: 40px;
+        float: left;
+        position: relative;
         top: 40px;
-        padding: 10px;
-        scrollbar-color: var(--poseidon-coral) var(--athena-glow);
-        z-index: 501;
-        transform: translateZ(0);
-        text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
+        margin-bottom: 30px;
+    }
+    .navbar a {
+        font-size:29px !important;
+    }
+    .about-me {
+        align-items: center;
+        background-image: url(https://cdn.allthepics.net/images/2026/05/09/Parthenon__28_May_1838__Skene_James_-_1838.md.jpg);
+        position: relative;
+        top: -50px;
+        background-size: cover;
+        width: 85%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 15px var(--icarus-warmth) !important;
+    }
+    .scroll-image img {
+        display: none;
+    }
+    .scroll-box {
+        backdrop-filter: brightness(130%) contrast(70%) !important;
+        padding: 30px;
+        font-size: 16px;
+        overflow-y: auto;
+        height: 400px;
+        width: 100%;
+        position: relative;
+        top: 0px;
+        border-radius: 10px;
+        scrollbar-color: #2193b0a7 var(--artemis-blonde);
     }
 
     .external-link {
         position: relative;
-        left: -42%;
+        top: -50px;
+        left: -38%;
     }
+
 }
 
 @media only screen and (max-width: 819px) and (min-width: 744px) {
-    div#pageContainer.col-md-9 h1:before {
+ div#pageContainer.col-md-9 h1:before {
         font-family: "Sankofa Display";
         content: "Temple of Phoebus Apollo";
         font-weight: 600;
-        text-indent: 70px;
+        text-indent: 65px;
         float: left;
         position: relative;
         top: 20px;
         margin-bottom: 30px;
     }
     .navbar a {
-        font-size: 20px !important;
+        font-size:29px !important;
     }
     .about-me {
-        column-count: 2;
         align-items: center;
-        background: linear-gradient(180deg, #ffafbd 0%, var(--apollo-sunlight) 100%);
-        backdrop-filter: brightness(80%);
-        height: 450px;
-        border-radius: 20px;
-    }
-
-    .scroll-image {
-        width: 100%;
-        height: auto !important;
-        position: absolute !important;
-        margin-bottom: 50px;
-        left: 65px;
-        top: 10px;
-        z-index: 500;
-    }
-
-    .scroll-box {
-        font-size: 16px;
-        overflow-y: scroll;
-        height: 400px;
-        width: 40%;
+        background-image: url(https://cdn.allthepics.net/images/2026/05/09/Parthenon__28_May_1838__Skene_James_-_1838.md.jpg);
         position: relative;
-        top: 20px;
-        scrollbar-color: #e18791 var(--artemis-blonde);
+        top: -50px;
+        background-size: cover;
+        width: 85%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 15px var(--icarus-warmth) !important;
+    }
+    .scroll-image img {
+        display: none;
+    }
+    .scroll-box {
+        backdrop-filter: brightness(130%) contrast(70%) !important;
+        padding: 30px;
+        font-size: 16px;
+        overflow-y: auto;
+        height: 400px;
+        width: 100%;
+        position: relative;
+        top: 0px;
+        border-radius: 10px;
+        scrollbar-color: #2193b0a7 var(--artemis-blonde);
     }
 
     .external-link {
         position: relative;
-        left: -46%;
+        top: -50px;
+        left: -38%;
     }
+
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 820px) {
-    div#pageContainer.col-md-9 h1:before {
+ div#pageContainer.col-md-9 h1:before {
         font-family: "Sankofa Display";
         content: "Temple of Phoebus Apollo";
         font-weight: 600;
-        text-indent: 70px;
+        text-indent: 65px;
         float: left;
         position: relative;
         top: 20px;
         margin-bottom: 30px;
     }
     .navbar a {
-        font-size: 20px !important;
+        font-size:29px !important;
     }
     .about-me {
-        column-count: 2;
         align-items: center;
-        background: linear-gradient(180deg, var(--apollo-sunlight) 0%, #ffc3a0 45%, #2193b0a7 100%);
-        backdrop-filter: brightness(80%);
-        height: 450px;
-        border-radius: 20px;
-    }
-    
-    .scroll-image {
-        width: 90%;
-        height: auto !important;
-        position: absolute !important;
-        margin-bottom: 50px;
-        left: -50px;
-        top: 0px;
-        z-index: 500;
-            box-shadow: 0px 0px 20px 20px var(--apollo-sunlight) !important;
-    }
-
-    .scroll-box {
-        font-size: 16px;
-        overflow-y: scroll;
-        height: 400px;
-        width: 90%;
+        background-image: url(https://cdn.allthepics.net/images/2026/05/09/Parthenon__28_May_1838__Skene_James_-_1838.md.jpg);
         position: relative;
-        top: 20px;
-        scrollbar-color: #e18791 var(--artemis-blonde);
+        top: -50px;
+        background-size: cover;
+        width: 85%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 15px var(--icarus-warmth) !important;
+    }
+    .scroll-image img {
+        display: none;
+    }
+    .scroll-box {
+        backdrop-filter: brightness(130%) contrast(70%) !important;
+        padding: 30px;
+        font-size: 16px;
+        overflow-y: auto;
+        height: 400px;
+        width: 100%;
+        position: relative;
+        top: 0px;
+        border-radius: 10px;
+        scrollbar-color: #2193b0a7 var(--artemis-blonde);
     }
 
     .external-link {
         position: relative;
-        left: -46%;
+        top: -50px;
+        left: -38%;
     }
 
 }
@@ -329,8 +325,8 @@ div#pageContainer.col-md-9 h1:before {
         position: relative;
         top: -50px;
         background-size: cover;
-        width: 90%;
-        height: 450px;
+        width: 85%;
+        height: auto;
         border-radius: 10px;
         box-shadow: 0px 0px 15px 15px var(--icarus-warmth) !important;
     }
@@ -342,8 +338,8 @@ div#pageContainer.col-md-9 h1:before {
         padding: 30px;
         font-size: 16px;
         overflow-y: auto;
-        height: 450px;
-        width: 760px;
+        height: 400px;
+        width: 100%;
         position: relative;
         top: 0px;
         border-radius: 10px;
@@ -353,7 +349,7 @@ div#pageContainer.col-md-9 h1:before {
     .external-link {
         position: relative;
         top: -50px;
-        left: -40%;
+        left: -38%;
     }
 
 }
