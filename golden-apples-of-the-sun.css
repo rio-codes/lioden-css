@@ -22,13 +22,10 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
     --ares-brass: #e8b72ad0;
     --hermes-heat: #ffbe6ba7;
     --demeter-wheat: #ffe0b9;
-    --aphrodite-blossom: #ffce8e;
     --athena-glow: #ffb24d88;
     --poseidon-coral: #e8942a;
     --siren-brown: #432705;
 }
-
-
 
 /* Background image, font and font color, text alignment */
 body {
@@ -50,9 +47,9 @@ body {
     font-size: 20px;
     font-weight: 200;
     position: relative;
-    top: 30px;
+    top: 40px;
     left: -310px;
-    text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
+    text-shadow: 0 0 2em var(--icarus-warmth), 0 0 .3em var(--icarus-warmth) !important;
 }
 
 /* Link colors */
@@ -70,7 +67,7 @@ a img {
 }
 
 a:hover {
-    color: var(--poseidon-coral); 
+    color: var(--demeter-wheat); 
     text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
     transition: .5s;
 }
@@ -145,6 +142,8 @@ div#pageContainer.col-md-9 h1 {
     text-indent: -9999px;
 }
 
+/* Scroll Box */
+
 div#pageContainer.col-md-9 h1:before {
     font-family: "Sankofa Display";
     content: "Temple of Phoebus Apollo";
@@ -154,7 +153,6 @@ div#pageContainer.col-md-9 h1:before {
     position: relative;
     top: 20px;
     margin-bottom: 30px;
-    text-shadow: 0 0 20px var(--apollo-sunlight), 0 0 20px var(--apollo-sunlight) !important;
 }
 
 @media only screen and (max-width: 743px) {
@@ -181,7 +179,7 @@ div#pageContainer.col-md-9 h1:before {
         width: 85%;
         height: auto;
         border-radius: 10px;
-        box-shadow: 0px 0px 15px 15px var(--icarus-warmth) !important;
+        border: 1px solid var(--siren-brown);
     }
     .scroll-image img {
         display: none;
@@ -230,7 +228,7 @@ div#pageContainer.col-md-9 h1:before {
         width: 85%;
         height: auto;
         border-radius: 10px;
-        box-shadow: 0px 0px 15px 15px var(--icarus-warmth) !important;
+        border: 1px solid var(--siren-brown);
     }
     .scroll-image img {
         display: none;
@@ -279,7 +277,7 @@ div#pageContainer.col-md-9 h1:before {
         width: 85%;
         height: auto;
         border-radius: 10px;
-        box-shadow: 0px 0px 15px 15px var(--icarus-warmth) !important;
+        border: 1px solid var(--siren-brown);
     }
     .scroll-image img {
         display: none;
@@ -328,7 +326,7 @@ div#pageContainer.col-md-9 h1:before {
         width: 85%;
         height: auto;
         border-radius: 10px;
-        box-shadow: 0px 0px 15px 15px var(--icarus-warmth) !important;
+        border: 1px solid var(--siren-brown);
     }
     .scroll-image img {
         display: none;
@@ -353,6 +351,8 @@ div#pageContainer.col-md-9 h1:before {
     }
 
 }
+
+/* Primary header */
 
 h1 {
     font-family: "Sankofa Display";
@@ -388,10 +388,10 @@ h3, div.center.h3 {
 
 .container.main {
     background: #2193b050 !important;
-    border: 0px;
+    border: 1px solid !important;
     border-radius: 20px;
     text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
-
+    box-shadow: 0px 0px 30px 5px var(--icarus-warmth) !important;
 }
 
 /* Make left panel background and border invisible */
@@ -405,17 +405,17 @@ h3, div.center.h3 {
 /* Topbar (Welcome and account navigation) */
 
 .topbar {
-    background: transparent;
+    background: #2193b050;
     color: var(--siren-brown);
-    border: 0px;
-    border-radius: 0px 0px 4px 4px;
-    font-size: 14px;
+    border: 1px solid !important;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 18px;
     font-weight: 200;
 }
 
 .topbar a {
     color: var(--siren-brown) !important;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 200;
 }
 
@@ -430,26 +430,25 @@ h3, div.center.h3 {
     font-family: "Sankofa Display";
     font-size: 33px !important;
     font-weight: 800;
-    background: #2193b0a7 !important;
-    border-bottom: none;
-    color: var(--posiedon-coral);
+    background: #2193b0a7;
     border-radius: 10px 10px 0px 0px;
+    border-bottom: 2px solid var(--siren-brown);
     opacity: 1;
-    backdrop-filter: brightness(80%);
 }
 
 .navbar li a {
-    color: var(--posiedon-coral) !important;
+    color: var(--siren-brown) !important;
     font-size: 27px;
     font-weight: 600;
-    text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;}
+    text-shadow: 0 0 1em var(--icarus-warmth), 0 0 .5em var(--icarus-warmth) !important;}
 }
 
 .navbar li a:hover {
     color: var(--demeter-wheat) !important;
-    background: var(--apollo-sunlight) !important;
-    text-shadow: none !important;
-    height: 50px;
+    background: var(--icarus-warmth) !important;
+    border-bottom: 5px solid var(--demeter-wheat) !important;
+    z-index: 500 !important;
+    opacity: 1 !important;
 }
 
 /* Breadcrumb (Home button, den owner, bookmark) */
@@ -460,10 +459,10 @@ h3, div.center.h3 {
     background: #2193b0a7 !important;
     backdrop-filter: brightness(80%);
     color: var(--siren-brown) !important;
-    border: 0px !important;
+    border: 1px solid !important;
     border-radius: 5px;
     text-align: left !important;
-    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+    text-shadow: 0 0 2em var(--icarus-warmth), 0 0 .3em var(--icarus-warmth) !important;
 }
 
 .breadcrumb .active {
@@ -487,7 +486,7 @@ h3, div.center.h3 {
     font-size: 26px !important;
     font-weight: 600;
     color: var(--posiedon-coral) !important;
-    text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
+    text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .3em var(--apollo-sunlight) !important;
     text-align: right;
     position: relative;
     padding-top: 25px;
@@ -501,14 +500,13 @@ h3, div.center.h3 {
 .panel h3 {
     background: none !important;
     color: var(--siren-brown);
-    text-shadow: 0 0 2em #ffffff, 0 0 .5em #ffffff !important;
+    text-shadow: 0 0 2em var(--icarus-warmth), 0 0 .3em var(--icarus-warmth) !important;
     font-size: 24px !important;
     text-align: right;
     opacity: 0.9;
     border: 0px !important;
     z-index: 5;
     opacity: 90%;
-    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
     border-radius: 10px;
     filter: brightness(80%);
 }
@@ -528,33 +526,38 @@ div.panel a:hover {
 .panel-body.small,
 div.panel {
     background: linear-gradient(180deg, var(--icarus-warmth) 0%, #2193b0a7 100%);
+    backdrop-filter: brightness(80%);
+    border: 1px solid !important;
+    overflow: hidden;
+    border-radius: 10px;
     color: var(--siren-brown) !important;
-    font-size: 17px;
-    font-weight: 200;
-    z-index: 5;
-    border-radius: 20px;
-    backdrop-filter: brightness(70%) !important;
+    text-shadow: 0 0 2em var(--icarus-warmth), 0 0 .3em var(--icarus-warmth) !important;
+    font-size: 14px;
+    text-align: left;
+    opacity: 90%;
 }
 
 .panel-body.small a,
 div.panel a {
     color: var(--posiedon-coral) !important;
     font-weight: 200;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 
 .col-md-3 .panel {
-    border: none !important;
-    border-radius: 20px;
+    background: transparent !important;
+    border: 0px !important;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .panel-body.small .center a,
 .panel-body.small a {
     font-weight: 200 !important;
     color: var(--siren-brown) !important;
-    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
-    border-radius: 20px;
+    text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .3em var(--apollo-sunlight) !important;
+    border-radius: 10px;
 }
 
 div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
@@ -571,10 +574,9 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 .progress-bar,
 .progress-bar-danger,
 .progress-bar-success {
-    background: var(--apollo-sunlight);
-    backdrop-filter: brightness(30%) !important;
+    background: var(--demeter-wheat) !important;
     border-radius: 2px !important;
-    z-index: 30;
+    z-index: 10 !important;
 }
 
 .progress div {
@@ -589,14 +591,14 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 
 /* Comment box */
 div#commentBox {
-    background: linear-gradient(180deg, #ffafbda7 0%, #ffc3a0a7 45%, #2193b0a7 100%);
+    background: linear-gradient(180deg, var(--icarus-warmth) 0%, #2193b0a7 100%);
     backdrop-filter: brightness(80%);
-    border: 0px;
+    border: 1px solid var(--siren-brown);
     border-radius: 10px;
-    color: var(--posiedon-coral) !important;
+    color: var(--siren-brown) !important;
     text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
     margin-bottom: 10px;
-    margin-top: 40px;
+    margin-top: 0px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: left;
@@ -604,8 +606,12 @@ div#commentBox {
 }
 
 div#commentBox a {
-    color: var(--athena-glow);
-    opacity: 80%;
+    color: var(--siren-brown);
+    font-weight: 600;
+}
+
+div#commentBox a:hover {
+    color: var(--demeter-wheat);
 }
 
 div.commentText {
@@ -620,9 +626,10 @@ div.commentText {
 }
 
 img.floatleft.commentTag.clear {
-    height: 40px;
-    border: 4px solid var(--siren-brown);
-    border-radius: 20px !important;
+    height: 70px;
+    width: 70px;
+    border: 2px solid var(--siren-brown);
+    border-radius: 8px !important;
     position: relative;
     top: 2px;
     left: -3px
@@ -633,8 +640,8 @@ img.floatleft.commentTag.clear {
 .btn:hover,
 button.button:hover,
 .btn.btn:hover {
-    background: var(--athena-glow);
-    color: var(--posiedon-coral) !important;
+    background: var(--siren-brown);
+    color: var(--demeter-wheat) !important;
     transition: 1s;
 }
 
@@ -645,13 +652,13 @@ button.button:hover,
 .btn,
 button.button,
 .btn.btn {
-    background: var(--poseidon-coral);
-    border: none !important;
+    background: var(--apollo-sunlight);
+    border: 1px solid var(--siren-brown);
     border-radius: 4px;
     text-shadow: none !important;
     color: var(--siren-brown) !important;
-    width: 160px;
-    height: 30px;
+    width: 130px;
+    height: 25px;
     filter: drop-shadow(0px 0px 3rem var(--athena-glow)) !important;
 }
 
@@ -665,10 +672,10 @@ table#clans,
 table#sparring,
 table#attack,
 table.table {
-    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+    background: linear-gradient(180deg, var(--icarus-warmth) 0%, #2193b0a7 100%);
     opacity: 85%;
-    border: 1px solid var(--posiedon-coral);
-    border-radius: 2px;
+    border: 1px solid var(--siren-brown);
+    border-radius: 10px;
 }
 
 /*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
@@ -681,15 +688,17 @@ table.table {
 }
 
 table#about.table a {
-    color: var(--posiedon-coral);
+    color: var(--siren-brown);
     text-decoration: none;
 }
 
 .table .top,
 #sparring th,
 table.table th {
+    color: var(--siren-brown);
+    font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid var(--siren-brown);
-    text-shadow: 0 0 2em var(--posiedon-coral), 0 0 .3em var(--posiedon-coral) !important;
     opacity: 93% !important;
 }
 
@@ -701,8 +710,8 @@ th, #attack th {
 
 .bottom,
 th {
-    background: var(--athena-glow);
-    color: var(--siren-brown);
+    background: var(--icarus-warmth);
+    color: var(--siren-brown) !important;
 }
 
 .table .bottom {
@@ -719,27 +728,39 @@ td.bottom button {
 }
 
 .inner-table .left {
-    background: transparent !important;
-    color: var(--posiedon-coral);
-    text-shadow: 0 0 2em var(--posiedon-coral), 0 0 .3em var(--posiedon-coral) !important;
-    font-size: 13px;
-    border: 1px solid var(--posiedon-coral);
-    border-left: 1px solid var(--posiedon-coral);
-    border-top: 0px;
+    background: transparent;
+    color: var(--siren-brown) !important;
+    text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .3em var(--apollo-sunlight) !important;
+    font-family: "Electrolize" !important;
+    font-weight: 300 !important;
+    font-size: 13px !important;
+    border: 0px solid var(--siren-brown);
+    border-left: 1px solid var(--siren-brown);
+    border-top: 1px solid var(--siren-brown);
     border-right: 0px;
-    border-bottom: 1px solid var(--posiedon-coral);
-    border-radius: 0px 0px 0px 0px !important;
+    border-bottom: 1px dotted var(--posiedon-coral);
+    border-radius: 0px !important;
 }
 
 .inner-table .right {
     background: transparent !important;
-    color: var(--posiedon-coral);
-    text-shadow: none !important;
-    font-size: 13px;
-    border-bottom: 1px solid var(--posiedon-coral);
+    color: var(--siren-brown) !important;
+    text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .3em var(--apollo-sunlight) !important;
+    font-size: 12px;
+    border-top: 1px dotted var(--siren-brown);
     border-right: 0px;
     border-left: 1px solid var(--posiedon-coral);
     border-radius: 0px 0px 0px 0px !important;
+}
+
+.inner-table .right a {
+    color: var(--siren-brown) !important;
+    font-style: italic;
+    text-shadow: 0 0 2em var(--icarus-warmth), 0 0 .3em var(--icarus-warmth) !important;
+}
+
+.inner-table .right a:hover {
+    color: var(--demeter-wheat) !important;
 }
 
 .right_odd {
@@ -968,13 +989,18 @@ div.left h3,
     color: var(--posiedon-coral) !important;
 }
 
-*/
+
 /* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
 
 div.col-md-4 div h3,
 .dynastycollection a {
-    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
-    font-size: 20px !important;
+    background: transparent;
+    font-size: 35px !important;
+    font-weight: 600 !important;
+}
+
+.dynastycollection a:hover {
+    color: var(--demeter-wheat);
 }
 
 div.mb-2 div,
