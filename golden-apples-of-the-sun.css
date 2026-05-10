@@ -97,8 +97,8 @@ input.floatright:hover {
 input,
 select,
 textarea {
-    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
-    backdrop-filter: brightness(80%);
+    background: var(--icarus-warmth);
+    opacity: .7 !important;
     border: 1px solid var(--posiedon-coral);
     border-radius: 5px !important;
     box-shadow: none !important;
@@ -266,7 +266,7 @@ div#pageContainer.col-md-9 h1:before {
         margin-bottom: 30px;
     }
     .navbar a {
-        font-size:29px !important;
+        font-size:22px !important;
     }
     .about-me {
         align-items: center;
@@ -494,7 +494,7 @@ h3, div.center.h3 {
 
 .sidebar a {
     color: var(--posiedon-coral) !important;
-    text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
+    text-shadow: 0 0 2em var(--icarus-warmth), 0 0 .5em var(--icarus-warmth) !important;
 }
 
 .panel h3 {
@@ -512,8 +512,8 @@ h3, div.center.h3 {
 }
 
 .col-md-12 a {
-    color: var(--posiedon-coral);
-    text-shadow: 0 0 2em #ffffff, 0 0 .5em #ffffff !important;
+    color: var(--siren-brown);
+    text-shadow: 0 0 2em var(--icarus-warmth),, 0 0 .5em var(--icarus-warmth)!important;
 }
 
 .col-md-12 a:hover,
@@ -1209,10 +1209,15 @@ img[src$="icon_den_wishlist.png"] {
     display: none;
 }
 
+/* Misc fixes */
+
 p.center:nth-child(4)>a {
     top: 10px;
 }
 
+#allies > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1) {
+    display: none;
+}
 /* Replace Social Media Icons */
 
 img[src$="iconFB.png"] {
