@@ -1266,7 +1266,7 @@ p.center:nth-child(4)>a {
 /* Replace Social Media Icons */
 
 img[src$="iconFB.png"] {
-    content: url('');
+    content: url('https://cdn.allthepics.net/images/2026/05/10/greek-temple.png');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -1275,7 +1275,7 @@ img[src$="iconFB.png"] {
 }
 
 img[src$="iconTwit.png"] {
-    content: url('');
+    content: url('https://cdn.allthepics.net/images/2026/05/10/wingfoot.png');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -1286,7 +1286,7 @@ img[src$="iconTwit.png"] {
 }
 
 img[src$="iconInsta.png"] {
-    content: url('');
+    content: url('https://cdn.allthepics.net/images/2026/05/10/lyre.png');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -1295,6 +1295,7 @@ img[src$="iconInsta.png"] {
     overflow: hidden;
     filter: drop-shadow(0px 0px 3rem var(--posiedon-coral)) !important;
 }
+
 
 /* Replace Lioden Logo */
 
