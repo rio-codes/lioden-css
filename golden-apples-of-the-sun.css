@@ -15,7 +15,7 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Color variables */
 :root {
-    --apollo-sunlight: #ffd96b;
+    --apollo-sunlight: #ffd96ba7;
     --hera-hearth: #ffedb9;
     --icarus-warmth: #ffe28e;
     --artemis-blonde: #ffd14da7;
@@ -121,7 +121,7 @@ input#postComment {
 .alert,
 .alert-warning,
 .alert-danger {
-    background: var(--artemis-blonde);
+    background: #2193b0a7 !important;
     backdrop-filter: brightness(80%);
     color: var(--posiedon-coral) !important;
     border: 0px !important;
@@ -167,7 +167,7 @@ div#pageContainer.col-md-9 h1:before {
     .about-me {
         column-count: 2;
         align-items: center;
-        background: linear-gradient(90deg, #da70d6a7 0%, #ffa500a7 100%);
+        background: linear-gradient(180deg, #ffafbd 0%, #ffc3a0 45%, #2193b0 100%);
         backdrop-filter: brightness(80%);
         height: 400px;
         width: 93%;
@@ -226,7 +226,7 @@ div#pageContainer.col-md-9 h1:before {
     .about-me {
         column-count: 2;
         align-items: center;
-        background: linear-gradient(90deg, #da70d6a7 0%, #ffa500a7 100%);
+        background: linear-gradient(180deg, #ffafbd 0%, var(--apollo-sunlight) 100%);
         backdrop-filter: brightness(80%);
         height: 450px;
         border-radius: 20px;
@@ -275,7 +275,7 @@ div#pageContainer.col-md-9 h1:before {
     .about-me {
         column-count: 2;
         align-items: center;
-        background: linear-gradient(90deg, #da70d6a7 0%, #ffa500a7 100%);
+        background: linear-gradient(180deg, var(--apollo-sunlight) 0%, #ffc3a0 45%, #2193b0a7 100%);
         backdrop-filter: brightness(80%);
         height: 450px;
         border-radius: 20px;
@@ -321,42 +321,39 @@ div#pageContainer.col-md-9 h1:before {
         margin-bottom: 30px;
     }
     .navbar a {
-        font-size: 20px !important;
+        font-size:29px !important;
     }
     .about-me {
-        column-count: 2;
         align-items: center;
-        background: linear-gradient(90deg, #da70d6a7 0%, #ffa500a7 100%);
-        backdrop-filter: brightness(80%);
-        height: 450px;
-        border-radius: 20px;
-    }
-    
-    .scroll-image img {
-        width: 40%;
-        height: auto !important;
-        position: absolute !important;
-        margin-bottom: 50px;
-        left: 450px;
-        top: 100px;
-        z-index: 500;
-            box-shadow: 0px 0px 20px 20px var(--apollo-sunlight) !important;
-    }
-
-    .scroll-box {
-        font-size: 16px;
-        overflow-y: scroll;
-        height: 400px;
-        width: 90%;
+        background-image: url(https://cdn.allthepics.net/images/2026/05/09/Parthenon__28_May_1838__Skene_James_-_1838.md.jpg);
         position: relative;
-        top: 20px;
-        scrollbar-color: #e18791 var(--artemis-blonde);
-        
+        top: -50px;
+        background-size: cover;
+        width: 90%;
+        height: 450px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 15px var(--icarus-warmth) !important;
+    }
+    .scroll-image img {
+        display: none;
+    }
+    .scroll-box {
+        backdrop-filter: brightness(130%) contrast(70%) !important;
+        padding: 30px;
+        font-size: 16px;
+        overflow-y: auto;
+        height: 450px;
+        width: 760px;
+        position: relative;
+        top: 0px;
+        border-radius: 10px;
+        scrollbar-color: #2193b0a7 var(--artemis-blonde);
     }
 
     .external-link {
         position: relative;
-        left: -46%;
+        top: -50px;
+        left: -40%;
     }
 
 }
@@ -369,7 +366,7 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
-    text-shadow: 0 0 2em, 0 0 .5em var(--apollo-sunlight) !important;
+    text-shadow: 0 0 1em var(--icarus-warmth), 0 0 .2em var(--icarus-warmth) !important;
 }
 
 /* Secondary header */
@@ -394,11 +391,11 @@ h3, div.center.h3 {
 /* Main panel container appearance*/
 
 .container.main {
-    background: var(--athena-glow);
+    background: #2193b050 !important;
     border: 0px;
     border-radius: 20px;
     text-shadow: 0 0 1em var(--apollo-sunlight), 0 0 .5em var(--apollo-sunlight) !important;
-    box-shadow: 0px 0px 20px 20px var(--apollo-sunlight) !important;
+
 }
 
 /* Make left panel background and border invisible */
@@ -437,7 +434,7 @@ h3, div.center.h3 {
     font-family: "Sankofa Display";
     font-size: 33px !important;
     font-weight: 800;
-    background: linear-gradient(90deg, #da70d6 0%, #ffa500 100%);
+    background: #2193b0a7 !important;
     border-bottom: none;
     color: var(--posiedon-coral);
     border-radius: 10px 10px 0px 0px;
@@ -464,11 +461,11 @@ h3, div.center.h3 {
 .breadcrumb {
     font-family: "Sankofa Display";
     font-size: 24px;
-    background: linear-gradient(90deg, #da70d6 0%, #ffa500 100%);
+    background: #2193b0a7 !important;
     backdrop-filter: brightness(80%);
     color: var(--siren-brown) !important;
     border: 0px !important;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: left !important;
     text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
 }
@@ -534,12 +531,12 @@ div.panel a:hover {
 
 .panel-body.small,
 div.panel {
-    background: var(--ares-brass);
-    color: var(--posiedon-coral) !important;
-    font-size: 16px;
+    background: linear-gradient(180deg, var(--icarus-warmth) 0%, #2193b0a7 100%);
+    color: var(--siren-brown) !important;
+    font-size: 17px;
     font-weight: 200;
     z-index: 5;
-    border-radius: 1px;
+    border-radius: 20px;
     backdrop-filter: brightness(70%) !important;
 }
 
@@ -547,20 +544,21 @@ div.panel {
 div.panel a {
     color: var(--posiedon-coral) !important;
     font-weight: 200;
+    border-radius: 20px;
 }
 
 
 .col-md-3 .panel {
     border: none !important;
-    border-radius: 2px;
+    border-radius: 20px;
 }
 
 .panel-body.small .center a,
 .panel-body.small a {
     font-weight: 200 !important;
-    color: var(--posiedon-coral) !important;
+    color: var(--siren-brown) !important;
     text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
-    
+    border-radius: 20px;
 }
 
 div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
@@ -569,35 +567,33 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 
 /* Progress bars (Energy, hunger, EXP, IMP) */
 .progress {
-    background: var(--athena-glow);
+    background: var(--siren-brown) !important;
     color: var(--siren-brown) !important;
-    border-radius: 2px !important;
-    backdrop-filter: brightness(80%);
+    border-radius: 10px !important;
 }
 
 .progress-bar,
 .progress-bar-danger,
 .progress-bar-success {
-    background: linear-gradient(90deg, #da70d6 0%, #ffa500 100%) !important;
-    backdrop-filter: brightness(80%);
+    background: var(--apollo-sunlight);
+    backdrop-filter: brightness(30%) !important;
     border-radius: 2px !important;
-    z-index: 10;
+    z-index: 30;
 }
 
 .progress div {
-    background: var(--poseiden-coral);
-    color: #ffffff !important;
-    font-size: 11px;
-    padding: 1px;
-    font-weight: 200;
-    z-index: 35;
+    background: linear-gradient(var(--icarus-warmth), #2193b0a7);
+    color: var(--siren-brown) !important;
+    font-size: 13px;
+    padding: 0px;
+    font-weight: 500;
+    z-index: 20;
     text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
-
 }
 
 /* Comment box */
 div#commentBox {
-    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+    background: linear-gradient(180deg, #ffafbda7 0%, #ffc3a0a7 45%, #2193b0a7 100%);
     backdrop-filter: brightness(80%);
     border: 0px;
     border-radius: 10px;
@@ -703,10 +699,8 @@ table.table th {
 
 .top,
 th, #attack th {
-    background: linear-gradient(90deg, #da70d6 0%, #ffa500 100%);
-    backdrop-filter: brightness(80%);
+    background: #2193b0 !important;
     border-radius: 2px 2px 0px 0px;
-    opacity: 93% !important;
 }
 
 .bottom,
@@ -725,7 +719,7 @@ td.bottom button {
 }
 
 #about.table tr:nth-child(7) {
-   background: linear-gradient(90deg, #da70d6 0%, #ffa500 100%);
+   background: linear-gradient(180deg, #ffafbda7 0%, #ffc3a0a7 45%, #2193b0a7 100%);
 }
 
 .inner-table .left {
