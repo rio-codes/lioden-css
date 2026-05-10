@@ -673,7 +673,7 @@ table#sparring,
 table#attack,
 table.table {
     background: linear-gradient(180deg, var(--icarus-warmth) 0%, #2193b0a7 100%);
-    opacity: 85%;
+    opacity: 100%;
     border: 1px solid var(--siren-brown);
     border-radius: 10px;
 }
@@ -704,7 +704,7 @@ table.table th {
 
 .top,
 th, #attack th {
-    background: #2193b0 !important;
+    background: #2193b0c6 !important;
     border-radius: 2px 2px 0px 0px;
 }
 
@@ -778,10 +778,16 @@ div.lionImage.featured-lion {
     border-radius: 20px;
     border: 4px solid var(--siren-brown) !important;
     position: relative;
+    width: 200px;
+    height: 150px;
     left: 10px;
-    top: 15px;
-    z-index: 600 !important;
+    top: 10px;
     opacity: 1;
+}
+
+#lion_image div {
+    opacity: 1;
+    z-index: 700 !important;
 }
 
 table#player img {
