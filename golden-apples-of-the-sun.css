@@ -181,6 +181,10 @@ div.floatleft:not(div.b.floatleft), div.floatright:not(div.b.floatright):not(div
     top: 40px;
 }
 
+div.lionImage.featured-lion img {
+    margin-bottom: 60px;
+}
+
 /* Scroll Box */
 
 div#pageContainer.col-md-9 h1:before {
