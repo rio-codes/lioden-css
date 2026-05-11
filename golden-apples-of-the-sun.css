@@ -52,13 +52,14 @@ body {
 /* CSS Credit */
 
 .breadcrumb::after {
-    content: "custom css by lyri";
+    content: "custom css by lyri (see den for credits)";
     color: var(--siren-brown) !important;
     font-size: 20px;
     font-weight: 200;
-    position: relative;
-    top: 40px;
-    left: -310px;
+    overflow: visible !important;
+    position: absolute;
+    top: 50px;
+    left: 0px;
     text-shadow: 0 0 2em var(--icarus-warmth), 0 0 .3em var(--icarus-warmth) !important;
 }
 
@@ -150,6 +151,27 @@ input#postComment {
 
 div#pageContainer.col-md-9 h1 {
     text-indent: -9999px;
+}
+
+/* Cave-Specific Styling */
+
+h1.center:before {
+    display: none;
+}
+
+h1.center {
+    text-indent: 0px !important;
+}
+div.lionImage.featured-lion img {
+    content: url(https://static.lioden.com/images/dynamic/backgrounds/readyforadate.png);
+    margin-top: 50px;
+    width: 640px;
+    height: 500px;
+}
+    
+div.floatleft, div.floatright {
+    position: relative;
+    top: 40px;
 }
 
 /* Scroll Box */
@@ -336,6 +358,7 @@ div#pageContainer.col-md-9 h1:before {
         top: 20px;
         margin-bottom: 30px;
     }
+    
 
     .navbar a {
         font-size: 29px !important;
