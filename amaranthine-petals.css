@@ -234,8 +234,8 @@ div.lionImage.featured-lion img {
     height: 500px;
 }
 
-div.floatleft:not(div.b.floatleft),
-div.floatright:not(div.b.floatright):not(div.floatright:nth-child(2)) {
+div.floatleft:not(div.b.floatleft):not(div.battle-health-bar.floatleft),
+div.floatright:not(div.b.floatright):not(div.floatright:nth-child(2)):not(div.battle-health-bar.floatright) {
     position: relative;
     top: 40px;
 }
