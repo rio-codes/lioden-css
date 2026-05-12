@@ -9,7 +9,8 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Import Fonts (From Google Fonts) */
 
-@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Meow+Script&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Meow+Script&family=Nuosu+Sans+Yi&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
 /* Color variables */
 :root {
     --pale-petals: #f7f2f7;
@@ -26,26 +27,26 @@ body {
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
-    font-family: "Flamenco";
-    font-weight: 600 !important;
+    font-family: "Overlock";
+    font-weight: 200 !important;
     font-size: 16px;
     color: var(--evening-plum);
 }
 
 /* CSS Credit */
 
-/*.breadcrumb:after {
+.breadcrumb::after {
     content: "custom css by lyri";
-    color: var(--pale-petals) !important;
+    color: var(--light-lilac) !important;
     font-family: "Overlock";
     font-size: 18px;
     font-weight: 500;
     overflow: visible !important;
-    position: relative;
-    top: 0px;
-    left: 60px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
     text-shadow: 0 0 2em var(--pale-petals), 0 0 .3em var(--pale-petals) !important;
-}*/
+}
 
 /* Link colors */
 
@@ -76,10 +77,10 @@ a:focus {
 input.floatright {
     background: transparent;
     border: none !important;
-    border-radius: 20px !important;
-    color: var(--pale-petals) !important;
+    border-radius: 0px !important;
+    color: var(--evening-plum) !important;
     font-size: 19px;
-    font-weight: 800 !important;
+    font-weight: 600 !important;
     text-align: center !important;
     text-shadow: none;
     position: relative;
@@ -91,7 +92,6 @@ input.floatright:hover {
     font-size: 19px;
     color: var(--evening-plum) !important;
     box-shadow: none !important;
-    border-radius: 20px !important;
     transition: .4s;
 }
 
@@ -123,28 +123,20 @@ input#postComment {
     background: #bcaac0a7 !important;
     color: var(--evening-plum) !important;
     border: 0px !important;
-    border-radius: 8px;
+    border-radius: 2px;
     text-align: left !important;
-    text-shadow: none;
+    text-shadow: 0 0 1em var(--light-lilac), 0 0 .5em var(--light-lilac);
     position: relative;
     top: 13px;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .alert a,
 .alert-warning a,
 .alert-danger a {
-    color: var(--pale-petals);
+    color: var(--light-lilac);
     font-weight: 600;
-    text-shadow: 0 0 2em var(--pale-petals), 0 0 2em var(--pale-petals) !important;
-}
-
-.alert a:hover,
-.alert-warning a:hover,
-.alert-danger ahover {
-    color: var(--evening-plum) !important;
-    transition: 1s;
-    text-shadow: none;
+    text-shadow: 0 0 1em var(--light-lilac), 0 0 .5em var(--light-lilac);
 }
 
 /* Main header appearance ("___"'s Den) */
@@ -152,21 +144,6 @@ input#postComment {
 div#pageContainer.col-md-9 h1 {
     text-indent: -9999px;
 }
-
-div#pageContainer.col-md-9 h1:before {
-        font-family: "Meow Script";
-        content: "Amaranth's Respite";
-        font-weight: 400 !important;
-        font-size: 72px;
-        text-indent: 0px !important;
-        width: 100% !important;
-        float: left;
-        position: relative;
-        top: 20px;
-        margin-bottom: 30px;
-        overflow: visible !important;
-        word-wrap: unset !important;
-    }
 
 /* About Me */
 
@@ -204,14 +181,26 @@ div#pageContainer.col-md-9 h1:before {
 .about-me > a:nth-child(3) {
     position: relative;
     left: -150%;
-    top: 6%;
-    font-family: "Meow Script";
-    font-size: 20px;
+    top: 14%;
 }
 
 div#pageContainer.col-md-9 h1 {
     width: 100% !important;
 }
+
+div#pageContainer.col-md-9 h1:before {
+        font-family: "Rochester";
+        content: "Amaranth's Respite";
+        font-weight: 600;
+        text-indent: 0px !important;
+        width: 100% !important;
+        float: left;
+        position: relative;
+        top: 20px;
+        margin-bottom: 30px;
+        overflow: visible !important;
+        word-wrap: unset !important;
+    }
 
 /* Cave-Specific Styling */
 
@@ -248,7 +237,7 @@ div.lionImage.featured-lion img {
 /* Scroll Box */
 
 div#pageContainer.col-md-9 h1:before {
-    font-family: "Meow Script";
+    font-family: "Rochester";
     font-weight: 600;
     text-indent: 130px;
     float: left;
@@ -257,14 +246,17 @@ div#pageContainer.col-md-9 h1:before {
     margin-bottom: 30px;
 }
 
-.about-me {
-    font-family: "Flamenco" !important;
-    font-weight: 400;
-}
-
 @media only screen and (max-width: 743px) {
     div#pageContainer.col-md-9 h1:before {
-
+        font-family: "Rochester";
+        content: "a lyrical respite";
+        font-weight: 600;
+        font-size: 47px;
+        text-indent: 40px;
+        float: left;
+        position: relative;
+        top: 40px;
+        margin-bottom: 30px;
     }
 
     .navbar a {
@@ -280,7 +272,6 @@ div#pageContainer.col-md-9 h1:before {
         height: auto;
         border-radius: 0px;
         border: 2px solid var(--evening-plum);
-        
     }
 
     .scroll-image img {
@@ -288,7 +279,6 @@ div#pageContainer.col-md-9 h1:before {
     }
 
     .scroll-box {
-        
         backdrop-filter: brightness(130%) contrast(70%) !important;
         padding: 30px;
         font-size: 16px;
@@ -306,7 +296,14 @@ div#pageContainer.col-md-9 h1:before {
 
 @media only screen and (max-width: 819px) and (min-width: 744px) {
     div#pageContainer.col-md-9 h1:before {
-
+        font-family: "Rochester";
+        content: "a lyrical respite";
+        font-weight: 600;
+        text-indent: 65px;
+        float: left;
+        position: relative;
+        top: 20px;
+        margin-bottom: 30px;
     }
 
     .navbar a {
@@ -380,7 +377,7 @@ div#pageContainer.col-md-9 h1:before {
 /* Primary header */
 
 h1 {
-    font-family: "Meow Script";
+    font-family: "Rochester";
     font-size: 58px;
     color: var(--evening-plum);
     font-weight: 200 !important;
@@ -393,7 +390,7 @@ h1 {
 /* Secondary header */
 
 h2 {
-    font-family: "Meow Script";
+    font-family: "Rochester";
     font-size: 28px;
     color: var(--evening-plum) !important;
     text-shadow: 0 0 2em, 0 0 .5em var(--lovely-violet) !important;
@@ -403,7 +400,7 @@ h2 {
 
 h3,
 div.center.h3 {
-    font-family: "Meow Script";
+    font-family: "Rochester";
     font-size: 34px !important;
     font-weight: 300;
     color: var(--evening-plum) !important;
@@ -432,23 +429,22 @@ div.center.h3 {
 
 .topbar {
     background: #948397c7 !important;
-    color: var(--pale-petals);
+    color: var(--light-lilac);
     border: 0px !important;
     border-radius: 0px 0px 2px 2px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
 }
 
 .topbar a {
-    color: var(--pale-petals) !important;
-    font-size: 20px;
-    font-weight: 800;
-    text-shadow: 0 0 1em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
+    color: var(--light-lilac) !important;
+    font-size: 18px;
+    font-weight: 200;
 }
 
 .topbar a:hover {
-    color: var(--evening-plum) !important;
-    transition: 1s;
+    color: var(--soft-purple) !important;
+    transition: .2s;
     text-shadow: none;
 }
 
@@ -481,7 +477,7 @@ div.center.h3 {
 /* Breadcrumb (Home button, den owner, bookmark) */
 
 .breadcrumb {
-    font-family: "Flamenco" !important;
+    font-family: "Overlock";
     background: transparent !important;
     backdrop-filter: brightness(90%);
     border: 1px inset !important;
@@ -490,50 +486,31 @@ div.center.h3 {
     border-radius: 10px;
     color: var(--evening-plum) !important;
     text-shadow: 0 0 2em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
-    font-size: 18px !important;
-    font-weight: 800 !important;
+    font-size: 16px;
+    font-weight: 600;
     text-align: left;
 }
 
-.breadcrumb-item:before {
-    content: "~" !important;
-    color: var(--soft-purple) !important;
-}
-
 .breadcrumb .active {
-    font-family: "Flamenco";
+    font-family: "Overlock";
     color: var(--evening-plum) !important;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 15px;
     text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
-}
 
-.breadcrumb .active:after {
-    font-size: 14px;
-    color: var(--evening-plum);
-    content: "(you are here)";
-    position: relative;
-    left: 10px;
 }
 
 .breadcrumb a {
-    color: var(--pale-petals) !important;
-    text-shadow: 0 0 2em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
-    font-weight: 800 !important;
-    font-size: 18px;
-}
-
-.breadcrumb a:hover {
     color: var(--evening-plum) !important;
-    transition: 1s;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 
 /* Right-side panel appearance */
 
 .sidebar h3 {
-    font-family: "Meow Script";
-    font-size: 35px !important;
+    font-family: "Rochester";
+    font-size: 26px !important;
     font-weight: 600;
     color: var(--posiedon-coral) !important;
     text-shadow: 0 0 2em var(--lovely-violet), 0 0 .3em var(--lovely-violet) !important;
@@ -542,23 +519,16 @@ div.center.h3 {
     padding-top: 25px;
 }
 
-.floatright {
-    display: none;
-}
 .sidebar a {
+    color: var(--posiedon-coral) !important;
     text-shadow: 0 0 2em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
-}
-
-.sidebar a:hover {
-    color: var(--evening-plum) !important;
-    transition: 1s;
 }
 
 .panel h3 {
     background: none !important;
-    color: var(--pale-petals) !important;
+    color: var(--evening-plum);
     text-shadow: 0 0 2em var(--lavender-clouds), 0 0 .3em var(--lavender-clouds) !important;
-    font-size: 36px !important;
+    font-size: 24px !important;
     text-align: right;
     opacity: 0.9;
     border: 0px !important;
@@ -569,15 +539,14 @@ div.center.h3 {
 }
 
 .col-md-12 a {
-    color: var(--pale-petals);
+    color: var(--evening-plum);
     text-shadow: 0 0 2em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
 }
 
 .col-md-12 a:hover,
 .panel-body.small a:hover,
 div.panel a:hover {
-    color: var(--evening-plum) !important;
-    transition: 1s;
+    color: var(--demeter-wheat) !important;
     text-shadow: none !important;
 }
 
@@ -598,8 +567,8 @@ div.panel {
 .panel-body.small a,
 div.panel a {
     background: transparent !important;
-    color: var(--pale-petals) !important;
-    font-weight: 600 !important;
+    color: var(--lavender-clouds) !important;
+    font-weight: 200;
     border-radius: 10px;
 }
 
@@ -613,9 +582,9 @@ div.panel a {
 .panel-body.small .center a,
 .panel-body.small a {
     background: transparent !important;
-    font-weight: 500 !important;
-    color: var(--pale-petals) !important;
-    text-shadow: 0 0 2em var(--pale-petals), 0 0 .3em var(--pale-petals) !important;
+    font-weight: 200 !important;
+    color: var(--evening-plum) !important;
+    text-shadow: 0 0 2em var(--lovely-violet), 0 0 .3em var(--lovely-violet) !important;
     border-radius: 10px;
 }
 
@@ -625,35 +594,37 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 
 /* Progress bars (Energy, hunger, EXP, IMP) */
 .progress {
-    background: transparent;
-    color: var(--pale-petals) !important;
-    border-radius: 4px !important;
-    z-index: -1 !important;
+    background: var(--evening-plum) !important;
+    color: var(--evening-plum) !important;
+    border-radius: 10px !important;
 }
 
 .progress-bar,
 .progress-bar-danger,
 .progress-bar-success {
-    background: #bcaac0a7;
-    color: var(--pale-petals) !important;
-    box-shadow: 0px 0px 30px 10px var(--pale-petals) !important;
-    border-radius: 4px !important;
-    z-index: -10;
+    background: var(--demeter-wheat) !important;
+    border-radius: 2px !important;
+    z-index: 10 !important;
 }
 
 .progress div {
-    color: var(--pale-petals) !important;
+    background: linear-gradient(var(--lavender-clouds), var(--soft-purple));
+    color: var(--evening-plum) !important;
     font-size: 13px;
-    padding: 1px;
-    font-weight: 800;
+    padding: 0px;
+    font-weight: 500;
+    z-index: 20;
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
 }
 
 /* Comment box */
 div#commentBox {
     background: linear-gradient(180deg, var(--lavender-clouds) 0%, var(--light-lilac) 100%);
+    backdrop-filter: brightness(80%);
     border: 1px solid var(--evening-plum);
     border-radius: 10px;
     color: var(--evening-plum) !important;
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
     margin-bottom: 10px;
     margin-top: 0px;
     padding-left: 10px;
@@ -663,16 +634,18 @@ div#commentBox {
 }
 
 div#commentBox a {
-    color: var(--pale-petals);
+    color: var(--evening-plum);
     font-weight: 600;
 }
 
 div#commentBox a:hover {
-    color: var(--evening-plum);
+    color: var(--demeter-wheat);
 }
 
 div.commentText {
-    text-shadow: none !important;
+    color: var(--posiedon-coral) !important;
+    border-bottom: 1px solid var(--posiedon-coral);
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
 }
 
 .text-muted {
@@ -787,10 +760,14 @@ td.bottom button {
     background: transparent;
     color: var(--evening-plum) !important;
     text-shadow: 0 0 2em var(--lovely-violet), 0 0 .3em var(--lovely-violet) !important;
-    font-family: "Flamenco" !important;
+    font-family: "Electrolize" !important;
     font-weight: 300 !important;
-    font-size: 14px !important;
+    font-size: 13px !important;
     border: 0px solid var(--evening-plum);
+    border-left: 1px solid var(--evening-plum);
+    border-top: 1px solid var(--evening-plum);
+    border-right: 0px;
+    border-bottom: 1px dotted var(--posiedon-coral);
     border-radius: 0px !important;
 }
 
@@ -798,7 +775,7 @@ td.bottom button {
     background: transparent !important;
     color: var(--evening-plum) !important;
     text-shadow: 0 0 2em var(--lovely-violet), 0 0 .3em var(--lovely-violet) !important;
-    font-size: 14px;
+    font-size: 12px;
     border-top: 1px dotted var(--evening-plum);
     border-right: 0px;
     border-left: 1px solid var(--posiedon-coral);
@@ -849,16 +826,9 @@ div.lion-image-block img {
     height: 150% !important;
     z-index: 700 !important;
     position: relative !important;
-    left: 10px !important;
+    left: 20px !important;
     top: 20px !important;
         border-radius: 50% !important;
-}
-
-@media only screen and (max-width: 743px) {
-    #lion_image div {
-        position: relative;
-        left: 0px !important;
-    }
 }
 
 table#player img {
@@ -887,8 +857,6 @@ p.center:nth-child(5) {
 }
 
 div.center.h3 {
-    font-family: Flamenco;
-    font-weight: 400;
     text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
 }
 
@@ -938,7 +906,6 @@ td.right_odd.text-right img {
     left: 50px;
     top: -10px;
     height: 0px !important;
-
 }
 
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1) {
@@ -953,7 +920,6 @@ td.right_odd.text-right img {
     width: 100px !important;
     text-decoration: none !important;
     height: 0px !important;
-    padding: 10px;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a {
@@ -974,7 +940,6 @@ td.right_odd.text-right img {
     text-decoration: none !important;
     height: 0px !important;
     right: 100px !important;
-        padding: 10px;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5) {
@@ -989,7 +954,6 @@ td.right_odd.text-right img {
     width: 100px !important;
     text-decoration: none !important;
     height: 0px !important;
-    padding: 10px;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>p>a:nth-child(3):after {
@@ -1023,26 +987,17 @@ span.text-muted {
 }
 
 div.xlarge a {
-    padding: 0px !important;
+    padding: 50px !important;
 }
 
 table#player hr {
     display: none;
 }
 
-div.xlarge:nth-child(4) {
-    position: relative;
-    top: 40px;
-    padding: 10px;
+a.bigger {
+    font-family: "Noto Sans Yi"
 }
 
-p.center:nth-child(5) {
-    position: relative;
-    top: 20px;
-}
-div.xlarge:nth-child(4) > a {
-    padding: 10px;
-}
 /* Cave and Beetle Mound grid appearances*/
 #fraOrganizationBlock>div:nth-child(2)>div:nth-child(1),
 div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
@@ -1055,8 +1010,7 @@ div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
     color: var(--posiedon-coral) !important;
     border: 0px;
     border-radius: 2px !important;
-    font-family: "Meow Script" !important;
-    font-size: 30px !important;
+    font-size: 20px !important;
 }
 
 /* Feed all/Play all */
@@ -1148,21 +1102,21 @@ div.mound-grid img {
     left: -10px;
     right: -10px;
     top: -10px;
-    width: 0px
+    width: 200px
 }
 
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
     content: url('') !important;
     object-fit: cover !important;
-    height: 0px !important;
-    width: 0px !important;
+    height: 250px !important;
+    width: 300px !important;
 }
 
 div.cave-grid>img[src$="nestingbanner.png"] {
     content: url('') !important;
     object-fit: cover !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
-    height: 0px !important;
+    height: 250px !important;
     width: 300px !important;
     border: 5px ridge;
     border: 0px;
@@ -1180,7 +1134,7 @@ div.col.col-sm-4 div {
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
     content: url('') !important;
     object-fit: cover !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1189,21 +1143,21 @@ div.cave-grid>img[src$="prideoverviewbanner.png"] {
 div.cave-grid>img {
     content: url('') !important;
     object-fit: cover !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
 .mound-grid img {
     content: url('') !important;
     object-fit: cover !important;
-    height: 0px !important;
+    height: 100px !important;
     width: 250px !important;
 }
 
 #fraCaveList > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
     content: url('') !important;
     object-fit: contain !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 
 }
@@ -1211,14 +1165,14 @@ div.cave-grid>img {
 #fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
     content: url('') !important;
     object-fit: contain !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
 #fraCaveList > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
     content: url('') !important;
     object-fit: contain !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1226,7 +1180,7 @@ div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1){
     content: url('') !important;
     object-fit: contain !important;
     object-position: right !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1234,7 +1188,7 @@ div.center:nth-child(5) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
     content: url() !important;
     object-fit: contain !important;
     object-position: right !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1242,7 +1196,7 @@ div.col-md-4:nth-child(6) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1)
     content: url('') !important;
     object-fit: contain !important;
     object-position: right !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1250,7 +1204,7 @@ div.col-md-3:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1)
     content: url('') !important;
     object-fit: cover !important;
     object-position: right !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1258,7 +1212,7 @@ div.col-md-3:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1)
     content: url('') !important;
     object-fit: contain !important;
     object-position: center !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1266,7 +1220,7 @@ div.col-xs-4:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1)
     content: url('') !important;
     object-fit: contain !important;
     object-position: center !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1329,7 +1283,7 @@ div.center:nth-child(8) > a:nth-child(1) {
     position: relative !important;
     width: 100px !important;
 }
-#allies>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1), #allies > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(1), #clans > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1) {
+#allies>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1) {
     display: none;
 }
 
@@ -1388,14 +1342,13 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
 .container.main::after {
 	content: "";
 	background-image: url('https://cdn.allthepics.net/images/2026/05/11/am_pagedoll.png');
-	background-size: contain;
-    background-repeat: no-repeat;
+	background-size: cover;
 	display: block;
-	height: 250px;
-	width: 250px;
+	height: 200px;
+	width: 300px;
 	position: fixed;
 	right: 0px;
-	bottom: -30px;
+	bottom: 0px;
 	z-index: 30;
 	pointer-events: none;
 	opacity: 0.8;
