@@ -49,8 +49,8 @@ body {
 
 a:link,
 a:visited {
-    color: var(--evening-plum);
-    font-weight: 600;
+    color: var(--pale-petals) !important;
+    font-weight: 600 !important;
     text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
 }
 
@@ -247,7 +247,7 @@ div#pageContainer.col-md-9 h1:before {
 
 /*@media only screen and (max-width: 743px) {
     div#pageContainer.col-md-9 h1:before {
-        font-family: "Rochester";
+        font-family: "Meow Script";
         content: "a lyrical respite";
         font-weight: 600;
         font-size: 47px;
@@ -295,7 +295,7 @@ div#pageContainer.col-md-9 h1:before {
 
 @media only screen and (max-width: 819px) and (min-width: 744px) {
     div#pageContainer.col-md-9 h1:before {
-        font-family: "Rochester";
+        font-family: "Meow Script";
         content: "a lyrical respite";
         font-weight: 600;
         text-indent: 65px;
@@ -376,7 +376,7 @@ div#pageContainer.col-md-9 h1:before {
 /* Primary header */
 
 h1 {
-    font-family: "Rochester";
+    font-family: "Meow Script";
     font-size: 58px;
     color: var(--evening-plum);
     font-weight: 200 !important;
@@ -389,7 +389,7 @@ h1 {
 /* Secondary header */
 
 h2 {
-    font-family: "Rochester";
+    font-family: "Meow Script";
     font-size: 28px;
     color: var(--evening-plum) !important;
     text-shadow: 0 0 2em, 0 0 .5em var(--lovely-violet) !important;
@@ -399,7 +399,7 @@ h2 {
 
 h3,
 div.center.h3 {
-    font-family: "Rochester";
+    font-family: "Meow Script";
     font-size: 34px !important;
     font-weight: 300;
     color: var(--evening-plum) !important;
@@ -508,7 +508,7 @@ div.center.h3 {
 /* Right-side panel appearance */
 
 .sidebar h3 {
-    font-family: "Rochester";
+    font-family: "Meow Script";
     font-size: 26px !important;
     font-weight: 600;
     color: var(--posiedon-coral) !important;
