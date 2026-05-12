@@ -1063,11 +1063,10 @@ div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
 .cave-grid,
 .mound-grid {
     background: none;
-    color: var(--posiedon-coral) !important;
     border: 0px;
-    border-radius: 2px !important;
+    border-radius: 0px !important;
     font-family: "Meow Script" !important;
-    font-size: 30px !important;
+    font-size: 32px !important;
 }
 
 /* Feed all/Play all */
