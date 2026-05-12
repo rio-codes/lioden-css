@@ -531,6 +531,11 @@ div.center.h3 {
 
 /* Right-side panel appearance */
 
+div#pageSidebar h3 {
+    color: var(--evening-plum) !important;
+    text-shadow: 0 0 2em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
+}
+
 .sidebar h3 {
     font-family: "Meow Script";
     font-size: 35px !important;
@@ -1341,6 +1346,8 @@ div.center:nth-child(8)>a:nth-child(1) {
 a.bigger {
     font-family: "Noto Sans Yi";
 }
+
+
 /* Replace Social Media Icons */
 
 img[src$="iconFB.png"] {
