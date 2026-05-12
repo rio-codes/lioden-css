@@ -938,6 +938,7 @@ td.right_odd.text-right img {
     left: 50px;
     top: -10px;
     height: 0px !important;
+
 }
 
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1) {
@@ -952,6 +953,7 @@ td.right_odd.text-right img {
     width: 100px !important;
     text-decoration: none !important;
     height: 0px !important;
+    padding: 10px;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a {
@@ -972,6 +974,7 @@ td.right_odd.text-right img {
     text-decoration: none !important;
     height: 0px !important;
     right: 100px !important;
+        padding: 10px;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5) {
@@ -986,6 +989,7 @@ td.right_odd.text-right img {
     width: 100px !important;
     text-decoration: none !important;
     height: 0px !important;
+    padding: 10px;
 }
 
 #player>tbody>tr.right>td:nth-child(1)>p>a:nth-child(3):after {
@@ -1026,6 +1030,19 @@ table#player hr {
     display: none;
 }
 
+div.xlarge:nth-child(4) {
+    position: relative;
+    top: 40px;
+    padding: 10px;
+}
+
+p.center:nth-child(5) {
+    position: relative;
+    top: 20px;
+}
+div.xlarge:nth-child(4) > a {
+    padding: 10px;
+}
 /* Cave and Beetle Mound grid appearances*/
 #fraOrganizationBlock>div:nth-child(2)>div:nth-child(1),
 div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
@@ -1312,7 +1329,7 @@ div.center:nth-child(8) > a:nth-child(1) {
     position: relative !important;
     width: 100px !important;
 }
-#allies>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1) {
+#allies>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1), #allies > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(1), #clans > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1) {
     display: none;
 }
 
