@@ -34,18 +34,18 @@ body {
 
 /* CSS Credit */
 
-.breadcrumb::after {
+/*.breadcrumb:after {
     content: "custom css by lyri";
-    color: var(--light-lilac) !important;
+    color: var(--pale-petals) !important;
     font-family: "Overlock";
     font-size: 18px;
     font-weight: 500;
     overflow: visible !important;
-    position: absolute;
-    top: 60px;
-    left: 20px;
+    position: relative;
+    top: 0px;
+    left: 60px;
     text-shadow: 0 0 2em var(--pale-petals), 0 0 .3em var(--pale-petals) !important;
-}
+}*/
 
 /* Link colors */
 
@@ -76,10 +76,10 @@ a:focus {
 input.floatright {
     background: transparent;
     border: none !important;
-    border-radius: 0px !important;
-    color: var(--evening-plum) !important;
+    border-radius: 20px !important;
+    color: var(--pale-petals) !important;
     font-size: 19px;
-    font-weight: 600 !important;
+    font-weight: 800 !important;
     text-align: center !important;
     text-shadow: none;
     position: relative;
@@ -91,6 +91,7 @@ input.floatright:hover {
     font-size: 19px;
     color: var(--evening-plum) !important;
     box-shadow: none !important;
+    border-radius: 20px !important;
     transition: .4s;
 }
 
@@ -122,9 +123,9 @@ input#postComment {
     background: #bcaac0a7 !important;
     color: var(--evening-plum) !important;
     border: 0px !important;
-    border-radius: 2px;
+    border-radius: 8px;
     text-align: left !important;
-    text-shadow: 0 0 1em var(--light-lilac), 0 0 .5em var(--light-lilac);
+    text-shadow: none;
     position: relative;
     top: 13px;
     font-weight: 600;
@@ -133,9 +134,17 @@ input#postComment {
 .alert a,
 .alert-warning a,
 .alert-danger a {
-    color: var(--light-lilac);
+    color: var(--pale-petals);
     font-weight: 600;
-    text-shadow: 0 0 1em var(--light-lilac), 0 0 .5em var(--light-lilac);
+    text-shadow: 0 0 2em var(--pale-petals), 0 0 2em var(--pale-petals) !important;
+}
+
+.alert a:hover,
+.alert-warning a:hover,
+.alert-danger ahover {
+    color: var(--evening-plum) !important;
+    transition: 1s;
+    text-shadow: none;
 }
 
 /* Main header appearance ("___"'s Den) */
@@ -195,14 +204,14 @@ div#pageContainer.col-md-9 h1:before {
 .about-me > a:nth-child(3) {
     position: relative;
     left: -150%;
-    top: 14%;
+    top: 6%;
+    font-family: "Meow Script";
+    font-size: 20px;
 }
 
 div#pageContainer.col-md-9 h1 {
     width: 100% !important;
 }
-
-
 
 /* Cave-Specific Styling */
 
@@ -423,21 +432,22 @@ div.center.h3 {
 
 .topbar {
     background: #948397c7 !important;
-    color: var(--light-lilac);
+    color: var(--pale-petals);
     border: 0px !important;
     border-radius: 0px 0px 2px 2px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .topbar a {
-    color: var(--evening-plum) !important;
-    font-size: 19px;
-    font-weight: 600;
+    color: var(--pale-petals) !important;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 0 0 1em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
 }
 
 .topbar a:hover {
-    color: var(--pale-petals) !important;
+    color: var(--evening-plum) !important;
     transition: 1s;
     text-shadow: none;
 }
@@ -492,7 +502,7 @@ div.center.h3 {
 
 .breadcrumb .active {
     font-family: "Flamenco";
-    color: var(--pale-petals) !important;
+    color: var(--evening-plum) !important;
     font-size: 18px;
     font-weight: 600;
     text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
@@ -500,20 +510,21 @@ div.center.h3 {
 
 .breadcrumb .active:after {
     font-size: 14px;
-    color: var(--light-lilac);
+    color: var(--evening-plum);
     content: "(you are here)";
     position: relative;
     left: 10px;
 }
 
 .breadcrumb a {
-    color: var(--evening-plum) !important;
+    color: var(--pale-petals) !important;
+    text-shadow: 0 0 2em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
     font-weight: 800 !important;
     font-size: 18px;
 }
 
 .breadcrumb a:hover {
-    color: var(--pale-petals) !important;
+    color: var(--evening-plum) !important;
     transition: 1s;
 }
 
@@ -522,7 +533,7 @@ div.center.h3 {
 
 .sidebar h3 {
     font-family: "Meow Script";
-    font-size: 26px !important;
+    font-size: 35px !important;
     font-weight: 600;
     color: var(--posiedon-coral) !important;
     text-shadow: 0 0 2em var(--lovely-violet), 0 0 .3em var(--lovely-violet) !important;
@@ -531,15 +542,23 @@ div.center.h3 {
     padding-top: 25px;
 }
 
+.floatright {
+    display: none;
+}
 .sidebar a {
     text-shadow: 0 0 2em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
 }
 
+.sidebar a:hover {
+    color: var(--evening-plum) !important;
+    transition: 1s;
+}
+
 .panel h3 {
     background: none !important;
-    color: var(--evening-plum);
+    color: var(--pale-petals) !important;
     text-shadow: 0 0 2em var(--lavender-clouds), 0 0 .3em var(--lavender-clouds) !important;
-    font-size: 24px !important;
+    font-size: 36px !important;
     text-align: right;
     opacity: 0.9;
     border: 0px !important;
@@ -550,14 +569,15 @@ div.center.h3 {
 }
 
 .col-md-12 a {
-    color: var(--evening-plum);
+    color: var(--pale-petals);
     text-shadow: 0 0 2em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
 }
 
 .col-md-12 a:hover,
 .panel-body.small a:hover,
 div.panel a:hover {
-    color: var(--demeter-wheat) !important;
+    color: var(--evening-plum) !important;
+    transition: 1s;
     text-shadow: none !important;
 }
 
@@ -578,8 +598,8 @@ div.panel {
 .panel-body.small a,
 div.panel a {
     background: transparent !important;
-    color: var(--lavender-clouds) !important;
-    font-weight: 200;
+    color: var(--pale-petals) !important;
+    font-weight: 600 !important;
     border-radius: 10px;
 }
 
@@ -593,9 +613,9 @@ div.panel a {
 .panel-body.small .center a,
 .panel-body.small a {
     background: transparent !important;
-    font-weight: 200 !important;
-    color: var(--evening-plum) !important;
-    text-shadow: 0 0 2em var(--lovely-violet), 0 0 .3em var(--lovely-violet) !important;
+    font-weight: 500 !important;
+    color: var(--pale-petals) !important;
+    text-shadow: 0 0 2em var(--pale-petals), 0 0 .3em var(--pale-petals) !important;
     border-radius: 10px;
 }
 
@@ -605,37 +625,33 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 
 /* Progress bars (Energy, hunger, EXP, IMP) */
 .progress {
-    background: transparent !important;
-    color: var(--evening-plum) !important;
-    border-radius: 10px !important;
+    background: #00637c;
+    color: #7debdc !important;
+    border-radius: 4px !important;
 }
 
 .progress-bar,
 .progress-bar-danger,
 .progress-bar-success {
-    background: transparent !important;
-    border-radius: 2px !important;
-    z-index: 10 !important;
+    background: radial-gradient(#ffffff, #7debdca7);
+    box-shadow: 0px 0px 30px 20px #7debdca7 !important;
+    border-radius: 4px !important;
+    z-index: 10;
 }
 
 .progress div {
-    background: linear-gradient(var(--lavender-clouds), var(--soft-purple));
     color: var(--evening-plum) !important;
     font-size: 13px;
-    padding: 0px;
-    font-weight: 500;
-    z-index: 20;
-    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+    padding: 1px;
+    font-weight: 800;
 }
 
 /* Comment box */
 div#commentBox {
     background: linear-gradient(180deg, var(--lavender-clouds) 0%, var(--light-lilac) 100%);
-    backdrop-filter: brightness(80%);
     border: 1px solid var(--evening-plum);
     border-radius: 10px;
     color: var(--evening-plum) !important;
-    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
     margin-bottom: 10px;
     margin-top: 0px;
     padding-left: 10px;
@@ -645,18 +661,16 @@ div#commentBox {
 }
 
 div#commentBox a {
-    color: var(--evening-plum);
+    color: var(--pale-petals);
     font-weight: 600;
 }
 
 div#commentBox a:hover {
-    color: var(--demeter-wheat);
+    color: var(--evening-plum);
 }
 
 div.commentText {
-    color: var(--posiedon-coral) !important;
-    border-bottom: 1px solid var(--posiedon-coral);
-    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+    text-shadow: none !important;
 }
 
 .text-muted {
@@ -875,6 +889,8 @@ p.center:nth-child(5) {
 }
 
 div.center.h3 {
+    font-family: Flamenco;
+    font-weight: 400;
     text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
 }
 
