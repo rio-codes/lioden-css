@@ -135,6 +135,12 @@ input#postComment {
     text-shadow: 0 0 1em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
 }
 
+.alert a:hover,
+.alert-warning a:hover,
+.alert-danger a:hover {
+    color: var(--evening-plum) !important;
+    transition: 1s;
+}
 /* Main header appearance ("___"'s Den) */
 
 div#pageContainer.col-md-9 h1 {
@@ -460,7 +466,7 @@ div.center.h3 {
 .navbar {
     font-family: "Overlock";
     font-size: 20px !important;
-    font-weight: 500;
+    font-weight: 300 !important;
     background: var(--lovely-violet);
     border-radius: 10px 10px 0px 0px;
     border-bottom: 2px solid var(--evening-plum);
@@ -469,8 +475,8 @@ div.center.h3 {
 
 .navbar li a {
     color: var(--evening-plum) !important;
-    font-size: 25px !important;
-    font-weight: 500;
+    font-size: 26px !important;
+    font-weight: 300 !important;
     text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
 }
 
