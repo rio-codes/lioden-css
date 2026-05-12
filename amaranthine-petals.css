@@ -542,9 +542,6 @@ div.center.h3 {
     padding-top: 25px;
 }
 
-.floatright {
-    display: none;
-}
 .sidebar a {
     text-shadow: 0 0 2em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
 }
@@ -625,22 +622,24 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 
 /* Progress bars (Energy, hunger, EXP, IMP) */
 .progress {
-    background: #00637c;
-    color: #7debdc !important;
+    background: transparent;
+    color: var(--pale-petals) !important;
     border-radius: 4px !important;
+    z-index: -1 !important;
 }
 
 .progress-bar,
 .progress-bar-danger,
 .progress-bar-success {
-    background: radial-gradient(#ffffff, #7debdca7);
-    box-shadow: 0px 0px 30px 20px #7debdca7 !important;
+    background: #bcaac0a7;
+    color: var(--pale-petals) !important;
+    box-shadow: 0px 0px 30px 10px var(--pale-petals) !important;
     border-radius: 4px !important;
-    z-index: 10;
+    z-index: -10;
 }
 
 .progress div {
-    color: var(--evening-plum) !important;
+    color: var(--pale-petals) !important;
     font-size: 13px;
     padding: 1px;
     font-weight: 800;
