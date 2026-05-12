@@ -60,7 +60,7 @@ a img {
 }
 
 a:hover {
-    color: var(--pale-petals);
+    color: var(--pale-petals) !important;
     text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
     transition: .5s;
 }
