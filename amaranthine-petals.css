@@ -27,26 +27,23 @@ body {
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
-    font-family: "Overlock";
-    font-weight: 200 !important;
+    font-family: "Flamenco";
+    font-weight: 600 !important;
     font-size: 16px;
     color: var(--evening-plum);
 }
 
 /* CSS Credit */
 
-.breadcrumb::after {
-    content: "custom css by lyri";
+/*.breadcrumb::after {
+    content: "Custom CSS by Lyri";
     color: var(--light-lilac) !important;
-    font-family: "Overlock";
-    font-size: 18px;
+    font-family: "Meow Script";
+    font-size: 23px;
     font-weight: 500;
     overflow: visible !important;
-    position: absolute;
-    top: 60px;
-    left: 20px;
     text-shadow: 0 0 2em var(--pale-petals), 0 0 .3em var(--pale-petals) !important;
-}
+}*/
 
 /* Link colors */
 
@@ -63,7 +60,7 @@ a img {
 }
 
 a:hover {
-    color: var(--light-lilac);
+    color: var(--pale-petals);
     text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
     transition: .5s;
 }
@@ -128,13 +125,13 @@ input#postComment {
     text-shadow: 0 0 1em var(--light-lilac), 0 0 .5em var(--light-lilac);
     position: relative;
     top: 13px;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .alert a,
 .alert-warning a,
 .alert-danger a {
-    color: var(--light-lilac);
+    color: var(--pale-petals);
     font-weight: 600;
     text-shadow: 0 0 1em var(--light-lilac), 0 0 .5em var(--light-lilac);
 }
@@ -189,7 +186,7 @@ div#pageContainer.col-md-9 h1 {
 }
 
 div#pageContainer.col-md-9 h1:before {
-        font-family: "Rochester";
+        font-family: "Meow Script";
         content: "Amaranth's Respite";
         font-weight: 600;
         text-indent: 0px !important;
@@ -234,10 +231,12 @@ div.lionImage.featured-lion img {
     margin-bottom: 60px;
 }
 
+
+
 /* Scroll Box */
 
 div#pageContainer.col-md-9 h1:before {
-    font-family: "Rochester";
+    font-family: "Meow Script";
     font-weight: 600;
     text-indent: 130px;
     float: left;
@@ -246,7 +245,7 @@ div#pageContainer.col-md-9 h1:before {
     margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 743px) {
+/*@media only screen and (max-width: 743px) {
     div#pageContainer.col-md-9 h1:before {
         font-family: "Rochester";
         content: "a lyrical respite";
@@ -372,7 +371,7 @@ div#pageContainer.col-md-9 h1:before {
     }
 
 
-}
+} */
 
 /* Primary header */
 
@@ -1007,10 +1006,10 @@ div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
 .cave-grid,
 .mound-grid {
     background: none;
-    font-family: "Meow Script";
-    font-size: 30px !important;
+    color: var(--posiedon-coral) !important;
     border: 0px;
     border-radius: 2px !important;
+    font-size: 20px !important;
 }
 
 /* Feed all/Play all */
@@ -1108,7 +1107,7 @@ div.mound-grid img {
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
     content: url('') !important;
     object-fit: cover !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 300px !important;
 }
 
@@ -1116,7 +1115,7 @@ div.cave-grid>img[src$="nestingbanner.png"] {
     content: url('') !important;
     object-fit: cover !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
-    height: 0px !important;
+    height: 250px !important;
     width: 300px !important;
     border: 5px ridge;
     border: 0px;
@@ -1134,7 +1133,7 @@ div.col.col-sm-4 div {
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
     content: url('') !important;
     object-fit: cover !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1143,7 +1142,7 @@ div.cave-grid>img[src$="prideoverviewbanner.png"] {
 div.cave-grid>img {
     content: url('') !important;
     object-fit: cover !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1157,7 +1156,7 @@ div.cave-grid>img {
 #fraCaveList > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
     content: url('') !important;
     object-fit: contain !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 
 }
@@ -1165,14 +1164,14 @@ div.cave-grid>img {
 #fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
     content: url('') !important;
     object-fit: contain !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
 #fraCaveList > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
     content: url('') !important;
     object-fit: contain !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1180,7 +1179,7 @@ div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1){
     content: url('') !important;
     object-fit: contain !important;
     object-position: right !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1188,7 +1187,7 @@ div.center:nth-child(5) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
     content: url() !important;
     object-fit: contain !important;
     object-position: right !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1196,7 +1195,7 @@ div.col-md-4:nth-child(6) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1)
     content: url('') !important;
     object-fit: contain !important;
     object-position: right !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1204,7 +1203,7 @@ div.col-md-3:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1)
     content: url('') !important;
     object-fit: cover !important;
     object-position: right !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1212,7 +1211,7 @@ div.col-md-3:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1)
     content: url('') !important;
     object-fit: contain !important;
     object-position: center !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
@@ -1220,14 +1219,14 @@ div.col-xs-4:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1)
     content: url('') !important;
     object-fit: contain !important;
     object-position: center !important;
-    height: 0px !important;
+    height: 250px !important;
     width: 250px !important;
 }
 
 img[src$="den_ancestors.png"] {
     content: url('');
     object-fit: cover;
-    height: 0px !important;
+    height: 100px !important;
     width: 2 !important;
     filter: brightness(90%) contrast(90%) sepia(30%);
 }
