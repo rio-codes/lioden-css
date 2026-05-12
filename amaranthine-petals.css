@@ -9,7 +9,7 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Import Fonts (From Google Fonts) */
 
-@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Meow+Script&family=Nuosu+Sans+Yi&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Meow+Script&family=Noto+Sans+Yi&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
 /* Color variables */
 :root {
@@ -1338,6 +1338,9 @@ div.center:nth-child(8)>a:nth-child(1) {
     display: none;
 }
 
+a.bigger {
+    font-family: "Noto Sans Yi";
+}
 /* Replace Social Media Icons */
 
 img[src$="iconFB.png"] {
