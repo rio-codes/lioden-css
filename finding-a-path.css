@@ -410,14 +410,22 @@ div.about-me {
         position: relative;
         top: 0px;
     }
-
-    .external-link {
+    
+    img.pokemon {
+        position: relative;
+        left: 240px;
+        top: 90px;
+    }
+    #fraProfileContent > a:nth-child(4):before {
+        content: "||   ";
+    }
+    .external-link, #fraProfileContent > a:nth-child(4) {
         position: relative;
         color: var(--ranger-pine) !important;
-        font-size: 22px;
-        font-weight: 800;
+        font-size: 20px;
+        font-weight: 400 !important;
         top: -70px;
-        left: -38%;
+        left: -35%;
     }
     
     .external-link:hover {
