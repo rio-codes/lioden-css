@@ -1,0 +1,1351 @@
+/*
+Finding a Path
+
+Created 05/2026 by lyri [#583579] for Garnet [
+AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
+
+Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Tawny [#251887], Hok-Z [#41458], Austin [#43750] 
+
+Full credits for code contributors, artwork, photos, icons, and fonts can be found at https://rio-codes.github.io/lioden-css/credits_saints.txt .
+*/
+
+/* Import Fonts (From Google Fonts) */
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Nuosu+SIL&family=Shadows+Into+Light&family=Uchen&display=swap');
+
+/* Color variables */
+:root {
+    --ranger-pine: #0b1a15;
+    --druid-moss: #214634;
+    --cleric-sage: #4f7a5e;
+    --sorcerer-mint: #9ed6b1;
+    --rogue-bruise: #2d1b27;
+    --bard-merlot: #5a2d4a;
+    --wizard-violet: #744565;
+    --warlock-lilac: #e9d9e3;
+}
+
+/* Background image, font and font color, text alignment */
+body {
+    background: url(https://cdn.allthepics.net/images/2026/05/14/wallhaven-0pze39.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    font-family: "Macondo Swash Caps";
+    font-weight: 200 !important;
+    font-size: 16px;
+    color: var(--ranger-pine);
+}
+
+/* CSS Credit */
+
+.breadcrumb::after {
+    content: "custom css by lyri (see den for credits)";
+    color: var(--warlock-lilac) !important;
+    font-size: 18px;
+    font-weight: 200;
+    overflow: visible !important;
+    position: absolute;
+    top: -85px;
+    left: 10px;
+    text-shadow: 0 0 2em var(--sorcerer-mint), 0 0 .3em var(--sorcerer-mint) !important;
+}
+
+/* Link colors */
+
+a:link,
+a:visited {
+    color: var(--druid-moss);
+    font-weight: 200;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
+}
+
+a img {
+    border: none !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: var(--sorcerer-mint);
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
+    transition: .5s;
+}
+
+a:focus {
+    text-shadow: 0 0 1em var(--cleric-sage), 0 0 .5em var(--cleric-sage);
+}
+
+/* Bookmark button */
+
+input.floatright {
+    background: radial-gradient(var(--sorcerer-mint), var(--druid-moss));
+    border: none !important;
+    border-radius: 2px !important;
+    color: var(--ranger-pine) !important;
+    text-align: center !important;
+}
+
+input.floatright:hover {
+    background: var(--sorcerer-mint);
+    color: var(--ranger-pine) !important;
+    box-shadow: none !important;
+    transition: 1s;
+}
+
+/* Text input boxes, misc buttons */
+input,
+select,
+textarea {
+    background: var(--cleric-sage);
+    opacity: .7 !important;
+    border: 1px solid var(--ranger-pine);
+    border-radius: 5px !important;
+    box-shadow: none !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint);
+    color: var(--ranger-pine) !important;
+    font-weight: 300;
+}
+
+input#postComment {
+    background: var(--druid-moss);
+    border: 1px solid var(--ranger-pine);
+}
+
+
+/* Alerts (i.e. "Your lionesses have returned from hunting!") */
+
+.alert,
+.alert-warning,
+.alert-danger {
+    font-family: "Shadows Into Light";
+    background: url(https://cdn.allthepics.net/images/2026/05/14/paper-texture.jpg);
+    color: var(--ranger-pine) !important;
+    border: 0px !important;
+    border-radius: 7px;
+    text-align: left !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint);
+    position: relative;
+    top: 0px;
+    font-weight: 300;
+    margin-top: 0px !important;
+}
+
+#pageContainer > br:nth-child(4), #pageContainer > br:nth-child(6) {
+  display: none;
+}
+
+.alert a,
+.alert-warning a,
+.alert-danger a {
+    color: var(--druid-moss);
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint);
+}
+
+/* Main header appearance ("___"'s Den) */
+
+div#pageContainer.col-md-9 h1 {
+    text-indent: -9999px;
+}
+
+div#pageContainer.col-md-9 h1:before {
+    font-family: "Macondo Swash Caps";
+    content: "Heathen's Rest";
+    font-size: 65px;
+    color: var(--ranger-pine);
+    font-weight: 400;
+    text-indent: 130px;
+    float: left;
+    position: relative;
+    top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Cave-Specific Styling */
+
+h1.center:before {
+    display: none;
+}
+
+h1.center {
+    text-indent: 0px !important;
+}
+
+div.center:nth-child(8) > a:nth-child(1) {
+    position: relative !important;
+    top: 0px;
+    text-wrap: nowrap !important;
+}
+
+div.lionImage.featured-lion img {
+    content: url(https://static.lioden.com/images/dynamic/backgrounds/budongoforest.png);
+    margin-top: 50px;
+    width: 640px;
+    height: 500px;
+}
+    
+div.floatleft:not(div.b.floatleft), div.floatright:not(div.b.floatright):not(div.floatright:nth-child(2)) {
+    position: relative;
+    top: 40px;
+}
+
+div.lionImage.featured-lion img {
+    margin-bottom: 60px;
+}
+
+/* About Me */
+
+.about-me {
+    align-items: center;
+    background-image: url(https://cdn.allthepics.net/images/2026/05/14/paper-texture.jpg);
+    position: relative;
+    background-size: cover;
+    border-radius: 1px;
+    border: 0px;
+}
+
+.scroll-box {
+    overflow-y: auto;
+    border-radius: 0px;
+    scrollbar-color: var(--druid-moss) var(--cleric-sage);
+}
+
+
+/* Device-Specific Styling */
+
+/* Phone */
+
+@media only screen and (max-width: 743px) {
+    div#pageContainer.col-md-9 h1:before {
+        text-indent: 40px;
+        float: left;
+        position: relative;
+        top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .navbar a {
+        font-size: 29px !important;
+    }
+
+    .about-me {
+        top: -50px;
+        width: 85%;
+        height: auto;
+    }
+
+    .scroll-box {
+        padding: 30px;
+        font-size: 16px;
+        height: 400px;
+        width: 100%;
+        position: relative;
+        top: 0px;
+    }
+
+    .external-link {
+        position: relative;
+        top: -50px;
+        left: -38%;
+    }
+
+}
+
+/* Large Tablet */
+
+@media only screen and (max-width: 819px) and (min-width: 744px) {
+    div#pageContainer.col-md-9 h1:before {
+        text-indent: 65px;
+        float: left;
+        position: relative;
+        top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .navbar a {
+        font-size: 29px !important;
+    }
+
+    .about-me {
+        position: relative;
+        top: -50px;
+        width: 85%;
+        height: auto;
+    }
+
+    .scroll-box {
+        padding: 30px;
+        font-size: 16px;
+        height: 400px;
+        width: 100%;
+        position: relative;
+        top: 0px;
+    }
+
+    .external-link {
+        position: relative;
+        top: -50px;
+        left: -38%;
+    }
+
+}
+
+/* Small Tablet (iPad Mini) */
+
+@media only screen and (max-width: 1000px) and (min-width: 820px) {
+    div#pageContainer.col-md-9 h1:before {
+        font-weight: 600;
+        text-indent: 65px;
+        float: left;
+        position: relative;
+        top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .navbar a {
+        font-size: 22px !important;
+    }
+
+    .about-me {
+        align-items: center;
+        background-image: url(https://cdn.allthepics.net/images/2026/05/09/Parthenon__28_May_1838__Skene_James_-_1838.md.jpg);
+        position: relative;
+        top: -50px;
+        background-size: cover;
+        width: 85%;
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid var(--siren-brown);
+    }
+
+    .scroll-box {
+        padding: 30px;
+        font-size: 16px;
+        height: 400px;
+        width: 100%;
+        position: relative;
+        top: 0px;
+    }
+
+    .external-link {
+        position: relative;
+        top: -50px;
+        left: -38%;
+    }
+
+}
+
+/* Desktop, Horizontal Tablet */
+
+@media only screen and (min-width: 1001px) {
+    div#pageContainer.col-md-9 h1:before {
+        text-indent: 210px;
+        float: left;
+        position: relative;
+        top: 20px;
+        margin-bottom: 30px;
+    }
+    
+
+    .navbar a {
+        font-size: 29px !important;
+    }
+
+    .about-me {
+        position: relative;
+        top: -50px;
+        width: 85%;
+        height: auto;
+    }
+
+    .scroll-box {
+        padding: 30px;
+        font-size: 16px;
+        height: 400px;
+        width: 100%;
+        position: relative;
+        top: 0px;
+    }
+
+    .external-link {
+        position: relative;
+        top: -50px;
+        left: -38%;
+    }
+
+}
+
+/* Primary header */
+
+h1 {
+    font-family: "Macondo Swash Caps";
+    font-size: 58px;
+    color: var(--ranger-pine);
+    font-weight: 400 !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
+}
+
+/* Secondary header */
+
+h2 {
+    font-family: "Macondo Swash Caps";
+    font-size: 28px;
+    color: var(--ranger-pine) !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--sorcerer-mint) !important;
+}
+
+/* Tertiary header */
+
+h3,
+div.center.h3 {
+    font-family: "Macondo Swash Caps";
+    font-size: 34px !important;
+    font-weight: 300;
+    color: var(--ranger-pine) !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
+}
+
+/* Main panel container appearance*/
+
+.container.main {
+    background: url(https://cdn.allthepics.net/images/2026/05/14/olive-wood-rosette-139-in-architextures.jpg);
+    border: 2px solid var(--ranger-pine) !important;
+    border-radius: 10px;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
+}
+
+/* Make left panel background and border invisible */
+
+.col-md-9 {
+    background: none;
+    border-right: none
+}
+
+/* Topbar (Welcome and account navigation) */
+
+.topbar {
+    background: var(--bard-merlot);
+    color: var(--warlock-lilac);
+    border: 0px !important;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.topbar a {
+    color: var(--warlock-lilac) !important;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.topbar a:hover {
+    color: var(--wizard-violet) !important;
+    text-shadow: none !important;
+}
+
+/* Navbar (Den/Crossroads/Etc.) */
+
+.navbar {
+    background: var(--cleric-sage);
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 5px solid var(--ranger-pine);
+    opacity: 1;
+}
+
+.navbar li a {
+    color: var(--ranger-pine) !important;
+    font-size: 24px !important;
+    font-weight: 600;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
+}
+
+.navbar li a:hover {
+    background: var(--cleric-sage) !important;
+    color: var(--warlock-lilac) !important;
+    text-shadow: 0 0 1em var(--warlock-lilac), 0 0 .2em var(--warlock-lilac) !important;
+    z-index: 500 !important;
+    opacity: 1 !important;
+}
+
+/* Breadcrumb (Home button, den owner, bookmark) */
+
+.breadcrumb {
+    font-family: "Macondo Swash Caps";
+    font-size: 14px;
+    background-image: url(https://cdn.allthepics.net/images/2026/05/14/paper-texture.jpg);
+    color: var(--rogue-bruise) !important;
+    border: 1px solid !important;
+    border-radius: 10px;
+    text-align: left !important;
+    text-shadow: 0 0 1em var(--warlock-lilac), 0 0 .2em var(--warlock-lilac) !important;
+}
+
+li.breadcrumb-item.active {
+    opacity: 0%;
+}
+
+.breadcrumb > li:nth-child(1) > a:nth-child(1):after {
+    opacity: 100% !important;
+    content: " / Heathen's Den";
+    font-family: "Macondo Swash Caps";
+    color: var(--bard-merlot) !important;
+    font-size: 20px;
+    text-shadow: 0 0 1em var(--warlock-lilac), 0 0 .2em var(--warlock-lilac) !important;
+    z-index: 10;
+}
+.breadcrumb a {
+    color: var(--rogue-bruise);
+    font-size: 20px;
+}
+
+
+/* Right-side panel appearance */
+
+.sidebar h3 {
+    font-family: "Macondo Swash Caps";
+    font-size: 26px !important;
+    font-weight: 600;
+    color: var(--ranger-pine) !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
+    text-align: right;
+    position: relative;
+    padding-top: 15px;
+}
+
+.sidebar a {
+    color: var(--druid-moss) !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
+}
+
+.panel h3 {
+    background: none !important;
+    color: var(--druid-moss) !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
+    font-size: 24px !important;
+    text-align: right;
+    opacity: 0.9;
+    border: 0px !important;
+    z-index: 5;
+    border-radius: 0px;
+}
+
+.col-md-12 a {
+    color: var(--druid-moss) !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
+}
+
+.col-md-12 a:hover,
+.panel-body.small a:hover,
+div.panel a:hover {
+    color: var(--warlock-lilac) !important;
+    text-shadow: 0 0 1em var(--warlock-lilac), 0 0 .2em var(--warlock-lilac) !important;
+}
+
+.panel-body.small,
+div.panel {
+    background: none;
+    border: 0px;
+    overflow: hidden;
+    border-radius: 0px;
+    color: var(--druid-moss) !important;
+    text-shadow: none !important;
+    font-size: 14px;
+    text-align: left;
+}
+
+.panel-body.small a,
+div.panel a {
+    color: var(--druid-moss) !important;
+    font-weight: 200;
+    border-radius: 10px;
+}
+
+
+.col-md-3 .panel {
+    background-image: url(https://cdn.allthepics.net/images/2026/05/14/paper-texture.jpg);
+    border: 0px !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.panel-body.small .center a,
+.panel-body.small a {
+    font-size: 15px;
+    font-weight: 400 !important;
+    color: var(--druid-moss) !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
+    border-radius: 0px;
+}
+
+div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
+    display: none;
+}
+
+
+/* Replace Lioden Logo */
+/*
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
+    border: transparent !important;
+}
+
+.navbar-brand img {
+    content: url();
+    width: auto;
+    height: 160px;
+    position: relative;
+    top: -30px;
+    z-index: 9000;
+    filter: drop-shadow(0px 0px 3rem var(--apollo-sunlight)) !important;
+}
+
+
+
+/* Progress bars (Energy, hunger, EXP, IMP) */
+/* .progress {
+    background: var(--siren-brown) !important;
+    color: var(--siren-brown) !important;
+    border-radius: 10px !important;
+}
+
+.progress-bar,
+.progress-bar-danger,
+.progress-bar-success {
+    background: var(--demeter-wheat) !important;
+    border-radius: 2px !important;
+    z-index: 10 !important;
+}
+
+.progress div {
+    background: linear-gradient(var(--icarus-warmth), #2193b0a7);
+    color: var(--siren-brown) !important;
+    font-size: 13px;
+    padding: 0px;
+    font-weight: 500;
+    z-index: 20;
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+}
+
+/* Comment box */
+/*div#commentBox {
+    background: linear-gradient(180deg, var(--icarus-warmth) 0%, #2193b0a7 100%);
+    backdrop-filter: brightness(80%);
+    border: 1px solid var(--siren-brown);
+    border-radius: 10px;
+    color: var(--siren-brown) !important;
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    opacity: 80%;
+}
+
+div#commentBox a {
+    color: var(--siren-brown);
+    font-weight: 600;
+}
+
+div#commentBox a:hover {
+    color: var(--demeter-wheat);
+}
+
+div.commentText {
+    color: var(--posiedon-coral) !important;
+    border-bottom: 1px solid var(--posiedon-coral);
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+}
+
+.text-muted {
+    color: var(--posiedon-coral) !important;
+    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+}
+
+img.floatleft.commentTag.clear {
+    height: 70px;
+    width: 70px;
+    border: 2px solid var(--siren-brown);
+    border-radius: 8px !important;
+    position: relative;
+    top: 2px;
+    left: -3px
+}
+
+/* Switch Account and Bug Box buttons */
+
+/*.btn:hover,
+button.button:hover,
+.btn.btn:hover {
+    background: var(--siren-brown);
+    color: var(--demeter-wheat) !important;
+    transition: 1s;
+}
+
+.btn img {
+    display: none;
+}
+
+.btn,
+button.button,
+.btn.btn {
+    background: var(--apollo-sunlight);
+    border: 1px solid var(--siren-brown);
+    border-radius: 4px;
+    text-shadow: none !important;
+    color: var(--siren-brown) !important;
+    width: 130px;
+    height: 25px;
+    filter: drop-shadow(0px 0px 3rem var(--athena-glow)) !important;
+}
+
+/* All tables - styling */
+
+/*table#about,
+table#player,
+table#attack,
+table#allies,
+table#clans,
+table#sparring,
+table#attack,
+table.table {
+    background: linear-gradient(180deg, var(--icarus-warmth) 0%, #2193b0a7 100%);
+    opacity: 100%;
+    border: 1px solid var(--siren-brown);
+    border-radius: 10px;
+}
+
+/*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
+
+/*.table {
+    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+    border: 1px solid var(--siren-brown);
+    border-collapse: separate;
+    border-radius: 2px;
+}
+
+table#about.table a {
+    color: var(--siren-brown);
+    text-decoration: none;
+}
+
+.table .top,
+#sparring th,
+table.table th {
+    color: var(--siren-brown);
+    font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid var(--siren-brown);
+    opacity: 93% !important;
+}
+
+.top,
+th,
+#attack th {
+    background: #2193b0a7 !important;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.bottom,
+th {
+    background: var(--icarus-warmth);
+    color: var(--siren-brown) !important;
+}
+
+.table .bottom {
+    background: var(--athena-glow);
+    color: var(--siren-brown);
+}
+
+td.bottom button {
+    margin-top: 10px;
+}
+
+#about.table tr:nth-child(7) {
+    background: linear-gradient(180deg, #ffafbda7 0%, #ffc3a0a7 45%, #2193b0a7 100%);
+}
+
+.inner-table .left {
+    background: transparent;
+    color: var(--siren-brown) !important;
+    text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .3em var(--apollo-sunlight) !important;
+    font-family: "Electrolize" !important;
+    font-weight: 300 !important;
+    font-size: 13px !important;
+    border: 0px solid var(--siren-brown);
+    border-left: 1px solid var(--siren-brown);
+    border-top: 1px solid var(--siren-brown);
+    border-right: 0px;
+    border-bottom: 1px dotted var(--posiedon-coral);
+    border-radius: 0px !important;
+}
+
+.inner-table .right {
+    background: transparent !important;
+    color: var(--siren-brown) !important;
+    text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .3em var(--apollo-sunlight) !important;
+    font-size: 12px;
+    border-top: 1px dotted var(--siren-brown);
+    border-right: 0px;
+    border-left: 1px solid var(--posiedon-coral);
+    border-radius: 0px 0px 0px 0px !important;
+}
+
+.inner-table .right a {
+    color: var(--siren-brown) !important;
+    font-style: italic;
+    text-shadow: 0 0 2em var(--icarus-warmth), 0 0 .3em var(--icarus-warmth) !important;
+}
+
+.inner-table .right a:hover {
+    color: var(--demeter-wheat) !important;
+}
+
+.right_odd {
+    background: none !important
+}
+
+td.left.b,
+div.lionImage.featured-lion {
+    background: transparent;
+}
+
+/* Lion and user profile pictures */
+
+/*#about.table div .lion-image-block {
+    border-radius: 20px;
+    border: 4px solid var(--siren-brown) !important;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    left: 10px;
+    top: 10px;
+    opacity: 1;
+}
+
+#lion_image div {
+    opacity: 1;
+    z-index: 700 !important;
+}
+
+table#player img {
+    border-radius: 20px;
+    border: 4px solid var(--siren-brown) !important;
+    box-shadow: 0px 0px 12px 12px var(--posiedon-coral) !important;
+    position: relative;
+    left: -15px;
+    top: 15px;
+}
+
+p.center a {
+    position: relative !important;
+    padding: 10px;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+}
+
+div.xlarge:nth-child(4) {
+    position: relative;
+    top: -50px;
+}
+
+p.center:nth-child(5) {
+    margin-top: 0px !important;
+    font-size: 20px;
+    top: -50px;
+}
+
+div.center.h3 {
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+}
+
+/* Remove icons and edit text for user profile buttons */
+
+/*table.inner-table.auto:nth-child(2) td {
+    border: 0px;
+}
+
+td.right_odd:nth-child(1)>a:nth-child(1)>img:nth-child(1),
+td.right_odd.text-right img {
+    display: none;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a:before {
+    opacity: 0%;
+    font-size: 0px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a {
+    font-size: 0px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a:after {
+    background: transparent;
+    content: 'Block Member' !important;
+    font-size: 20px !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    left: 50px;
+    top: -10px;
+    height: 0px !important;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(2)>a {
+    font-size: 0px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(2)>a:after {
+    background: transparent;
+    content: 'Friend Request';
+    font-size: 20px !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    left: 50px;
+    top: -10px;
+    height: 0px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1):after {
+    background: transparent;
+    content: 'Message';
+    font-size: 20px !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    height: 0px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a {
+    font-size: 0px;
+    height: 20px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3):after {
+    background: transparent;
+    content: 'Send Gift!';
+    font-size: 20px !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    height: 0px !important;
+    right: 100px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5):after {
+    background: transparent;
+    content: 'Create Trade';
+    font-size: 20px !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    height: 0px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p>a:nth-child(3):after {
+    padding: 15px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p.center:nth-child(5)>a:nth-child(1)>img:nth-child(1) {
+    display: none;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p.center:nth-child(5)>a:nth-child(3)>img:nth-child(1) {
+    display: none;
+}
+
+p.center>a,
+div.xlarge>a#text {
+    top: -50px;
+}
+
+td.left.b,
+div.lionImage.featured-lion {
+    background: transparent;
+}
+
+div.xlarge img {
+    display: none;
+}
+
+span.text-muted {
+    display: none;
+}
+
+div.xlarge a {
+    padding: 50px !important;
+}
+
+table#player hr {
+    display: none;
+}
+
+/* Cave and Beetle Mound grid appearances*/
+/*#fraOrganizationBlock>div:nth-child(2)>div:nth-child(1),
+div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+}
+
+.cave-grid,
+.mound-grid {
+    background: none;
+    color: var(--posiedon-coral) !important;
+    border: 0px;
+    border-radius: 2px !important;
+    font-size: 20px !important;
+}
+
+/* Feed all/Play all */
+
+/*div.feature,
+.feature {
+    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+    color: var(--posiedon-coral);
+    font-size: 13px;
+    font-weight: 200;
+    z-index: 5;
+    box-shadow: 0px 3px 8px 4px var(--posiedon-coral) !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    border: 0px;
+    border-radius: 2px;
+}
+
+.feature,
+div.left {
+    background: #040201;
+}
+
+.feature,
+div.left h3,
+.feature h3 {
+    font-weight: 500 !important;
+    color: var(--posiedon-coral) !important;
+}
+
+
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
+
+/*div.col-md-4 div h3,
+.dynastycollection a {
+    background: transparent;
+    font-size: 35px !important;
+    font-weight: 600 !important;
+}
+
+.dynastycollection a:hover {
+    color: var(--demeter-wheat);
+}
+
+div.mb-2 div,
+div.col div {
+    color: var(--posiedon-coral) !important;
+    border-radius: 10px;
+    height: 0px;
+    margin: 5px;
+    background: transparent !important;
+}
+
+/* Edit Details */
+
+/*table.table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>th:nth-child(1) {
+    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+    color: var(--siren-brown) !important;
+}
+
+td.left b {
+    background: transparent !important;
+    font-weight: 700 !important;
+}
+
+
+/* Background fix for mobile */
+/*@media only screen and (max-width: 767px) {
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://rio-codes.github.io/lioden-css/beach.webp') no-repeat center center;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .container.main {
+        margin-top: 35px;
+    }
+}
+
+/* Image Replacement */
+
+/*div.mound-grid img {
+    position: relative;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    width: 200px
+}
+
+div.cave-grid>img[src$="unsortedlionsbanner.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-01.png') !important;
+    object-fit: cover !important;
+    height: 250px !important;
+    width: 300px !important;
+}
+
+div.cave-grid>img[src$="nestingbanner.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-02.png') !important;
+    object-fit: cover !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+    height: 250px !important;
+    width: 300px !important;
+    border: 5px ridge;
+    border: 0px;
+    border-radius: 0px !important;
+}
+
+div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div,
+div.col.col-sm-4 div {
+    height: 70px;
+    color: var(--siren-brown);
+    font-weight: 200 !important;
+    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+}
+
+div.cave-grid>img[src$="prideoverviewbanner.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-03.png') !important;
+    object-fit: cover !important;
+    height: 250px !important;
+    width: 250px !important;
+}
+
+
+
+div.cave-grid>img {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 250px !important;
+    width: 250px !important;
+}
+
+.mound-grid img {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 100px !important;
+    width: 250px !important;
+}
+
+#fraCaveList > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-04.png') !important;
+    object-fit: contain !important;
+    height: 250px !important;
+    width: 250px !important;
+
+}
+
+#fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-05.png') !important;
+    object-fit: contain !important;
+    height: 250px !important;
+    width: 250px !important;
+}
+
+#fraCaveList > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-06.png') !important;
+    object-fit: contain !important;
+    height: 250px !important;
+    width: 250px !important;
+}
+
+div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1){
+    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-07.png') !important;
+    object-fit: contain !important;
+    object-position: right !important;
+    height: 250px !important;
+    width: 250px !important;
+}
+
+div.center:nth-child(5) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-08.png') !important;
+    object-fit: contain !important;
+    object-position: right !important;
+    height: 250px !important;
+    width: 250px !important;
+}
+
+div.col-md-4:nth-child(6) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-09.png') !important;
+    object-fit: contain !important;
+    object-position: right !important;
+    height: 250px !important;
+    width: 250px !important;
+}
+
+div.col-md-3:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-10.png') !important;
+    object-fit: cover !important;
+    object-position: right !important;
+    height: 250px !important;
+    width: 250px !important;
+}
+
+div.col-md-3:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-11.png') !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    height: 250px !important;
+    width: 250px !important;
+}
+
+div.col-xs-4:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-02.png') !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    height: 250px !important;
+    width: 250px !important;
+}
+
+img[src$="den_ancestors.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px !important;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="ancestorsfem.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px !important;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="den_achievements.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="den_showcase.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="den_beetlebook.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 100px;
+    width: 2 !important;
+    filter: brightness(90%) contrast(90%) sepia(30%);
+}
+
+img[src$="icon_den_friend.png"],
+img[src$="icon_den_wishlist.png"] {
+    display: none;
+}
+
+/* Misc fixes */
+
+/*p.center:nth-child(4)>a {
+    top: 10px;
+}
+
+div.center:nth-child(8) {
+    margin-top: -10px !important;
+}
+
+div.center:nth-child(8) > a:nth-child(1) {
+    position: relative !important;
+    width: 100px !important;
+}
+#allies>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1) {
+    display: none;
+}
+
+/* Replace Social Media Icons */
+
+/*img[src$="iconFB.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/greek-temple.png');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 3rem var(--posiedon-coral)) !important;
+}
+
+img[src$="iconTwit.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/wingfoot.png');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 3rem var(--posiedon-coral)) !important;
+}
+
+img[src$="iconInsta.png"] {
+    content: url('https://cdn.allthepics.net/images/2026/05/10/lyre.png');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 3rem var(--posiedon-coral)) !important;
+}
+
+/* Pagedoll */
+
+/*.container.main::after {
+	content: "";
+	background-image: url('https://cdn.allthepics.net/images/2026/05/10/apollo_pagedoll.png');
+	background-size: cover;
+	display: block;
+	height: 400px;
+	width: 250px;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	z-index: 30;
+	pointer-events: none;
+	opacity: 0.8;
+}
+ */
+
+
+/* Replace Lioden Logo */
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
+    border: transparent !important;
+}
+
+.navbar-brand img {
+    content: url();
+    width: auto;
+    height: 160px;
+    position: relative;
+    top: -30px;
+    z-index: 9000;
+    filter: drop-shadow(0px 0px 3rem var(--apollo-sunlight)) !important;
+}
