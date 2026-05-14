@@ -608,7 +608,7 @@ div.panel {
     border: 0px;
     overflow: hidden;
     border-radius: 0px;
-    color: var(--druid-moss) !important;
+    color: var(--sorcerer-mint) !important;
     text-shadow: none !important;
     font-size: 14px;
     text-align: left;
@@ -617,14 +617,13 @@ div.panel {
 
 .panel-body.small a,
 div.panel a {
-    color: var(--druid-moss) !important;
+    color: var(--sorcerer-mint) !important;
     font-weight: 200;
     border-radius: 10px;
 }
 
-
 .col-md-3 .panel {
-    background: var(--cleric-sage);
+    background: radial-gradient(var(--cleric-sage), var(--druid-moss));
     border-radius: 10px 10px 0px 0px;
     border-bottom: 5px solid var(--ranger-pine);
     opacity: 1;
@@ -638,8 +637,8 @@ div.panel a {
 .panel-body.small a {
     font-size: 16px;
     font-weight: 400 !important;
-    color: var(--druid-moss) !important;
-    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
+    color: var(--sorcerer-mint) !important;
+    text-shadow: 0 0 1em var(--cleric-sage), 0 0 .5em var(--cleric-sage) !important;
     border-radius: 0px;
 }
 
