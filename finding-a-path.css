@@ -419,6 +419,10 @@ div.about-me {
         top: -70px;
         left: -38%;
     }
+    
+    .external-link:hover {
+        color: var(--sorcerer-mint) !important;
+    }
 
 }
 
@@ -515,7 +519,7 @@ div.center.h3 {
 }
 
 .navbar li a:hover {
-    background: var(--cleric-sage) !important;
+    background: transparent !important;
     color: var(--warlock-lilac) !important;
     text-shadow: 0 0 1em var(--warlock-lilac), 0 0 .2em var(--warlock-lilac) !important;
     z-index: 500 !important;
@@ -612,7 +616,6 @@ div.panel {
     text-shadow: none !important;
     font-size: 14px;
     text-align: left;
-    
 }
 
 .panel-body.small a,
