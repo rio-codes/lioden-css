@@ -134,6 +134,7 @@ input#postComment {
     box-shadow: 5px 5px 14px 10px var(--ranger-pine);
     backdrop-filter: brightness(70%) !important;
     text-indent: 10px;
+    z-index: 10;
 }
 
 #pageContainer > br:nth-child(4), #pageContainer > br:nth-child(6) {
@@ -163,18 +164,30 @@ div#pageContainer.col-md-9 h1 {
 }
 
 div#pageContainer.col-md-9 h1:before {
+    background-image: url("https://cdn.allthepics.net/images/2026/05/14/Pngtreerustic-hanging-wooden-sign-suspended_24089639.png");
+    background-size: cover;
+    background-position-y: -450px;
+    background-position-x: 100px;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 700px;
+    position: relative;
+    top: 10px !important;
     font-family: "Macondo Swash Caps";
     content: "Heathen's Rest";
     font-size: 65px;
     color: var(--ranger-pine);
-    text-shadow: 0 0 1em 2em var(--sorcerer-mint), 0 0 .7em 1em var(--sorcerer-mint);
+    text-shadow: none !important;
     font-weight: 200;
     text-indent: 130px;
     float: left;
-    position: relative;
-    top: 20px;
     margin-bottom: 30px;
-    
+    z-index: 5;   
+}
+
+div#pageContainer.col-md-9 h1 {
+    background: url("https://cdn.allthepics.net/images/2026/05/14/Pngtreerustic-hanging-wooden-sign-suspended_24089639.png")
+    position: relative;
 }
 
 /* Cave-Specific Styling */
@@ -218,6 +231,7 @@ div.lionImage.featured-lion img {
     background-image: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
     background-size: cover;
     position: relative;
+    top: -100px;
     background-size: cover;
     height: 300px !important;
     margin-bottom: 100px;
@@ -228,10 +242,12 @@ div.lionImage.featured-lion img {
 
 div.about-me {
     position: relative;
-    top: 40px;
+    top: 10px;
 }
 
 .scroll-box {
+    position: absolute;
+    top: -300px !important;
     overflow-y: auto;
     border-radius: 0px;
     scrollbar-color: var(--druid-moss) var(--cleric-sage);
@@ -366,7 +382,7 @@ div.about-me {
 
 @media only screen and (min-width: 1001px) {
     div#pageContainer.col-md-9 h1:before {
-        text-indent: 210px;
+        text-indent: 200px;
         float: left;
         position: relative;
         top: 20px;
@@ -396,7 +412,10 @@ div.about-me {
 
     .external-link {
         position: relative;
-        top: -50px;
+        color: var(--ranger-pine) !important;
+        font-size: 22px;
+        font-weight: 800;
+        top: -70px;
         left: -38%;
     }
 
@@ -507,9 +526,9 @@ div.center.h3 {
 .breadcrumb {
     font-family: "Macondo Swash Caps";
     font-size: 14px;
-    background-image: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
+    background: var(--cleric-sage) !important;
     background-size: cover;
-    color: var(--rogue-bruise) !important;
+    color: var(--ranger-pine) !important;
     border: 1px solid !important;
     border-radius: 10px;
     text-align: left !important;
@@ -525,11 +544,12 @@ li.breadcrumb-item.active {
     opacity: 100% !important;
     content: " / Heathen's Den";
     font-family: "Macondo Swash Caps";
-    color: var(--bard-merlot) !important;
+    color: var(--ranger-pine) !important;
     font-size: 20px;
-    text-shadow: 0 0 1em var(--warlock-lilac), 0 0 .2em var(--warlock-lilac) !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
     z-index: 10;
 }
+
 .breadcrumb a {
     color: var(--rogue-bruise);
     font-size: 20px;
