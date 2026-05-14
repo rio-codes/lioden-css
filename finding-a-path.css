@@ -33,13 +33,14 @@ body {
     z-index: -1;
     font-family: "Macondo Swash Caps";
     font-weight: 200 !important;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--ranger-pine);
 }
 
 /* CSS Credit */
 
 .breadcrumb::after {
+    font-family: "Shadows Into Light";
     content: "custom css by lyri (see den for credits)";
     color: var(--warlock-lilac) !important;
     font-size: 18px;
@@ -47,7 +48,7 @@ body {
     overflow: visible !important;
     position: absolute;
     top: -85px;
-    left: 10px;
+    left: 16px;
     text-shadow: 0 0 2em var(--sorcerer-mint), 0 0 .3em var(--sorcerer-mint) !important;
 }
 
@@ -116,18 +117,23 @@ input#postComment {
 
 .alert,
 .alert-warning,
-.alert-danger {
-    font-family: "Shadows Into Light";
-    background: url(https://cdn.allthepics.net/images/2026/05/14/paper-texture.jpg);
+.alert-danger,
+.alert-success {
+    font-size: 20px;
+    background: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
+    background-size: cover;
     color: var(--ranger-pine) !important;
     border: 0px !important;
     border-radius: 7px;
     text-align: left !important;
-    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint);
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
     position: relative;
     top: 0px;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 0px !important;
+    box-shadow: 5px 5px 14px 10px var(--ranger-pine);
+    backdrop-filter: brightness(70%) !important;
+    text-indent: 10px;
 }
 
 #pageContainer > br:nth-child(4), #pageContainer > br:nth-child(6) {
@@ -137,8 +143,17 @@ input#postComment {
 .alert a,
 .alert-warning a,
 .alert-danger a {
-    color: var(--druid-moss);
-    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint);
+    color: var(--cleric-sage);
+    font-weight: 800 !important;
+    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
+}
+
+.alert a:hover,
+.alert-warning a:hover,
+.alert-danger a:hover {
+    color: var(--sorcerer-mint);
+    font-weight: 800 !important;
+    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
 }
 
 /* Main header appearance ("___"'s Den) */
@@ -152,12 +167,14 @@ div#pageContainer.col-md-9 h1:before {
     content: "Heathen's Rest";
     font-size: 65px;
     color: var(--ranger-pine);
-    font-weight: 400;
+    text-shadow: 0 0 1em 2em var(--sorcerer-mint), 0 0 .7em 1em var(--sorcerer-mint);
+    font-weight: 200;
     text-indent: 130px;
     float: left;
     position: relative;
     top: 20px;
     margin-bottom: 30px;
+    
 }
 
 /* Cave-Specific Styling */
@@ -195,12 +212,23 @@ div.lionImage.featured-lion img {
 /* About Me */
 
 .about-me {
-    align-items: center;
-    background-image: url(https://cdn.allthepics.net/images/2026/05/14/paper-texture.jpg);
+    align-items: left;
+    align-content: left !important;
+    text-align: left;
+    background-image: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
+    background-size: cover;
     position: relative;
     background-size: cover;
-    border-radius: 1px;
+    height: 300px !important;
+    margin-bottom: 100px;
+    border-radius: 10px;
     border: 0px;
+    box-shadow: 3px 3px 14px 10px var(--ranger-pine);
+}
+
+div.about-me {
+    position: relative;
+    top: 40px;
 }
 
 .scroll-box {
@@ -307,7 +335,7 @@ div.lionImage.featured-lion img {
 
     .about-me {
         align-items: center;
-        background-image: url(https://cdn.allthepics.net/images/2026/05/09/Parthenon__28_May_1838__Skene_James_-_1838.md.jpg);
+        background-image: url();
         position: relative;
         top: -50px;
         background-size: cover;
@@ -410,7 +438,7 @@ div.center.h3 {
 /* Main panel container appearance*/
 
 .container.main {
-    background: url(https://cdn.allthepics.net/images/2026/05/14/olive-wood-rosette-139-in-architextures.jpg);
+    background: url(https://cdn.allthepics.net/images/2026/05/14/oak-12894-in-architextures.jpg);
     border: 2px solid var(--ranger-pine) !important;
     border-radius: 10px;
     text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
@@ -426,8 +454,12 @@ div.center.h3 {
 /* Topbar (Welcome and account navigation) */
 
 .topbar {
-    background: var(--bard-merlot);
-    color: var(--warlock-lilac);
+    background: var(--cleric-sage);
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 5px solid var(--ranger-pine);
+    opacity: 1;
+    box-shadow: 3px 3px 14px 10px var(--ranger-pine);
+    color: var(--ranger-pine);
     border: 0px !important;
     border-radius: 4px;
     font-size: 18px;
@@ -452,6 +484,7 @@ div.center.h3 {
     border-radius: 10px 10px 0px 0px;
     border-bottom: 5px solid var(--ranger-pine);
     opacity: 1;
+    box-shadow: 3px 3px 14px 10px var(--ranger-pine);
 }
 
 .navbar li a {
@@ -474,12 +507,14 @@ div.center.h3 {
 .breadcrumb {
     font-family: "Macondo Swash Caps";
     font-size: 14px;
-    background-image: url(https://cdn.allthepics.net/images/2026/05/14/paper-texture.jpg);
+    background-image: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
+    background-size: cover;
     color: var(--rogue-bruise) !important;
     border: 1px solid !important;
     border-radius: 10px;
     text-align: left !important;
     text-shadow: 0 0 1em var(--warlock-lilac), 0 0 .2em var(--warlock-lilac) !important;
+    box-shadow: 3px 3px 14px 10px var(--ranger-pine);
 }
 
 li.breadcrumb-item.active {
@@ -512,6 +547,7 @@ li.breadcrumb-item.active {
     text-align: right;
     position: relative;
     padding-top: 15px;
+    
 }
 
 .sidebar a {
@@ -529,11 +565,13 @@ li.breadcrumb-item.active {
     border: 0px !important;
     z-index: 5;
     border-radius: 0px;
+    
 }
 
 .col-md-12 a {
     color: var(--druid-moss) !important;
     text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
+    
 }
 
 .col-md-12 a:hover,
@@ -553,6 +591,7 @@ div.panel {
     text-shadow: none !important;
     font-size: 14px;
     text-align: left;
+    
 }
 
 .panel-body.small a,
@@ -564,10 +603,12 @@ div.panel a {
 
 
 .col-md-3 .panel {
-    background-image: url(https://cdn.allthepics.net/images/2026/05/14/paper-texture.jpg);
+    background-image: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
+    background-size: cover;
     border: 0px !important;
     border-radius: 10px;
     overflow: hidden;
+        box-shadow: 5px 5px 14px 10px var(--ranger-pine);
 }
 
 .panel-body.small .center a,
@@ -628,8 +669,9 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
 }
 
 /* Comment box */
-/*div#commentBox {
-    background: linear-gradient(180deg, var(--icarus-warmth) 0%, #2193b0a7 100%);
+div#commentBox {
+    background: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
+    box-shadow: 3px 3px 14px 10px var(--ranger-pine);
     backdrop-filter: brightness(80%);
     border: 1px solid var(--siren-brown);
     border-radius: 10px;
