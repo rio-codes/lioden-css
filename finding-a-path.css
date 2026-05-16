@@ -232,23 +232,31 @@ div.lionImage.featured-lion img {
     background-image: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
     background-size: cover;
     position: relative;
-    top: -100px;
+    top: 0px;
     background-size: cover;
     height: 300px !important;
     margin-bottom: 100px;
     border-radius: 10px;
     border: 0px;
     box-shadow: 3px 3px 14px 10px var(--ranger-pine);
+    overflow-y: scroll;
+    scrollbar-color: var(--druid-moss) var(--cleric-sage);
+}
+
+div.about-links {
+    position: absolute;
+    top: 370px;
+    z-index: 30;
 }
 
 div.about-me {
     position: relative;
-    top: 10px;
+    top: -300px;
 }
 
 .scroll-box {
     position: absolute;
-    top: -300px !important;
+    top: -10px !important;
     overflow-y: auto;
     border-radius: 0px;
     scrollbar-color: var(--druid-moss) var(--cleric-sage);
