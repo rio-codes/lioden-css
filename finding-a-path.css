@@ -27,7 +27,7 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Background image, font and font color, text alignment */
 body {
-    background: url(https://cdn.allthepics.net/images/2026/05/14/wallhaven-0pze39.png) no-repeat center center;
+    background: url("https://cdn.allthepics.net/images/2026/05/14/wallhaven-0pze39.png") no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
@@ -261,7 +261,7 @@ div.about-me {
 
 @media only screen and (max-width: 743px) {
     div#pageContainer.col-md-9 h1:before {
-        text-indent: 40px;
+        text-indent: -100px;
         float: left;
         position: relative;
         top: 40px;
@@ -293,6 +293,9 @@ div.about-me {
         left: -38%;
     }
 
+    div#pageContainer.col-md-9 h1:before {
+        background-position-x: -70px;
+    }
 }
 
 /* Large Tablet */
@@ -1147,7 +1150,7 @@ td.left b {
 
 
 /* Background fix for mobile */
-/*@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     body::before {
         content: "";
         position: fixed;
@@ -1155,7 +1158,7 @@ td.left b {
         left: 0;
         width: 100%;
         height: 100%;
-        background: url('https://rio-codes.github.io/lioden-css/beach.webp') no-repeat center center;
+        background: url("https://cdn.allthepics.net/images/2026/05/14/wallhaven-0pze39.png") no-repeat center center;
         background-size: cover;
         z-index: -1;
     }
