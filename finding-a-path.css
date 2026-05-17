@@ -835,31 +835,21 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
     filter: drop-shadow(0px 0px 3rem var(--apollo-sunlight)) !important;
 }
 
-
-
 /* Progress bars (Energy, hunger, EXP, IMP) */
-/* .progress {
-    background: var(--siren-brown) !important;
-    color: var(--siren-brown) !important;
-    border-radius: 10px !important;
+.progress {
+	background: var(--druid-moss);
+	color: var(--sorcerer-mint) !important;
+	border-radius: 4px !important;
 }
 
-.progress-bar,
-.progress-bar-danger,
-.progress-bar-success {
-    background: var(--demeter-wheat) !important;
-    border-radius: 2px !important;
-    z-index: 10 !important;
+.progress-bar, .progress-bar-danger, .progress-bar-success {
+	background: linear-gradient(to right, var(--sorcerer-mint), var(--cleric-sage), var(--druid-moss));
+	border-radius: 4px !important;
 }
 
 .progress div {
-    background: linear-gradient(var(--icarus-warmth), #2193b0a7);
-    color: var(--siren-brown) !important;
-    font-size: 13px;
-    padding: 0px;
-    font-weight: 500;
-    z-index: 20;
-    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+	color: var(--sorcerer-mint) !important;
+	font-weight: bolder;
 }
 
 /* Comment box */
