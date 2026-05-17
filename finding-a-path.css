@@ -120,19 +120,17 @@ input#postComment {
 .alert-danger,
 .alert-success {
     font-size: 20px;
-    font-family: "The Girl Next Door" !important;
     background: linear-gradient(var(--cleric-sage), var(--druid-moss));
     color: var(--ranger-pine) !important;
     border: 0px !important;
     border-radius: 7px;
-    text-align: left !important;
+    text-align: center !important;
     text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
     position: relative;
-    top: 0px;
+    top: -105x;
     font-weight: 400;
     margin-top: 0px !important;
     box-shadow: 5px 5px 14px 10px var(--ranger-pine);
-    backdrop-filter: brightness(70%) !important;
     text-indent: 10px;
     z-index: 10;
 }
@@ -144,9 +142,8 @@ input#postComment {
 .alert a,
 .alert-warning a,
 .alert-danger a {
-    font-family: "The Girl Next Door" !important;
-    color: var(--cleric-sage);
-    font-weight: 800 !important;
+    color: var(--sorcerer-mint);
+    font-weight: 400 !important;
     text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
     
 }
@@ -154,8 +151,8 @@ input#postComment {
 .alert a:hover,
 .alert-warning a:hover,
 .alert-danger a:hover {
-    color: var(--sorcerer-mint);
-    font-weight: 800 !important;
+    color: var(--druid-moss);
+    font-weight: 400 !important;
     text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
 
 }
@@ -174,7 +171,7 @@ div#pageContainer.col-md-9 h1:before {
     background-repeat: no-repeat;
     height: 400px;
     width: 700px;
-    position: absolute;
+    position: relative !important;
     top: 10px !important;
     font-family: "Macondo Swash Caps";
     content: "Heathen's Rest";
@@ -187,6 +184,7 @@ div#pageContainer.col-md-9 h1:before {
     margin-bottom: 30px;
     z-index: 5;   
 }
+
 
 /* Cave-Specific Styling */
 
@@ -234,7 +232,7 @@ div.lionImage.featured-lion img {
     background-size: cover;
     height: 300px !important;
     width: 82% !important;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     border-radius: 10px;
     border: 0px;
     box-shadow: 3px 3px 14px 10px var(--ranger-pine);
@@ -244,11 +242,11 @@ div.lionImage.featured-lion img {
 
 .about-links {
     font-family: "The Girl Next Door" !important;
-    position: absolute;
+    position: relative;
     font-size: 17px;
     font-weight: 600 !important;
-    top: 210px !important;
-    left: 11%;
+    top: -710px !important;
+    left: -34%;
     color: var(--druid-moss) !important;
     text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine) !important;
     z-index: 40;
@@ -287,12 +285,22 @@ div.lionImage.featured-lion img {
 /* Phone */
 
 @media only screen and (max-width: 743px) {
+    .breadcrumb::after {
+    overflow: visible !important;
+    position: absolute;
+    top: -40px;
+    left: 16px;
+}
+
     div#pageContainer.col-md-9 h1:before {
-        text-indent: -150px;
+        text-indent: -80px !important;
         float: left;
         position: relative;
         top: 40px;
         margin-bottom: 30px;
+    }
+    div#pageContainer.col-md-9 h1:before {
+        background-position-x: -60px;
     }
 
     .navbar a {
@@ -300,28 +308,36 @@ div.lionImage.featured-lion img {
     }
 
     div.about-me {
-        position: absolute;
-        top: 200px;
-        left: 50px;
+        position: relative;
+        top: -300px;
+        left: 0px;
     }
     
     div#commentBox {
-        width: 86% !important;
-        position: absolute;
-        left: -5px !important;
+        width: 82% !important;
+        position: relative;
+        left: 0px !important;
+    }
+    
+    div#makeComment {
+        position: relative;
+        top: -530px;
     }
     
     input#comment {
-        width: 70% !important;
-        left: 50px !important;
+        width: 60% !important;
+        position: relative;
+        top: 100px !important;
+        left: 20px !important;
     }
     
     input#postComment {
+        position: relative;
+        top: -90px;
         left: 480px;
     }
     .about-me {
         width: 85%;
-        height: auto;
     }
 
     .scroll-box {
@@ -333,66 +349,79 @@ div.lionImage.featured-lion img {
         top: 0px;
     }
 
-    div#pageContainer.col-md-9 h1:before {
-        background-position-x: -70px;
+    .about-links {
+        position: relative;
+        top: -600px !important;
+        left: -160px
+    }
+        div.alert.alert-danger {
+        position: relative !important;
+        top: -50px;
+        z-index: 70;
     }
 }
 
 /* Small Tablet (iPad Mini)*/
 
-@media only screen and (max-width: 820px) and (min-width: 744px) {
+@media only screen and (max-width: 759px) and (min-width: 744px) {
     div#pageContainer.col-md-9 h1:before {
-        text-indent: 20px !important;
+        text-indent: 0px !important;
         float: left;
         position: relative;
         top: 40px;
         margin-bottom: 30px;
+        background-position-x: -20px;
     }
+    div#pageContainer.col-md-9 h1:before {
+        background-position-x: 0px;
+    }
+    
+    .breadcrumb::after {
+    overflow: visible !important;
+    position: absolute;
+    top: -40px;
+    left: 16px;
+}
 
-    ul.nav a {
-        font-size: 17px !important;
-        z-index: 50;
-    }
-
-    ul.nav a:hover {
-        color: var(--sorcerer-mint) !important;
-    }
     div.about-me {
-        position: absolute;
-        top: 200px;
+        position: relative !important;
+        top: -200px;
         left: 50px;
     }
     
     div#commentBox {
-        
-        width: 86% !important;
-        position: absolute;
-        left: -5px !important;
+        width: 84% !important;
+        position: relative !important;
+        left: -10px !important;
+        top: -490px !important;
+        font-size: 14px !important;
+    }
+    
+    div#makeComment {
+        position: relative !important;
+        top: -520px;
+        left: -80px;
     }
     
     input#comment {
-        width: 70% !important;
-        left: 50px !important;
+        width: 75% !important;
+        left: 70px !important;
     }
     
     input#postComment {
-        left: 480px;
+        left: 70px !important;
     }
     
     .about-me {
         align-items: left;
         align-content: left !important;
         text-align: left;
-        background-image: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg) !important;
-        background-size: cover !important;
-        position: relative;
-        top: 0px;
+        position: relative !important;
+        top: -300px !important;
+        left: -10px !important;
         background-size: cover;
         height: 300px !important;
-        width: 82% !important;
-        margin-bottom: 100px;
-        border-radius: 10px;
-        border: 0px;
+        width: 84% !important;
         box-shadow: 3px 3px 14px 10px var(--ranger-pine);
         overflow-y: scroll !important;
         scrollbar-color: var(--druid-moss) var(--cleric-sage) !important;
@@ -406,31 +435,21 @@ div.lionImage.featured-lion img {
         position: relative;
         top: -30px !important;
     }
-
-    div#pageContainer.col-md-9 h1:before {
-        background-position-x: -10px !important;
-    }
     
     .about-links {
-        position: absolute;
+        position: relative;
         font-size: 16px;
-        font-weight: 400 !important;
-        top: 210px !important;
-        left: 120px;
-        color: var(--druid-moss) !important;
+        font-weight: 800 !important;
+        top: -600px !important;
+        left: -240px;
+        color: var(--ranger-pine) !important;
         text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine) !important;
         z-index: 40;
     }
     
-    .about-links .external-link {
-        position: absolute;
-        left: -54px;
-        top: 0px;
-    }
-    
-    .about-links > a:nth-child(2) {
-        position: absolute;
-        right: -35px;    
+    .about-links a {
+        font-weight: 600 !important;
+        color: var(--ranger-pine) !important;
     }
     
     .pokemon {
@@ -438,12 +457,65 @@ div.lionImage.featured-lion img {
         top: 0px !important;
         left: 0px !important;
     }
+    
+    .alert-warning,
+.alert-danger,
+.alert-success {
+    border: 0px !important;
+    border-radius: 7px;
+    text-align: center !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
+    position: relative !important;
+    top: 0px;
+    font-weight: 400;
+    margin-top: 0px !important;
+    box-shadow: 5px 5px 14px 10px var(--ranger-pine);
+    text-indent: 10px;
+    z-index: 60;
+    height: 40px !important;
+}
+    
+    div.alert.alert-danger {
+        position: relative !important;
+        top: -70px;
+        z-index: 70;
+    }
+    
+    .alert a,
+.alert-warning a,
+.alert-danger a {
+    color: var(--sorcerer-mint);
+    font-weight: 400 !important;
+    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
+    
+}
+
+.alert a:hover,
+.alert-warning a:hover,
+.alert-danger a:hover {
+    color: var(--druid-moss);
+    font-weight: 400 !important;
+    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
+
+}
+    
+
+
 }
 
 /* Large Tablet */
 
-@media only screen and (max-width: 1000px) and (min-width: 821px) {
+@media only screen and (max-width: 1499px) and (min-width: 760px) {
     
+    div#pageContainer.col-md-9 h1:before {
+        text-indent: 0px !important;
+        float: left;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    div#pageContainer.col-md-9 h1:before {
+        background-position-x: 10px !important;
+    }
     .about-me {
         align-items: left;
         align-content: left !important;
@@ -451,7 +523,7 @@ div.lionImage.featured-lion img {
         background-image: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg) !important;
         background-size: cover !important;
         position: relative;
-        top: -300px;
+        top: -310px !important;
         background-size: cover;
         height: 300px !important;
         width: 82% !important;
@@ -473,19 +545,6 @@ div.lionImage.featured-lion img {
         top: -40px !important;
     }
 
-
-    div#pageContainer.col-md-9 h1:before {
-        font-weight: 600;
-        text-indent: 0px;
-        float: left;
-        position: relative;
-        top: 20px;
-        margin-bottom: 30px;
-    }
-    
-    div#pageContainer.col-md-9 h1:before {
-        background-position-x: 0px !important;
-    }
     
     
     .toplinks li a {
@@ -499,42 +558,29 @@ div.lionImage.featured-lion img {
         text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
     }
     
-
-    .scroll-box {
-        padding: 30px;
-        font-size: 16px;
-        height: 400px;
-        width: 100%;
-        position: absolute;
-        top: -10px !important;
-    }
-
-    .external-link {
-        position: relative;
-        top: -40px;
-    }
     
     .about-links {
-        position: absolute;
-        left: 140px;
-        top: 230px !important;
+        position: relative !important;
+        left: -200px;
+        top: -730px !important;
+        width: min-content !important;
     }
     .about-links .external-link {
-        position: absolute;
-        left: -50px;
-        top: -1px;
+        position: relative !important;
+        left: -55px;
+        top: 23px;
     }
     
     .about-links > a:nth-child(2) {
-        position: absolute;
+        position: relative;
         top: -1px;
-        left: 10px;    
+        left: -3px;    
     }
     
-    .pokemon {
+    .external-link .pokemon {
         position: relative;
-        top: 0px !important;
-        left: 0px !important;
+        top: 160px !important;
+        left: 20px !important;
     }
     
      .scroll-box {
@@ -563,36 +609,115 @@ div.lionImage.featured-lion img {
         top: 100px !important;
     }
 
+.alert-warning,
+.alert-danger,
+.alert-success {
+    border: 0px !important;
+    border-radius: 7px;
+    text-align: center !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
+    position: relative !important;
+    top: 0px;
+    font-weight: 400;
+    margin-top: 0px !important;
+    box-shadow: 5px 5px 14px 10px var(--ranger-pine);
+    text-indent: 10px;
+    z-index: 60;
+    height: 40px !important;
+}
+    
+    div.alert.alert-danger {
+        position: relative !important;
+        top: 560px;
+        z-index: 70;
+    }
+    
+    .alert a,
+.alert-warning a,
+.alert-danger a {
+    color: var(--sorcerer-mint);
+    font-weight: 400 !important;
+    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
+    
+}
+
+.alert a:hover,
+.alert-warning a:hover,
+.alert-danger a:hover {
+    color: var(--druid-moss);
+    font-weight: 400 !important;
+    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
+
+}
+    
+    div#commentBox {
+        width: 81% !important;
+        position: relative !important;
+        left: 0px !important;
+        top: -590px !important;
+        font-size: 14px !important;
+    }
+    
+    div#makeComment {
+        position: relative !important;
+        top: -620px;
+        left: -70px;
+    }
+    
+    input#comment {
+        width: 75% !important;
+        left: 70px !important;
+    }
+    
+    input#postComment {
+        left: 70px !important;
+    }
+
 }
 
 /* Desktop, Horizontal Tablet */
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1500px) {
     div#pageContainer.col-md-9 h1:before {
         text-indent: 200px;
         float: left;
         position: relative;
-        top: 20px;
         margin-bottom: 30px;
     }
 
     div.about-me {
-        position: absolute;
-        top: 200px;
-        left: 10%;
+        position: relative;
+        top: -310px;
+        left: -1%;
     }
 
     .about-me {
         position: relative;
-        top: -50px;
+        top: -60px;
         width: 85%;
         height: auto;
+    }
+    
+    .about-links {
+        position: relative;
+        font-size: 16px;
+        font-weight: 800 !important;
+        top: -610px !important;
+        left: -290px;
+        color: var(--ranger-pine) !important;
+        text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine) !important;
+        z-index: 40;
+    }
+    
+    .about-links a {
+        font-weight: 600 !important;
+        color: var(--ranger-pine) !important;
     }
 
     .scroll-box {
         padding: 30px;
         font-size: 16px;
-        height: 400px;
+        height: 300px !important;
         width: 100%;
         position: relative;
         top: 0px;
@@ -608,6 +733,72 @@ div.lionImage.featured-lion img {
         font-weight: 600;
         text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
     }
+    
+    
+.alert-warning,
+.alert-danger,
+.alert-success {
+    border: 0px !important;
+    border-radius: 7px;
+    text-align: center !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
+    position: relative !important;
+    top: 0px;
+    font-weight: 400;
+    margin-top: 0px !important;
+    box-shadow: 5px 5px 14px 10px var(--ranger-pine);
+    text-indent: 10px;
+    z-index: 60;
+    height: 40px !important;
+}
+    
+    div.alert.alert-danger {
+        position: relative !important;
+        top: -50px;
+        z-index: 70;
+    }
+    
+    .alert a,
+.alert-warning a,
+.alert-danger a {
+    color: var(--sorcerer-mint);
+    font-weight: 400 !important;
+    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
+    
+}
+
+.alert a:hover,
+.alert-warning a:hover,
+.alert-danger a:hover {
+    color: var(--druid-moss);
+    font-weight: 400 !important;
+    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
+
+}
+    
+    div#commentBox {
+        width: 81% !important;
+        position: relative !important;
+        left: -10px !important;
+        top: -490px !important;
+        font-size: 14px !important;
+    }
+    
+    div#makeComment {
+        position: relative !important;
+        top: -520px;
+        left: -80px;
+    }
+    
+    input#comment {
+        width: 75% !important;
+        left: 70px !important;
+    }
+    
+    input#postComment {
+        left: 70px !important;
+    }
+
 
 }
 
@@ -870,22 +1061,19 @@ div#commentBox {
     font-weight: 600;
     background: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
     box-shadow: 3px 3px 14px 10px var(--ranger-pine);
-    backdrop-filter: brightness(80%);
     border: none;
     border-radius: 10px;
-    color: var(--siren-brown) !important;
     text-shadow: 0 0 2em var(--sorcerer-mint), 0 0 .3em var(--sorcerer-mint) !important;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 0px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     text-align: left;
-    opacity: 80%;
     position: relative;
-    top: 30px;
-    left:1%;
-    width: 85%;
+    top: -500px;
+    left:-1%;
+    width: 82%;
 }
 
 div#commentBox a {
@@ -907,26 +1095,21 @@ div.commentText {
 
 input#comment {
     width: 82%;
-    position: absolute;
-    left: 10%;
-    top: 860px;
+    position: relative !important;
+    left: 3%;
+    top: 30px !important;
 }
 
 div#makeComment {
+    pos
     box-shadow: 3px 3px 14px 10px var(--ranger-pine) !important;
 }
 
 input#postComment {
-    position: absolute;
-    top: 860px;
-    left: 93%;
-    text-align: right !important;
-    
-}
-
-.text-muted {
-    color: var(--posiedon-coral) !important;
-    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+    position: relative !important;
+    top: 30px;
+    left: 4%;
+    text-align: right !important;   
 }
 
 img.floatleft.commentTag.clear {
@@ -1353,7 +1536,7 @@ td.left b {
 
 
 /* Background fix for mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 743px) {
     body::before {
         content: "";
         position: fixed;
