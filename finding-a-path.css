@@ -924,12 +924,13 @@ img.floatleft.commentTag.clear {
 
 /* Switch Account and Bug Box buttons */
 
-/*.btn:hover,
+.btn:hover,
 button.button:hover,
 .btn.btn:hover {
-    background: var(--siren-brown);
-    color: var(--demeter-wheat) !important;
+    background: var(--ranger-pine);
+    color: var(--sorcerer-mint) !important;
     transition: 1s;
+    border: none !important;
 }
 
 .btn img {
@@ -939,14 +940,14 @@ button.button:hover,
 .btn,
 button.button,
 .btn.btn {
-    background: var(--apollo-sunlight);
-    border: 1px solid var(--siren-brown);
+    background: var(--cleric-sage);
+    border: none;
     border-radius: 4px;
     text-shadow: none !important;
     color: var(--siren-brown) !important;
     width: 130px;
     height: 25px;
-    filter: drop-shadow(0px 0px 3rem var(--athena-glow)) !important;
+    box-shadow: 3px 3px 10px 5px var(--ranger-pine);
 }
 
 /* All tables - styling */
