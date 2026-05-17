@@ -11,7 +11,7 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Import Fonts (From Google Fonts) */
 
-@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Nuosu+SIL&family=Shadows+Into+Light&family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Nuosu+SIL&family=The+Girl+Next+Door&family=Uchen&display=swap');
 
 /* Color variables */
 :root {
@@ -40,7 +40,7 @@ body {
 /* CSS Credit */
 
 .breadcrumb::after {
-    font-family: "Shadows Into Light";
+    font-family: "The Girl Next Door";
     content: "custom css by lyri (see den for credits)";
     color: var(--warlock-lilac) !important;
     font-size: 18px;
@@ -120,6 +120,7 @@ input#postComment {
 .alert-danger,
 .alert-success {
     font-size: 20px;
+    font-family: "The Girl Next Door" !important;
     background: linear-gradient(var(--cleric-sage), var(--druid-moss));
     color: var(--ranger-pine) !important;
     border: 0px !important;
@@ -143,6 +144,7 @@ input#postComment {
 .alert a,
 .alert-warning a,
 .alert-danger a {
+    font-family: "The Girl Next Door" !important;
     color: var(--cleric-sage);
     font-weight: 800 !important;
     text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
@@ -221,6 +223,7 @@ div.lionImage.featured-lion img {
 /* About Me */
 
 .about-me {
+    font-family: "The Girl Next Door" !important;
     align-items: left;
     align-content: left !important;
     text-align: left;
@@ -240,9 +243,10 @@ div.lionImage.featured-lion img {
 }
 
 .about-links {
+    font-family: "The Girl Next Door" !important;
     position: absolute;
-    font-size: 15px;
-    font-weight: 400 !important;
+    font-size: 17px;
+    font-weight: 600 !important;
     top: 210px !important;
     left: 11%;
     color: var(--druid-moss) !important;
@@ -251,12 +255,18 @@ div.lionImage.featured-lion img {
 }
 
 .about-links a {
+    font-family: "The Girl Next Door" !important;
     color: var(--druid-moss) !important;
     text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--warlock-lilac) !important;
 }
 
 .about-links a:hover{
     color: var(--sorcerer-mint) !important;
+}
+
+.scroll-box h2 {
+    font-family: "The Girl Next Door" !important;
+    font-weight: 600;
 }
 
 .scroll-box {
@@ -354,6 +364,7 @@ div.lionImage.featured-lion img {
     }
     
     div#commentBox {
+        
         width: 86% !important;
         position: absolute;
         left: -5px !important;
@@ -854,6 +865,9 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
 
 /* Comment box */
 div#commentBox {
+    font-family: "The Girl Next Door" !important;
+    font-size: 17px;
+    font-weight: 600;
     background: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
     box-shadow: 3px 3px 14px 10px var(--ranger-pine);
     backdrop-filter: brightness(80%);
@@ -865,6 +879,7 @@ div#commentBox {
     margin-top: 0px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 10px;
     text-align: left;
     opacity: 80%;
     position: relative;
@@ -874,8 +889,9 @@ div#commentBox {
 }
 
 div#commentBox a {
-    color: var(--siren-brown);
-    font-weight: 600;
+    color: var(--druid-moss);
+    text-shadow: 0 0 2em var(--sorcerer-mint), 0 0 .4em var(--sorcerer-mint) !important;
+    font-weight: 400;
 }
 
 div#commentBox a:hover {
@@ -1018,6 +1034,8 @@ th {
 .table .bottom a, td.bottom a {
     color: var(--ranger-pine) !important;
     text-shadow: 0 0 2em var(--sorcerer-mint), 0 0 .3em var(--sorcerer-mint) !important;
+        font-family: "The Girl Next Door" !important;
+    font-size: 19px;
 }
 
 td.bottom button {
@@ -1032,9 +1050,8 @@ td.bottom button {
     background: transparent;
     color: var(--siren-brown) !important;
     text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .3em var(--apollo-sunlight) !important;
-    font-family: "Shadows Into Light" !important;
-    font-weight: 300 !important;
-    font-size: 14px !important;
+    font-family: "The Girl Next Door" !important;
+    font-size: 17px;
     border: 0px solid var(--siren-brown);
     border-left: 1px solid var(--siren-brown);
     border-top: 1px solid var(--siren-brown);
@@ -1047,8 +1064,9 @@ td.bottom button {
     background: transparent !important;
     color: var(--siren-brown) !important;
     text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .3em var(--apollo-sunlight) !important;
-    font-family: "Shadows Into Light" !important;
-    font-size: 14px;
+    font-family: "The Girl Next Door" !important;
+    font-weight: 600;
+    font-size: 17px;
     border-top: 1px dotted var(--siren-brown);
     border-right: 0px;
     border-left: 1px solid var(--posiedon-coral);
