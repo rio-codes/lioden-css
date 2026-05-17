@@ -239,11 +239,26 @@ div.lionImage.featured-lion img {
     scrollbar-color: var(--druid-moss) var(--cleric-sage);
 }
 
-div.about-links {
-    position: absolute;
-    top: 370px;
-    z-index: 30;
+    .about-links {
+        position: absolute;
+        font-size: 15px;
+        font-weight: 400 !important;
+        top: 210px !important;
+        left: 11%;
+        color: var(--druid-moss) !important;
+        text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine) !important;
+        z-index: 40;
+    }
+
+.about-links a {
+    color: var(--druid-moss) !important;
+    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--warlock-lilac) !important;
 }
+
+.about-links a:hover{
+    color: var(--sorcerer-mint) !important;
+}
+    
 
 
 .scroll-box {
@@ -254,6 +269,10 @@ div.about-links {
     scrollbar-color: var(--druid-moss) var(--cleric-sage);
 }
 
+.pokemon img {
+    position: absolute;
+    left: -100px !important;
+}
 
 /* Device-Specific Styling */
 
@@ -446,22 +465,11 @@ div.about-links {
         top: 0px;
     }
     
-    img.pokemon {
-        position: relative;
-        left: 240px;
-        top: 90px;
-    }
+
     #fraProfileContent > a:nth-child(4):before {
         content: "||   ";
     }
-    .external-link, #fraProfileContent > a:nth-child(4) {
-        position: relative;
-        color: var(--ranger-pine) !important;
-        font-size: 20px;
-        font-weight: 400 !important;
-        top: -70px;
-        left: -35%;
-    }
+
     
     .external-link:hover {
         color: var(--sorcerer-mint) !important;
@@ -746,13 +754,13 @@ div#commentBox {
     color: var(--siren-brown) !important;
     text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
     margin-bottom: 10px;
-    margin-top: 40px;
+    margin-top: 0px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: left;
     opacity: 80%;
     position: relative;
-    top: 0px;
+    top: 30px;
     left:1%;
     width: 85%;
 }
