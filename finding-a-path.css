@@ -857,10 +857,10 @@ div#commentBox {
     background: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
     box-shadow: 3px 3px 14px 10px var(--ranger-pine);
     backdrop-filter: brightness(80%);
-    border: 1px solid var(--siren-brown);
+    border: none;
     border-radius: 10px;
     color: var(--siren-brown) !important;
-    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+    text-shadow: 0 0 2em var(--sorcerer-mint), 0 0 .3em var(--sorcerer-mint) !important;
     margin-bottom: 10px;
     margin-top: 0px;
     padding-left: 10px;
@@ -893,18 +893,19 @@ input#comment {
     width: 82%;
     position: absolute;
     left: 10%;
+    top: 860px;
 }
 
 div#makeComment {
-    display: grid;
-    justify-items: right;
+    box-shadow: 3px 3px 14px 10px var(--ranger-pine) !important;
 }
 
 input#postComment {
     position: absolute;
+    top: 860px;
+    left: 93%;
     text-align: right !important;
-    display: grid;
-    justify-items: right !important;
+    
 }
 
 .text-muted {
@@ -927,7 +928,7 @@ img.floatleft.commentTag.clear {
 .btn:hover,
 button.button:hover,
 .btn.btn:hover {
-    background: var(--ranger-pine);
+    background: var(--druid-moss);
     color: var(--sorcerer-mint) !important;
     transition: 1s;
     border: none !important;
@@ -940,7 +941,7 @@ button.button:hover,
 .btn,
 button.button,
 .btn.btn {
-    background: var(--cleric-sage);
+    background: radial-gradient(var(--cleric-sage), var(--druid-moss));
     border: none;
     border-radius: 4px;
     text-shadow: none !important;
@@ -952,7 +953,7 @@ button.button,
 
 /* All tables - styling */
 
-/*table#about,
+table#about,
 table#player,
 table#attack,
 table#allies,
@@ -960,30 +961,34 @@ table#clans,
 table#sparring,
 table#attack,
 table.table {
-    background: linear-gradient(180deg, var(--icarus-warmth) 0%, #2193b0a7 100%);
+    background: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
     opacity: 100%;
-    border: 1px solid var(--siren-brown);
+    border: none;
     border-radius: 10px;
 }
 
 /*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
 
-/*.table {
+.table {
     background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
     border: 1px solid var(--siren-brown);
     border-collapse: separate;
     border-radius: 2px;
+    position: relative;
+    top: 80px;
 }
 
 table#about.table a {
-    color: var(--siren-brown);
+    color: var(--sorcerer-mint);
     text-decoration: none;
 }
 
 .table .top,
 #sparring th,
 table.table th {
-    color: var(--siren-brown);
+    
+    background: radial-gradient(var(--cleric-sage), var(--druid-moss));
+    color: var(#sorcerer-mint) !important;
     font-size: 18px;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid var(--siren-brown);
@@ -993,19 +998,26 @@ table.table th {
 .top,
 th,
 #attack th {
-    background: #2193b0a7 !important;
+    background: radial-gradient(var(--cleric-sage), var(--druid-moss));
+    color: var(--sorcerer-mint) !important;
     border-radius: 2px 2px 0px 0px;
 }
 
 .bottom,
 th {
-    background: var(--icarus-warmth);
-    color: var(--siren-brown) !important;
+    background: transparent;
+    
 }
 
 .table .bottom {
-    background: var(--athena-glow);
-    color: var(--siren-brown);
+    background: transparent;
+    color: var(--ranger-pine) !important;
+    
+}
+
+.table .bottom a, td.bottom a {
+    color: var(--ranger-pine) !important;
+    text-shadow: 0 0 2em var(--sorcerer-mint), 0 0 .3em var(--sorcerer-mint) !important;
 }
 
 td.bottom button {
@@ -1020,9 +1032,9 @@ td.bottom button {
     background: transparent;
     color: var(--siren-brown) !important;
     text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .3em var(--apollo-sunlight) !important;
-    font-family: "Electrolize" !important;
+    font-family: "Shadows Into Light" !important;
     font-weight: 300 !important;
-    font-size: 13px !important;
+    font-size: 14px !important;
     border: 0px solid var(--siren-brown);
     border-left: 1px solid var(--siren-brown);
     border-top: 1px solid var(--siren-brown);
@@ -1035,7 +1047,8 @@ td.bottom button {
     background: transparent !important;
     color: var(--siren-brown) !important;
     text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .3em var(--apollo-sunlight) !important;
-    font-size: 12px;
+    font-family: "Shadows Into Light" !important;
+    font-size: 14px;
     border-top: 1px dotted var(--siren-brown);
     border-right: 0px;
     border-left: 1px solid var(--posiedon-coral);
@@ -1516,7 +1529,7 @@ img[src$="icon_den_wishlist.png"] {
 
 /* Misc fixes */
 
-/*p.center:nth-child(4)>a {
+p.center:nth-child(4)>a {
     top: 10px;
 }
 
@@ -1529,6 +1542,10 @@ div.center:nth-child(8) > a:nth-child(1) {
     width: 100px !important;
 }
 #allies>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1) {
+    display: none;
+}
+
+div.floatright {
     display: none;
 }
 
