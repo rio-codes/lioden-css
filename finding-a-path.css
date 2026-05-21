@@ -222,13 +222,14 @@ div.lionImage.featured-lion img {
 /* About Me */
 
 .about-me {
+    color: var(--sorcerer-mint) !important;
     font-family: "The Girl Next Door" !important;
     align-items: left;
     align-content: left !important;
     text-align: left;
     background: var(--druid-moss-clear);
     position: relative;
-    top: 0px;
+    top: -310px;
     height: 300px !important;
     width: 82% !important;
     margin-bottom: 10px;
@@ -239,9 +240,14 @@ div.lionImage.featured-lion img {
     scrollbar-color: var(--druid-moss) var(--cleric-sage);
 }
 
+.scroll-box h2 {
+    color: var(--sorcerer-mint) !important;
+}
+
 div.about-me {
+    color: var(--sorcerer-mint) !important;
     background: var(--druid-moss-clear) !important;
-    margin-bottom: 150px !important;
+    margin-bottom: 50px !important;
     width: 81% !important;
 }
 
@@ -257,12 +263,12 @@ div.about-me {
 
 div.about-links {
     position: relative !important;
-    top: -776px !important;
-    left: -250px;
+    top: -650px !important;
+    left: -270px;
     color: var(--sorcerer-mint) !important;
 }
 
-.about-links a {
+div.about-links a {
     font-family: "The Girl Next Door" !important;
     color: var(--sorcerer-mint) !important;
     text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--warlock-lilac) !important;
