@@ -1413,7 +1413,7 @@ div.left h3,
 
 /* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
 
-/*div.col-md-4 div h3,
+div.col-md-4 div h3,
 .dynastycollection a {
     background: transparent;
     font-size: 35px !important;
@@ -1467,7 +1467,7 @@ td.left b {
 
 /* Image Replacement */
 
-/*div.mound-grid img {
+div.mound-grid img {
     position: relative;
     left: -10px;
     right: -10px;
@@ -1476,16 +1476,15 @@ td.left b {
 }
 
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-01.png') !important;
+    content: url('') !important;
     object-fit: cover !important;
     height: 250px !important;
     width: 300px !important;
 }
 
 div.cave-grid>img[src$="nestingbanner.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-02.png') !important;
+    content: url('') !important;
     object-fit: cover !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
     height: 250px !important;
     width: 300px !important;
     border: 5px ridge;
@@ -1496,13 +1495,12 @@ div.cave-grid>img[src$="nestingbanner.png"] {
 div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div,
 div.col.col-sm-4 div {
     height: 70px;
-    color: var(--siren-brown);
     font-weight: 200 !important;
     text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
 }
 
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-03.png') !important;
+    content: url('') !important;
     object-fit: cover !important;
     height: 250px !important;
     width: 250px !important;
@@ -1525,7 +1523,7 @@ div.cave-grid>img {
 }
 
 #fraCaveList > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-04.png') !important;
+    content: url('') !important;
     object-fit: contain !important;
     height: 250px !important;
     width: 250px !important;
@@ -1533,21 +1531,21 @@ div.cave-grid>img {
 }
 
 #fraCaveList > div:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-05.png') !important;
+    content: url('') !important;
     object-fit: contain !important;
     height: 250px !important;
     width: 250px !important;
 }
 
 #fraCaveList > div:nth-child(3) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-06.png') !important;
+    content: url('') !important;
     object-fit: contain !important;
     height: 250px !important;
     width: 250px !important;
 }
 
 div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1){
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-07.png') !important;
+    content: url('') !important;
     object-fit: contain !important;
     object-position: right !important;
     height: 250px !important;
@@ -1555,7 +1553,7 @@ div.center:nth-child(4) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1){
 }
 
 div.center:nth-child(5) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-08.png') !important;
+    content: url('') !important;
     object-fit: contain !important;
     object-position: right !important;
     height: 250px !important;
@@ -1563,7 +1561,7 @@ div.center:nth-child(5) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
 }
 
 div.col-md-4:nth-child(6) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-09.png') !important;
+    content: url('') !important;
     object-fit: contain !important;
     object-position: right !important;
     height: 250px !important;
@@ -1571,7 +1569,7 @@ div.col-md-4:nth-child(6) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1)
 }
 
 div.col-md-3:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-10.png') !important;
+    content: url('') !important;
     object-fit: cover !important;
     object-position: right !important;
     height: 250px !important;
@@ -1579,7 +1577,7 @@ div.col-md-3:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1)
 }
 
 div.col-md-3:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-11.png') !important;
+    content: url('') !important;
     object-fit: contain !important;
     object-position: center !important;
     height: 250px !important;
@@ -1587,7 +1585,7 @@ div.col-md-3:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1)
 }
 
 div.col-xs-4:nth-child(2) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-02.png') !important;
+    content: url('') !important;
     object-fit: contain !important;
     object-position: center !important;
     height: 250px !important;
@@ -1661,9 +1659,13 @@ div.floatright {
     display: none;
 }
 
+#clans td.left {
+    display: none;
+}
+
 /* Replace Social Media Icons */
 
-/*img[src$="iconFB.png"] {
+img[src$="iconFB.png"] {
     content: url('https://cdn.allthepics.net/images/2026/05/10/greek-temple.png');
     object-fit: cover;
     height: 50px;
