@@ -36,6 +36,7 @@ body {
     font-weight: 200 !important;
     font-size: 18px;
     color: var(--ranger-pine);
+    text-shadow: none !important;
 }
 
 /* CSS Credit */
@@ -165,11 +166,6 @@ div#pageContainer.col-md-9 h1 {
 }
 
 div#pageContainer.col-md-9 h1:before {
-    background-image: url("https://cdn.allthepics.net/images/2026/05/14/Pngtreerustic-hanging-wooden-sign-suspended_24089639.png");
-    background-size: cover;
-    background-position-y: -450px;
-    background-position-x: 100px;
-    background-repeat: no-repeat;
     height: 400px;
     width: 700px;
     position: relative !important;
@@ -177,8 +173,8 @@ div#pageContainer.col-md-9 h1:before {
     font-family: "Macondo Swash Caps";
     content: "Heathen's Rest";
     font-size: 65px;
-    color: var(--ranger-pine);
-    text-shadow: none !important;
+    color: var(--sorcerer-mint);
+    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
     font-weight: 200;
     text-indent: 150px !important;
     float: left;
