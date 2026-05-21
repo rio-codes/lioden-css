@@ -225,7 +225,7 @@ div.lionImage.featured-lion img {
     align-items: left;
     align-content: left !important;
     text-align: left;
-    background-image: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
+    background: #214634a7;
     background-size: cover;
     position: relative;
     top: 0px;
@@ -679,7 +679,7 @@ div.lionImage.featured-lion img {
 
 @media only screen and (min-width: 1500px) {
     div#pageContainer.col-md-9 h1:before {
-        text-indent: 200px;
+        text-indent: 220px !important;
         float: left;
         position: relative;
         margin-bottom: 30px;
@@ -689,6 +689,7 @@ div.lionImage.featured-lion img {
         position: relative;
         top: -310px;
         left: -1%;
+        margin-bottom: 50px;
     }
 
     .about-me {
@@ -702,7 +703,7 @@ div.lionImage.featured-lion img {
         position: relative;
         font-size: 16px;
         font-weight: 800 !important;
-        top: -610px !important;
+        top: -650px !important;
         left: -290px;
         color: var(--ranger-pine) !important;
         text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine) !important;
@@ -785,8 +786,9 @@ div.lionImage.featured-lion img {
     }
     
     div#makeComment {
+        background: transparent !important;;
         position: relative !important;
-        top: -520px;
+        top: -500px;
         left: -80px;
     }
     
@@ -838,7 +840,7 @@ div.center.h3 {
 /* Main panel container appearance*/
 
 .container.main {
-    background: url(https://cdn.allthepics.net/images/2026/05/14/oak-12894-in-architextures.jpg);
+    background: #214634a7;
     border: 2px solid var(--ranger-pine) !important;
     border-radius: 10px;
     text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
@@ -1057,9 +1059,10 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
 /* Comment box */
 div#commentBox {
     font-family: "The Girl Next Door" !important;
+    color: var(--sorcerer-mint) !important;
     font-size: 17px;
     font-weight: 600;
-    background: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
+    background: #214634a7;
     box-shadow: 3px 3px 14px 10px var(--ranger-pine);
     border: none;
     border-radius: 10px;
@@ -1077,22 +1080,26 @@ div#commentBox {
 }
 
 div#commentBox a {
-    color: var(--druid-moss);
+    color: var(--sorcerer-mint);
     text-shadow: 0 0 2em var(--sorcerer-mint), 0 0 .4em var(--sorcerer-mint) !important;
     font-weight: 400;
 }
 
 div#commentBox a:hover {
-    color: var(--demeter-wheat);
+    color: var(--sorcerer-mint);
+    text-shadow: 0 0 2em var(--ranger-pine), 0 0 .3em var(--ranger-pine) !important;
 }
 
 div.commentText {
-    color: var(--posiedon-coral) !important;
-    border-bottom: 1px solid var(--posiedon-coral);
-    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+    color: var(--sorcerer-mint);
+    text-shadow: 0 0 2em var(--ranger-pine), 0 0 .3em var(--ranger-pine) !important;
     left: 1%;
 }
 
+small.text-muted {
+    color: var(--sorcerer-mint);
+    text-shadow: 0 0 2em var(--ranger-pine), 0 0 .3em var(--ranger-pine) !important;
+}
 input#comment {
     width: 82%;
     position: relative !important;
@@ -1101,7 +1108,6 @@ input#comment {
 }
 
 div#makeComment {
-    pos
     box-shadow: 3px 3px 14px 10px var(--ranger-pine) !important;
 }
 
