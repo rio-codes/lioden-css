@@ -17,7 +17,7 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 :root {
     --ranger-pine: #0b1a15;
     --druid-moss: #214634;
-    --druid-moss-clear: #214634a7; 
+    --druid-moss-clear: #214634a7;
     --cleric-sage: #4f7a5e;
     --sorcerer-mint: #9ed6b1;
     --rogue-bruise: #2d1b27;
@@ -137,8 +137,9 @@ input#postComment {
     z-index: 10;
 }
 
-#pageContainer > br:nth-child(4), #pageContainer > br:nth-child(6) {
-  display: none;
+#pageContainer>br:nth-child(4),
+#pageContainer>br:nth-child(6) {
+    display: none;
 }
 
 .alert a,
@@ -147,7 +148,7 @@ input#postComment {
     color: var(--sorcerer-mint);
     font-weight: 400 !important;
     text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
-    
+
 }
 
 .alert a:hover,
@@ -179,7 +180,7 @@ div#pageContainer.col-md-9 h1:before {
     text-indent: 150px !important;
     float: left;
     margin-bottom: 30px;
-    z-index: 5;   
+    z-index: 5;
 }
 
 
@@ -193,7 +194,7 @@ h1.center {
     text-indent: 0px !important;
 }
 
-div.center:nth-child(8) > a:nth-child(1) {
+div.center:nth-child(8)>a:nth-child(1) {
     position: relative !important;
     top: 0px;
     text-wrap: nowrap !important;
@@ -205,8 +206,9 @@ div.lionImage.featured-lion img {
     width: 640px;
     height: 500px;
 }
-    
-div.floatleft:not(div.b.floatleft), div.floatright:not(div.b.floatright):not(div.floatright:nth-child(2)) {
+
+div.floatleft:not(div.b.floatleft),
+div.floatright:not(div.b.floatright):not(div.floatright:nth-child(2)) {
     position: relative;
     top: 40px;
 }
@@ -268,10 +270,10 @@ div.about-links a {
     font-family: "Goudy Bookletter 1911" !important;
     color: var(--sorcerer-mint) !important;
     text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine) !important;
-    
+
 }
 
-.about-links a:hover{
+.about-links a:hover {
     color: var(--sorcerer-mint) !important;
 }
 
@@ -281,14 +283,14 @@ div.about-links a {
 }
 
 .scroll-box {
-        padding: 30px;
-        font-size: 14px;
-        font-weight: 300 !important;
-        height: 300px !important;
-        width: 100%;
-        position: relative;
-        top: 0px;
-        scrollbar-color: var(--druid-moss) var(--cleric-sage);  
+    padding: 30px;
+    font-size: 14px;
+    font-weight: 300 !important;
+    height: 300px !important;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    scrollbar-color: var(--druid-moss) var(--cleric-sage);
 }
 
 .pokemon img {
@@ -302,11 +304,11 @@ div.about-links a {
 
 @media only screen and (max-width: 743px) {
     .breadcrumb::after {
-    overflow: visible !important;
-    position: absolute;
-    top: -40px;
-    left: 16px;
-}
+        overflow: visible !important;
+        position: absolute;
+        top: -40px;
+        left: 16px;
+    }
 
     div#pageContainer.col-md-9 h1:before {
         text-indent: -80px !important;
@@ -315,6 +317,7 @@ div.about-links a {
         top: 40px;
         margin-bottom: 30px;
     }
+
     div#pageContainer.col-md-9 h1:before {
         background-position-x: -60px;
     }
@@ -328,30 +331,31 @@ div.about-links a {
         top: -300px;
         left: 0px;
     }
-    
+
     div#commentBox {
         width: 82% !important;
         position: relative;
         left: 0px !important;
     }
-    
+
     div#makeComment {
         position: relative;
         top: -530px;
     }
-    
+
     input#comment {
         width: 60% !important;
         position: relative;
         top: 100px !important;
         left: 20px !important;
     }
-    
+
     input#postComment {
         position: relative;
         top: -90px;
         left: 480px;
     }
+
     .about-me {
         width: 85%;
     }
@@ -370,7 +374,8 @@ div.about-links a {
         top: -600px !important;
         left: -160px
     }
-        div.alert.alert-danger {
+
+    div.alert.alert-danger {
         position: relative !important;
         top: -50px;
         z-index: 70;
@@ -388,23 +393,24 @@ div.about-links a {
         margin-bottom: 30px;
         background-position-x: -20px;
     }
+
     div#pageContainer.col-md-9 h1:before {
         background-position-x: 0px;
     }
-    
+
     .breadcrumb::after {
-    overflow: visible !important;
-    position: absolute;
-    top: -40px;
-    left: 16px;
-}
+        overflow: visible !important;
+        position: absolute;
+        top: -40px;
+        left: 16px;
+    }
 
     div.about-me {
         position: relative !important;
         top: -200px;
         left: 50px;
     }
-    
+
     div#commentBox {
         width: 84% !important;
         position: relative !important;
@@ -412,22 +418,22 @@ div.about-links a {
         top: -490px !important;
         font-size: 14px !important;
     }
-    
+
     div#makeComment {
         position: relative !important;
         top: -520px;
         left: -80px;
     }
-    
+
     input#comment {
         width: 75% !important;
         left: 70px !important;
     }
-    
+
     input#postComment {
         left: 70px !important;
     }
-    
+
     .about-me {
         align-items: left;
         align-content: left !important;
@@ -451,7 +457,7 @@ div.about-links a {
         position: relative;
         top: -30px !important;
     }
-    
+
     .about-links {
         position: relative;
         font-size: 16px;
@@ -462,59 +468,59 @@ div.about-links a {
         text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine) !important;
         z-index: 40;
     }
-    
+
     .about-links a {
         font-weight: 600 !important;
         color: var(--ranger-pine) !important;
     }
-    
+
     .pokemon {
         position: relative;
         top: 0px !important;
         left: 0px !important;
     }
-    
+
     .alert-warning,
-.alert-danger,
-.alert-success {
-    border: 0px !important;
-    border-radius: 7px;
-    text-align: center !important;
-    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
-    position: relative !important;
-    top: 0px;
-    font-weight: 400;
-    margin-top: 0px !important;
-    box-shadow: 5px 5px 14px 10px var(--ranger-pine);
-    text-indent: 10px;
-    z-index: 60;
-    height: 40px !important;
-}
-    
+    .alert-danger,
+    .alert-success {
+        border: 0px !important;
+        border-radius: 7px;
+        text-align: center !important;
+        text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
+        position: relative !important;
+        top: 0px;
+        font-weight: 400;
+        margin-top: 0px !important;
+        box-shadow: 5px 5px 14px 10px var(--ranger-pine);
+        text-indent: 10px;
+        z-index: 60;
+        height: 40px !important;
+    }
+
     div.alert.alert-danger {
         position: relative !important;
         top: -70px;
         z-index: 70;
     }
-    
+
     .alert a,
-.alert-warning a,
-.alert-danger a {
-    color: var(--sorcerer-mint);
-    font-weight: 400 !important;
-    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
-    
-}
+    .alert-warning a,
+    .alert-danger a {
+        color: var(--sorcerer-mint);
+        font-weight: 400 !important;
+        text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
 
-.alert a:hover,
-.alert-warning a:hover,
-.alert-danger a:hover {
-    color: var(--druid-moss);
-    font-weight: 400 !important;
-    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
+    }
 
-}
-    
+    .alert a:hover,
+    .alert-warning a:hover,
+    .alert-danger a:hover {
+        color: var(--druid-moss);
+        font-weight: 400 !important;
+        text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
+
+    }
+
 
 
 }
@@ -522,16 +528,18 @@ div.about-links a {
 /* Large Tablet */
 
 @media only screen and (max-width: 1499px) and (min-width: 760px) {
-    
+
     div#pageContainer.col-md-9 h1:before {
         text-indent: 0px !important;
         float: left;
         position: relative;
         margin-bottom: 30px;
     }
+
     div#pageContainer.col-md-9 h1:before {
         background-position-x: 10px !important;
     }
+
     .about-me {
         align-items: left;
         align-content: left !important;
@@ -550,8 +558,8 @@ div.about-links a {
         overflow-y: scroll !important;
         scrollbar-color: var(--druid-moss) var(--cleric-sage) !important;
     }
-    
-    
+
+
     .scroll-box {
         padding: 30px;
         font-size: 16px;
@@ -561,45 +569,46 @@ div.about-links a {
         top: -40px !important;
     }
 
-    
-    
+
+
     .toplinks li a {
         color: var(--sorcerer-mint) !important;
     }
 
-    ul.nav:nth-child(2) > li > a {
+    ul.nav:nth-child(2)>li>a {
         font-size: 16px !important;
         font-weight: 600;
         color: var(--ranger-pine);
         text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
     }
-    
-    
+
+
     .about-links {
         position: relative !important;
         left: -200px;
         top: -730px !important;
         width: min-content !important;
     }
+
     .about-links .external-link {
         position: relative !important;
         left: -55px;
         top: 23px;
     }
-    
-    .about-links > a:nth-child(2) {
+
+    .about-links>a:nth-child(2) {
         position: relative;
         top: -1px;
-        left: -3px;    
+        left: -3px;
     }
-    
+
     .external-link .pokemon {
         position: relative;
         top: 160px !important;
         left: 20px !important;
     }
-    
-     .scroll-box {
+
+    .scroll-box {
         padding: 30px;
         font-size: 16px;
         height: 400px;
@@ -607,65 +616,65 @@ div.about-links a {
         position: relative;
         top: 0px;
     }
-    
-    
+
+
     .external-link:hover {
         color: var(--sorcerer-mint) !important;
     }
-    
+
     .navbar li a {
         color: var(--ranger-pine) !important;
         font-size: 22px !important;
         font-weight: 600;
         text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
     }
-    
+
     img.pokemon {
         position: absolute !important;
         top: 100px !important;
     }
 
-.alert-warning,
-.alert-danger,
-.alert-success {
-    border: 0px !important;
-    border-radius: 7px;
-    text-align: center !important;
-    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
-    position: relative !important;
-    top: 0px;
-    font-weight: 400;
-    margin-top: 0px !important;
-    box-shadow: 5px 5px 14px 10px var(--ranger-pine);
-    text-indent: 10px;
-    z-index: 60;
-    height: 40px !important;
-}
-    
+    .alert-warning,
+    .alert-danger,
+    .alert-success {
+        border: 0px !important;
+        border-radius: 7px;
+        text-align: center !important;
+        text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
+        position: relative !important;
+        top: 0px;
+        font-weight: 400;
+        margin-top: 0px !important;
+        box-shadow: 5px 5px 14px 10px var(--ranger-pine);
+        text-indent: 10px;
+        z-index: 60;
+        height: 40px !important;
+    }
+
     div.alert.alert-danger {
         position: relative !important;
         top: 560px;
         z-index: 70;
     }
-    
+
     .alert a,
-.alert-warning a,
-.alert-danger a {
-    color: var(--sorcerer-mint);
-    font-weight: 400 !important;
-    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
-    
-}
+    .alert-warning a,
+    .alert-danger a {
+        color: var(--sorcerer-mint);
+        font-weight: 400 !important;
+        text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
 
-.alert a:hover,
-.alert-warning a:hover,
-.alert-danger a:hover {
-    color: var(--druid-moss);
-    font-weight: 400 !important;
-    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
+    }
 
-}
-    
+    .alert a:hover,
+    .alert-warning a:hover,
+    .alert-danger a:hover {
+        color: var(--druid-moss);
+        font-weight: 400 !important;
+        text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
+
+    }
+
     div#commentBox {
         width: 81% !important;
         position: relative !important;
@@ -673,18 +682,18 @@ div.about-links a {
         top: -590px !important;
         font-size: 14px !important;
     }
-    
+
     div#makeComment {
         position: relative !important;
         top: -620px;
         left: -70px;
     }
-    
+
     input#comment {
         width: 75% !important;
         left: 70px !important;
     }
-    
+
     input#postComment {
         left: 70px !important;
     }
@@ -695,47 +704,47 @@ div.about-links a {
 
 @media only screen and (min-width: 1500px) {
 
-.alert-warning,
-.alert-danger,
-.alert-success {
-    border: 0px !important;
-    border-radius: 7px;
-    text-align: center !important;
-    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
-    position: relative !important;
-    top: 0px;
-    font-weight: 400;
-    margin-top: 0px !important;
-    box-shadow: 5px 5px 14px 10px var(--ranger-pine);
-    text-indent: 10px;
-    z-index: 60;
-    height: 40px !important;
-}
-    
+    .alert-warning,
+    .alert-danger,
+    .alert-success {
+        border: 0px !important;
+        border-radius: 7px;
+        text-align: center !important;
+        text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
+        position: relative !important;
+        top: 0px;
+        font-weight: 400;
+        margin-top: 0px !important;
+        box-shadow: 5px 5px 14px 10px var(--ranger-pine);
+        text-indent: 10px;
+        z-index: 60;
+        height: 40px !important;
+    }
+
     div.alert.alert-danger {
         position: relative !important;
         top: -50px;
         z-index: 70;
     }
-    
+
     .alert a,
-.alert-warning a,
-.alert-danger a {
-    color: var(--sorcerer-mint);
-    font-weight: 400 !important;
-    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
-    
-}
+    .alert-warning a,
+    .alert-danger a {
+        color: var(--sorcerer-mint);
+        font-weight: 400 !important;
+        text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
 
-.alert a:hover,
-.alert-warning a:hover,
-.alert-danger a:hover {
-    color: var(--druid-moss);
-    font-weight: 400 !important;
-    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
+    }
 
-}
-    
+    .alert a:hover,
+    .alert-warning a:hover,
+    .alert-danger a:hover {
+        color: var(--druid-moss);
+        font-weight: 400 !important;
+        text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
+
+    }
+
 
 
 }
@@ -856,7 +865,7 @@ li.breadcrumb-item.active {
     opacity: 0%;
 }
 
-.breadcrumb > li:nth-child(1) > a:nth-child(1):after {
+.breadcrumb>li:nth-child(1)>a:nth-child(1):after {
     opacity: 100% !important;
     content: " / Heathen's Den";
     font-family: "Macondo Swash Caps";
@@ -883,7 +892,7 @@ li.breadcrumb-item.active {
     text-align: right;
     position: relative;
     padding-top: 15px;
-    
+
 }
 
 .sidebar a {
@@ -901,13 +910,13 @@ li.breadcrumb-item.active {
     border: 0px !important;
     z-index: 5;
     border-radius: 0px;
-    
+
 }
 
 .col-md-12 a {
     color: var(--druid-moss) !important;
     text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
-    
+
 }
 
 .col-md-12 a:hover,
@@ -979,38 +988,41 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
 
 /* Progress bars (Energy, hunger, EXP, IMP) */
 .progress {
-	background: var(--druid-moss);
-	color: var(--sorcerer-mint) !important;
-	border-radius: 4px !important;
+    background: var(--druid-moss);
+    color: var(--sorcerer-mint) !important;
+    border-radius: 4px !important;
 }
 
-.progress-bar, .progress-bar-danger, .progress-bar-success {
-	background: linear-gradient(to right, var(--sorcerer-mint), var(--cleric-sage), var(--druid-moss));
-	border-radius: 4px !important;
+.progress-bar,
+.progress-bar-danger,
+.progress-bar-success {
+    background: linear-gradient(to right, var(--sorcerer-mint), var(--cleric-sage), var(--druid-moss));
+    border-radius: 4px !important;
 }
 
 .progress div {
-	color: var(--sorcerer-mint) !important;
-	font-weight: bolder;
+    color: var(--sorcerer-mint) !important;
+    font-weight: bolder;
 }
 
 /* Comment box */
-    
-    div#makeComment {
-        background: transparent !important;;
-        position: relative !important;
-        top: -500px;
-        left: -82px;
-    }
-    
-    input#comment {
-        width: 75% !important;
-        left: 70px !important;
-    }
-    
-    input#postComment {
-        left: 70px !important;
-    }
+
+div#makeComment {
+    background: transparent !important;
+    ;
+    position: relative !important;
+    top: -500px;
+    left: -82px;
+}
+
+input#comment {
+    width: 75% !important;
+    left: 70px !important;
+}
+
+input#postComment {
+    left: 70px !important;
+}
 
 div#commentBox {
     font-family: "Goudy Bookletter 1911" !important;
@@ -1030,9 +1042,9 @@ div#commentBox {
     text-align: left;
     position: relative;
     top: -500px;
-    left:0%;
+    left: 0%;
     width: 81%;
-    scrollbar-color: var(--druid-moss) var(--cleric-sage);  
+    scrollbar-color: var(--druid-moss) var(--cleric-sage);
 }
 
 div#commentBox a {
@@ -1072,7 +1084,7 @@ input#postComment {
     position: relative !important;
     top: 30px;
     left: 4%;
-    text-align: right !important;   
+    text-align: right !important;
 }
 
 img.floatleft.commentTag.clear {
@@ -1123,8 +1135,8 @@ table#clans,
 table#sparring,
 table#attack,
 table.table {
-    background: 
-    opacity: 100%;
+    background:
+        opacity: 100%;
     border: none;
     border-radius: 10px;
 }
@@ -1148,7 +1160,7 @@ table#about.table a {
 .table .top,
 #sparring th,
 table.table th {
-    
+
     background: radial-gradient(var(--cleric-sage), var(--druid-moss));
     color: var(#sorcerer-mint) !important;
     font-size: 18px;
@@ -1168,19 +1180,20 @@ th,
 .bottom,
 th {
     background: transparent;
-    
+
 }
 
 .table .bottom {
     background: transparent;
     color: var(--ranger-pine) !important;
-    
+
 }
 
-.table .bottom a, td.bottom a {
+.table .bottom a,
+td.bottom a {
     color: var(--ranger-pine) !important;
     text-shadow: 0 0 2em var(--sorcerer-mint), 0 0 .3em var(--sorcerer-mint) !important;
-        font-family: "Goudy Bookletter 1911" !important;
+    font-family: "Goudy Bookletter 1911" !important;
     font-size: 19px;
 }
 
@@ -1701,10 +1714,11 @@ div.center:nth-child(8) {
     margin-top: -10px !important;
 }
 
-div.center:nth-child(8) > a:nth-child(1) {
+div.center:nth-child(8)>a:nth-child(1) {
     position: relative !important;
     width: 100px !important;
 }
+
 #allies>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1) {
     display: none;
 }
