@@ -11,7 +11,17 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Import Fonts (From Google Fonts) */
 
-@import url('https://fonts.googleapis.com/css2?family=Texturina&family=Macondo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Texturina&family=Macondo+Swash+Caps&family=Noto+Sans+Yi&display=swap');
+
+@font-face {
+   font-family: "Noto Sans Yi";
+   src: url(https://fonts.googleapis.com/css2?family=Noto+Sans+Yi&display=swap);
+   unicode-range: U+A000–A48F, U+A490–A4CF;
+}
+
+a.bigger, #player > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > small:nth-child(1)  {
+   font-family: "Noto Sans Yi";
+}
 
 /* Color variables */
 :root {
@@ -26,6 +36,8 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
     --warlock-lilac: #e9d9e3;
 }
 
+
+
 /* Background image, font and font color, text alignment */
 body {
     background: url("https://cdn.allthepics.net/images/2026/05/14/wallhaven-0pze39.png") no-repeat center center;
@@ -33,6 +45,7 @@ body {
     background-attachment: fixed;
     z-index: -1;
     font-family: "Macondo Swash Caps";
+
     font-weight: 200 !important;
     font-size: 18px;
     color: var(--ranger-pine);
@@ -668,49 +681,6 @@ div.about-links a {
 /* Desktop, Horizontal Tablet */
 
 @media only screen and (min-width: 1500px) {
-
-.alert-warning,
-.alert-danger,
-.alert-success {
-    border: 0px !important;
-    border-radius: 7px;
-    text-align: center !important;
-    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
-    position: relative !important;
-    top: 0px;
-    font-weight: 400;
-    margin-top: 0px !important;
-    box-shadow: 5px 5px 14px 10px var(--ranger-pine);
-    text-indent: 10px;
-    z-index: 60;
-    height: 40px !important;
-}
-    
-    div.alert.alert-danger {
-        position: relative !important;
-        top: -50px;
-        z-index: 70;
-    }
-    
-    .alert a,
-.alert-warning a,
-.alert-danger a {
-    color: var(--sorcerer-mint);
-    font-weight: 400 !important;
-    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
-    
-}
-
-.alert a:hover,
-.alert-warning a:hover,
-.alert-danger a:hover {
-    color: var(--druid-moss);
-    font-weight: 400 !important;
-    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine);
-
-}
-    
-
 
 }
 
@@ -1655,7 +1625,7 @@ div.center:nth-child(8) > a:nth-child(1) {
     display: none;
 }
 
-div.floatright {
+div.floatright: not(div.floatright small) {
     display: none;
 }
 
