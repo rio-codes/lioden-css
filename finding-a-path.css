@@ -695,19 +695,6 @@ div.about-links a {
 
 @media only screen and (min-width: 1500px) {
 
-
-    .external-link:hover {
-        color: var(--sorcerer-mint) !important;
-    }
-    
-    .navbar li a {
-        color: var(--ranger-pine) !important;
-        font-size: 22px !important;
-        font-weight: 600;
-        text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
-    }
-    
-    
 .alert-warning,
 .alert-danger,
 .alert-success {
@@ -818,13 +805,13 @@ div.center.h3 {
 }
 
 .topbar a {
-    color: var(--warlock-lilac) !important;
+    color: var(--sorcerer-mint) !important;
     font-size: 18px;
     font-weight: 200;
 }
 
 .topbar a:hover {
-    color: var(--wizard-violet) !important;
+    color: var(--cleric-sage) !important;
     text-shadow: none !important;
 }
 
@@ -842,8 +829,8 @@ div.center.h3 {
 
 .navbar li a:hover {
     background: transparent !important;
-    color: var(--warlock-lilac) !important;
-    text-shadow: 0 0 1em var(--warlock-lilac), 0 0 .2em var(--warlock-lilac) !important;
+    color: var(--sorcerer-mint) !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
     z-index: 500 !important;
     opacity: 1 !important;
 }
@@ -859,7 +846,7 @@ div.center.h3 {
     border: 1px solid !important;
     border-radius: 10px;
     text-align: left !important;
-    text-shadow: 0 0 1em var(--warlock-lilac), 0 0 .2em var(--warlock-lilac) !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
     box-shadow: 3px 3px 14px 10px var(--ranger-pine);
 }
 
@@ -878,7 +865,7 @@ li.breadcrumb-item.active {
 }
 
 .breadcrumb a {
-    color: var(--rogue-bruise);
+    color: var(--sorcerer-mint);
     font-size: 20px;
 }
 
