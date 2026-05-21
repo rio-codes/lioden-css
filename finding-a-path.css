@@ -1413,9 +1413,8 @@ table#player hr {
 }
 
 /* Cave and Beetle Mound grid appearances*/
-/*#fraOrganizationBlock>div:nth-child(2)>div:nth-child(1),
+#fraOrganizationBlock>div:nth-child(2)>div:nth-child(1),
 div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
-    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
 }
 
 .cave-grid,
@@ -1425,6 +1424,8 @@ div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
     border: 0px;
     border-radius: 2px !important;
     font-size: 20px !important;
+    position: relative;
+    top: -430px;
 }
 
 /* Feed all/Play all */
