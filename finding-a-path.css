@@ -267,7 +267,7 @@ div.about-links {
 div.about-links a {
     font-family: "Goudy Bookletter 1911" !important;
     color: var(--sorcerer-mint) !important;
-    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--warlock-lilac) !important;
+    text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine) !important;
     
 }
 
@@ -825,7 +825,9 @@ div.center.h3 {
     box-shadow: 3px 3px 14px 10px var(--ranger-pine);
 }
 
-
+.navbar li a {
+    color: var(--ranger-pine) !important;
+}
 
 .navbar li a:hover {
     background: transparent !important;
@@ -911,8 +913,8 @@ li.breadcrumb-item.active {
 .col-md-12 a:hover,
 .panel-body.small a:hover,
 div.panel a:hover {
-    color: var(--warlock-lilac) !important;
-    text-shadow: 0 0 1em var(--warlock-lilac), 0 0 .2em var(--warlock-lilac) !important;
+    color: var(--druid-moss) !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
 }
 
 .panel-body.small,
