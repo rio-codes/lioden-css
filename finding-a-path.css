@@ -271,6 +271,11 @@ div.about-me {
     z-index: 40;
 }
 
+div.about-links a:hover {
+    color: var(--ranger-pine) !important;
+    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .5em var(--sorcerer-mint) !important;
+}
+
 div.about-links {
     position: relative !important;
     top: -650px !important;
@@ -693,7 +698,7 @@ h1 {
 h2 {
     font-family: "Macondo Swash Caps";
     font-size: 28px;
-    color: var(--ranger-pine) !important;
+    color: var(--sorcerer-mint) !important;
     text-shadow: 0 0 2em, 0 0 .5em var(--sorcerer-mint) !important;
 }
 
@@ -704,7 +709,7 @@ div.center.h3 {
     font-family: "Macondo Swash Caps";
     font-size: 34px !important;
     font-weight: 300;
-    color: var(--ranger-pine) !important;
+    color: var(--sorcerer-mint) !important;
     text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
 }
 
@@ -813,12 +818,17 @@ li.breadcrumb-item.active {
     font-family: "Macondo Swash Caps";
     font-size: 26px !important;
     font-weight: 600;
-    color: var(--ranger-pine) !important;
-    text-shadow: 0 0 1em var(--sorcerer-mint), 0 0 .2em var(--sorcerer-mint) !important;
+    color: var(--sorcerer-mint) !important;
+    text-shadow: 0 0 1em var(--druid-moss), 0 0 .2em var(--druid-moss) !important;
     text-align: right;
     position: relative;
     padding-top: 15px;
     
+}
+
+.sidebar h3:hover {
+    color: var(--ranger-pine) !important;
+    transition: 0.5s;
 }
 
 .sidebar a {
@@ -864,11 +874,12 @@ div.panel {
     text-align: left;
 }
 
-.panel-body.small a,
-div.panel a {
-    color: var(--sorcerer-mint) !important;
+.panel-body.small a:hover,
+div.panel a:hover {
+    color: var(--ranger-pine) !important;
     font-weight: 200;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .col-md-3 .panel {
@@ -889,6 +900,11 @@ div.panel a {
     color: var(--sorcerer-mint) !important;
     text-shadow: 0 0 1em var(--cleric-sage), 0 0 .5em var(--cleric-sage) !important;
     border-radius: 0px;
+}
+
+.panel-body.small .center a:hover,
+.panel-body.small a:hover {
+    color: var(--ranger-pine) !important;
 }
 
 div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
