@@ -1666,7 +1666,7 @@ div.floatright {
 /* Replace Social Media Icons */
 
 img[src$="iconFB.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/greek-temple.png');
+    content: url('');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -1675,7 +1675,7 @@ img[src$="iconFB.png"] {
 }
 
 img[src$="iconTwit.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/wingfoot.png');
+    content: url('');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -1686,7 +1686,7 @@ img[src$="iconTwit.png"] {
 }
 
 img[src$="iconInsta.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/lyre.png');
+    content: url('');
     object-fit: cover;
     height: 50px;
     width: 50px;
