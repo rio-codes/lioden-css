@@ -281,12 +281,13 @@ div.about-links a {
 }
 
 .scroll-box {
-    position: relative !important;
-    top: -10px !important;
-    overflow-y: auto;
-    border-radius: 0px;
-    scrollbar-color: var(--druid-moss) var(--cleric-sage);
-    
+        padding: 30px;
+        font-size: 16px;
+        height: 300px !important;
+        width: 100%;
+        position: relative;
+        top: 0px;
+        scrollbar-color: var(--druid-moss) var(--cleric-sage);  
 }
 
 .pokemon img {
@@ -692,24 +693,7 @@ div.about-links a {
 /* Desktop, Horizontal Tablet */
 
 @media only screen and (min-width: 1500px) {
-    div#pageContainer.col-md-9 h1:before {
-    }
-    
 
-    
-    .about-links a {
-        font-weight: 600 !important;
-        color: var(--ranger-pine) !important;
-    }
-
-    .scroll-box {
-        padding: 30px;
-        font-size: 16px;
-        height: 300px !important;
-        width: 100%;
-        position: relative;
-        top: 0px;
-    }
 
     .external-link:hover {
         color: var(--sorcerer-mint) !important;
@@ -764,29 +748,6 @@ div.about-links a {
 
 }
     
-    div#commentBox {
-        width: 81% !important;
-        position: relative !important;
-        left: -10px !important;
-        top: -490px !important;
-        font-size: 14px !important;
-    }
-    
-    div#makeComment {
-        background: transparent !important;;
-        position: relative !important;
-        top: -500px;
-        left: -80px;
-    }
-    
-    input#comment {
-        width: 75% !important;
-        left: 70px !important;
-    }
-    
-    input#postComment {
-        left: 70px !important;
-    }
 
 
 }
@@ -1044,6 +1005,23 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
 }
 
 /* Comment box */
+    
+    div#makeComment {
+        background: transparent !important;;
+        position: relative !important;
+        top: -500px;
+        left: -82px;
+    }
+    
+    input#comment {
+        width: 75% !important;
+        left: 70px !important;
+    }
+    
+    input#postComment {
+        left: 70px !important;
+    }
+
 div#commentBox {
     font-family: "The Girl Next Door" !important;
     color: var(--sorcerer-mint) !important;
@@ -1055,15 +1033,16 @@ div#commentBox {
     border-radius: 10px;
     text-shadow: 0 0 2em var(--sorcerer-mint), 0 0 .3em var(--sorcerer-mint) !important;
     margin-bottom: 20px;
-    margin-top: 0px;
+    margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     text-align: left;
     position: relative;
     top: -500px;
-    left:-1%;
-    width: 82%;
+    left:0%;
+    width: 81%;
+    scrollbar-color: var(--druid-moss) var(--cleric-sage);  
 }
 
 div#commentBox a {
@@ -1087,6 +1066,7 @@ small.text-muted {
     color: var(--sorcerer-mint);
     text-shadow: 0 0 2em var(--ranger-pine), 0 0 .3em var(--ranger-pine) !important;
 }
+
 input#comment {
     width: 82%;
     position: relative !important;
