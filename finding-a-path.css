@@ -171,6 +171,14 @@ input#postComment {
 
 }
 
+    div.alert-danger:not(div.alert:nth-child(2)) {
+        position: relative !important;
+        top: -90px !important;
+        box-shadow: none !important;
+        
+    }
+    
+
 /* Main header appearance ("___"'s Den) */
 
 div#pageContainer.col-md-9 h1 {
@@ -641,6 +649,7 @@ div.about-links a {
         z-index: 70;
     }
     
+
     .alert a,
 .alert-warning a,
 .alert-danger a {
