@@ -11,7 +11,7 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Import Fonts (From Google Fonts) */
 
-@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Nuosu+SIL&family=The+Girl+Next+Door&family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Macondo+Swash+Caps&display=swap');
 
 /* Color variables */
 :root {
@@ -42,7 +42,7 @@ body {
 /* CSS Credit */
 
 .breadcrumb::after {
-    font-family: "The Girl Next Door";
+    font-family: "Goudy Bookletter 1911";
     content: "custom css by lyri (see den for credits)";
     color: var(--sorcerer-mint) !important;
     font-size: 18px;
@@ -219,7 +219,7 @@ div.lionImage.featured-lion img {
 
 .about-me {
     color: var(--sorcerer-mint) !important;
-    font-family: "The Girl Next Door" !important;
+    font-family: "Goudy Bookletter 1911" !important;
     align-items: left;
     align-content: left !important;
     text-align: left;
@@ -248,7 +248,7 @@ div.about-me {
 }
 
 .about-links {
-    font-family: "The Girl Next Door" !important;
+    font-family: "Goudy Bookletter 1911" !important;
     position: relative;
     font-size: 17px;
     font-weight: 600 !important;
@@ -265,7 +265,7 @@ div.about-links {
 }
 
 div.about-links a {
-    font-family: "The Girl Next Door" !important;
+    font-family: "Goudy Bookletter 1911" !important;
     color: var(--sorcerer-mint) !important;
     text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--warlock-lilac) !important;
     
@@ -276,13 +276,14 @@ div.about-links a {
 }
 
 .scroll-box h2 {
-    font-family: "The Girl Next Door" !important;
-    font-weight: 600;
+    font-family: "Goudy Bookletter 1911" !important;
+    font-weight: 300;
 }
 
 .scroll-box {
         padding: 30px;
-        font-size: 16px;
+        font-size: 14px;
+        font-weight: 300 !important;
         height: 300px !important;
         width: 100%;
         position: relative;
@@ -1023,7 +1024,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
     }
 
 div#commentBox {
-    font-family: "The Girl Next Door" !important;
+    font-family: "Goudy Bookletter 1911" !important;
     color: var(--sorcerer-mint) !important;
     font-size: 17px;
     font-weight: 600;
@@ -1190,7 +1191,7 @@ th {
 .table .bottom a, td.bottom a {
     color: var(--ranger-pine) !important;
     text-shadow: 0 0 2em var(--sorcerer-mint), 0 0 .3em var(--sorcerer-mint) !important;
-        font-family: "The Girl Next Door" !important;
+        font-family: "Goudy Bookletter 1911" !important;
     font-size: 19px;
 }
 
@@ -1206,7 +1207,7 @@ td.bottom button {
     background: transparent;
     color: var(--siren-brown) !important;
     text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .3em var(--apollo-sunlight) !important;
-    font-family: "The Girl Next Door" !important;
+    font-family: "Goudy Bookletter 1911" !important;
     font-size: 17px;
     border: 0px solid var(--siren-brown);
     border-left: 1px solid var(--siren-brown);
@@ -1220,7 +1221,7 @@ td.bottom button {
     background: transparent !important;
     color: var(--siren-brown) !important;
     text-shadow: 0 0 2em var(--apollo-sunlight), 0 0 .3em var(--apollo-sunlight) !important;
-    font-family: "The Girl Next Door" !important;
+    font-family: "Goudy Bookletter 1911" !important;
     font-weight: 600;
     font-size: 17px;
     border-top: 1px dotted var(--siren-brown);
