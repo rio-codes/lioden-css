@@ -17,6 +17,7 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 :root {
     --ranger-pine: #0b1a15;
     --druid-moss: #214634;
+    --druid-moss-clear: #214634a7; 
     --cleric-sage: #4f7a5e;
     --sorcerer-mint: #9ed6b1;
     --rogue-bruise: #2d1b27;
@@ -42,7 +43,7 @@ body {
 .breadcrumb::after {
     font-family: "The Girl Next Door";
     content: "custom css by lyri (see den for credits)";
-    color: var(--warlock-lilac) !important;
+    color: var(--sorcerer-mint) !important;
     font-size: 18px;
     font-weight: 200;
     overflow: visible !important;
@@ -179,7 +180,7 @@ div#pageContainer.col-md-9 h1:before {
     color: var(--ranger-pine);
     text-shadow: none !important;
     font-weight: 200;
-    text-indent: 130px;
+    text-indent: 150px !important;
     float: left;
     margin-bottom: 30px;
     z-index: 5;   
@@ -225,11 +226,9 @@ div.lionImage.featured-lion img {
     align-items: left;
     align-content: left !important;
     text-align: left;
-    background: #214634a7;
-    background-size: cover;
+    background: var(--druid-moss-clear);
     position: relative;
     top: 0px;
-    background-size: cover;
     height: 300px !important;
     width: 82% !important;
     margin-bottom: 10px;
@@ -240,22 +239,34 @@ div.lionImage.featured-lion img {
     scrollbar-color: var(--druid-moss) var(--cleric-sage);
 }
 
+div.about-me {
+    background: var(--druid-moss-clear) !important;
+    margin-bottom: 150px !important;
+    width: 81% !important;
+}
+
 .about-links {
     font-family: "The Girl Next Door" !important;
     position: relative;
     font-size: 17px;
     font-weight: 600 !important;
-    top: -710px !important;
-    left: -34%;
     color: var(--druid-moss) !important;
     text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine) !important;
     z-index: 40;
 }
 
+div.about-links {
+    position: relative !important;
+    top: -776px !important;
+    left: -250px;
+    color: var(--sorcerer-mint) !important;
+}
+
 .about-links a {
     font-family: "The Girl Next Door" !important;
-    color: var(--druid-moss) !important;
+    color: var(--sorcerer-mint) !important;
     text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--warlock-lilac) !important;
+    
 }
 
 .about-links a:hover{
@@ -268,11 +279,12 @@ div.lionImage.featured-lion img {
 }
 
 .scroll-box {
-    position: absolute;
+    position: relative !important;
     top: -10px !important;
     overflow-y: auto;
     border-radius: 0px;
     scrollbar-color: var(--druid-moss) var(--cleric-sage);
+    
 }
 
 .pokemon img {
@@ -679,36 +691,9 @@ div.lionImage.featured-lion img {
 
 @media only screen and (min-width: 1500px) {
     div#pageContainer.col-md-9 h1:before {
-        text-indent: 220px !important;
-        float: left;
-        position: relative;
-        margin-bottom: 30px;
-    }
-
-    div.about-me {
-        position: relative;
-        top: -310px;
-        left: -1%;
-        margin-bottom: 50px;
-    }
-
-    .about-me {
-        position: relative;
-        top: -60px;
-        width: 85%;
-        height: auto;
     }
     
-    .about-links {
-        position: relative;
-        font-size: 16px;
-        font-weight: 800 !important;
-        top: -650px !important;
-        left: -290px;
-        color: var(--ranger-pine) !important;
-        text-shadow: 0 0 1em var(--ranger-pine), 0 0 .5em var(--ranger-pine) !important;
-        z-index: 40;
-    }
+
     
     .about-links a {
         font-weight: 600 !important;
@@ -1166,7 +1151,7 @@ table#clans,
 table#sparring,
 table#attack,
 table.table {
-    background: url(https://cdn.allthepics.net/images/2026/05/14/grunge-background.jpg);
+    background: 
     opacity: 100%;
     border: none;
     border-radius: 10px;
