@@ -188,8 +188,8 @@ div#pageContainer.col-md-9 h1:before {
 
 @media only screen and (max-width: 743px) {
     div#pageContainer.col-md-9 h1:before {
-        font-family: "Special Elite"";
-        content: "KÃ¶nig's Headquarters";
+        font-family: "Special Elite" ";
+ content: "KÃ¶nig's Headquarters";
         font-weight: 600;
         font-size: 47px;
         text-indent: 40px;
@@ -549,7 +549,8 @@ div.center.h3 {
 
 .panel h3 {
     background: none !important;
-    color: #ffffff !important;;
+    color: #ffffff !important;
+    ;
     text-shadow: 0 0 2em var(--neon-glow), 0 0 .3em var(--neon-glow) !important;
     font-size: 26px !important;
     text-align: right;
