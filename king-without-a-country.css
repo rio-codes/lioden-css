@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*
 King Without a Country
 
@@ -11,7 +13,7 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Import Fonts (From Google Fonts) */
 
-@import url('https://fonts.googleapis.com/css2?family=Winky+Rough&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Tektur:wght@400;500;600;700;800;900&display=swap');
 
 /* Color variables */
 :root {
@@ -21,6 +23,14 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
     --neon-glow: #870b07a7;
     --fresh-wound: #5c0500a7;
     --neon-sign: #870b07;
+    --soft-beige: #f3e8dc;
+}
+
+/* Remove all rounded corners */
+*,
+*::before,
+*::after {
+    border-radius: 0px !important;
 }
 
 /* Background image, font and font color, text alignment */
@@ -29,17 +39,17 @@ body {
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
-    font-family: "Rationale" !important;
-    font-weight: 100 !important;
+    font-family: "Oxanium", sans-serif !important;
+    font-weight: 300 !important;
     font-size: 16px;
-    color: #ffffff;
+    color: #f3e8dc;
 }
 
 /* CSS Credit */
 
-.breadcrumb::after {
+/*.breadcrumb::after {
     content: "custom css by lyri (see den for credits)";
-    color: #ffffff !important;
+    color: #f3e8dc !important;
     font-size: 14px;
     font-weight: 200;
     overflow: visible !important;
@@ -47,7 +57,7 @@ body {
     top: 90px;
     left: 0px;
     text-shadow: 0 0 2em var(--neon-glow), 0 0 .3em var(--neon-glow) !important;
-}
+}*/
 
 /* Link colors */
 
@@ -76,16 +86,19 @@ a:focus {
 /* Bookmark button */
 
 input.floatright {
-    background: radial-gradient(var(--hera-hearth), var(--blood-crimson));
+    background: radial-gradient(var(--fresh-wound), var(--blood-crimson));
     border: none !important;
     border-radius: 0px !important;
-    color: var(--main-artery) !important;
+    color: #f3e8dc !important;
     text-align: center !important;
+    position: relative;
+    top: -5px;
+    right: 5px;
 }
 
 input.floatright:hover {
     background: radial-gradient(var(--main-artery), var(--blood-crimson));
-    color: var(--spilled-ink) !important;
+    color: #f3e8dc !important;
     box-shadow: none !important;
     transition: 1s;
 }
@@ -100,7 +113,7 @@ textarea {
     border-radius: 0px !important;
     box-shadow: none !important;
     text-shadow: 0 0 1em var(--neon-sign), 0 0 .5em var(--neon-sign);
-    color: var(--spilled-ink) !important;
+    color: #f3e8dc !important;
     font-weight: 300;
 }
 
@@ -117,9 +130,9 @@ input#postComment {
 .alert-danger {
     background: var(--main-artery) !important;
     backdrop-filter: brightness(80%);
-    color: #ffffff !important;
+    color: #f3e8dc !important;
     border: 0px !important;
-    border-radius: 2px;
+    border-radius: 0px !important;
     text-align: left !important;
     text-shadow: 0 0 1em var(--neon-sign), 0 0 .5em var(--neon-sign);
     position: relative;
@@ -130,7 +143,7 @@ input#postComment {
 .alert a,
 .alert-warning a,
 .alert-danger a {
-    color: #ffffff !important;
+    color: #f3e8dc !important;
     text-shadow: 0 0 1em var(--neon-sign), 0 0 .5em var(--neon-sign);
 }
 
@@ -176,27 +189,49 @@ div.lionImage.featured-lion img {
 /* Scroll Box */
 
 div#pageContainer.col-md-9 h1:before {
-    font-family: "Special Elite";
-    content: "KÃÂ¶nig's Headquarters";
-    font-weight: 600;
-    text-indent: 130px;
-    float: left;
+    font-family: "Tektur", display, sans-serif;
+    content: "K\0000f6nig's Headquarters";
+    font-weight: 400 !important;
+    font-size: 38px !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f3e8dc !important;
+    text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    text-indent: 0px !important;
+    float: none !important;
     position: relative;
-    top: 20px;
-    margin-bottom: 30px;
+    top: 0px;
+    margin-top: 70px !important;
+    margin-bottom: 100px !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    animation: neonFlicker 6.5s infinite ease-in-out;
 }
 
 @media only screen and (max-width: 743px) {
     div#pageContainer.col-md-9 h1:before {
-        font-family: "Special Elite" ";
- content: "KÃ¶nig's Headquarters";
-        font-weight: 600;
-        font-size: 47px;
-        text-indent: 40px;
-        float: left;
+        font-family: "Tektur", display, sans-serif;
+        content: "K\0000f6nig's Headquarters";
+        font-weight: 400 !important;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-size: 28px !important;
+        color: #f3e8dc !important;
+        text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        text-indent: 0px !important;
+        float: none !important;
         position: relative;
-        top: 40px;
-        margin-bottom: 30px;
+        top: 0px;
+        margin-top: 50px !important;
+        margin-bottom: 70px !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
     }
 
     .navbar a {
@@ -211,7 +246,7 @@ div#pageContainer.col-md-9 h1:before {
         background-size: cover;
         width: 85%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 0px !important;
         border: 1px solid var(--main-artery);
     }
 
@@ -228,7 +263,7 @@ div#pageContainer.col-md-9 h1:before {
         width: 100%;
         position: relative;
         top: 0px;
-        border-radius: 10px;
+        border-radius: 0px !important;
         scrollbar-color: var(--neon-sign) var(--blood-crimson);
     }
 
@@ -242,14 +277,25 @@ div#pageContainer.col-md-9 h1:before {
 
 @media only screen and (max-width: 819px) and (min-width: 744px) {
     div#pageContainer.col-md-9 h1:before {
-        font-family: "Special Elite";
-        content: "KÃ¶nig's Headquarters";
-        font-weight: 600;
-        text-indent: 65px;
-        float: left;
+        font-family: "Tektur", display, sans-serif;
+        content: "K\0000f6nig's Headquarters";
+        font-weight: 400 !important;
+        font-size: 34px !important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #f3e8dc !important;
+        text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        text-indent: 0px !important;
+        float: none !important;
         position: relative;
-        top: 20px;
-        margin-bottom: 30px;
+        top: 0px;
+        margin-top: 60px !important;
+        margin-bottom: 80px !important;
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
     }
 
     .navbar a {
@@ -264,7 +310,7 @@ div#pageContainer.col-md-9 h1:before {
         background-size: cover;
         width: 85%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 0px !important;
         border: 1px solid var(--main-artery);
     }
 
@@ -281,7 +327,7 @@ div#pageContainer.col-md-9 h1:before {
         width: 100%;
         position: relative;
         top: 0px;
-        border-radius: 10px;
+        border-radius: 0px !important;
         scrollbar-color: var(--neon-sign) var(--blood-crimson);
     }
 
@@ -295,14 +341,25 @@ div#pageContainer.col-md-9 h1:before {
 
 @media only screen and (max-width: 1000px) and (min-width: 820px) {
     div#pageContainer.col-md-9 h1:before {
-        font-family: "Special Elite";
-        content: "KÃ¶nig's Headquarters";
-        font-weight: 600;
-        text-indent: 65px;
-        float: left;
+        font-family: "Tektur", display, sans-serif;
+        content: "K\0000f6nig's Headquarters";
+        font-weight: 400 !important;
+        font-size: 36px !important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #f3e8dc !important;
+        text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        text-indent: 0px !important;
+        float: none !important;
         position: relative;
-        top: 20px;
-        margin-bottom: 30px;
+        top: 0px;
+        margin-top: 60px !important;
+        margin-bottom: 90px !important;
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
     }
 
     .navbar a {
@@ -317,7 +374,7 @@ div#pageContainer.col-md-9 h1:before {
         background-size: cover;
         width: 85%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 0px !important;
         border: 1px solid var(--main-artery);
     }
 
@@ -334,7 +391,7 @@ div#pageContainer.col-md-9 h1:before {
         width: 100%;
         position: relative;
         top: 0px;
-        border-radius: 10px;
+        border-radius: 0px !important;
         scrollbar-color: var(--neon-sign) var(--blood-crimson);
     }
 
@@ -348,15 +405,26 @@ div#pageContainer.col-md-9 h1:before {
 
 @media only screen and (min-width: 1001px) {
     div#pageContainer.col-md-9 h1:before {
-        font-family: "Special Elite";
-        content: "König's Headquarters";
-        font-weight: 600;
-        text-indent: 100px;
-        float: left;
+        font-family: "Tektur", display, sans-serif;
+        content: "K\0000f6nig's Headquarters";
+        font-weight: 400 !important;
+        font-size: 50px !important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #f3e8dc !important;
+        text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        text-indent: 0px !important;
+        float: none !important;
         position: relative;
-        top: 20px;
-        margin-bottom: 30px;
-        color: #ffffff;
+        top: 0px;
+        margin-top: 50px !important;
+        margin-bottom: 100px !important;
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+        animation: neonFlicker 6.5s infinite ease-in-out;
     }
 
 
@@ -372,7 +440,7 @@ div#pageContainer.col-md-9 h1:before {
         background-size: cover;
         width: 85%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 0px !important;
         border: 1px solid var(--main-artery);
     }
 
@@ -389,7 +457,7 @@ div#pageContainer.col-md-9 h1:before {
         width: 100%;
         position: relative;
         top: 0px;
-        border-radius: 10px;
+        border-radius: 0px !important;
         scrollbar-color: var(--neon-sign) var(--blood-crimson);
     }
 
@@ -401,37 +469,85 @@ div#pageContainer.col-md-9 h1:before {
 
 }
 
-/* Primary header */
+/* Intermittent broken neon flicker animation */
+@keyframes neonFlicker {
+    0%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
+    }
+    3.5% {
+        opacity: 0.35;
+        text-shadow: 0 0 1px #f3e8dc, 0 0 3px #C4102F !important;
+    }
+    4.5% {
+        opacity: 0.95;
+        text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F !important;
+    }
+    5.5% {
+        opacity: 0.4;
+        text-shadow: none !important;
+    }
+    6.5% {
+        opacity: 1;
+        text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
+    }
+    78% {
+        opacity: 1;
+        text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
+    }
+    79% {
+        opacity: 0.25;
+        text-shadow: 0 0 1px #C4102F !important;
+    }
+    80% {
+        opacity: 0.85;
+        text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F !important;
+    }
+    80.5% {
+        opacity: 0.3;
+        text-shadow: none !important;
+    }
+    81.5% {
+        opacity: 1;
+        text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
+    }
+}
+
+/* Primary header - hide default "user's den" text */
 
 h1 {
-    font-family: "Special Elite";
-    font-size: 58px;
-    color: var(--spilled-ink);
-    font-weight: 400 !important;
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-align: center;
-    text-shadow: 0 0 1em var(--neon-glow), 0 0 .2em var(--neon-glow) !important;
+    font-size: 0px !important;
+    color: transparent !important;
+    text-shadow: none !important;
+    line-height: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 /* Secondary header */
 
 h2 {
-    font-family: "Special Elite";
-    font-size: 28px;
-    color: var(--spilled-ink) !important;
-    text-shadow: 0 0 2em, 0 0 .5em var(--neon-sign) !important;
+    font-family: "Tektur", display, sans-serif;
+    font-size: 26px;
+    color: #f3e8dc !important;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
 }
 
 /* Tertiary header */
 
 h3,
 div.center.h3 {
-    font-family: "Special Elite";
-    font-size: 34px !important;
-    font-weight: 300;
-    color: var(--spilled-ink) !important;
-    text-shadow: 0 0 1em var(--neon-sign), 0 0 .5em var(--neon-sign) !important;
+    font-family: "Tektur", display, sans-serif;
+    font-size: 28px !important;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #f3e8dc !important;
+    text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
 }
 
 /* Main panel container appearance*/
@@ -439,7 +555,7 @@ div.center.h3 {
 .container.main {
     background: var(--fresh-wound) !important;
     border: 0px solid !important;
-    border-radius: 20px;
+    border-radius: 0px !important;
     text-shadow: 0 0 1em var(--neon-sign), 0 0 .5em var(--neon-sign) !important;
     box-shadow: 0px 0px 30px 5px var(--neon-glow) !important;
 }
@@ -456,15 +572,15 @@ div.center.h3 {
 
 .topbar {
     background: var(--fresh-wound);
-    color: #ffffff;
+    color: #f3e8dc;
     border: 0px solid !important;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px !important;
     font-size: 18px;
     font-weight: 200;
 }
 
 .topbar a {
-    color: #ffffff !important;
+    color: #f3e8dc !important;
     font-size: 18px;
     font-weight: 200;
 }
@@ -477,26 +593,29 @@ div.center.h3 {
 /* Navbar (Den/Crossroads/Etc.) */
 
 .navbar {
-    font-family: "Special Elite";
-    font-size: 16px !important;
-    font-weight: 400;
+    font-family: "Oxanium", display, sans-serif;
+    font-size: 18px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     background: var(--main-artery);
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px !important;
     border-bottom: 1px solid var(--neon-sign);
     opacity: 1;
 }
 
 .navbar li a {
-    color: #ffffff !important;
+    color: #f3e8dc !important;
     font-size: 21px !important;
     font-weight: 200;
     text-shadow: 0 0 1em var(--neon-glow), 0 0 .5em var(--neon-glow) !important;
+    border-bottom: 1px solid transparent !important;
 }
 
 .navbar li a:hover {
     color: var(--neon-glow) !important;
     background: var(--neon-glow) !important;
-    border-bottom: 0px solid var(--neon-glow) !important;
+    border-bottom: 1px solid var(--neon-glow) !important;
     z-index: 500 !important;
     opacity: 1 !important;
 }
@@ -504,27 +623,28 @@ div.center.h3 {
 /* Breadcrumb (Home button, den owner, bookmark) */
 
 .breadcrumb {
-    font-family: "Special Elite";
+    font-family: "Oxanium", display, sans-serif;
     font-size: 24px;
+    font-weight: 400 !important;
     background: var(--main-artery) !important;
     backdrop-filter: brightness(80%);
-    color: #ffffff !important;
+    color: #f3e8dc !important;
     border: 10x solid !important;
-    border-radius: 5px;
+    border-radius: 0px !important;
     text-align: left !important;
     text-shadow: 0 0 2em var(--neon-glow), 0 0 .3em var(--neon-glow) !important;
 }
 
 .breadcrumb .active {
-    font-family: "Special Elite";
-    color: #ffffff !important;
+    font-family: "Oxanium", display, sans-serif;
+    color: #f3e8dc !important;
     font-size: 20px;
     text-shadow: 0 0 2em var(--blood-crimson), 0 0 .3em var(--blood-crimson) !important;
 
 }
 
 .breadcrumb a {
-    color: #ffffff;
+    color: #f3e8dc;
     font-size: 20px;
 }
 
@@ -532,37 +652,42 @@ div.center.h3 {
 /* Right-side panel appearance */
 
 .sidebar h3 {
-    font-family: "Special Elite";
-    font-size: 26px !important;
-    font-weight: 600;
-    color: #ffffff !important;
-    text-shadow: 0 0 2em var(--neon-sign), 0 0 .3em var(--neon-sign) !important;
+    font-family: "Tektur", display, sans-serif;
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #f3e8dc !important;
+    text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
     text-align: right;
     position: relative;
     padding-top: 25px;
 }
 
 .sidebar a {
-    color: var(--spilled-ink) !important;
+    color: #f3e8dc !important;
     text-shadow: 0 0 2em var(--neon-glow), 0 0 .5em var(--neon-glow) !important;
 }
 
 .panel h3 {
     background: none !important;
-    color: #ffffff !important;
-    ;
-    text-shadow: 0 0 2em var(--neon-glow), 0 0 .3em var(--neon-glow) !important;
-    font-size: 26px !important;
+    color: #f3e8dc !important;
+    font-family: "Tektur", display, sans-serif;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
+    font-size: 24px !important;
     text-align: right;
     opacity: 0.9;
     border: 0px !important;
     z-index: 5;
     opacity: 90%;
-    border-radius: 10px;
+    border-radius: 0px !important;
 }
 
 .col-md-12 a {
-    color: var(--main-artery);
+    color: #f3e8dc;
     text-shadow: 0 0 2em var(--neon-glow), 0 0 .5em var(--neon-glow) !important;
 }
 
@@ -573,14 +698,35 @@ div.panel a:hover {
     text-shadow: none !important;
 }
 
+.panel,
+.panel-default,
+.panel-body,
+.panel-heading,
+.panel-footer,
 .panel-body.small,
-div.panel {
+div.panel,
+div.panel-body,
+.col-md-3 .panel,
+.col-md-3 .panel-body,
+.sidebar .panel,
+.sidebar .panel-body {
+    border: 0px none transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.panel-body,
+.panel-body.small,
+div.panel,
+div.panel-body {
     background: linear-gradient(180deg, var(--neon-glow) 0%, var(--spilled-ink) 100%);
     backdrop-filter: brightness(80%);
-    border: 0px solid !important;
+    border: 0px none transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
     overflow: hidden;
-    border-radius: 10px;
-    color: #ffffff !important;
+    border-radius: 0px !important;
+    color: #f3e8dc !important;
     text-shadow: 0 0 2em var(--neon-glow), 0 0 .3em var(--neon-glow) !important;
     font-size: 14px;
     text-align: left;
@@ -588,28 +734,35 @@ div.panel {
     font-weight: 200 !important;
 }
 
+.panel-body a,
 .panel-body.small a,
-div.panel a {
-    color: #ffffff !important;
+div.panel a,
+div.panel-body a {
+    color: #f3e8dc !important;
     font-weight: 200;
-    border-radius: 1px;
+    border-radius: 0px !important;
 }
 
 
-.col-md-3 .panel {
+.col-md-3 .panel,
+.col-md-3 .panel-body {
     background: transparent !important;
-    border: 0px !important;
-    border-radius: 10px;
+    border: 0px none transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
     overflow: hidden;
 }
 
+.panel-body .center a,
 .panel-body.small .center a,
+.panel-body a,
 .panel-body.small a {
     font-weight: 200 !important;
-    color: #ffffff !important;
+    color: #f3e8dc !important;
     size: 15px !important;
     text-shadow: 0 0 2em var(--neon-sign), 0 0 .3em var(--neon-sign) !important;
-    border-radius: 10px;
+    border-radius: 0px !important;
 }
 
 div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
@@ -620,20 +773,20 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 .progress {
     background: var(--main-artery) !important;
     color: var(--main-artery) !important;
-    border-radius: 10px !important;
+    border-radius: 0px !important;
 }
 
 .progress-bar,
 .progress-bar-danger,
 .progress-bar-success {
     background: var(--neon-glow) !important;
-    border-radius: 2px !important;
+    border-radius: 0px !important;
     z-index: 10 !important;
 }
 
 .progress div {
     background: linear-gradient(var(--neon-glow), var(--neon-glow));
-    color: #ffffff !important;
+    color: #f3e8dc !important;
     font-size: 13px;
     padding: 0px;
     font-weight: 500;
@@ -643,11 +796,11 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
 
 /* Comment box */
 div#commentBox {
-    background: linear-gradient(180deg, var(--neon-glow) 0%, #ffffff 100%);
+    background: linear-gradient(180deg, var(--neon-glow) 0%, var(--spilled-ink) 100%);
     backdrop-filter: brightness(80%);
     border: 1px solid var(--main-artery);
-    border-radius: 10px;
-    color: var(--main-artery) !important;
+    border-radius: 0px !important;
+    color: #f3e8dc !important;
     text-shadow: 0 0 2em var(--blood-crimson), 0 0 .3em var(--blood-crimson) !important;
     margin-bottom: 10px;
     margin-top: 0px;
@@ -658,7 +811,7 @@ div#commentBox {
 }
 
 div#commentBox a {
-    color: var(--main-artery);
+    color: #f3e8dc;
     font-weight: 600;
 }
 
@@ -667,13 +820,13 @@ div#commentBox a:hover {
 }
 
 div.commentText {
-    color: var(--spilled-ink) !important;
+    color: #f3e8dc !important;
     border-bottom: 1px solid var(--spilled-ink);
     text-shadow: 0 0 2em var(--blood-crimson), 0 0 .3em var(--blood-crimson) !important;
 }
 
 .text-muted {
-    color: var(--spilled-ink) !important;
+    color: #f3e8dc !important;
     text-shadow: 0 0 2em var(--blood-crimson), 0 0 .3em var(--blood-crimson) !important;
 }
 
@@ -681,7 +834,7 @@ img.floatleft.commentTag.clear {
     height: 70px;
     width: 70px;
     border: 2px solid var(--main-artery);
-    border-radius: 8px !important;
+    border-radius: 0px !important;
     position: relative;
     top: 2px;
     left: -3px
@@ -706,50 +859,187 @@ button.button,
 .btn.btn {
     background: var(--neon-sign);
     border: 1px solid var(--main-artery);
-    border-radius: 4px;
+    border-radius: 0px !important;
     text-shadow: none !important;
-    color: var(--main-artery) !important;
+    color: #f3e8dc !important;
     width: 130px;
     height: 25px;
     filter: drop-shadow(0px 0px 3rem var(--blood-crimson)) !important;
 }
 
-/* All tables - styling */
+/* Recreated Custom Profile Layout (.konig-profile-box) */
 
+.konig-profile-box {
+    background: linear-gradient(180deg, var(--neon-glow) 0%, var(--spilled-ink) 100%) !important;
+    backdrop-filter: brightness(80%);
+    border: 1px solid var(--main-artery);
+    border-radius: 0px !important;
+    margin: 80px 0;
+    padding: 0;
+    color: #f3e8dc;
+    box-sizing: border-box;
+}
+
+.konig-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .konig-grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.konig-col,
+.konig-full-col {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--main-artery);
+    border-radius: 0px !important;
+    overflow: hidden;
+}
+
+.konig-full-col {
+    margin: 0 15px 15px 15px;
+}
+
+.konig-col-header {
+    font-family: "Tektur", display, sans-serif;
+    font-size: 20px;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background: var(--main-artery) !important;
+    color: #f3e8dc !important;
+    text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F !important;
+    text-align: center;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--spilled-ink);
+}
+
+.konig-scroll-content {
+    font-family: "Oxanium", sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 14px;
+    color: #f3e8dc !important;
+    height: 200px;
+    overflow-y: auto;
+    padding: 15px;
+    scrollbar-color: var(--neon-sign) var(--blood-crimson);
+}
+
+.konig-scroll-content p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.konig-scroll-content a {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #C4102F, 0 0 20px #C4102F !important;
+    text-decoration: none;
+}
+
+.konig-scroll-content a:hover {
+    text-shadow: 0 0 7px #ffffff, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 45px #C4102F !important;
+}
+
+.konig-art-scroll {
+    height: 240px;
+    text-align: center;
+}
+
+.konig-art-grid img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--main-artery);
+    margin-top: 10px;
+}
+
+.konig-links-bar {
+    background: var(--main-artery) !important;
+    text-align: center;
+    padding: 10px 15px;
+    font-family: "Tektur", display, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-top: 1px solid var(--spilled-ink);
+}
+
+.konig-links-bar a {
+    color: #f3e8dc !important;
+    text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F !important;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.konig-links-bar a:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #C4102F, 0 0 20px #C4102F !important;
+}
+
+.konig-divider {
+    color: var(--neon-sign);
+    padding: 0 5px;
+}
+
+/* All tables - styling */
+#fraProfileContent table:first-of-type {
+    margin-top: 65px;
+}
+#fraProfileContent table:first-of-type,
+#fraProfileContent > div:nth-child(1) > table,
 table#about,
 table#player,
 table#attack,
 table#allies,
 table#clans,
 table#sparring,
-table#attack,
 table.table {
-    background: linear-gradient(180deg, var(--neon-glow) 0%, #2193b0a7 100%);
+    background: linear-gradient(180deg, var(--neon-glow) 0%, var(--spilled-ink) 100%) !important;
+    backdrop-filter: brightness(80%);
     opacity: 100%;
     border: 1px solid var(--main-artery);
-    border-radius: 10px;
+    border-radius: 0px !important;
 }
 
 /*  Lion profile table and headers (Level, Stats, Territory Count, Etc.) */
 
 .table {
-    background: radial-gradient(var(--hera-hearth), var(--blood-crimson));
+    background: linear-gradient(180deg, var(--neon-glow) 0%, var(--spilled-ink) 100%) !important;
+    backdrop-filter: brightness(80%);
     border: 1px solid var(--main-artery);
     border-collapse: separate;
-    border-radius: 2px;
+    border-radius: 0px !important;
+}
+
+table.table:nth-child(4) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1),
+table.table td,
+table.table th,
+.table td,
+.table th,
+td.left,
+td.right,
+.inner-table td,
+.inner-table th {
+    font-family: "Oxanium", display, sans-serif !important;
 }
 
 table#about.table a {
-    color: var(--main-artery);
+    color: #f3e8dc;
     text-decoration: none;
 }
 
 .table .top,
 #sparring th,
 table.table th {
-    color: var(--main-artery);
-    font-size: 18px;
-    border-radius: 10px 10px 0px 0px;
+    background: var(--main-artery) !important;
+    color: #f3e8dc;
+    font-family: Tektur !important;
+    font-weight: 400 !important;
+    font-size: 22px;
+    border-radius: 0px !important;
     border-bottom: 1px solid var(--main-artery);
     opacity: 93% !important;
 }
@@ -757,19 +1047,19 @@ table.table th {
 .top,
 th,
 #attack th {
-    background: var(--blood-crimson) !important;
-    border-radius: 2px 2px 0px 0px;
+    background: var(--main-artery) !important;
+    border-radius: 0px !important;
 }
 
 .bottom,
 th {
-    background: var(--neon-glow);
-    color: var(--main-artery) !important;
+    background: var(--main-artery) !important;
+    color: #f3e8dc !important;
 }
 
 .table .bottom {
-    background: var(--blood-crimson);
-    color: var(--main-artery);
+    background: var(--main-artery) !important;
+    color: #f3e8dc;
 }
 
 td.bottom button {
@@ -777,14 +1067,14 @@ td.bottom button {
 }
 
 #about.table tr:nth-child(7) {
-    background: linear-gradient(180deg, #ffafbda7 0%, #ffc3a0a7 45%, #2193b0a7 100%);
+    background: linear-gradient(180deg, var(--neon-glow) 0%, var(--fresh-wound) 45%, var(--spilled-ink) 100%);
 }
 
 .inner-table .left {
     background: transparent;
-    color: var(--main-artery) !important;
+    color: #f3e8dc !important;
     text-shadow: 0 0 2em var(--neon-sign), 0 0 .3em var(--neon-sign) !important;
-    font-family: "Tomorrow" !important;
+    font-family: "Oxanium", sans-serif !important;
     font-weight: 300 !important;
     font-size: 13px !important;
     border: 0px solid var(--main-artery);
@@ -797,7 +1087,7 @@ td.bottom button {
 
 .inner-table .right {
     background: transparent !important;
-    color: var(--main-artery) !important;
+    color: #f3e8dc !important;
     text-shadow: 0 0 2em var(--neon-sign), 0 0 .3em var(--neon-sign) !important;
     font-size: 12px;
     border-top: 1px dotted var(--main-artery);
@@ -807,7 +1097,7 @@ td.bottom button {
 }
 
 .inner-table .right a {
-    color: var(--main-artery) !important;
+    color: #f3e8dc !important;
     font-style: italic;
     text-shadow: 0 0 2em var(--neon-glow), 0 0 .3em var(--neon-glow) !important;
 }
@@ -828,7 +1118,7 @@ div.lionImage.featured-lion {
 /* Lion and user profile pictures */
 
 #about.table div .lion-image-block {
-    border-radius: 20px;
+    border-radius: 0px !important;
     border: 4px solid var(--main-artery) !important;
     position: relative;
     width: 200px;
@@ -844,7 +1134,7 @@ div.lionImage.featured-lion {
 }
 
 table#player img {
-    border-radius: 20px;
+    border-radius: 0px !important;
     border: 4px solid var(--main-artery) !important;
     box-shadow: 0px 0px 12px 12px var(--spilled-ink) !important;
     position: relative;
@@ -893,9 +1183,17 @@ td.right_odd.text-right img {
     font-size: 0px;
 }
 
+table#player,
+table#player td,
+table#player a,
+table#player p.center a {
+    color: #f3e8dc !important;
+}
+
 #player>tbody>tr:nth-child(3)>td:nth-child(1)>a:after {
     background: transparent;
     content: 'Block Member' !important;
+    color: #f3e8dc !important;
     font-size: 20px !important;
     text-shadow: 0 0 2em, 0 0 .5em var(--spilled-ink) !important;
     width: 100px !important;
@@ -912,6 +1210,7 @@ td.right_odd.text-right img {
 #player>tbody>tr:nth-child(3)>td:nth-child(2)>a:after {
     background: transparent;
     content: 'Friend Request';
+    color: #f3e8dc !important;
     font-size: 20px !important;
     text-shadow: 0 0 2em, 0 0 .5em var(--spilled-ink) !important;
     width: 100px !important;
@@ -928,6 +1227,7 @@ td.right_odd.text-right img {
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1):after {
     background: transparent;
     content: 'Message';
+    color: #f3e8dc !important;
     font-size: 20px !important;
     text-shadow: 0 0 2em, 0 0 .5em var(--spilled-ink) !important;
     width: 100px !important;
@@ -947,6 +1247,7 @@ td.right_odd.text-right img {
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3):after {
     background: transparent;
     content: 'Send Gift!';
+    color: #f3e8dc !important;
     font-size: 20px !important;
     text-shadow: 0 0 2em, 0 0 .5em var(--spilled-ink) !important;
     width: 100px !important;
@@ -962,6 +1263,7 @@ td.right_odd.text-right img {
 #player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5):after {
     background: transparent;
     content: 'Create Trade';
+    color: #f3e8dc !important;
     font-size: 20px !important;
     text-shadow: 0 0 2em, 0 0 .5em var(--spilled-ink) !important;
     width: 100px !important;
@@ -1016,25 +1318,66 @@ div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
 .cave-grid,
 .mound-grid {
     background: none;
-    color: var(--spilled-ink) !important;
+    color: #f3e8dc !important;
     border: 0px;
-    border-radius: 2px !important;
-    font-size: 20px !important;
+    border-radius: 0px !important;
+    font-size: 22px !important;
+    margin: 0px !important;
+    padding: 2px 4px !important;
+}
+
+.cave-grid a {
+    color: #f3e8dc !important;
+    text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+    animation: neonFlicker 7.2s infinite ease-in-out 1.4s;
+}
+
+.mound-grid a {
+    color: #f3e8dc !important;
+    text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+    animation: neonFlicker 5.8s infinite ease-in-out 3.1s;
+}
+
+.cave-grid a:hover,
+.cave-grid div:hover,
+.mound-grid a:hover,
+.mound-grid div:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #C4102F, 0 0 40px #C4102F, 0 0 60px #C4102F, 0 0 80px #C4102F !important;
+}
+
+.mound-grid,
+#fraMoundList,
+#fraMoundList div.mound-grid {
+    margin-top: 30px !important;
+}
+
+.cave-grid div,
+.cave-grid a,
+.mound-grid div,
+.mound-grid a,
+#fraCaveList > div {
+    margin-bottom: 2px !important;
+    padding: 2px 4px !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.2px;
 }
 
 /* Feed all/Play all */
 
 div.feature,
 .feature {
-    background: radial-gradient(var(--hera-hearth), var(--blood-crimson));
-    color: var(--spilled-ink);
+    background: radial-gradient(var(--fresh-wound), var(--blood-crimson));
+    color: #f3e8dc;
     font-size: 13px;
     font-weight: 200;
     z-index: 5;
     box-shadow: 0px 3px 8px 4px var(--spilled-ink) !important;
     text-shadow: 0 0 2em, 0 0 .5em var(--spilled-ink) !important;
     border: 0px;
-    border-radius: 2px;
+    border-radius: 0px !important;
 }
 
 .feature,
@@ -1046,27 +1389,33 @@ div.left {
 div.left h3,
 .feature h3 {
     font-weight: 500 !important;
-    color: var(--spilled-ink) !important;
+    color: #f3e8dc !important;
 }
 
 
 /* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
 
 div.col-md-4 div h3,
-.dynastycollection a {
+.dynastycollection a,
+div.col-md-4 div h3 a {
     background: transparent;
-    font-size: 35px !important;
-    font-weight: 600 !important;
+    font-size: 28px !important;
+    font-weight: 400 !important;
+    color: #f3e8dc !important;
+    text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 50px #C4102F, 0 0 70px #C4102F !important;
 }
 
-.dynastycollection a:hover {
-    color: var(--neon-glow);
+div.col-md-4 div h3:hover,
+.dynastycollection a:hover,
+div.col-md-4 div h3 a:hover  {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #C4102F, 0 0 40px #C4102F, 0 0 60px #C4102F !important;
 }
 
 div.mb-2 div,
 div.col div {
-    color: var(--spilled-ink) !important;
-    border-radius: 10px;
+    color: #f3e8dc !important;
+    border-radius: 0px !important;
     height: 0px;
     margin: 5px;
     background: transparent !important;
@@ -1075,13 +1424,22 @@ div.col div {
 /* Edit Details */
 
 table.table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>th:nth-child(1) {
-    background: radial-gradient(var(--hera-hearth), var(--blood-crimson));
-    color: var(--main-artery) !important;
+    background: radial-gradient(var(--fresh-wound), var(--blood-crimson));
+    color: #f3e8dc !important;
 }
 
-td.left b {
+.b,
+td.b,
+td.left.b,
+td.left b,
+td.left strong,
+.inner-table .b,
+.inner-table .left b,
+.table td.left b,
+table .b {
+    font-family: "Oxanium", display, sans-serif !important;
+    font-weight: 200 !important;
     background: transparent !important;
-    font-weight: 700 !important;
 }
 
 
@@ -1106,171 +1464,123 @@ td.left b {
 
 /* Image Replacement */
 
-div.mound-grid img {
+div.mound-grid img,
+div.cave-grid img {
     position: relative;
-    left: -10px;
-    right: -10px;
-    top: -10px;
-    width: 200px
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
 
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
     content: url('') !important;
-    object-fit: cover !important;
-    height: 250px !important;
-    width: 300px !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
 
 div.cave-grid>img[src$="nestingbanner.png"] {
     content: url('') !important;
-    object-fit: cover !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-    height: 250px !important;
-    width: 300px !important;
-    border: 5px ridge;
-    border: 0px;
-    border-radius: 0px !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
 
 div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div,
 div.col.col-sm-4 div {
     height: 70px;
-    color: var(--main-artery);
+    color: #ffffff;
     font-weight: 200 !important;
-    text-shadow: 0 0 .6em, 0 0 1em #d7bf70 !important;
+    text-shadow: 0 0 .6em, 0 0 1em var(--neon-sign) !important;
 }
 
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-03.png') !important;
-    object-fit: cover !important;
-    height: 250px !important;
-    width: 250px !important;
+    content: url('') !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
-
-
 
 div.cave-grid>img {
     content: url('') !important;
-    object-fit: cover !important;
-    height: 250px !important;
-    width: 250px !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
 
 .mound-grid img {
     content: url('') !important;
-    object-fit: cover !important;
-    height: 100px !important;
-    width: 250px !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
 
 #fraCaveList>div:nth-child(1)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-04.png') !important;
-    object-fit: contain !important;
-    height: 250px !important;
-    width: 250px !important;
+    content: url('') !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 
 }
 
 #fraCaveList>div:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-05.png') !important;
-    object-fit: contain !important;
-    height: 250px !important;
-    width: 250px !important;
+    content: url('') !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
 
 #fraCaveList>div:nth-child(3)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-06.png') !important;
-    object-fit: contain !important;
-    height: 250px !important;
-    width: 250px !important;
+    content: url('') !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
 
 div.center:nth-child(4)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-07.png') !important;
-    object-fit: contain !important;
-    object-position: right !important;
-    height: 250px !important;
-    width: 250px !important;
+    content: url('') !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
 
 div.center:nth-child(5)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-08.png') !important;
-    object-fit: contain !important;
-    object-position: right !important;
-    height: 250px !important;
-    width: 250px !important;
+    content: url('') !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
 
 div.col-md-4:nth-child(6)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-09.png') !important;
-    object-fit: contain !important;
-    object-position: right !important;
-    height: 250px !important;
-    width: 250px !important;
+    content: url('') !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
 
 div.col-md-3:nth-child(1)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-10.png') !important;
-    object-fit: cover !important;
-    object-position: right !important;
-    height: 250px !important;
-    width: 250px !important;
-}
-
-div.col-md-3:nth-child(1)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-11.png') !important;
-    object-fit: contain !important;
-    object-position: center !important;
-    height: 250px !important;
-    width: 250px !important;
+    content: url('') !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
 
 div.col-xs-4:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/pottery-02.png') !important;
-    object-fit: contain !important;
-    object-position: center !important;
-    height: 250px !important;
-    width: 250px !important;
+    content: url('') !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
 
-img[src$="den_ancestors.png"] {
-    content: url('');
-    object-fit: cover;
-    height: 100px !important;
-    width: 2 !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
-img[src$="ancestorsfem.png"] {
-    content: url('');
-    object-fit: cover;
-    height: 100px !important;
-    width: 2 !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
-img[src$="den_achievements.png"] {
-    content: url('');
-    object-fit: cover;
-    height: 100px;
-    width: 2 !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
-img[src$="den_showcase.png"] {
-    content: url('');
-    object-fit: cover;
-    height: 100px;
-    width: 2 !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
-}
-
+img[src$="den_ancestors.png"],
+img[src$="ancestorsfem.png"],
+img[src$="den_achievements.png"],
+img[src$="den_showcase.png"],
 img[src$="den_beetlebook.png"] {
     content: url('');
-    object-fit: cover;
-    height: 100px;
-    width: 2 !important;
-    filter: brightness(90%) contrast(90%) sepia(30%);
+    height: 0px !important;
+    width: 0px !important;
+    border: 0px !important;
 }
 
 img[src$="icon_den_friend.png"],
@@ -1293,14 +1603,45 @@ div.center:nth-child(8)>a:nth-child(1) {
     width: 100px !important;
 }
 
+#allies td.left,
+#clans td.left,
+table#allies td.left,
+table#clans td.left,
 #allies>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1) {
-    display: none;
+    display: none !important;
+}
+
+/* Allies and Clan Membership Table Link Colors */
+#allies,
+#clans,
+#allies td,
+#clans td,
+table#allies td,
+table#clans td {
+    color: #f3e8dc !important;
+    text-shadow: 0 0 2em var(--neon-glow), 0 0 .3em var(--neon-glow) !important;
+}
+
+#allies a,
+#clans a,
+table#allies a,
+table#clans a {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #C4102F, 0 0 20px #C4102F !important;
+}
+
+#allies a:hover,
+#clans a:hover,
+table#allies a:hover,
+table#clans a:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 7px #ffffff, 0 0 15px #C4102F, 0 0 30px #C4102F, 0 0 45px #C4102F !important;
 }
 
 /* Replace Social Media Icons */
 
 img[src$="iconFB.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/greek-temple.png');
+    content: url('');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -1309,7 +1650,7 @@ img[src$="iconFB.png"] {
 }
 
 img[src$="iconTwit.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/wingfoot.png');
+    content: url('');
     object-fit: cover;
     height: 50px;
     width: 50px;
@@ -1320,7 +1661,7 @@ img[src$="iconTwit.png"] {
 }
 
 img[src$="iconInsta.png"] {
-    content: url('https://cdn.allthepics.net/images/2026/05/10/lyre.png');
+    content: url('');
     object-fit: cover;
     height: 50px;
     width: 50px;
