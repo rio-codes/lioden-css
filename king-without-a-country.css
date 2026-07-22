@@ -1692,7 +1692,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
 
 .container.main::after {
     content: "";
-    background-image: url('');
+    background-image: url('https://cdn.allthepics.net/images/2026/07/21/QAAAAASUVORK5CYII.png');
     background-size: cover;
     display: block;
     height: 400px;
