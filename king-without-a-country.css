@@ -63,7 +63,7 @@ body {
 
 a:link,
 a:visited {
-    color: var(--main-artery);
+    color: var(--soft-beige);
     font-weight: 200;
     text-shadow: 0 0 1em var(--neon-sign), 0 0 .5em var(--neon-sign) !important;
 }
@@ -232,6 +232,10 @@ div#pageContainer.col-md-9 h1:before {
         margin-bottom: 70px !important;
         padding-top: 20px !important;
         padding-bottom: 20px !important;
+    }
+    
+    .topbar a {
+        font-size: 15px !important;
     }
 
     .navbar a {
@@ -1310,20 +1314,18 @@ table#player hr {
 }
 
 /* Cave and Beetle Mound grid appearances*/
-#fraOrganizationBlock>div:nth-child(2)>div:nth-child(1),
-div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
-    text-shadow: 0 0 2em, 0 0 .5em var(--spilled-ink) !important;
-}
 
 .cave-grid,
 .mound-grid {
-    background: none;
+    background: transparent;
+    font-size: 26px !important;
+    font-weight: 400 !important;
     color: #f3e8dc !important;
+    text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F !important;
     border: 0px;
     border-radius: 0px !important;
-    font-size: 22px !important;
     margin: 0px !important;
-    padding: 2px 4px !important;
+    padding: 6px 6px !important;
 }
 
 .cave-grid a {
@@ -1369,15 +1371,15 @@ div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
 
 div.feature,
 .feature {
-    background: radial-gradient(var(--fresh-wound), var(--blood-crimson));
-    color: #f3e8dc;
-    font-size: 13px;
-    font-weight: 200;
-    z-index: 5;
-    box-shadow: 0px 3px 8px 4px var(--spilled-ink) !important;
-    text-shadow: 0 0 2em, 0 0 .5em var(--spilled-ink) !important;
+    background: transparent;
+    font-size: 26px !important;
+    font-weight: 400 !important;
+    color: #f3e8dc !important;
+    text-shadow: 0 0 3px #f3e8dc, 0 0 7px #f3e8dc, 0 0 15px #C4102F, 0 0 30px #C4102F !important;
     border: 0px;
     border-radius: 0px !important;
+    margin: 0px !important;
+    padding: 6px 6px !important;
 }
 
 .feature,
@@ -1452,7 +1454,7 @@ table .b {
         left: 0;
         width: 100%;
         height: 100%;
-        background: url() no-repeat center center;
+        background: url(https://rio-codes.github.io/lioden-css/konig3.webp) no-repeat center center;
         background-size: cover;
         z-index: -1;
     }
@@ -1472,47 +1474,12 @@ div.cave-grid img {
     border: 0px !important;
 }
 
-div.cave-grid>img[src$="unsortedlionsbanner.png"] {
-    content: url('') !important;
-    height: 0px !important;
-    width: 0px !important;
-    border: 0px !important;
-}
-
-div.cave-grid>img[src$="nestingbanner.png"] {
-    content: url('') !important;
-    height: 0px !important;
-    width: 0px !important;
-    border: 0px !important;
-}
-
 div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div,
 div.col.col-sm-4 div {
     height: 70px;
     color: #ffffff;
     font-weight: 200 !important;
     text-shadow: 0 0 .6em, 0 0 1em var(--neon-sign) !important;
-}
-
-div.cave-grid>img[src$="prideoverviewbanner.png"] {
-    content: url('') !important;
-    height: 0px !important;
-    width: 0px !important;
-    border: 0px !important;
-}
-
-div.cave-grid>img {
-    content: url('') !important;
-    height: 0px !important;
-    width: 0px !important;
-    border: 0px !important;
-}
-
-.mound-grid img {
-    content: url('') !important;
-    height: 0px !important;
-    width: 0px !important;
-    border: 0px !important;
 }
 
 #fraCaveList>div:nth-child(1)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
