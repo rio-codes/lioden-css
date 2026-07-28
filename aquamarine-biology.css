@@ -1,9 +1,9 @@
-/* 
+/*
 Aquamarine Biology
 Created 04/2026 by lyri [#583579]
 AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
 
-Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Tawny [#251887], Hok-Z [#41458], Austin [#43750] 
+Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Tawny [#251887], Hok-Z [#41458], Austin [#43750]
 */
 
 
@@ -13,7 +13,7 @@ Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Ta
 /* Background image, font and font color, text alignment */
 
 body {
-	background: url("https://cdn.allthepics.net/images/2026/03/31/lab.jpg") center center;
+	background: url("https://i.postimg.cc/tgr7sWzq/lab.jpg") center center;
 	background-size: cover;
     background-attachment: fixed;
 	font-family: "Nova Square", sans-serif;
@@ -126,7 +126,7 @@ button.button {
 	position: relative;
 	left: 34%;
 	top: -50%;
-		
+
 }
 
 
@@ -206,7 +206,7 @@ input.floatright, input.floatright:hover {
 	border-radius: 4px !important;
 	padding: 5px;
 	margin-top: 20px;
-	text-align: right;
+	text-align: center;
 }
 
 /* Main header appearance ("___"'s Den) */
@@ -224,7 +224,7 @@ h1 {
 
 h2 {
 	font-size: 24px;
-	text-align: right;
+	text-align: center;
 	color: #9CE8D3;
 }
 
@@ -232,7 +232,7 @@ h2 {
 
 h3 {
 	font-size: 14px !important;
-	text-align: right;
+	text-align: center;
 	color: #9CE8D3;
 }
 
@@ -339,7 +339,7 @@ td.left.b, div.lionImage.featured-lion {
     border: solid 4px #7cc2af;
     box-shadow: 0px 0px 5px #1D2C24;
     transition: 0.2s;
-	margin-top: 15px; 
+	margin-top: 15px;
 }
 
 div#lion_image:hover {
@@ -473,7 +473,7 @@ td.right_odd:nth-child(1) > a:nth-child(1) > img:nth-child(1), td.right_odd.text
 
 #player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1) {
     font-size:0px;
-}   
+}
 
 #player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(1)::after {
     content:'Message';
@@ -482,7 +482,7 @@ td.right_odd:nth-child(1) > a:nth-child(1) > img:nth-child(1), td.right_odd.text
 
 #player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(3) {
     font-size:0px;
-}   
+}
 
 #player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(3)::after {
     content:'Send Gift!';
@@ -492,12 +492,12 @@ td.right_odd:nth-child(1) > a:nth-child(1) > img:nth-child(1), td.right_odd.text
 #player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(5) {
     font-size:0px;
 }
- 
+
 #player > tbody > tr.right > td:nth-child(1) > div.xlarge > a:nth-child(5)::after {
     content:'Create Trade';
     font-size:12px;
 }
- 
+
 #player > tbody > tr.right > td:nth-child(1) > p > a:nth-child(3)::after {
 	padding: 15px;
 }
@@ -534,7 +534,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img:hover {
 div.cave-grid>img[src$="nestingbanner.png"] {
 	content: url('https://cdn.allthepics.net/images/2026/04/01/aqua_bio-nestingbanner.png') !important;
 	padding-left: 0%;
-	height: 60px;	
+	height: 60px;
 	width:250px;
 	opacity: 0.7;
 	border: 0px ridge;
@@ -552,7 +552,7 @@ div.cave-grid>img:hover{
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
 	content: url('https://cdn.allthepics.net/images/2026/04/01/aqua_bio-prideoverviewbanner.png') !important;
 	padding-left: 0%;
-	height: 60px;	
+	height: 60px;
 	width:250px;
 	opacity: 0.7;
 	border: 0px ridge;
@@ -564,7 +564,7 @@ div.cave-grid>img[src$="prideoverviewbanner.png"] {
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
 	content: url('https://cdn.allthepics.net/images/2026/04/01/aqua_bio-unsortedlionsbanner.png') !important;
 	padding-left: 0%;
-	height: 60px;	
+	height: 60px;
 	width:250px;
 	opacity: 0.7;
 	border: 0px ridge;
@@ -576,7 +576,7 @@ div.cave-grid>img[src$="unsortedlionsbanner.png"] {
 div.cave-grid>img {
 	content: url('https://cdn.allthepics.net/images/2026/04/01/aqua_bio-cave-grid.png') !important;
 	padding-left: 0%;
-	height: 100%;	
+	height: 100%;
 	width:250px;
 	opacity: 0.7;
 	border: 0px ridge;
@@ -606,7 +606,7 @@ img[src$="den_ancestors.png"] {
 	object-fit: cover;
 	height: 100px !important;
 	width: 2 !important;
-} 
+}
 
 img[src$="ancestorsfem.png"] {
 	content: url('https://cdn.allthepics.net/images/2026/04/01/aqua_bio-ancestorsfem.png');
@@ -633,7 +633,7 @@ img[src$="den_beetlebook.png"] {
 	content: url('https://cdn.allthepics.net/images/2026/04/01/aqua_bio-den_beetlebook.png');
 	object-fit: cover;
 	height: 100px;
-	width: 2 !important 
+	width: 2 !important
 }
 
 div.lion-image-block {
