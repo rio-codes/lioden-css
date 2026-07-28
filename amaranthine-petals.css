@@ -133,7 +133,7 @@ input#postComment {
 .alert-danger a {
     color: var(--pale-petals);
     font-weight: 600;
-    text-shadow: 0 0 1em var(--light-lilac), 0 0 .5em var(--light-lilac);
+    text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
 }
 
 /* Main header appearance ("___"'s Den) */
@@ -679,7 +679,7 @@ div.commentText {
 
 .text-muted {
     color: var(--posiedon-coral) !important;
-    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+    text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
 }
 
 img.floatleft.commentTag.clear {
@@ -807,7 +807,7 @@ td.bottom button {
 .inner-table .right a {
     color: var(--evening-plum) !important;
     font-style: italic;
-    text-shadow: 0 0 2em var(--lavender-clouds), 0 0 .3em var(--lavender-clouds) !important;
+    text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;;
 }
 
 .inner-table .right a:hover {
@@ -871,7 +871,7 @@ table#player img {
 p.center a {
     position: relative !important;
     padding: 10px;
-    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;;
 }
 
 div.xlarge:nth-child(4) {
@@ -915,7 +915,7 @@ td.right_odd.text-right img {
     background: transparent;
     content: 'Block Member' !important;
     font-size: 20px !important;
-    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
     width: 100px !important;
     text-decoration: none !important;
     left: 50px;
@@ -931,7 +931,7 @@ td.right_odd.text-right img {
     background: transparent;
     content: 'Friend Request';
     font-size: 20px !important;
-    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
     width: 100px !important;
     text-decoration: none !important;
     left: 50px;
@@ -948,7 +948,7 @@ td.right_odd.text-right img {
     background: transparent;
     content: 'Message';
     font-size: 20px !important;
-    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
     width: 100px !important;
     text-decoration: none !important;
     height: 0px !important;
@@ -968,7 +968,7 @@ td.right_odd.text-right img {
     background: transparent;
     content: 'Send Gift!';
     font-size: 20px !important;
-    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
     width: 100px !important;
     text-decoration: none !important;
     height: 0px !important;
@@ -984,7 +984,7 @@ td.right_odd.text-right img {
     background: transparent;
     content: 'Create Trade';
     font-size: 20px !important;
-    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
     width: 100px !important;
     text-decoration: none !important;
     height: 0px !important;
