@@ -139,6 +139,7 @@ input#postComment {
 /* Main header appearance ("___"'s Den) */
 
 div#pageContainer.col-md-9 h1 {
+    font-family: "Meow Script" !important;
     text-indent: -9999px;
 }
 
@@ -380,7 +381,7 @@ div#pageContainer.col-md-9 h1:before {
 /* Primary header */
 
 h1 {
-    font-family: "Meow Script";
+    font-family: "Meow Script" !important;
     font-size: 58px;
     color: var(--evening-plum);
     font-weight: 200 !important;
@@ -393,7 +394,7 @@ h1 {
 /* Secondary header */
 
 h2 {
-    font-family: "Meow Script";
+    font-family: "Meow Script" !important;
     font-size: 28px;
     color: var(--evening-plum) !important;
     text-shadow: 0 0 2em, 0 0 .5em var(--lovely-violet) !important;
@@ -403,7 +404,7 @@ h2 {
 
 h3,
 div.center.h3 {
-    font-family: "Meow Script";
+    font-family: "Meow Script" !important;
     font-size: 34px !important;
     font-weight: 300;
     color: var(--evening-plum) !important;
@@ -1336,7 +1337,10 @@ div.center:nth-child(8)>a:nth-child(1) {
 
 #allies>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1),
 #allies>tbody:nth-child(1)>tr:nth-child(5)>td:nth-child(1),
-#clans>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1) {
+#clans>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1),
+#clans > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(1),
+#clans > tbody:nth-child(1) > tr:nth-child(7) > td:nth-child(1)
+ {
     display: none;
 }
 
