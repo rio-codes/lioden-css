@@ -1,4 +1,4 @@
-45rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr@charset "UTF-8";
+r@charset "UTF-8";
 
 /*
 King Without a Country
@@ -6,7 +6,7 @@ King Without a Country
 Created 07/2026 by lyri [#583579] for Cookie [#387705]
 AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
 
-Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Tawny [#251887], Hok-Z [#41458], Austin [#43750] 
+Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Tawny [#251887], Hok-Z [#41458], Austin [#43750]
 
 Full credits for code contributors, artwork, photos, icons, and fonts can be found at https://rio-codes.github.io/lioden-css/credits_king.txt .
 */
@@ -1683,7 +1683,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
 
 .container.main::after {
     content: "";
-    background-image: url('https://cdn.allthepics.net/images/2026/07/21/QAAAAASUVORK5CYII.png');
+    background-image: url('https://i.postimg.cc/hjn36QmG/QAAAAASUVORK5CYII.png');
     background-size: cover;
     display: block;
     height: 400px;
