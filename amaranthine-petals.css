@@ -1060,11 +1060,11 @@ div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
 }
 
 #fraOrganizationBlock {
-    background: radial-gradient(var(--pale-petals), var(--evening-plum)) !important;
+    background: none !important;
     padding: 20px;
     width: 100%;
     height: 600px;
-    border: 2px solid var(--evening-plum);
+    border: 0px;
     border-radius: 30px;
 }
 
