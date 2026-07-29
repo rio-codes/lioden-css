@@ -97,13 +97,12 @@ input,
 select,
 textarea {
     background: var(--soft-purple);
-    opacity: .7 !important;
     border: 1px solid var(--evening-plum);
     border-radius: 5px !important;
     box-shadow: none !important;
     text-shadow: 0 0 1em var(--lovely-violet), 0 0 .5em var(--lovely-violet);
-    color: var(--evening-plum) !important;
-    font-weight: 300;
+    color: var(--evening-plum);
+    font-weight: 600;
 }
 
 input#postComment {
@@ -1440,4 +1439,12 @@ button.button.bad.noclick.disabled {
     background: var(--evening-plum);
     color: #ffffff !important;
     border: 0px;
+}
+
+td.left.sub-row, .sub_menu {
+    background: #bcaac0a7;
+}
+
+.sub_menu_item_selected {
+    background: var(--lovely-violet);
 }
