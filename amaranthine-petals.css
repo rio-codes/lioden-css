@@ -1414,3 +1414,30 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
     pointer-events: none;
     opacity: 0.8;
 }
+
+/* Monkey Business Fixes */
+
+.combo-select-row {
+    min-height: 40px;
+    line-height: 10px;
+    overflow:enabled;
+}
+
+span.badge.uses, span.badge.counter {
+    background: none;
+}
+
+div.pr-0.col-xs-5.text-right.small {
+    position: relative;
+    left: 90px;
+    top: -6px;
+}
+
+button.button.bad.noclick.disabled {
+    opacity: 1;
+    font-weight: 900;
+    width: fit-content;
+    background: var(--evening-plum);
+    color: #ffffff !important;
+    border: 0px;
+}
