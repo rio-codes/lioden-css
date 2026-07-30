@@ -105,6 +105,11 @@ textarea {
     font-weight: 600;
 }
 
+select {
+    z-index: 20;
+    min-width: 50px !important;
+}
+
 input#postComment {
     background: var(--lovely-violet);
     border: 2px solid var(--evening-plum);
@@ -1447,4 +1452,13 @@ td.left.sub-row, .sub_menu {
 
 .sub_menu_item_selected {
     background: var(--lovely-violet);
+}
+
+div.floatright {
+    display: contents !important;
+}
+
+div.floatleft {
+    position: relative;
+    top: 0px !important;
 }
