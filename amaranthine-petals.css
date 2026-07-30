@@ -50,9 +50,13 @@ body {
 
 a:link,
 a:visited {
-    color: var(--evening-plum) !important;
+    color: var(--pale-petals) !important;
     font-weight: 600 !important;
     text-shadow: 0 0 1em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
+}
+
+a.bigger, span.small a {
+    color: var(--evening-plum) !important;
 }
 
 a img {
@@ -235,6 +239,12 @@ div.floatleft:not(div.b.floatleft),
 div.floatright:not(div.b.floatright):not(div.floatright:nth-child(2)) {
     position: relative;
     top: 40px;
+}
+
+div.floatright.right:nth-child(1) {
+    position: relative !important;
+    top: 10px !important;
+    right: -6px !important;
 }
 
 div.lionImage.featured-lion img {
@@ -478,7 +488,7 @@ br.clear {
     text-shadow: 0 0 2em var(--lovely-violet), 0 0 .3em var(--lovely-violet) !important;
     text-align: right;
     position: relative;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 .sidebar a {
@@ -544,6 +554,9 @@ div.panel a {
     border: 0px !important;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.col-md-3 .panel a {
 }
 
 .panel-body.small .center a,
@@ -715,7 +728,7 @@ div.pt-3.pb-3.customiser-bar.text-center button {
 }
 
 table#about.table a {
-    color: var(--evening-plum) !important;
+    color: var(--pale-petals) !important;
     text-decoration: none;
 }
 
