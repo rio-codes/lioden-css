@@ -9,7 +9,8 @@ Full credits for code contributors, artwork, photos, icons, and fonts can be fou
 
 /* Import Fonts (From Google Fonts) */
 
-@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Meow+Script&family=Noto+Sans+Yi&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap');
+
 
 /* Color variables */
 :root {
@@ -27,7 +28,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
-    font-family: "Flamenco";
+    font-family: "Ysabeau Infant";
     font-weight: 600 !important;
     font-size: 16px;
     color: var(--evening-plum);
@@ -38,7 +39,7 @@ body {
 /*.breadcrumb::after {
     content: "Custom CSS by Lyri";
     color: var(--light-lilac) !important;
-    font-family: "Meow Script";
+    font-family: "My Soul";
     font-size: 23px;
     font-weight: 500;
     overflow: visible !important;
@@ -143,7 +144,7 @@ input#postComment {
 /* Main header appearance ("___"'s Den) */
 
 div#pageContainer.col-md-9 h1 {
-    font-family: "Meow Script" !important;
+    font-family: "My Soul" !important;
     text-indent: -9999px;
 }
 
@@ -194,10 +195,10 @@ div#pageContainer.col-md-9 h1 {
 }
 
 div#pageContainer.col-md-9 h1:before {
-    font-family: "Meow Script";
-    content: "Amaranth's Respite";
+    font-family: "My Soul";
+    content: "The Grove of Je Ne Sais Quois";
     font-weight: 600;
-    text-indent: 0px !important;
+    text-indent: 130px !important;
     width: 100% !important;
     float: left;
     position: relative;
@@ -242,43 +243,29 @@ div.lionImage.featured-lion img {
 
 
 
-/* Scroll Box */
+/* Responsive Breakpoint Styles */
 
-div#pageContainer.col-md-9 h1:before {
-    font-family: "Meow Script";
-    font-weight: 600;
-    text-indent: 130px;
-    float: left;
-    position: relative;
-    top: 20px;
-    margin-bottom: 30px;
-}
-
-/*@media only screen and (max-width: 743px) {
+/* Mobile Devices */
+@media only screen and (max-width: 743px) {
     div#pageContainer.col-md-9 h1:before {
-        font-family: "Meow Script";
-        content: "a lyrical respite";
-        font-weight: 600;
-        font-size: 47px;
-        text-indent: 40px;
-        float: left;
-        position: relative;
+        font-size: 47px !important;
+        text-indent: 40px !important;
         top: 40px;
-        margin-bottom: 30px;
     }
 
-    .navbar a {
-        font-size: 29px !important;
+    .navbar li a {
+        font-size: 20px !important;
     }
 
     .about-me {
+        column-count: 1 !important;
         align-items: center;
-        background: radial-gradient(var(--evening-plum), var(--lavender-clouds));
+        background: radial-gradient(var(--evening-plum), var(--lavender-clouds)) !important;
         position: relative;
-        top: -50px;
-        width: 85%;
+        top: -10px;
+        width: 100%;
         height: auto;
-        border-radius: 0px;
+        border-radius: 10px;
         border: 2px solid var(--evening-plum);
     }
 
@@ -288,43 +275,28 @@ div#pageContainer.col-md-9 h1:before {
 
     .scroll-box {
         backdrop-filter: brightness(130%) contrast(70%) !important;
-        padding: 30px;
+        padding: 20px;
         font-size: 16px;
         overflow-y: auto;
-        height: 400px;
+        height: 380px !important;
         width: 100%;
         position: relative;
         top: 0px;
+        left: 0px;
         border-radius: 10px;
-        scrollbar-color: var(--lavender-clouds) var(--evening-plum);
+        scrollbar-color: var(--lavender-clouds) var(--evening-plum) !important;
     }
-
-
 }
 
-@media only screen and (max-width: 819px) and (min-width: 744px) {
+/* Small Tablets */
+@media only screen and (min-width: 744px) and (max-width: 819px) {
     div#pageContainer.col-md-9 h1:before {
-        font-family: "Meow Script";
-        content: "a lyrical respite";
-        font-weight: 600;
-        text-indent: 65px;
-        float: left;
-        position: relative;
+        text-indent: 65px !important;
         top: 20px;
-        margin-bottom: 30px;
     }
 
-    .navbar a {
-        font-size: 29px !important;
-    }
-
-    .about-me {
-        align-items: center;
-    }
-
-
-    .scroll-box {
-
+    .navbar li a {
+        font-size: 22px !important;
     }
 
     .external-link {
@@ -332,60 +304,19 @@ div#pageContainer.col-md-9 h1:before {
         top: -50px;
         left: -38%;
     }
-
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 820px) {
-    div#pageContainer.col-md-9 h1:before {
-
-    }
-
-    .navbar a {
+/* Medium Tablets */
+@media only screen and (min-width: 820px) and (max-width: 1000px) {
+    .navbar li a {
         font-size: 22px !important;
     }
-
-    .about-me {
-
-    }
-
-    .scroll-image img {
-        display: none;
-    }
-
-    .scroll-box {
-
-    }
-
 }
-
-@media only screen and (min-width: 1001px) {
-    div#pageContainer.col-md-9 h1:before {
-
-    }
-
-    .navbar a {
-        font-size: 29px !important;
-    }
-
-    .about-me {
-
-    }
-
-    .scroll-image img {
-        display: none;
-    }
-
-    .scroll-box {
-
-    }
-
-
-} */
 
 /* Primary header */
 
 h1 {
-    font-family: "Meow Script" !important;
+    font-family: "My Soul" !important;
     font-size: 58px;
     color: var(--evening-plum);
     font-weight: 200 !important;
@@ -398,7 +329,7 @@ h1 {
 /* Secondary header */
 
 h2 {
-    font-family: "Meow Script" !important;
+    font-family: "My Soul" !important;
     font-size: 28px;
     color: var(--evening-plum) !important;
     text-shadow: 0 0 2em, 0 0 .5em var(--lovely-violet) !important;
@@ -408,7 +339,7 @@ h2 {
 
 h3,
 div.center.h3 {
-    font-family: "Meow Script" !important;
+    font-family: "My Soul" !important;
     font-size: 34px !important;
     font-weight: 300;
     color: var(--evening-plum) !important;
@@ -478,7 +409,7 @@ div.center.h3 {
 
 .navbar li a:hover {
     background: var(--lavender-clouds) !important;
-    border-bottom: 5px solid var(--demeter-wheat) !important;
+    border-bottom: 5px solid var(--evening-plum) !important;
     z-index: 500 !important;
     opacity: 1 !important;
 }
@@ -486,7 +417,7 @@ div.center.h3 {
 /* Breadcrumb (Home button, den owner, bookmark) */
 
 .breadcrumb {
-    font-family: "Flamenco" !important;
+    font-family: "Ysabeau Infant" !important;
     background: transparent !important;
     backdrop-filter: brightness(90%);
     border: 1px inset !important;
@@ -506,11 +437,11 @@ div.center.h3 {
 }
 
 .breadcrumb .active {
-    font-family: "Flamenco";
+    font-family: "Ysabeau Infant";
     color: var(--evening-plum) !important;
     font-size: 18px;
     font-weight: 600;
-    text-shadow: 0 0 2em var(--athena-glow), 0 0 .3em var(--athena-glow) !important;
+    text-shadow: 0 0 2em var(--pale-petals), 0 0 .3em var(--pale-petals) !important;
 }
 
 .breadcrumb .active:after {
@@ -537,10 +468,10 @@ div.center.h3 {
 /* Right-side panel appearance */
 
 .sidebar h3 {
-    font-family: "Meow Script";
+    font-family: "My Soul";
     font-size: 35px !important;
     font-weight: 600;
-    color: var(--posiedon-coral) !important;
+    color: var(--evening-plum) !important;
     text-shadow: 0 0 2em var(--lovely-violet), 0 0 .3em var(--lovely-violet) !important;
     text-align: right;
     position: relative;
@@ -682,7 +613,7 @@ div.commentText {
 }
 
 .text-muted {
-    color: var(--posiedon-coral) !important;
+    color: var(--evening-plum) !important;
     text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
 }
 
@@ -702,7 +633,7 @@ img.floatleft.commentTag.clear {
 button.button:hover,
 .btn.btn:hover {
     background: var(--evening-plum);
-    color: var(--demeter-wheat) !important;
+    color: var(--pale-petals) !important;
     transition: 1s;
 }
 
@@ -720,7 +651,7 @@ button.button,
     color: var(--evening-plum) !important;
     width: 130px;
     height: 25px;
-    filter: drop-shadow(0px 0px 3rem var(--athena-glow)) !important;
+    filter: drop-shadow(0px 0px 3rem var(--lavender-clouds)) !important;
 }
 
 /* All tables - styling */
@@ -814,7 +745,7 @@ th {
 }
 
 .table .bottom {
-    background: var(--athena-glow);
+    background: var(--light-lilac);
     color: var(--evening-plum);
 }
 
@@ -826,7 +757,7 @@ td.bottom button {
     background: transparent;
     color: var(--evening-plum) !important;
     text-shadow: 0 0 2em var(--lovely-violet), 0 0 .3em var(--lovely-violet) !important;
-    font-family: "Flamenco" !important;
+    font-family: "Ysabeau Infant" !important;
     font-weight: 300 !important;
     font-size: 14px !important;
     border: 0px solid var(--evening-plum);
@@ -840,7 +771,7 @@ td.bottom button {
     font-size: 14px;
     border-top: 1px dotted var(--evening-plum);
     border-right: 0px;
-    border-left: 1px solid var(--posiedon-coral);
+    border-left: 1px solid var(--evening-plum);
     border-radius: 0px 0px 0px 0px !important;
 }
 
@@ -851,7 +782,7 @@ td.bottom button {
 }
 
 .inner-table .right a:hover {
-    color: var(--demeter-wheat) !important;
+    color: var(--evening-plum) !important;
 }
 
 .right_odd {
@@ -926,9 +857,9 @@ p.center:nth-child(5) {
 }
 
 div.center.h3 {
-    font-family: Flamenco;
+    font-family: Ysabeau Infant;
     font-weight: 400;
-    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--lovely-violet) !important;
 }
 
 /* Remove icons and edit text for user profile buttons */
@@ -1087,16 +1018,16 @@ div.xlarge:nth-child(4)>a {
 /* Cave and Beetle Mound grid appearances*/
 #fraOrganizationBlock>div:nth-child(2)>div:nth-child(1),
 div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
-    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--lovely-violet) !important;
 }
 
 .cave-grid,
 .mound-grid {
     background: none;
-    color: var(--posiedon-coral) !important;
+    color: var(--evening-plum) !important;
     border: 0px;
     border-radius: 2px !important;
-    font-family: "Meow Script" !important;
+    font-family: "My Soul" !important;
     font-size: 30px !important;
 }
 
@@ -1113,13 +1044,13 @@ div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
 
 div.feature,
 .feature {
-    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
-    color: var(--posiedon-coral);
+    background: radial-gradient(var(--lavender-clouds), var(--lovely-violet));
+    color: var(--evening-plum);
     font-size: 13px;
     font-weight: 200;
     z-index: 5;
-    box-shadow: 0px 3px 8px 4px var(--posiedon-coral) !important;
-    text-shadow: 0 0 2em, 0 0 .5em var(--posiedon-coral) !important;
+    box-shadow: 0px 3px 8px 4px var(--lavender-clouds) !important;
+    text-shadow: 0 0 2em, 0 0 .5em var(--lovely-violet) !important;
     border: 0px;
     border-radius: 2px;
 }
@@ -1133,7 +1064,7 @@ div.left {
 div.left h3,
 .feature h3 {
     font-weight: 500 !important;
-    color: var(--posiedon-coral) !important;
+    color: var(--evening-plum) !important;
 }
 
 
@@ -1147,12 +1078,12 @@ div.col-md-4 div h3,
 }
 
 .dynastycollection a:hover {
-    color: var(--demeter-wheat);
+    color: var(--evening-plum);
 }
 
 div.mb-2 div,
 div.col div {
-    color: var(--posiedon-coral) !important;
+    color: var(--evening-plum) !important;
     border-radius: 10px;
     height: 0px;
     margin: 5px;
@@ -1180,7 +1111,7 @@ div.col div img {
 /* Edit Details */
 
 table.table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>th:nth-child(1) {
-    background: radial-gradient(var(--hera-hearth), var(--hermes-heat));
+    background: radial-gradient(var(--lavender-clouds), var(--lovely-violet));
     color: var(--evening-plum) !important;
 }
 
@@ -1199,7 +1130,7 @@ td.left b {
         left: 0;
         width: 100%;
         height: 100%;
-        background: url('https://cdn.allthepics.net/images/2026/05/11/wallhaven-7pvl3e.jpg') no-repeat center center;
+        background: url('https://i.postimg.cc/xj3hM5zw/wallhaven-7pvl3e.jpg') no-repeat center center;
         background-size: cover;
         z-index: -1;
     }
@@ -1225,7 +1156,7 @@ div.mound-grid img, div.cave-grid img {
 }
 
 div.col-md-3:nth-child(1) > a:nth-child(1) {
-        border: 2px solid var(evening-plum);
+        border: 2px solid var(--evening-plum);
     border-radius: 20px;
 }
 div.cave-grid>img[src$="unsortedlionsbanner.png"] {
@@ -1413,7 +1344,7 @@ img[src$="iconFB.png"] {
     height: 50px;
     width: 50px;
     overflow: hidden;
-    filter: drop-shadow(0px 0px 3rem var(--posiedon-coral)) !important;
+    filter: drop-shadow(0px 0px 3rem var(--lovely-violet)) !important;
 }
 
 img[src$="iconTwit.png"] {
@@ -1424,7 +1355,7 @@ img[src$="iconTwit.png"] {
     position: relative;
     top: 2px;
     overflow: hidden;
-    filter: drop-shadow(0px 0px 3rem var(--posiedon-coral)) !important;
+    filter: drop-shadow(0px 0px 3rem var(--lovely-violet)) !important;
 }
 
 img[src$="iconInsta.png"] {
@@ -1435,7 +1366,7 @@ img[src$="iconInsta.png"] {
     position: relative;
     top: 2px;
     overflow: hidden;
-    filter: drop-shadow(0px 0px 3rem var(--posiedon-coral)) !important;
+    filter: drop-shadow(0px 0px 3rem var(--lovely-violet)) !important;
 }
 
 
@@ -1459,7 +1390,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
 
 .container.main::after {
     content: "";
-    background-image: url('https://cdn.allthepics.net/images/2026/05/11/am_pagedoll.png');
+    background-image: url('https://i.postimg.cc/RVGLGRfk/f2u-rainbow-series-1-by-sh1ve-dccrmez.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
