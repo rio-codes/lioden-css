@@ -748,8 +748,44 @@ table.table {
     border-radius: 2px;
 }
 
+div#fraBaseBlock {
+    background: var(--lavender-clouds);
+}
+
+div.row.customiser-row:nth-child(odd) {
+    background: var(--soft-purple);
+}
+
+div.slot-label.mr-2, .row.p-1.customiser-bottom, .container-fluid.customiser-block.table {
+    background: var(--lavender-clouds) !important;
+}
+
+select, select.custom-select, input.form-control.pr-1, .search_field.form-control  {
+   background: var(--lovely-violet) !important;
+   border: 1px solid var(--evening-plum) !important;
+   color: var(--evening-plum) !important;
+   text-align: left;
+}
+
+textarea {
+    background: var(--light-lilac) !important;
+    width: 90% !important;
+    align-content: center !important;
+}
+
+.form-control.dib.pl-1.pr-0 {
+    background: var(--soft-purple);
+}
+div.pt-3.pb-3.customiser-bar.text-center, div.g-col-2.left {
+    background: transparent;
+}
+
+div.pt-3.pb-3.customiser-bar.text-center button {
+    width: 124px;
+}
+
 table#about.table a {
-    color: var(--evening-plum);
+    color: var(--evening-plum) !important;
     text-decoration: none;
 }
 
@@ -1121,6 +1157,24 @@ div.col div {
     height: 0px;
     margin: 5px;
     background: transparent !important;
+}
+
+div.col-12.top, div.g-col-12.text-center {
+    background: var(--evening-plum) !important;
+    color: #ffffff;
+    border-radius: 0px;
+}
+
+div.left.col-xs-3 {
+    background: var(--lavender-clouds);
+}
+
+div.combo-selection-parent, .search_field, .row.p-1, div.right.col-xs-3.pl-1.pr-1.customiser-ui-control {
+    background: var(--lavender-clouds) !important;
+    color: var(--evening-plum);
+}
+div.col div img {
+    overflow: hidden !important;
 }
 
 /* Edit Details */
