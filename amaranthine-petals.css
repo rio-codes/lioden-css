@@ -729,17 +729,14 @@ table.table th {
     border-bottom: 1px solid var(--evening-plum);
 }
 
-.top,
-th,
-#attack th {
-    background: #bcaac0a7 !important;
-    border-radius: 2px 2px 0px 0px;
-}
 
 .bottom,
-th {
+.top,
+th,
+#attack th  {
     background: var(--lavender-clouds);
     color: var(--evening-plum) !important;
+    border-bottom: 1px solid var(--evening-plum) !important;
 }
 
 .table .bottom {
@@ -1016,7 +1013,9 @@ div.xlarge:nth-child(4)>a {
 /* Cave and Beetle Mound grid appearances*/
 #fraOrganizationBlock>div:nth-child(2)>div:nth-child(1),
 div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
-    text-shadow: 0 0 2em, 0 0 .5em var(--lovely-violet) !important;
+    font-size: 25px !important;
+    font-weight: 600 !important;
+    text-shadow: 0 0 1em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
 }
 
 .cave-grid,
