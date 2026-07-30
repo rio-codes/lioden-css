@@ -29,9 +29,9 @@ body {
     background-attachment: fixed;
     z-index: -1;
     font-family: "Ysabeau Infant";
-    font-weight: 600 !important;
+    font-weight: 300 !important;
     font-size: 16px;
-    color: var(--evening-plum);
+    color: var(--pale-petals);
 }
 
 /* CSS Credit */
@@ -50,9 +50,9 @@ body {
 
 a:link,
 a:visited {
-    color: var(--pale-petals) !important;
+    color: var(--evening-plum) !important;
     font-weight: 600 !important;
-    text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .5em var(--lavender-clouds) !important;
+    text-shadow: 0 0 1em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
 }
 
 a img {
@@ -198,7 +198,7 @@ div#pageContainer.col-md-9 h1:before {
     font-family: "My Soul";
     content: "The Grove of Je Ne Sais Quois";
     font-weight: 600;
-    text-indent: 130px !important;
+    text-indent: 0px !important;
     width: 100% !important;
     float: left;
     position: relative;
@@ -372,13 +372,13 @@ div.center.h3 {
     border: 0px !important;
     border-radius: 0px 0px 2px 2px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .topbar a {
     color: var(--pale-petals) !important;
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 18px;
+    font-weight: 300 !important;
     text-shadow: 0 0 1em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
 }
 
@@ -391,7 +391,7 @@ div.center.h3 {
 /* Navbar (Den/Crossroads/Etc.) */
 
 .navbar {
-    font-family: "Overlock";
+    font-family: "Ysabeau Infant";
     font-size: 20px !important;
     font-weight: 500;
     background: var(--lovely-violet);
@@ -409,7 +409,6 @@ div.center.h3 {
 
 .navbar li a:hover {
     background: var(--lavender-clouds) !important;
-    border-bottom: 5px solid var(--evening-plum) !important;
     z-index: 500 !important;
     opacity: 1 !important;
 }
@@ -433,14 +432,14 @@ div.center.h3 {
 
 .breadcrumb-item:before {
     content: "~" !important;
-    color: var(--soft-purple) !important;
+    color: var(--evening-plum) !important;
 }
 
 .breadcrumb .active {
     font-family: "Ysabeau Infant";
     color: var(--evening-plum) !important;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     text-shadow: 0 0 2em var(--pale-petals), 0 0 .3em var(--pale-petals) !important;
 }
 
@@ -455,7 +454,7 @@ div.center.h3 {
 .breadcrumb a {
     color: var(--pale-petals) !important;
     text-shadow: 0 0 2em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
-    font-weight: 800 !important;
+    font-weight: 400 !important;
     font-size: 18px;
 }
 
@@ -467,6 +466,10 @@ div.center.h3 {
 
 /* Right-side panel appearance */
 
+br.clear {
+    position: relative !important;
+    top: -10px !important;
+}
 .sidebar h3 {
     font-family: "My Soul";
     font-size: 35px !important;
@@ -476,10 +479,6 @@ div.center.h3 {
     text-align: right;
     position: relative;
     padding-top: 25px;
-}
-
-.floatright {
-    display: none;
 }
 
 .sidebar a {
@@ -529,7 +528,7 @@ div.panel {
     text-shadow: 0 0 2em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
     font-size: 16px;
     font-weight: 600;
-    text-align: left;
+    text-align: right;
 }
 
 .panel-body.small a,
@@ -582,7 +581,7 @@ div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
     color: var(--pale-petals) !important;
     font-size: 13px;
     padding: 1px;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 /* Comment box */
@@ -723,12 +722,11 @@ table#about.table a {
 .table .top,
 #sparring th,
 table.table th {
-    background: #bcaac0a7 !important;
+    background: var(--soft-purple) !important;
     color: var(--evening-plum);
     font-size: 18px;
     border-radius: 10px 10px 0px 0px;
     border-bottom: 1px solid var(--evening-plum);
-    opacity: 93% !important;
 }
 
 .top,
@@ -745,8 +743,8 @@ th {
 }
 
 .table .bottom {
-    background: var(--light-lilac);
-    color: var(--evening-plum);
+    background: var(--evening-plum);
+    color: var(--lavender-clouds) !important;
 }
 
 td.bottom button {
@@ -1028,7 +1026,7 @@ div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
     border: 0px;
     border-radius: 2px !important;
     font-family: "My Soul" !important;
-    font-size: 30px !important;
+    font-size: 25px !important;
 }
 
 #fraOrganizationBlock {
@@ -1151,8 +1149,9 @@ div.mound-grid img, div.cave-grid img {
 }
 
 #fraMoundList div.mound-grid {
+    padding: 0px !important;
     position: relative;
-    top: 30px;
+    top: 10px;
 }
 
 div.col-md-3:nth-child(1) > a:nth-child(1) {
@@ -1439,11 +1438,12 @@ td.left.sub-row, .sub_menu {
     background: var(--lovely-violet);
 }
 
-div.floatright {
-    display: contents !important;
+div.b.floatright {
+    position: relative !important;
+    top: -7px !important;
 }
 
-div.floatleft {
-    position: relative;
-    top: 0px !important;
+div.b.floatleft {
+    position: relative !important;
+    top: -7px !important;
 }
