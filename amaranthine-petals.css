@@ -359,7 +359,7 @@ div#pageContainer.col-md-9 h1.section-title {
     border-radius: 8px;
 }
 
-/* Stamps Box */
+/* Stamps Box (2 Stamps per row layout) */
 
 .stamps-wrapper {
     width: 100%;
@@ -367,15 +367,75 @@ div#pageContainer.col-md-9 h1.section-title {
     box-sizing: border-box;
 }
 
+.stamps-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: 12px !important;
+    height: 290px;
+    width: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
 .stamps-box img {
-    max-height: 100px;
-    margin: 5px;
+    max-width: calc(50% - 4px) !important;
+    height: auto;
+    object-fit: contain;
+    margin: 0 !important;
+    padding: 2px !important;
     vertical-align: middle;
     transition: transform 0.3s ease;
+    box-sizing: border-box;
 }
 
 .stamps-box img:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
+}
+
+/* Adoptables 3 per row Grid */
+
+.adoptables-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.adoptables-grid a,
+.art-box a[href*="finaloutpost.net"] {
+    display: inline-block;
+    flex: 0 0 calc(33.333% - 6px);
+    width: calc(33.333% - 6px);
+    max-width: calc(33.333% - 6px);
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.adoptables-grid a img,
+.art-box a[href*="finaloutpost.net"] img {
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: inline-block;
+    padding: 4px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+    object-fit: contain;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    transition: transform 0.3s ease;
+}
+
+.adoptables-grid a img:hover,
+.art-box a[href*="finaloutpost.net"] img:hover {
+    transform: scale(1.08);
 }
 
 /* Custom Scrollbar Styles for WebKit Browsers */
