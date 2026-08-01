@@ -194,6 +194,151 @@ div#pageContainer.col-md-9 h1 {
     top: 14%;
 }
 
+/* Custom Sub-Scrolling Boxes Layout (Art & Adoptables, Goals, Stamps) */
+
+.two-column-wrapper,
+.box-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.box-column,
+.column-box {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 280px;
+    box-sizing: border-box;
+}
+
+/* Titles above boxes (Left-aligned, "My Soul" font like h1) */
+
+.box-title,
+.section-title,
+.art-title,
+.goals-title,
+.stamps-title,
+.two-column-wrapper h1,
+.two-column-wrapper h2,
+.two-column-wrapper h3,
+.stamps-wrapper h1,
+.stamps-wrapper h2,
+.stamps-wrapper h3 {
+    font-family: "My Soul" !important;
+    font-size: 45px !important;
+    color: var(--evening-plum) !important;
+    font-weight: 200 !important;
+    text-align: left !important;
+    text-shadow: 0 0 1em var(--lavender-clouds), 0 0 .2em var(--lavender-clouds) !important;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    text-indent: 0px !important;
+    width: 100% !important;
+    float: none !important;
+    position: relative;
+    top: 0px;
+}
+
+div#pageContainer.col-md-9 .two-column-wrapper h1:before,
+div#pageContainer.col-md-9 .stamps-wrapper h1:before,
+div#pageContainer.col-md-9 h1.box-title:before,
+div#pageContainer.col-md-9 h1.art-title:before,
+div#pageContainer.col-md-9 h1.goals-title:before,
+div#pageContainer.col-md-9 h1.stamps-title:before,
+div#pageContainer.col-md-9 h1.section-title:before {
+    display: none !important;
+    content: none !important;
+}
+
+div#pageContainer.col-md-9 .two-column-wrapper h1,
+div#pageContainer.col-md-9 .stamps-wrapper h1,
+div#pageContainer.col-md-9 h1.box-title,
+div#pageContainer.col-md-9 h1.art-title,
+div#pageContainer.col-md-9 h1.goals-title,
+div#pageContainer.col-md-9 h1.stamps-title,
+div#pageContainer.col-md-9 h1.section-title {
+    text-indent: 0px !important;
+    width: auto !important;
+}
+
+/* Base style for sub-scrolling boxes */
+
+.art-box,
+.goals-box,
+.stamps-box,
+.custom-scroll-box {
+    background: radial-gradient(var(--lavender-clouds), var(--lovely-violet)) !important;
+    border: 1px solid var(--evening-plum);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--pale-petals);
+    font-size: 16px;
+    overflow-y: auto;
+    scrollbar-color: var(--evening-plum) var(--lavender-clouds) !important;
+    text-align: left;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.art-box,
+.goals-box {
+    height: 290px;
+    width: 100%;
+}
+
+/* Stamps Box (Full Width matching About Me box) */
+
+.stamps-wrapper {
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.stamps-box {
+    width: 100%;
+    height: 200px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.stamps-box img {
+    max-height: 100px;
+    margin: 5px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.stamps-box img:hover {
+    transform: scale(1.05);
+}
+
+/* Custom Scrollbar Styles for WebKit Browsers */
+.art-box::-webkit-scrollbar,
+.goals-box::-webkit-scrollbar,
+.stamps-box::-webkit-scrollbar,
+.custom-scroll-box::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.art-box::-webkit-scrollbar-track,
+.goals-box::-webkit-scrollbar-track,
+.stamps-box::-webkit-scrollbar-track,
+.custom-scroll-box::-webkit-scrollbar-track {
+    background: var(--lavender-clouds);
+    border-radius: 4px;
+}
+
+.art-box::-webkit-scrollbar-thumb,
+.goals-box::-webkit-scrollbar-thumb,
+.stamps-box::-webkit-scrollbar-thumb,
+.custom-scroll-box::-webkit-scrollbar-thumb {
+    background: var(--evening-plum);
+    border-radius: 4px;
+}
+
 div#pageContainer.col-md-9 h1 {
     width: 100% !important;
 }
@@ -295,6 +440,42 @@ div.lionImage.featured-lion img {
         left: 0px;
         border-radius: 10px;
         scrollbar-color: var(--lavender-clouds) var(--evening-plum) !important;
+    }
+
+    .two-column-wrapper,
+    .box-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .box-column,
+    .column-box {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .art-box,
+    .goals-box,
+    .stamps-box,
+    .custom-scroll-box {
+        backdrop-filter: brightness(130%) contrast(70%) !important;
+        padding: 15px;
+        height: 320px;
+        scrollbar-color: var(--lavender-clouds) var(--evening-plum) !important;
+    }
+
+    .box-title,
+    .section-title,
+    .art-title,
+    .goals-title,
+    .stamps-title,
+    .two-column-wrapper h1,
+    .two-column-wrapper h2,
+    .two-column-wrapper h3,
+    .stamps-wrapper h1,
+    .stamps-wrapper h2,
+    .stamps-wrapper h3 {
+        font-size: 34px !important;
     }
 }
 
