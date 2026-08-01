@@ -334,7 +334,7 @@ div#pageContainer.col-md-9 h1.section-title {
 .goals-box,
 .stamps-box,
 .albums-box {
-    height: 290px;
+    height: 330px;
     width: 100%;
 }
 
@@ -374,7 +374,7 @@ div#pageContainer.col-md-9 h1.section-title {
     justify-content: flex-start;
     align-content: flex-start;
     padding: 12px !important;
-    height: 290px;
+    height: 330px;
     width: 100%;
     overflow-y: auto;
     box-sizing: border-box;
