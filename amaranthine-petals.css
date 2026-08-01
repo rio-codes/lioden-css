@@ -178,7 +178,7 @@ div#pageContainer.col-md-9 h1 {
     background: transparent !important;
     color: var(--pale-petals);
     font-size: 16px;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 290px !important;
     width: auto;
     position: relative;
@@ -213,16 +213,41 @@ div#pageContainer.col-md-9 h1 {
     box-sizing: border-box;
 }
 
+/* Asymmetric 2/3 and 1/3 Column Sizing (e.g. Albums & Stamps Row) */
+
+.column-2-3,
+.albums-column {
+    flex: 2 1 calc(66.666% - 14px);
+    min-width: 280px;
+    box-sizing: border-box;
+}
+
+.column-1-3,
+.stamps-column {
+    flex: 1 1 calc(33.333% - 7px);
+    min-width: 200px;
+    box-sizing: border-box;
+}
+
 /* Titles above boxes (Left-aligned, "My Soul" font like h1) */
 
 .box-title,
 .section-title,
+.about-title,
+.about-me-title,
 .art-title,
 .goals-title,
+.albums-title,
 .stamps-title,
+.about-me-wrapper h1,
+.about-me-wrapper h2,
+.about-me-wrapper h3,
 .two-column-wrapper h1,
 .two-column-wrapper h2,
 .two-column-wrapper h3,
+.albums-wrapper h1,
+.albums-wrapper h2,
+.albums-wrapper h3,
 .stamps-wrapper h1,
 .stamps-wrapper h2,
 .stamps-wrapper h3 {
@@ -241,22 +266,44 @@ div#pageContainer.col-md-9 h1 {
     top: 0px;
 }
 
+/* Margin adjustment when About Me has a title above it */
+.box-title + .about-me,
+.about-title + .about-me,
+.about-me-title + .about-me,
+.about-me-wrapper .about-me,
+.column-2-3 .about-me,
+.column-box .about-me,
+.two-column-wrapper .about-me {
+    margin-top: 5px;
+    top: 0px;
+}
+
+div#pageContainer.col-md-9 .about-me-wrapper h1:before,
 div#pageContainer.col-md-9 .two-column-wrapper h1:before,
 div#pageContainer.col-md-9 .stamps-wrapper h1:before,
+div#pageContainer.col-md-9 .albums-wrapper h1:before,
 div#pageContainer.col-md-9 h1.box-title:before,
+div#pageContainer.col-md-9 h1.about-title:before,
+div#pageContainer.col-md-9 h1.about-me-title:before,
 div#pageContainer.col-md-9 h1.art-title:before,
 div#pageContainer.col-md-9 h1.goals-title:before,
+div#pageContainer.col-md-9 h1.albums-title:before,
 div#pageContainer.col-md-9 h1.stamps-title:before,
 div#pageContainer.col-md-9 h1.section-title:before {
     display: none !important;
     content: none !important;
 }
 
+div#pageContainer.col-md-9 .about-me-wrapper h1,
 div#pageContainer.col-md-9 .two-column-wrapper h1,
 div#pageContainer.col-md-9 .stamps-wrapper h1,
+div#pageContainer.col-md-9 .albums-wrapper h1,
 div#pageContainer.col-md-9 h1.box-title,
+div#pageContainer.col-md-9 h1.about-title,
+div#pageContainer.col-md-9 h1.about-me-title,
 div#pageContainer.col-md-9 h1.art-title,
 div#pageContainer.col-md-9 h1.goals-title,
+div#pageContainer.col-md-9 h1.albums-title,
 div#pageContainer.col-md-9 h1.stamps-title,
 div#pageContainer.col-md-9 h1.section-title {
     text-indent: 0px !important;
@@ -267,6 +314,7 @@ div#pageContainer.col-md-9 h1.section-title {
 
 .art-box,
 .goals-box,
+.albums-box,
 .stamps-box,
 .custom-scroll-box {
     background: radial-gradient(var(--lavender-clouds), var(--lovely-violet)) !important;
@@ -283,24 +331,40 @@ div#pageContainer.col-md-9 h1.section-title {
 }
 
 .art-box,
-.goals-box {
+.goals-box,
+.stamps-box,
+.albums-box {
     height: 290px;
     width: 100%;
 }
 
-/* Stamps Box (Full Width matching About Me box) */
+/* Full Width Favorite Albums Image Box */
 
-.stamps-wrapper {
+.albums-wrapper {
     width: 100%;
     margin-top: 20px;
     box-sizing: border-box;
 }
 
-.stamps-box {
-    width: 100%;
-    height: 200px;
+.albums-box {
     overflow-x: auto;
     overflow-y: auto;
+}
+
+.albums-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Stamps Box */
+
+.stamps-wrapper {
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
 }
 
 .stamps-box img {
@@ -317,6 +381,7 @@ div#pageContainer.col-md-9 h1.section-title {
 /* Custom Scrollbar Styles for WebKit Browsers */
 .art-box::-webkit-scrollbar,
 .goals-box::-webkit-scrollbar,
+.albums-box::-webkit-scrollbar,
 .stamps-box::-webkit-scrollbar,
 .custom-scroll-box::-webkit-scrollbar {
     width: 8px;
@@ -325,6 +390,7 @@ div#pageContainer.col-md-9 h1.section-title {
 
 .art-box::-webkit-scrollbar-track,
 .goals-box::-webkit-scrollbar-track,
+.albums-box::-webkit-scrollbar-track,
 .stamps-box::-webkit-scrollbar-track,
 .custom-scroll-box::-webkit-scrollbar-track {
     background: var(--lavender-clouds);
@@ -333,6 +399,7 @@ div#pageContainer.col-md-9 h1.section-title {
 
 .art-box::-webkit-scrollbar-thumb,
 .goals-box::-webkit-scrollbar-thumb,
+.albums-box::-webkit-scrollbar-thumb,
 .stamps-box::-webkit-scrollbar-thumb,
 .custom-scroll-box::-webkit-scrollbar-thumb {
     background: var(--evening-plum);
@@ -449,13 +516,18 @@ div.lionImage.featured-lion img {
     }
 
     .box-column,
-    .column-box {
+    .column-box,
+    .column-2-3,
+    .column-1-3,
+    .albums-column,
+    .stamps-column {
         flex: 1 1 100%;
         width: 100%;
     }
 
     .art-box,
     .goals-box,
+    .albums-box,
     .stamps-box,
     .custom-scroll-box {
         backdrop-filter: brightness(130%) contrast(70%) !important;
@@ -466,12 +538,21 @@ div.lionImage.featured-lion img {
 
     .box-title,
     .section-title,
+    .about-title,
+    .about-me-title,
     .art-title,
     .goals-title,
+    .albums-title,
     .stamps-title,
+    .about-me-wrapper h1,
+    .about-me-wrapper h2,
+    .about-me-wrapper h3,
     .two-column-wrapper h1,
     .two-column-wrapper h2,
     .two-column-wrapper h3,
+    .albums-wrapper h1,
+    .albums-wrapper h2,
+    .albums-wrapper h3,
     .stamps-wrapper h1,
     .stamps-wrapper h2,
     .stamps-wrapper h3 {
