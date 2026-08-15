@@ -55,6 +55,12 @@ a:visited {
     text-shadow: 0 0 1em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
 }
 
+h1.center > small:nth-child(2) {
+    color: var(--pale-petals) !important;
+    font-weight: 600 !important;
+    text-shadow: 0 0 1em var(--pale-petals), 0 0 .5em var(--pale-petals) !important;
+}
+
 a.bigger, span.small a {
     color: var(--evening-plum) !important;
 }
@@ -534,12 +540,6 @@ div.center:nth-child(8)>a:nth-child(1) {
     text-wrap: nowrap !important;
 }
 
-div.lionImage.featured-lion img {
-    content: url();
-    margin-top: 50px;
-    width: 640px;
-    height: 500px;
-}
 
 div.floatleft:not(div.b.floatleft),
 div.floatright:not(div.b.floatright):not(div.floatright:nth-child(2)) {
@@ -1204,15 +1204,29 @@ div.lionImage.featured-lion {
 }
 
 .lion-image-block {
+    
     width: 100% !important;
     height: 100% !important;
 }
 
-div.lion-image-block img {
-    width: 110%;
-    height: auto;
-    overflow: visible !important;
+div.lion-image-block {
+    background-image: url("https://i.postimg.cc/hPpsQ79X/thelonging.png") !important;
+    background-size: cover !important;
+    background-repeat: none !important;
 
+    height: 100% !important;
+    overflow: visible !important;
+    z-index: 10 !important;
+}
+
+div.lionImage.featured-lion {
+    background-image: url("https://i.postimg.cc/hPpsQ79X/thelonging.png") !important;
+        background-repeat: none !important;
+    background-size: cover !important;
+        width: 850px !important;
+    height: 500px;
+    overflow: hidden;
+    z-index: 10 !important;
 }
 
 #lion_image div {
@@ -1572,6 +1586,11 @@ div.cave-grid>img[src$="unsortedlionsbanner.png"] {
     width: 0px !important;
     border: 0px !important;
         /*border: 2px solid var(--evening-plum) !important;*/
+}
+
+.lion-image-block>img[src$="default.png"] {
+    content: none !important;
+    opacity: 0%;
 }
 
 div.cave-grid>img[src$="nestingbanner.png"] {
