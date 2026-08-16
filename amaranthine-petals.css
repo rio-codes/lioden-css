@@ -1209,16 +1209,6 @@ div.lionImage.featured-lion {
     height: 100% !important;
 }
 
-div.lion-image-block {
-    background-image: url("https://i.postimg.cc/hPpsQ79X/thelonging.png") !important;
-    background-size: cover !important;
-    background-repeat: none !important;
-
-    height: 100% !important;
-    overflow: visible !important;
-    z-index: 10 !important;
-}
-
 div.lionImage.featured-lion {
     background-image: url("https://i.postimg.cc/hPpsQ79X/thelonging.png") !important;
         background-repeat: none !important;
