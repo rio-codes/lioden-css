@@ -512,7 +512,7 @@ div.panel {
     border-color: transparent !important;
     box-shadow: none !important;
     overflow: hidden;
-    border-radius: 12px !important;
+    border-radius: 5px !important;
     color: var(--bright-cream) !important;
     text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
     font-size: 19px;
@@ -559,9 +559,10 @@ div.xlarge.b {
 
 /* Progress bars (Energy, hunger, EXP, IMP) */
 .progress {
-    background: rgba(24, 17, 28, 0.75) !important;
+    background: var(--midnight-blue)!important;
     color: var(--bright-cream) !important;
-    border-radius: 8px !important;
+    text-shadow: 0 0 0.8em var(--midnight-blue), 0 0 0.4em var(--cosmic-purple) !important;
+    border-radius: 1px !important;
     border: none !important;
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6) !important;
     height: 28px !important;
@@ -578,11 +579,13 @@ div.xlarge.b {
 .progress-bar-info,
 .progress-bar-warning {
     background: linear-gradient(90deg, rgba(77, 61, 82, 0.95), rgba(87, 252, 250, 0.65)) !important;
+    opacity: 0.5;
     height: 100% !important;
     line-height: 28px !important;
     box-shadow: 0 0 12px rgba(87, 252, 250, 0.4) !important;
-    border-radius: 8px !important;
+    border-radius: 1px !important;
     border: none !important;
+    text-shadow: 0 0 0.8em var(--midnight-blue), 0 0 0.4em var(--cosmic-purple) !important;
 }
 
 .progress div,
@@ -590,9 +593,10 @@ div.xlarge.b {
 .progress-bar div {
     font-family: "Almendra Display", serif !important;
     color: var(--bright-cream) !important;
+    font-family: Macondo !important;
     font-size: 15px !important;
-    font-weight: 400 !important;
-    text-shadow: 0 0 6px rgba(87, 252, 250, 0.8), 0 0 10px var(--cosmic-purple) !important;
+    font-weight: 600 !important;
+    text-shadow: 0 0 0.8em var(--midnight-blue), 0 0 0.4em var(--cosmic-purple) !important;
     text-align: center !important;
     white-space: nowrap !important;
 }
