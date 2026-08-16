@@ -1,0 +1,1351 @@
+/*
+Astral Protection
+Created 08/2026 by lyri [#583579]
+AGPL License: https://www.gnu.org/licenses/agpl-3.0.en.html
+
+Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Tawny [#251887], Hok-Z [#41458], Austin [#43750]
+
+*/
+
+/* Import Fonts (From Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Almendra+Display&family=Macondo&display=swap');
+
+/* Color variables */
+:root {
+    --bright-cream: #38D4CC;
+    --link-cyan: #2EC4BC;
+    --soft-starlight: #8CEBE7;
+    --starlight-white: #FFFFFF;
+    --cosmic-purple: #4D3D52;
+    --deep-midnight-violet: #241b28;
+    --midnight-blue: #18111c;
+    --space-void: #0f0a14;
+}
+
+/* Global Reset: Remove borders everywhere */
+*,
+*:before,
+*:after,
+.container.main,
+.topbar,
+.navbar,
+.breadcrumb,
+.panel,
+.panel-default,
+.panel-heading,
+.panel-body,
+.panel-footer,
+.col-md-3 .panel,
+.col-md-3 .panel-default,
+.col-md-3 div,
+.sidebar .panel,
+.sidebar .panel-default,
+.well,
+table,
+tr,
+th,
+td,
+.table,
+.inner-table,
+.alert,
+input,
+select,
+textarea,
+button,
+div,
+span {
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Solid Space Void Background */
+body {
+    background-color: var(--space-void);
+    background-image: none;
+    z-index: -1;
+    font-family: "Macondo", cursive;
+    font-weight: 200 !important;
+    font-size: 21px;
+    color: var(--bright-cream);
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Link colors */
+a:link,
+a:visited {
+    color: var(--link-cyan) !important;
+    font-weight: 200 !important;
+    text-decoration: none !important;
+    text-shadow: 0 0 0.8em var(--link-cyan), 0 0 0.4em var(--cosmic-purple) !important;
+    transition: 0.3s ease-in-out;
+}
+
+h1.center > small:nth-child(2) {
+    color: var(--bright-cream) !important;
+    font-weight: 200 !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+}
+
+a.bigger, span.small a {
+    color: var(--link-cyan) !important;
+    text-decoration: none !important;
+    text-shadow: 0 0 0.8em var(--link-cyan) !important;
+}
+
+a img {
+    border: none !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: var(--soft-starlight) !important;
+    text-decoration: none !important;
+    text-shadow: 0 0 1.2em var(--soft-starlight), 0 0 0.8em var(--link-cyan), 0 0 0.4em var(--cosmic-purple) !important;
+    transition: .3s;
+}
+
+a:focus {
+    color: var(--soft-starlight) !important;
+    text-decoration: none !important;
+    text-shadow: 0 0 1.2em var(--soft-starlight), 0 0 0.8em var(--link-cyan), 0 0 0.4em var(--cosmic-purple);
+}
+
+/* Bookmark button */
+input.floatright {
+    background: transparent;
+    border: none !important;
+    border-radius: 0px !important;
+    color: var(--bright-cream) !important;
+    font-size: 23px;
+    font-weight: 200 !important;
+    text-align: center !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple);
+    position: relative;
+    top: -5px;
+}
+
+input.floatright:hover {
+    background: var(--deep-midnight-violet);
+    font-size: 23px;
+    color: var(--bright-cream) !important;
+    box-shadow: none !important;
+    transition: .4s;
+}
+
+/* Text input boxes, misc buttons */
+input,
+select,
+textarea {
+    background: var(--midnight-blue);
+    border: none !important;
+    border-radius: 5px !important;
+    box-shadow: none !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple);
+    color: var(--bright-cream);
+    font-weight: 200;
+}
+
+select {
+    z-index: 20;
+    min-width: 50px !important;
+}
+
+input#postComment {
+    background: var(--deep-midnight-violet);
+    border: none !important;
+}
+
+/* Alerts (i.e. "Your lionesses have returned from hunting!") */
+.alert,
+.alert-warning,
+.alert-danger {
+    background: var(--midnight-blue) !important;
+    backdrop-filter: blur(3px);
+    color: var(--bright-cream) !important;
+    border: none !important;
+    border-radius: 2px;
+    text-align: left !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple);
+    position: relative;
+    top: 13px;
+    font-weight: 200 !important;
+}
+
+.alert a,
+.alert-warning a,
+.alert-danger a {
+    color: var(--soft-starlight);
+    font-weight: 200 !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+}
+
+/* Main header appearance ("___"'s Den) */
+div#pageContainer.col-md-9 > h1:first-of-type {
+    font-family: "Almendra Display", serif !important;
+    text-indent: -9999px;
+}
+
+div#pageContainer.col-md-9 h1 {
+    width: 100% !important;
+}
+
+div#pageContainer.col-md-9 h1:before {
+    font-family: "Almendra Display", serif;
+    content: "Cassiopeia's Conservatory";
+    font-size: 64px;
+    font-weight: 200;
+    text-indent: 0px !important;
+    width: 100% !important;
+    float: left;
+    position: relative;
+    top: 20px;
+    margin-bottom: 30px;
+    overflow: visible !important;
+    word-wrap: unset !important;
+    color: var(--bright-cream) !important;
+    text-shadow: 0 0 1em var(--bright-cream), 0 0 0.5em var(--cosmic-purple) !important;
+}
+
+/* Cave-Specific Styling */
+h1.center:before {
+    display: none;
+}
+
+h1.center {
+    text-indent: 0px !important;
+}
+
+div.center:nth-child(8)>a:nth-child(1) {
+    position: relative !important;
+    top: 0px;
+    text-wrap: nowrap !important;
+}
+
+div.floatleft:not(div.b.floatleft),
+div.floatright:not(div.b.floatright):not(div.floatright:nth-child(2)) {
+    position: relative;
+    top: 40px;
+}
+
+div.floatright.right:nth-child(1) {
+    position: relative !important;
+    top: 10px !important;
+    right: -6px !important;
+}
+
+div.lionImage.featured-lion img {
+    margin-bottom: 60px;
+}
+
+/* Responsive Breakpoint Styles */
+
+/* Mobile Devices */
+@media only screen and (max-width: 743px) {
+    div#pageContainer.col-md-9 h1:before {
+        font-size: 48px !important;
+        text-indent: 20px !important;
+        top: 40px;
+    }
+
+    .navbar li a {
+        font-size: 20px !important;
+    }
+}
+
+/* Small Tablets */
+@media only screen and (min-width: 744px) and (max-width: 819px) {
+    div#pageContainer.col-md-9 h1:before {
+        text-indent: 45px !important;
+        top: 20px;
+    }
+
+    .navbar li a {
+        font-size: 22px !important;
+    }
+
+    .external-link {
+        position: relative;
+        top: -50px;
+        left: -38%;
+    }
+}
+
+/* Medium Tablets */
+@media only screen and (min-width: 820px) and (max-width: 1000px) {
+    .navbar li a {
+        font-size: 22px !important;
+    }
+}
+
+/* Primary header */
+h1 {
+    font-family: "Almendra Display", serif !important;
+    font-size: 64px;
+    color: var(--bright-cream);
+    font-weight: 200 !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    text-shadow: 0 0 1em var(--bright-cream), 0 0 .5em var(--cosmic-purple) !important;
+}
+
+/* Secondary header */
+h2 {
+    font-family: "Almendra Display", serif !important;
+    font-size: 36px;
+    color: var(--bright-cream) !important;
+    text-shadow: 0 0 1em var(--bright-cream), 0 0 .5em var(--cosmic-purple) !important;
+}
+
+/* Tertiary header */
+h3,
+div.center.h3 {
+    font-family: "Almendra Display", serif !important;
+    font-size: 38px !important;
+    font-weight: 200 !important;
+    color: var(--bright-cream) !important;
+    text-shadow: 0 0 1em var(--bright-cream), 0 0 .5em var(--cosmic-purple) !important;
+}
+
+/* Main panel container appearance with dense cyan starfield background */
+.container.main {
+    background-color: rgba(36, 27, 40, 0.75) !important;
+    background-image:
+        radial-gradient(1px 1px at 20px 30px, var(--bright-cream), rgba(0, 0, 0, 0)),
+        radial-gradient(1.5px 1.5px at 140px 70px, var(--soft-starlight), rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 270px 160px, var(--bright-cream), rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 80px 220px, rgba(87, 252, 250, 0.8), rgba(0, 0, 0, 0)),
+        radial-gradient(2.5px 2.5px at 350px 290px, var(--bright-cream), rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 390px 110px, rgba(158, 250, 249, 0.7), rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 450px 380px, var(--soft-starlight), rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 50px 420px, var(--bright-cream), rgba(0, 0, 0, 0)),
+        radial-gradient(1.5px 1.5px at 190px 460px, rgba(87, 252, 250, 0.85), rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 310px 490px, var(--bright-cream), rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 430px 40px, rgba(158, 250, 249, 0.6), rgba(0, 0, 0, 0)),
+        radial-gradient(1.5px 1.5px at 110px 130px, rgba(255, 251, 240, 0.9), rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 220px 260px, var(--soft-starlight), rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 320px 60px, var(--bright-cream), rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 400px 230px, rgba(87, 252, 250, 0.75), rgba(0, 0, 0, 0)),
+        radial-gradient(1.5px 1.5px at 160px 370px, var(--soft-starlight), rgba(0, 0, 0, 0)),
+        radial-gradient(2.5px 2.5px at 70px 320px, rgba(87, 252, 250, 0.9), rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 290px 350px, var(--bright-cream), rgba(0, 0, 0, 0)),
+        radial-gradient(1.5px 1.5px at 470px 200px, rgba(158, 250, 249, 0.8), rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 240px 430px, var(--bright-cream), rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 360px 460px, rgba(87, 252, 250, 0.65), rgba(0, 0, 0, 0)),
+        radial-gradient(1.5px 1.5px at 15px 180px, var(--soft-starlight), rgba(0, 0, 0, 0)),
+        radial-gradient(2px 2px at 480px 100px, var(--bright-cream), rgba(0, 0, 0, 0)),
+        radial-gradient(1px 1px at 130px 490px, rgba(158, 250, 249, 0.7), rgba(0, 0, 0, 0)) !important;
+    background-repeat: repeat !important;
+    background-size: 500px 520px !important;
+    border: none !important;
+    border-radius: 4px;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    box-shadow: 0px 0px 30px 5px rgba(77, 61, 82, 0.4) !important;
+}
+
+/* Make left panel background and border invisible */
+.col-md-9 {
+    background: none;
+    border: none !important;
+}
+
+/* Topbar (Welcome and account navigation) */
+.topbar {
+    background: var(--midnight-blue) !important;
+    backdrop-filter: blur(3px);
+    color: var(--bright-cream);
+    border: none !important;
+    border-radius: 0px 0px 2px 2px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.topbar a {
+    color: var(--link-cyan) !important;
+    font-size: 18px;
+    font-weight: 200 !important;
+    text-shadow: 0 0 0.8em var(--link-cyan), 0 0 0.4em var(--cosmic-purple) !important;
+}
+
+.topbar a:hover {
+    color: var(--soft-starlight) !important;
+    transition: 1s;
+    text-shadow: 0 0 1.2em var(--soft-starlight), 0 0 0.4em var(--cosmic-purple) !important;
+}
+
+/* Navbar (Den/Crossroads/Etc.) */
+.navbar {
+    font-family: "Macondo", cursive;
+    font-size: 20px !important;
+    font-weight: 200;
+    background: var(--midnight-blue) !important;
+    backdrop-filter: blur(3px);
+    border-radius: 10px 10px 0px 0px;
+    border: none !important;
+    opacity: 1;
+}
+
+.navbar li a {
+    color: var(--link-cyan) !important;
+    font-size: 25px !important;
+    font-weight: 200;
+    text-shadow: 0 0 0.8em var(--link-cyan), 0 0 0.4em var(--cosmic-purple) !important;
+}
+
+.navbar li a:hover {
+    background: var(--midnight-blue) !important;
+    z-index: 500 !important;
+    opacity: 1 !important;
+}
+
+/* Breadcrumb (Home button, den owner, bookmark) */
+.breadcrumb {
+    font-family: "Macondo", cursive !important;
+    background: var(--midnight-blue) !important;
+    backdrop-filter: brightness(90%);
+    border: none !important;
+    box-shadow: none !important;
+    overflow: hidden;
+    border-radius: 10px;
+    color: var(--bright-cream) !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    font-size: 23px !important;
+    font-weight: 200 !important;
+    text-align: left;
+}
+
+.breadcrumb-item:before {
+    content: "~" !important;
+    color: var(--bright-cream) !important;
+}
+
+.breadcrumb .active {
+    font-family: "Macondo", cursive;
+    color: var(--bright-cream) !important;
+    font-size: 23px;
+    font-weight: 200;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+}
+
+.breadcrumb .active:after {
+    font-size: 18px;
+    color: var(--soft-starlight);
+    content: "(you are here)";
+    position: relative;
+    left: 10px;
+}
+
+.breadcrumb a {
+    color: var(--link-cyan) !important;
+    text-shadow: 0 0 0.8em var(--link-cyan), 0 0 0.4em var(--cosmic-purple) !important;
+    font-weight: 200 !important;
+    font-size: 23px;
+}
+
+.breadcrumb a:hover {
+    color: var(--soft-starlight) !important;
+    transition: 1s;
+}
+
+/* Right-side panel appearance */
+br.clear {
+    position: relative !important;
+    top: -10px !important;
+}
+
+.sidebar h3,
+.panel h3,
+.panel-heading {
+    font-family: "Almendra Display", serif !important;
+    font-size: 34px !important;
+    font-weight: 200 !important;
+    color: var(--bright-cream) !important;
+    text-shadow: 0 0 1em var(--bright-cream), 0 0 0.5em var(--cosmic-purple) !important;
+    text-align: right !important;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 12px !important;
+    background: none !important;
+    border: none !important;
+}
+
+.sidebar a,
+.col-md-12 a {
+    color: var(--link-cyan) !important;
+    text-shadow: 0 0 0.8em var(--link-cyan), 0 0 0.4em var(--cosmic-purple) !important;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar a:hover,
+.col-md-12 a:hover,
+.panel-body.small a:hover,
+div.panel a:hover {
+    color: var(--soft-starlight) !important;
+    text-shadow: 0 0 1.2em var(--soft-starlight), 0 0 0.6em var(--link-cyan) !important;
+}
+
+.panel,
+.panel-default,
+.panel-body.small,
+div.panel {
+    background: var(--midnight-blue) !important;
+    backdrop-filter: blur(4px);
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    overflow: hidden;
+    border-radius: 12px !important;
+    color: var(--bright-cream) !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    font-size: 19px;
+    font-weight: 200;
+    text-align: right !important;
+    padding: 12px 14px !important;
+    margin-bottom: 14px !important;
+}
+
+.panel-body.small a,
+div.panel a {
+    background: transparent !important;
+    color: var(--link-cyan) !important;
+    font-weight: 200 !important;
+    text-shadow: 0 0 0.8em var(--link-cyan) !important;
+    border-radius: 8px;
+}
+
+.col-md-3 .panel,
+.col-md-3 .panel-default {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+.panel-body.small .center a,
+.panel-body.small a {
+    background: transparent !important;
+    font-weight: 200 !important;
+    color: var(--bright-cream) !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    border-radius: 10px;
+}
+
+div.col-md-12:nth-child(3)>div:nth-child(4)>p:nth-child(2) {
+    display: none;
+}
+
+/* Progress bars (Energy, hunger, EXP, IMP) */
+.progress {
+    background: rgba(24, 17, 28, 0.75) !important;
+    color: var(--bright-cream) !important;
+    border-radius: 8px !important;
+    border: none !important;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6) !important;
+    height: 28px !important;
+    line-height: 28px !important;
+    margin-top: 6px !important;
+    margin-bottom: 10px !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.progress-bar,
+.progress-bar-danger,
+.progress-bar-success,
+.progress-bar-info,
+.progress-bar-warning {
+    background: linear-gradient(90deg, rgba(77, 61, 82, 0.95), rgba(87, 252, 250, 0.65)) !important;
+    height: 100% !important;
+    line-height: 28px !important;
+    box-shadow: 0 0 12px rgba(87, 252, 250, 0.4) !important;
+    border-radius: 8px !important;
+    border: none !important;
+    font-family: "Macondo", cursive !important;
+    color: var(--bright-cream) !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    text-shadow: 0 0 6px rgba(87, 252, 250, 0.8), 0 0 10px var(--cosmic-purple) !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+}
+
+/* Comment box */
+div#commentBox {
+    background: var(--midnight-blue) !important;
+    backdrop-filter: blur(3px);
+    border: none !important;
+    border-radius: 10px;
+    color: var(--bright-cream) !important;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    opacity: 90%;
+}
+
+div#commentBox a {
+    color: var(--soft-starlight);
+    font-weight: 200 !important;
+}
+
+div#commentBox a:hover {
+    color: var(--bright-cream);
+}
+
+div.commentText {
+    text-shadow: none !important;
+}
+
+.text-muted {
+    color: var(--soft-starlight) !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+}
+
+img.floatleft.commentTag.clear {
+    height: 70px;
+    width: 70px;
+    border: none !important;
+    border-radius: 8px !important;
+    position: relative;
+    top: 2px;
+    left: -3px;
+}
+
+/* Switch Account and Bug Box buttons */
+.btn:hover,
+button.button:hover,
+.btn.btn:hover {
+    background: var(--bright-cream);
+    color: var(--space-void) !important;
+    transition: 1s;
+}
+
+.btn img {
+    display: none;
+}
+
+.btn,
+button.button,
+.btn.btn {
+    background: var(--deep-midnight-violet);
+    border: none !important;
+    border-radius: 4px;
+    text-shadow: none !important;
+    color: var(--bright-cream) !important;
+    width: 130px;
+    height: 25px;
+    filter: drop-shadow(0px 0px 3rem var(--cosmic-purple)) !important;
+    font-weight: 200 !important;
+}
+
+/* All tables - styling */
+table#about,
+table#player,
+table#attack,
+table#allies,
+table#clans,
+table#sparring,
+table#attack,
+table.table {
+    background: var(--midnight-blue) !important;
+    backdrop-filter: blur(3px);
+    opacity: 100%;
+    border: none !important;
+    border-radius: 10px;
+}
+
+/* Lion profile table and headers */
+.table {
+    background: var(--midnight-blue) !important;
+    backdrop-filter: blur(3px);
+    border: none !important;
+    border-collapse: separate;
+    border-radius: 2px;
+}
+
+div#fraBaseBlock {
+    background: var(--midnight-blue);
+}
+
+div.row.customiser-row:nth-child(odd) {
+    background: var(--deep-midnight-violet);
+}
+
+div.slot-label.mr-2, .row.p-1.customiser-bottom, .container-fluid.customiser-block.table {
+    background: var(--midnight-blue) !important;
+}
+
+select, select.custom-select, input.form-control.pr-1, .search_field.form-control  {
+   background: var(--deep-midnight-violet) !important;
+   border: none !important;
+   color: var(--bright-cream) !important;
+   text-align: left;
+}
+
+textarea {
+    background: var(--midnight-blue) !important;
+    color: var(--bright-cream) !important;
+    width: 90% !important;
+    align-content: center !important;
+    border: none !important;
+}
+
+.form-control.dib.pl-1.pr-0 {
+    background: var(--deep-midnight-violet);
+}
+
+div.pt-3.pb-3.customiser-bar.text-center, div.g-col-2.left {
+    background: transparent;
+}
+
+div.pt-3.pb-3.customiser-bar.text-center button {
+    width: 124px;
+}
+
+table#about.table a {
+    color: var(--bright-cream) !important;
+    text-decoration: none;
+}
+
+.table .top,
+#sparring th,
+table.table th {
+    background: var(--deep-midnight-violet) !important;
+    color: var(--bright-cream);
+    font-size: 23px;
+    border-radius: 10px 10px 0px 0px;
+    border: none !important;
+    font-weight: 200 !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+}
+
+.bottom,
+.top,
+th,
+#attack th  {
+    background: var(--midnight-blue);
+    color: var(--bright-cream) !important;
+    border: none !important;
+    font-weight: 200 !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+}
+
+.table .bottom {
+    background: var(--deep-midnight-violet);
+    color: var(--soft-starlight) !important;
+}
+
+td.bottom button {
+    margin-top: 10px;
+}
+
+.inner-table .left {
+    background: transparent;
+    color: var(--bright-cream) !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    font-family: "Macondo", cursive !important;
+    font-weight: 200 !important;
+    font-size: 20px !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+.inner-table .right {
+    background: transparent !important;
+    color: var(--bright-cream) !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    font-size: 20px;
+    border: none !important;
+    border-radius: 0px 0px 0px 0px !important;
+    font-weight: 200 !important;
+}
+
+.inner-table .right a {
+    color: var(--soft-starlight) !important;
+    font-style: italic;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    font-weight: 200 !important;
+}
+
+.inner-table .right a:hover {
+    color: var(--bright-cream) !important;
+}
+
+.right_odd {
+    background: none !important;
+}
+
+td.left.b,
+div.lionImage.featured-lion {
+    background: transparent;
+}
+
+/* Lion and user profile pictures */
+#about.table div .lion-image-block {
+    background: radial-gradient(var(--cosmic-purple), var(--space-void)) !important;
+    border: none !important;
+}
+
+.lion-image-block {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+div.lionImage.featured-lion {
+    background-image: url('') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 850px !important;
+    height: 500px;
+    overflow: hidden;
+    z-index: 10 !important;
+}
+
+#lion_image div {
+    opacity: 1;
+    width: 100% !important;
+    height: 150% !important;
+    z-index: 700 !important;
+    position: relative !important;
+    left: 10px !important;
+    top: 20px !important;
+    border-radius: 50% !important;
+}
+
+@media only screen and (max-width: 743px) {
+    #lion_image div {
+        position: relative;
+        left: 0px !important;
+    }
+}
+
+table#player img {
+    border-radius: 50% !important;
+    border: none !important;
+    position: relative;
+    left: -15px;
+    top: 0px;
+}
+
+p.center a {
+    position: relative !important;
+    padding: 10px;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    font-weight: 200 !important;
+}
+
+div.xlarge:nth-child(4) {
+    position: relative;
+    top: -50px;
+}
+
+p.center:nth-child(5) {
+    margin-top: 0px !important;
+    font-size: 20px;
+    top: -50px;
+}
+
+div.center.h3 {
+    font-family: "Macondo", cursive;
+    font-weight: 200;
+    text-shadow: 0 0 1em var(--bright-cream), 0 0 .5em var(--cosmic-purple) !important;
+}
+
+/* Remove icons and edit text for user profile buttons */
+table.inner-table.auto:nth-child(2) td {
+    border: none !important;
+}
+
+td.right_odd:nth-child(1)>a:nth-child(1)>img:nth-child(1),
+td.right_odd.text-right img {
+    display: none;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a:before {
+    opacity: 0%;
+    font-size: 0px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a {
+    font-size: 0px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(1)>a:after {
+    background: transparent;
+    content: 'Block Member' !important;
+    font-size: 20px !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    left: 50px;
+    top: -10px;
+    height: 0px !important;
+    font-weight: 200 !important;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(2)>a {
+    font-size: 0px;
+}
+
+#player>tbody>tr:nth-child(3)>td:nth-child(2)>a:after {
+    background: transparent;
+    content: 'Friend Request';
+    font-size: 20px !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    left: 50px;
+    top: -10px;
+    height: 0px !important;
+    font-weight: 200 !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(1):after {
+    background: transparent;
+    content: 'Message';
+    font-size: 20px !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    height: 0px !important;
+    padding: 10px;
+    font-weight: 200 !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a {
+    font-size: 0px;
+    height: 20px !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(3):after {
+    background: transparent;
+    content: 'Send Gift!';
+    font-size: 20px !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    height: 0px !important;
+    right: 100px !important;
+    padding: 10px;
+    font-weight: 200 !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5) {
+    font-size: 0px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>div.xlarge>a:nth-child(5):after {
+    background: transparent;
+    content: 'Create Trade';
+    font-size: 20px !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    width: 100px !important;
+    text-decoration: none !important;
+    height: 0px !important;
+    padding: 10px;
+    font-weight: 200 !important;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p>a:nth-child(3):after {
+    padding: 15px;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p.center:nth-child(5)>a:nth-child(1)>img:nth-child(1) {
+    display: none;
+}
+
+#player>tbody>tr.right>td:nth-child(1)>p.center:nth-child(5)>a:nth-child(3)>img:nth-child(1) {
+    display: none;
+}
+
+p.center>a,
+div.xlarge>a#text {
+    top: -50px;
+}
+
+td.left.b,
+div.lionImage.featured-lion {
+    background: transparent;
+}
+
+div.xlarge img {
+    display: none;
+}
+
+span.text-muted {
+    display: none;
+}
+
+div.xlarge a {
+    padding: 0px !important;
+}
+
+table#player hr {
+    display: none;
+}
+
+div.xlarge:nth-child(4) {
+    position: relative;
+    top: 40px;
+    padding: 10px;
+}
+
+p.center:nth-child(5) {
+    position: relative;
+    top: 20px;
+}
+
+div.xlarge:nth-child(4)>a {
+    padding: 10px;
+}
+
+/* Cave and Beetle Mound grid appearances */
+#fraOrganizationBlock>div:nth-child(2)>div:nth-child(1),
+div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
+    font-size: 25px !important;
+    font-weight: 200 !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+}
+
+.cave-grid,
+.mound-grid {
+    background: none;
+    color: var(--bright-cream) !important;
+    border: none !important;
+    border-radius: 2px !important;
+    font-family: "Almendra Display", serif !important;
+    font-size: 25px !important;
+    font-weight: 200 !important;
+}
+
+#fraOrganizationBlock {
+    background: none !important;
+    padding: 20px;
+    width: 100%;
+    height: 600px;
+    border: none !important;
+    border-radius: 30px;
+}
+
+/* Feed all/Play all */
+div.feature,
+.feature {
+    background: radial-gradient(var(--midnight-blue), var(--deep-midnight-violet));
+    color: var(--bright-cream);
+    font-size: 17px;
+    font-weight: 200;
+    z-index: 5;
+    box-shadow: 0px 3px 8px 4px var(--deep-midnight-violet) !important;
+    text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
+    border: none !important;
+    border-radius: 2px;
+}
+
+.feature,
+div.left {
+    background: #0f0a14;
+}
+
+.feature,
+div.left h3,
+.feature h3 {
+    font-weight: 200 !important;
+    color: var(--bright-cream) !important;
+}
+
+/* "King Dynasty, Pride Dynasty, Achievements, Showcase" panel appearance */
+div.col-md-4 div h3,
+.dynastycollection a {
+    background: transparent;
+    font-size: 35px !important;
+    font-weight: 200 !important;
+}
+
+.dynastycollection a:hover {
+    color: var(--soft-starlight);
+}
+
+div.mb-2 div,
+div.col div {
+    color: var(--bright-cream) !important;
+    border-radius: 10px;
+    height: 0px;
+    margin: 5px;
+    background: transparent !important;
+}
+
+div.col-12.top, div.g-col-12.text-center {
+    background: var(--deep-midnight-violet) !important;
+    color: var(--bright-cream);
+    border-radius: 0px;
+}
+
+div.left.col-xs-3 {
+    background: var(--midnight-blue);
+}
+
+div.combo-selection-parent, .search_field, .row.p-1, div.right.col-xs-3.pl-1.pr-1.customiser-ui-control {
+    background: var(--midnight-blue) !important;
+    color: var(--bright-cream);
+}
+div.col div img {
+    overflow: hidden !important;
+}
+
+/* Edit Details */
+table.table:nth-child(3)>tbody:nth-child(1)>tr:nth-child(1)>th:nth-child(1) {
+    background: radial-gradient(var(--midnight-blue), var(--deep-midnight-violet));
+    color: var(--bright-cream) !important;
+}
+
+td.left b {
+    background: transparent !important;
+    font-weight: 200 !important;
+}
+
+/* Background fix for mobile */
+@media only screen and (max-width: 767px) {
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--space-void);
+        z-index: -1;
+    }
+
+    .container.main {
+        margin-top: 35px;
+    }
+}
+
+/* Image Replacement */
+div.mound-grid img, div.cave-grid img {
+    position: relative;
+    height: 0px !important;
+    width: 0px !important;
+    border: none !important;
+}
+
+#fraMoundList div.mound-grid {
+    padding: 0px !important;
+    position: relative;
+    top: 10px;
+}
+
+div.col-md-3:nth-child(1) > a:nth-child(1) {
+    border: none !important;
+    border-radius: 20px;
+}
+
+div.cave-grid>img[src$="unsortedlionsbanner.png"] {
+    content: url('') !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: none !important;
+}
+
+.lion-image-block>img[src$="default.png"] {
+    content: none !important;
+    opacity: 0%;
+}
+
+div.cave-grid>img[src$="nestingbanner.png"] {
+    content: url('') !important;
+    object-fit: scale-down !important;
+    filter: blur(0.7px);
+    height: 0px !important;
+    width: 0px !important;
+    border: none !important;
+}
+
+div.col-md-4.col-sm-6.col-xs-6.mb-2.dynastylist div,
+div.col.col-sm-4 div {
+    height: 70px;
+    color: var(--bright-cream);
+    font-weight: 200 !important;
+    text-shadow: 0 0 .6em, 0 0 1em var(--cosmic-purple) !important;
+}
+
+div.cave-grid>img[src$="prideoverviewbanner.png"] {
+    content: url('') !important;
+    object-fit: scale-down !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: none !important;
+}
+
+div.cave-grid>img {
+    content: url('') !important;
+    object-fit: scale-down !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: none !important;
+}
+
+.mound-grid img {
+    content: url('') !important;
+    object-fit: cover !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: none !important;
+}
+
+#fraCaveList > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > img:nth-child(1),
+#fraCaveList>div:nth-child(2)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1),
+#fraCaveList>div:nth-child(3)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1),
+div.center:nth-child(4)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1),
+div.center:nth-child(5)>a:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
+    content: url('') !important;
+    filter: blur(0.7px);
+    object-fit: scale-down !important;
+    height: 0px !important;
+    width: 0px !important;
+    border: none !important;
+}
+
+img[src$="beetlemound.png"],
+img[src$="den_ancestors.png"],
+img[src$="ancestorsfem.png"],
+img[src$="den_achievements.png"],
+img[src$="den_showcase.png"],
+img[src$="den_beetlebook.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 0px !important;
+    width: 0px !important;
+    border: none !important;
+}
+
+img[src$="icon_den_friend.png"],
+img[src$="icon_den_wishlist.png"] {
+    display: none;
+}
+
+/* Misc fixes */
+p.center:nth-child(4)>a {
+    top: 10px;
+}
+
+div.center:nth-child(8) {
+    margin-top: -10px !important;
+}
+
+div.center:nth-child(8)>a:nth-child(1) {
+    position: relative !important;
+    width: 100px !important;
+}
+
+#allies>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1),
+#allies>tbody:nth-child(1)>tr:nth-child(5)>td:nth-child(1),
+#clans>tbody:nth-child(1)>tr:nth-child(3)>td:nth-child(1),
+#clans > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(1),
+#clans > tbody:nth-child(1) > tr:nth-child(7) > td:nth-child(1) {
+    display: none;
+}
+
+/* Replace Social Media Icons */
+img[src$="iconFB.png"],
+img[src$="iconTwit.png"],
+img[src$="iconInsta.png"] {
+    content: url('');
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 3rem var(--cosmic-purple)) !important;
+}
+
+/* Replace Lioden Logo */
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a {
+    border: transparent !important;
+}
+
+.navbar-brand img {
+    content: url();
+    width: auto;
+    height: 160px;
+    position: relative;
+    top: -30px;
+    z-index: 9000;
+    filter: drop-shadow(0px 0px 3rem var(--cosmic-purple)) !important;
+}
+
+/* Pagedoll */
+.container.main::after {
+    content: "";
+    background-image: url('');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    height: 300px;
+    width: 300px;
+    position: fixed;
+    right: -60px;
+    bottom: -30px;
+    z-index: 30;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+/* Monkey Business Fixes */
+.combo-select-row {
+    min-height: 40px;
+    line-height: 10px;
+    overflow: enabled;
+}
+
+span.badge.uses, span.badge.counter {
+    background: none;
+}
+
+div.pr-0.col-xs-5.text-right.small {
+    position: relative;
+    left: 90px;
+    top: -6px;
+}
+
+button.button.bad.noclick.disabled {
+    opacity: 1;
+    font-weight: 200 !important;
+    width: fit-content;
+    background: var(--deep-midnight-violet);
+    color: var(--bright-cream) !important;
+    border: none !important;
+}
+
+td.left.sub-row, .sub_menu {
+    background: rgba(36, 27, 40, 0.55);
+}
+
+.sub_menu_item_selected {
+    background: var(--midnight-blue);
+}
+
+div.b.floatright,
+div.b.floatleft {
+    position: relative !important;
+    top: -7px !important;
+}
