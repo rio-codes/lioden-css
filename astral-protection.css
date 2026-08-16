@@ -316,7 +316,7 @@ h2 {
 h3,
 div.center.h3 {
     font-family: "Almendra Display", serif !important;
-    font-size: 38px !important;
+    font-size: 32px !important;
     font-weight: 600 !important;
     color: var(--bright-cream) !important;
     text-shadow: 0 0 1em var(--bright-cream), 0 0 .5em var(--cosmic-purple) !important;
@@ -482,11 +482,16 @@ br.clear {
     text-align: right !important;
     position: relative;
     padding-top: 10px;
+    padding-right: 10px;
     margin-bottom: 12px !important;
     background: none !important;
     border: none !important;
 }
 
+div.floatright.right img {
+    vertical-align: top !important;
+    padding: 5px;
+}
 .sidebar a,
 .col-md-12 a {
     color: var(--link-cyan) !important;
@@ -597,7 +602,7 @@ div.xlarge.b {
     font-size: 15px !important;
     font-weight: 600 !important;
     text-shadow: 0 0 0.8em var(--midnight-blue), 0 0 0.4em var(--cosmic-purple) !important;
-    text-align: center !important;
+    text-align: right !important;
     white-space: nowrap !important;
 }
 
@@ -719,7 +724,7 @@ textarea {
     background: var(--midnight-blue) !important;
     color: var(--bright-cream) !important;
     width: 90% !important;
-    align-content: center !important;
+    align-content: right !important;
     border: none !important;
 }
 
