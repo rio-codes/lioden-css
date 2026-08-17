@@ -69,7 +69,7 @@ body {
     background-color: var(--space-void);
     background-image: none;
     z-index: -1;
-    font-family: "Almendra Display", serif;
+    font-family: "Macondo", serif;
     font-weight: 200 !important;
     font-size: 21px;
     color: var(--bright-cream);
@@ -82,7 +82,7 @@ body {
 a:link,
 a:visited {
     color: var(--link-cyan) !important;
-    font-weight: 600 !important;
+    font-weight: 400 !important;
     text-decoration: none !important;
     text-shadow: 0 0 0.8em var(--link-cyan), 0 0 0.4em var(--cosmic-purple) !important;
     transition: 0.3s ease-in-out;
@@ -90,7 +90,7 @@ a:visited {
 
 h1.center > small:nth-child(2) {
     color: var(--bright-cream) !important;
-    font-weight: 600 !important;
+    font-weight: 200 !important;
     text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
 }
 
@@ -181,7 +181,7 @@ input#postComment {
     text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple);
     position: relative;
     top: 13px;
-    font-weight: 600 !important;
+    font-weight: 300 !important;
     font-size: 18px;
 }
 
@@ -189,7 +189,7 @@ input#postComment {
 .alert-warning a,
 .alert-danger a {
     color: var(--soft-starlight);
-    font-weight: 600 !important;
+    font-weight: 300 !important;
     text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
 }
 
@@ -293,10 +293,10 @@ div.lionImage.featured-lion img {
 
 /* Primary header */
 h1 {
-    font-family: "Almendra Display", serif !important;
+    font-family: "Macondo", serif !important;
     font-size: 64px;
     color: var(--bright-cream);
-    font-weight: 600 !important;
+    font-weight: 300 !important;
     -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
@@ -305,9 +305,9 @@ h1 {
 
 /* Secondary header */
 h2 {
-    font-family: "Almendra Display", serif !important;
+    font-family: "Macondo", serif !important;
     font-size: 36px;
-    font-weight: 600 !important;
+    font-weight: 300 !important;
     color: var(--bright-cream) !important;
     text-shadow: 0 0 1em var(--bright-cream), 0 0 .5em var(--cosmic-purple) !important;
 }
@@ -315,9 +315,9 @@ h2 {
 /* Tertiary header */
 h3,
 div.center.h3 {
-    font-family: "Almendra Display", serif !important;
+    font-family: "Macondo", serif !important;
     font-size: 32px !important;
-    font-weight: 600 !important;
+    font-weight: 300 !important;
     color: var(--bright-cream) !important;
     text-shadow: 0 0 1em var(--bright-cream), 0 0 .5em var(--cosmic-purple) !important;
 }
@@ -521,7 +521,7 @@ div.panel {
     color: var(--bright-cream) !important;
     text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
     font-size: 19px;
-    font-weight: 600 !important;
+    font-weight: 200 !important;
     text-align: right !important;
     padding: 12px 14px !important;
     margin-bottom: 14px !important;
@@ -548,7 +548,7 @@ div.panel a {
 .panel-body.small .center a,
 .panel-body.small a {
     background: transparent !important;
-    font-weight: 600 !important;
+    font-weight: 200 !important;
     color: var(--bright-cream) !important;
     text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
     border-radius: 10px;
@@ -596,7 +596,7 @@ div.xlarge.b {
 .progress div,
 .progress span,
 .progress-bar div {
-    font-family: "Almendra Display", serif !important;
+    font-family: "Macondo", serif !important;
     color: var(--bright-cream) !important;
     font-family: Macondo !important;
     font-size: 15px !important;
@@ -884,7 +884,7 @@ p.center:nth-child(5) {
 }
 
 div.center.h3 {
-    font-family: "Almendra Display", serif;
+    font-family: "Macondo", serif;
     font-weight: 200;
     text-shadow: 0 0 1em var(--bright-cream), 0 0 .5em var(--cosmic-purple) !important;
 }
