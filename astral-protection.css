@@ -64,12 +64,10 @@ span {
     box-shadow: none !important;
 }
 
-/* Solid Space Void Background */
 body {
-    background-color: var(--space-void);
-    background-image: url("https://i.postimg.cc/28pzhPjY/wallhaven-vgrl1p.jpg") no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
+    background: url("https://i.postimg.cc/28pzhPjY/wallhaven-vgrl1p.jpg") top left !important;
+    background-size: contain !important;
+    background-attachment: fixed !important;
     z-index: -1;
     font-family: "Macondo", serif;
     font-weight: 200 !important;
