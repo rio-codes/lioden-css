@@ -66,7 +66,7 @@ span {
 
 body {
     background: url("https://i.postimg.cc/28pzhPjY/wallhaven-vgrl1p.jpg") top left !important;
-    background-size: contain !important;
+    background-size: cover !important;
     background-attachment: fixed !important;
     z-index: -1;
     font-family: "Macondo", serif;
