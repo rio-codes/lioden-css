@@ -8,7 +8,7 @@ Previous CSS Code Credits: Katie [#106445], Pandora [#144118] & Kat [#94329], Ta
 */
 
 /* Import Fonts (From Google Fonts) */
-@import url('https://fonts.googleapis.com/css2?family=Almendra+Display:ital,wght@0,400;0,700;1,400;1,700&family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,400;0,700;1,400;1,700&family=Arima&display=swap');
 
 /* Color variables */
 :root {
@@ -69,9 +69,9 @@ body {
     background-size: cover !important;
     background-attachment: fixed !important;
     z-index: -1;
-    font-family: "Macondo", serif;
+    font-family: "Ysabeau Infant", serif;
     font-weight: 200 !important;
-    font-size: 21px;
+    font-size: 18px;
     color: var(--bright-cream);
     text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple);
     -webkit-font-smoothing: antialiased;
@@ -195,7 +195,7 @@ input#postComment {
 
 /* Main header appearance ("___"'s Den) */
 div#pageContainer.col-md-9 > h1:first-of-type {
-    font-family: "Almendra Display", serif !important;
+    font-family: "Caudex", serif !important;
     text-indent: -9999px;
 }
 
@@ -204,10 +204,10 @@ div#pageContainer.col-md-9 h1 {
 }
 
 div#pageContainer.col-md-9 h1:before {
-    font-family: "Almendra Display", serif;
+    font-family: "Caudex", serif;
     content: "Cassiopeia's Conservatory";
-    font-size: 64px;
-    font-weight: 600;
+    font-size: 52px;
+    font-weight: 300;
     text-indent: 0px !important;
     width: 100% !important;
     float: left;
@@ -293,7 +293,7 @@ div.lionImage.featured-lion img {
 
 /* Primary header */
 h1 {
-    font-family: "Macondo", serif !important;
+    font-family: "Ysabeau Infant", serif !important;
     font-size: 64px;
     color: var(--bright-cream);
     font-weight: 300 !important;
@@ -305,7 +305,7 @@ h1 {
 
 /* Secondary header */
 h2 {
-    font-family: "Macondo", serif !important;
+    font-family: "Ysabeau Infant", serif !important;
     font-size: 36px;
     font-weight: 300 !important;
     color: var(--bright-cream) !important;
@@ -315,7 +315,7 @@ h2 {
 /* Tertiary header */
 h3,
 div.center.h3 {
-    font-family: "Macondo", serif !important;
+    font-family: "Ysabeau Infant", serif !important;
     font-size: 32px !important;
     font-weight: 300 !important;
     color: var(--bright-cream) !important;
@@ -366,7 +366,7 @@ div.center.h3 {
 
 /* Topbar (Welcome and account navigation) */
 .topbar {
-    font-family: "Macondo", cursive !important;
+    font-family: "Ysabeau Infant", cursive !important;
     background: var(--midnight-blue) !important;
     backdrop-filter: blur(3px);
     color: var(--bright-cream);
@@ -377,7 +377,7 @@ div.center.h3 {
 }
 
 .topbar a {
-    font-family: "Macondo", cursive !important;
+    font-family: "Ysabeau Infant", cursive !important;
     color: var(--link-cyan) !important;
     font-size: 18px;
     font-weight: 200 !important;
@@ -403,7 +403,7 @@ div.center.h3 {
 }
 
 .navbar li a {
-    font-family: "Macondo", cursive !important;
+    font-family: "Arima", cursive !important;
     color: var(--link-cyan) !important;
     font-size: 25px !important;
     font-weight: 200;
@@ -418,7 +418,7 @@ div.center.h3 {
 
 /* Breadcrumb (Home button, den owner, bookmark) */
 .breadcrumb {
-    font-family: "Almendra Display", serif !important;
+    font-family: "Ysabeau Infant", serif !important;
     background: var(--midnight-blue) !important;
     backdrop-filter: brightness(90%);
     border: none !important;
@@ -438,7 +438,7 @@ div.center.h3 {
 }
 
 .breadcrumb .active {
-    font-family: "Almendra Display", serif;
+    font-family: "Ysabeau Infant", serif;
     color: var(--bright-cream) !important;
     font-size: 23px;
     font-weight: 200;
@@ -474,9 +474,9 @@ br.clear {
 .sidebar h3,
 .panel h3,
 .panel-heading {
-    font-family: "Almendra Display", serif !important;
+    font-family: "Ysabeau Infant", serif !important;
     font-size: 34px !important;
-    font-weight: 600 !important;
+    font-weight: 400 !important;
     color: var(--bright-cream) !important;
     text-shadow: 0 0 1em var(--bright-cream), 0 0 0.5em var(--cosmic-purple) !important;
     text-align: right !important;
@@ -596,9 +596,8 @@ div.xlarge.b {
 .progress div,
 .progress span,
 .progress-bar div {
-    font-family: "Macondo", serif !important;
+    font-family: "Arima", serif !important;
     color: var(--bright-cream) !important;
-    font-family: Macondo !important;
     font-size: 15px !important;
     font-weight: 600 !important;
     text-shadow: 0 0 0.8em var(--midnight-blue), 0 0 0.4em var(--cosmic-purple) !important;
@@ -781,9 +780,9 @@ td.bottom button {
     background: transparent;
     color: var(--bright-cream) !important;
     text-shadow: 0 0 0.8em var(--bright-cream), 0 0 0.4em var(--cosmic-purple) !important;
-    font-family: "Almendra Display", serif !important;
+    font-family: "Arima", serif !important;
     font-weight: 200 !important;
-    font-size: 20px !important;
+    font-size: 15px !important;
     border: none !important;
     border-radius: 0px !important;
 }
@@ -884,7 +883,7 @@ p.center:nth-child(5) {
 }
 
 div.center.h3 {
-    font-family: "Macondo", serif;
+    font-family: "Arima", serif;
     font-weight: 200;
     text-shadow: 0 0 1em var(--bright-cream), 0 0 .5em var(--cosmic-purple) !important;
 }
@@ -1059,9 +1058,9 @@ div.center:nth-child(5)>div:nth-child(1)>i:nth-child(3) {
     color: var(--bright-cream) !important;
     border: none !important;
     border-radius: 2px !important;
-    font-family: "Almendra Display", serif !important;
+    font-family: "Arima", serif !important;
     font-size: 25px !important;
-    font-weight: 600 !important;
+    font-weight: 200 !important;
 }
 
 #fraOrganizationBlock {
@@ -1385,7 +1384,7 @@ img.lioness {
 /* Explore fixes */
 
 div#explore-log-inner div {
-    font-family: Macondo;
+    font-family: Arima;
     font-size: 18px !important;
     font-weight: 600 !important;
 }
